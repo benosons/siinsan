@@ -1,0 +1,780 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="2"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel mne_pelaksanaan_umum edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="2"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>Balik ke daftar</button>
+	{END back_button}
+{BEGIN view_page_button}
+		<a class="btn btn-sm btn-default" href="mne_pelaksanaan_umum_view.php?{$editlink}" {$view_page_button_attrs}>Lihat</a>
+{END view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<div class="panel with-tabs panel-default form-tabs" data-itemtype="tabs" data-itemid="tabs" {$item_tabs} data-pageid="{$pageid}">
+	<div class="panel-heading">
+		<ul class="nav nav-tabs" role="tablist">
+									<li role="presentation" class="active">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section{$pageid}">
+					Informasi Umum				</a>
+			</li>
+										<li role="presentation" class="">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section1{$pageid}">
+					Catatan & Tindak Lanjut				</a>
+			</li>
+									</ul>
+	</div>
+	<div class="panel-body">
+		<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="tab_section{$pageid}"> 
+			{BEGIN section_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section" id="form_section_{$pageid}" data-makeup="small" {$form_section} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section_0} >
+										
+
+{BEGIN cellblock_section_c1}
+<td
+	{$cell_section_c1}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="section_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN kd_sektor_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_sektor}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="kd_sektor{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="kd_sektor" data-fieldname="kd_sektor" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_kd_sektor}">
+		{BEGIN kd_sektor_label}{$label mne_pelaksanaan_umum kd_sektor }{END kd_sektor_label}
+	</label>
+	<div class="r-edit-field">
+		{$kd_sektor_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="kd_sektor">
+		<div class="text-muted" >
+		{$tooltip mne_pelaksanaan_umum kd_sektor }		</div>
+	</div>
+</div>
+
+
+{END kd_sektor_fieldblock}
+											
+{BEGIN provinsiid_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_provinsiid}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="provinsiid{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="provinsiid" data-fieldname="provinsiid" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_provinsiid}">
+		{BEGIN provinsiid_label}{$label mne_pelaksanaan_umum provinsiid }{END provinsiid_label}
+	</label>
+	<div class="r-edit-field">
+		{$provinsiid_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="provinsiid">
+		<div class="text-muted" >
+		{$tooltip mne_pelaksanaan_umum provinsiid }		</div>
+	</div>
+</div>
+
+
+{END provinsiid_fieldblock}
+											
+{BEGIN kabupatenkotaid_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kabupatenkotaid}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="kabupatenkotaid{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="kabupatenkotaid" data-fieldname="kabupatenkotaid" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_kabupatenkotaid}">
+		{BEGIN kabupatenkotaid_label}{$label mne_pelaksanaan_umum kabupatenkotaid }{END kabupatenkotaid_label}
+	</label>
+	<div class="r-edit-field">
+		{$kabupatenkotaid_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="kabupatenkotaid">
+		<div class="text-muted" >
+		{$tooltip mne_pelaksanaan_umum kabupatenkotaid }		</div>
+	</div>
+</div>
+
+
+{END kabupatenkotaid_fieldblock}
+											
+{BEGIN tahun_data_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tahun_data}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="tahun_data{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="tahun_data" data-fieldname="tahun_data" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_tahun_data}">
+		{BEGIN tahun_data_label}{$label mne_pelaksanaan_umum tahun_data }{END tahun_data_label}
+	</label>
+	<div class="r-edit-field">
+		{$tahun_data_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="tahun_data">
+		<div class="text-muted" >
+		{$tooltip mne_pelaksanaan_umum tahun_data }		</div>
+	</div>
+</div>
+
+
+{END tahun_data_fieldblock}
+											
+{BEGIN nm_kegiatan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nm_kegiatan}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="nm_kegiatan{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="nm_kegiatan" data-fieldname="nm_kegiatan" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_nm_kegiatan}">
+		{BEGIN nm_kegiatan_label}{$label mne_pelaksanaan_umum nm_kegiatan }{END nm_kegiatan_label}
+	</label>
+	<div class="r-edit-field">
+		{$nm_kegiatan_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nm_kegiatan">
+		<div class="text-muted" >
+		{$tooltip mne_pelaksanaan_umum nm_kegiatan }		</div>
+	</div>
+</div>
+
+
+{END nm_kegiatan_fieldblock}
+											
+{BEGIN kd_jenisInfra_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_jenisInfra}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="kd_jenisInfra{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="kd_jenisInfra" data-fieldname="kd_jenisInfra" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_kd_jenisInfra}">
+		{BEGIN kd_jenisInfra_label}{$label mne_pelaksanaan_umum kd_jenisInfra }{END kd_jenisInfra_label}
+	</label>
+	<div class="r-edit-field">
+		{$kd_jenisInfra_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="kd_jenisInfra">
+		<div class="text-muted" >
+		{$tooltip mne_pelaksanaan_umum kd_jenisInfra }		</div>
+	</div>
+</div>
+
+
+{END kd_jenisInfra_fieldblock}
+											
+{BEGIN nmSatker_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nmSatker}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="nmSatker{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="nmSatker" data-fieldname="nmSatker" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_nmSatker}">
+		{BEGIN nmSatker_label}{$label mne_pelaksanaan_umum nmSatker }{END nmSatker_label}
+	</label>
+	<div class="r-edit-field">
+		{$nmSatker_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nmSatker">
+		<div class="text-muted" >
+		{$tooltip mne_pelaksanaan_umum nmSatker }		</div>
+	</div>
+</div>
+
+
+{END nmSatker_fieldblock}
+											
+{BEGIN lokasi_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_lokasi}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="lokasi{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="lokasi" data-fieldname="lokasi" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_lokasi}">
+		{BEGIN lokasi_label}{$label mne_pelaksanaan_umum lokasi }{END lokasi_label}
+	</label>
+	<div class="r-edit-field">
+		{$lokasi_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="lokasi">
+		<div class="text-muted" >
+		{$tooltip mne_pelaksanaan_umum lokasi }		</div>
+	</div>
+</div>
+
+
+{END lokasi_fieldblock}
+											
+{BEGIN lat_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_lat}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="lat{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="lat" data-fieldname="lat" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_lat}">
+		{BEGIN lat_label}{$label mne_pelaksanaan_umum lat }{END lat_label}
+	</label>
+	<div class="r-edit-field">
+		{$lat_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="lat">
+		<div class="text-muted" >
+		{$tooltip mne_pelaksanaan_umum lat }		</div>
+	</div>
+</div>
+
+
+{END lat_fieldblock}
+											
+{BEGIN longt_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_longt}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="longt{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="longt" data-fieldname="longt" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_longt}">
+		{BEGIN longt_label}{$label mne_pelaksanaan_umum longt }{END longt_label}
+	</label>
+	<div class="r-edit-field">
+		{$longt_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="longt">
+		<div class="text-muted" >
+		{$tooltip mne_pelaksanaan_umum longt }		</div>
+	</div>
+</div>
+
+
+{END longt_fieldblock}
+											
+{BEGIN nilai_kontrak_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nilai_kontrak}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="nilai_kontrak{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="nilai_kontrak" data-fieldname="nilai_kontrak" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_nilai_kontrak}">
+		{BEGIN nilai_kontrak_label}{$label mne_pelaksanaan_umum nilai_kontrak }{END nilai_kontrak_label}
+	</label>
+	<div class="r-edit-field">
+		{$nilai_kontrak_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nilai_kontrak">
+		<div class="text-muted" >
+		{$tooltip mne_pelaksanaan_umum nilai_kontrak }		</div>
+	</div>
+</div>
+
+
+{END nilai_kontrak_fieldblock}
+											
+{BEGIN jenisKontrak_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jenisKontrak}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="jenisKontrak{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="jenisKontrak" data-fieldname="jenisKontrak" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_jenisKontrak}">
+		{BEGIN jenisKontrak_label}{$label mne_pelaksanaan_umum jenisKontrak }{END jenisKontrak_label}
+	</label>
+	<div class="r-edit-field">
+		{$jenisKontrak_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="jenisKontrak">
+		<div class="text-muted" >
+		{$tooltip mne_pelaksanaan_umum jenisKontrak }		</div>
+	</div>
+</div>
+
+
+{END jenisKontrak_fieldblock}
+											
+{BEGIN tglKontrak_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tglKontrak}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="tglKontrak{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="tglKontrak" data-fieldname="tglKontrak" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_tglKontrak}">
+		{BEGIN tglKontrak_label}{$label mne_pelaksanaan_umum tglKontrak }{END tglKontrak_label}
+	</label>
+	<div class="r-edit-field">
+		{$tglKontrak_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="tglKontrak">
+		<div class="text-muted" >
+		{$tooltip mne_pelaksanaan_umum tglKontrak }		</div>
+	</div>
+</div>
+
+
+{END tglKontrak_fieldblock}
+											
+{BEGIN pagu_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pagu}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="pagu{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="pagu" data-fieldname="pagu" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_pagu}">
+		{BEGIN pagu_label}{$label mne_pelaksanaan_umum pagu }{END pagu_label}
+	</label>
+	<div class="r-edit-field">
+		{$pagu_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="pagu">
+		<div class="text-muted" >
+		{$tooltip mne_pelaksanaan_umum pagu }		</div>
+	</div>
+</div>
+
+
+{END pagu_fieldblock}
+											
+{BEGIN nilaiAddendum1_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nilaiAddendum1}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="nilaiAddendum1{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="nilaiAddendum1" data-fieldname="nilaiAddendum1" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_nilaiAddendum1}">
+		{BEGIN nilaiAddendum1_label}{$label mne_pelaksanaan_umum nilaiAddendum1 }{END nilaiAddendum1_label}
+	</label>
+	<div class="r-edit-field">
+		{$nilaiAddendum1_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nilaiAddendum1">
+		<div class="text-muted" >
+		{$tooltip mne_pelaksanaan_umum nilaiAddendum1 }		</div>
+	</div>
+</div>
+
+
+{END nilaiAddendum1_fieldblock}
+											
+{BEGIN waktuAddendum1_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_waktuAddendum1}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="waktuAddendum1{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="waktuAddendum1" data-fieldname="waktuAddendum1" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_waktuAddendum1}">
+		{BEGIN waktuAddendum1_label}{$label mne_pelaksanaan_umum waktuAddendum1 }{END waktuAddendum1_label}
+	</label>
+	<div class="r-edit-field">
+		{$waktuAddendum1_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="waktuAddendum1">
+		<div class="text-muted" >
+		{$tooltip mne_pelaksanaan_umum waktuAddendum1 }		</div>
+	</div>
+</div>
+
+
+{END waktuAddendum1_fieldblock}
+											
+{BEGIN nilaiAddendum2_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nilaiAddendum2}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="nilaiAddendum2{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="nilaiAddendum2" data-fieldname="nilaiAddendum2" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_nilaiAddendum2}">
+		{BEGIN nilaiAddendum2_label}{$label mne_pelaksanaan_umum nilaiAddendum2 }{END nilaiAddendum2_label}
+	</label>
+	<div class="r-edit-field">
+		{$nilaiAddendum2_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nilaiAddendum2">
+		<div class="text-muted" >
+		{$tooltip mne_pelaksanaan_umum nilaiAddendum2 }		</div>
+	</div>
+</div>
+
+
+{END nilaiAddendum2_fieldblock}
+											
+{BEGIN waktuAddendum2_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_waktuAddendum2}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="waktuAddendum2{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="waktuAddendum2" data-fieldname="waktuAddendum2" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_waktuAddendum2}">
+		{BEGIN waktuAddendum2_label}{$label mne_pelaksanaan_umum waktuAddendum2 }{END waktuAddendum2_label}
+	</label>
+	<div class="r-edit-field">
+		{$waktuAddendum2_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="waktuAddendum2">
+		<div class="text-muted" >
+		{$tooltip mne_pelaksanaan_umum waktuAddendum2 }		</div>
+	</div>
+</div>
+
+
+{END waktuAddendum2_fieldblock}
+											
+{BEGIN nilaiAddendum3_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nilaiAddendum3}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="nilaiAddendum3{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="nilaiAddendum3" data-fieldname="nilaiAddendum3" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_nilaiAddendum3}">
+		{BEGIN nilaiAddendum3_label}{$label mne_pelaksanaan_umum nilaiAddendum3 }{END nilaiAddendum3_label}
+	</label>
+	<div class="r-edit-field">
+		{$nilaiAddendum3_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nilaiAddendum3">
+		<div class="text-muted" >
+		{$tooltip mne_pelaksanaan_umum nilaiAddendum3 }		</div>
+	</div>
+</div>
+
+
+{END nilaiAddendum3_fieldblock}
+											
+{BEGIN waktuAddendum3_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_waktuAddendum3}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="waktuAddendum3{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="waktuAddendum3" data-fieldname="waktuAddendum3" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_waktuAddendum3}">
+		{BEGIN waktuAddendum3_label}{$label mne_pelaksanaan_umum waktuAddendum3 }{END waktuAddendum3_label}
+	</label>
+	<div class="r-edit-field">
+		{$waktuAddendum3_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="waktuAddendum3">
+		<div class="text-muted" >
+		{$tooltip mne_pelaksanaan_umum waktuAddendum3 }		</div>
+	</div>
+</div>
+
+
+{END waktuAddendum3_fieldblock}
+											
+{BEGIN foto_kegiatan1_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_foto_kegiatan1}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="foto_kegiatan1{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="foto_kegiatan1" data-fieldname="foto_kegiatan1" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_foto_kegiatan1}">
+		{BEGIN foto_kegiatan1_label}{$label mne_pelaksanaan_umum foto_kegiatan1 }{END foto_kegiatan1_label}
+	</label>
+	<div class="r-edit-field">
+		{$foto_kegiatan1_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="foto_kegiatan1">
+		<div class="text-muted" >
+		{$tooltip mne_pelaksanaan_umum foto_kegiatan1 }		</div>
+	</div>
+</div>
+
+
+{END foto_kegiatan1_fieldblock}
+											
+{BEGIN foto_kegiatan2_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_foto_kegiatan2}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="foto_kegiatan2{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="foto_kegiatan2" data-fieldname="foto_kegiatan2" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_foto_kegiatan2}">
+		{BEGIN foto_kegiatan2_label}{$label mne_pelaksanaan_umum foto_kegiatan2 }{END foto_kegiatan2_label}
+	</label>
+	<div class="r-edit-field">
+		{$foto_kegiatan2_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="foto_kegiatan2">
+		<div class="text-muted" >
+		{$tooltip mne_pelaksanaan_umum foto_kegiatan2 }		</div>
+	</div>
+</div>
+
+
+{END foto_kegiatan2_fieldblock}
+											
+{BEGIN kesimpulan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kesimpulan}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="kesimpulan{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="kesimpulan" data-fieldname="kesimpulan" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_kesimpulan}">
+		{BEGIN kesimpulan_label}{$label mne_pelaksanaan_umum kesimpulan }{END kesimpulan_label}
+	</label>
+	<div class="r-edit-field">
+		{$kesimpulan_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="kesimpulan">
+		<div class="text-muted" >
+		{$tooltip mne_pelaksanaan_umum kesimpulan }		</div>
+	</div>
+</div>
+
+
+{END kesimpulan_fieldblock}
+	
+								</td>
+			{END cellblock_section_c1}
+								</tr>
+			</tbody></table>
+{END section_block}
+						</div>
+					<div role="tabpanel" class="tab-pane " id="tab_section1{$pageid}"> 
+			{BEGIN section1_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section1" id="form_section1_{$pageid}" data-makeup="small" {$form_section1} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section1_0} >
+										
+
+{BEGIN cellblock_section1_c1}
+<td
+	{$cell_section1_c1}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="section1_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN catatan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_catatan}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="catatan{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="catatan" data-fieldname="catatan" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_catatan}">
+		{BEGIN catatan_label}{$label mne_pelaksanaan_umum catatan }{END catatan_label}
+	</label>
+	<div class="r-edit-field">
+		{$catatan_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="catatan">
+		<div class="text-muted" >
+		{$tooltip mne_pelaksanaan_umum catatan }		</div>
+	</div>
+</div>
+
+
+{END catatan_fieldblock}
+											
+{BEGIN tindak_lanjut_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tindak_lanjut}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="tindak_lanjut{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field26" {$item_integrated_edit_field26} data-pageid="{$pageid}" data-field="tindak_lanjut" data-fieldname="tindak_lanjut" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_tindak_lanjut}">
+		{BEGIN tindak_lanjut_label}{$label mne_pelaksanaan_umum tindak_lanjut }{END tindak_lanjut_label}
+	</label>
+	<div class="r-edit-field">
+		{$tindak_lanjut_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="tindak_lanjut">
+		<div class="text-muted" >
+		{$tooltip mne_pelaksanaan_umum tindak_lanjut }		</div>
+	</div>
+</div>
+
+
+{END tindak_lanjut_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c1}
+								</tr>
+			</tbody></table>
+{END section1_block}
+						</div>
+				</div>
+	</div>
+</div>  	
+				{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="2"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Simpan			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							Batal			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		Tata ulang		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  href="mne_pelaksanaan_umum_view.php?{$editlink}" {$view_page_button_attrs}  title="" >
+				
+		Lihat		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

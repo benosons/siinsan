@@ -1,0 +1,406 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel al_kualitasair search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN kualitasairid_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kualitasairid}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kualitasairid{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="kualitasairid" data-fieldname="kualitasairid" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kualitasairid}">
+		{$label al_kualitasair kualitasairid }	</label>
+	<div class="r-search-option">
+		{$searchtype_kualitasairid}
+	</div>
+	<div class="r-search-field">
+		{$kualitasairid_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kualitasairid_editcontrol1}
+	</div>
+	
+</div>
+
+{END kualitasairid_fieldblock}
+											
+{BEGIN r_provinsiid_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_r_provinsiid}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="r_provinsiid{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="r_provinsiid" data-fieldname="r_provinsiid" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_r_provinsiid}">
+		{$label al_kualitasair r_provinsiid }	</label>
+	<div class="r-search-option">
+		{$searchtype_r_provinsiid}
+	</div>
+	<div class="r-search-field">
+		{$r_provinsiid_editcontrol}	</div>
+	<div class="r-search-field">
+		{$r_provinsiid_editcontrol1}
+	</div>
+	
+</div>
+
+{END r_provinsiid_fieldblock}
+											
+{BEGIN r_kabupatenkotaid_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_r_kabupatenkotaid}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="r_kabupatenkotaid{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="r_kabupatenkotaid" data-fieldname="r_kabupatenkotaid" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_r_kabupatenkotaid}">
+		{$label al_kualitasair r_kabupatenkotaid }	</label>
+	<div class="r-search-option">
+		{$searchtype_r_kabupatenkotaid}
+	</div>
+	<div class="r-search-field">
+		{$r_kabupatenkotaid_editcontrol}	</div>
+	<div class="r-search-field">
+		{$r_kabupatenkotaid_editcontrol1}
+	</div>
+	
+</div>
+
+{END r_kabupatenkotaid_fieldblock}
+											
+{BEGIN r_kecamatanid_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_r_kecamatanid}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="r_kecamatanid{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="r_kecamatanid" data-fieldname="r_kecamatanid" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_r_kecamatanid}">
+		{$label al_kualitasair r_kecamatanid }	</label>
+	<div class="r-search-option">
+		{$searchtype_r_kecamatanid}
+	</div>
+	<div class="r-search-field">
+		{$r_kecamatanid_editcontrol}	</div>
+	<div class="r-search-field">
+		{$r_kecamatanid_editcontrol1}
+	</div>
+	
+</div>
+
+{END r_kecamatanid_fieldblock}
+											
+{BEGIN r_kelurahanid_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_r_kelurahanid}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="r_kelurahanid{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="r_kelurahanid" data-fieldname="r_kelurahanid" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_r_kelurahanid}">
+		{$label al_kualitasair r_kelurahanid }	</label>
+	<div class="r-search-option">
+		{$searchtype_r_kelurahanid}
+	</div>
+	<div class="r-search-field">
+		{$r_kelurahanid_editcontrol}	</div>
+	<div class="r-search-field">
+		{$r_kelurahanid_editcontrol1}
+	</div>
+	
+</div>
+
+{END r_kelurahanid_fieldblock}
+											
+{BEGIN kualitasairtype_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kualitasairtype}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kualitasairtype{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="kualitasairtype" data-fieldname="kualitasairtype" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kualitasairtype}">
+		{$label al_kualitasair kualitasairtype }	</label>
+	<div class="r-search-option">
+		{$searchtype_kualitasairtype}
+	</div>
+	<div class="r-search-field">
+		{$kualitasairtype_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kualitasairtype_editcontrol1}
+	</div>
+	
+</div>
+
+{END kualitasairtype_fieldblock}
+											
+{BEGIN namasungai_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_namasungai}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="namasungai{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="namasungai" data-fieldname="namasungai" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_namasungai}">
+		{$label al_kualitasair namasungai }	</label>
+	<div class="r-search-option">
+		{$searchtype_namasungai}
+	</div>
+	<div class="r-search-field">
+		{$namasungai_editcontrol}	</div>
+	<div class="r-search-field">
+		{$namasungai_editcontrol1}
+	</div>
+	
+</div>
+
+{END namasungai_fieldblock}
+											
+{BEGIN tahun_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tahun}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="tahun{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="tahun" data-fieldname="tahun" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_tahun}">
+		{$label al_kualitasair tahun }	</label>
+	<div class="r-search-option">
+		{$searchtype_tahun}
+	</div>
+	<div class="r-search-field">
+		{$tahun_editcontrol}	</div>
+	<div class="r-search-field">
+		{$tahun_editcontrol1}
+	</div>
+	
+</div>
+
+{END tahun_fieldblock}
+											
+{BEGIN longitude_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_longitude}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="longitude{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="longitude" data-fieldname="longitude" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_longitude}">
+		{$label al_kualitasair longitude }	</label>
+	<div class="r-search-option">
+		{$searchtype_longitude}
+	</div>
+	<div class="r-search-field">
+		{$longitude_editcontrol}	</div>
+	<div class="r-search-field">
+		{$longitude_editcontrol1}
+	</div>
+	
+</div>
+
+{END longitude_fieldblock}
+											
+{BEGIN latitude_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_latitude}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="latitude{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="latitude" data-fieldname="latitude" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_latitude}">
+		{$label al_kualitasair latitude }	</label>
+	<div class="r-search-option">
+		{$searchtype_latitude}
+	</div>
+	<div class="r-search-field">
+		{$latitude_editcontrol}	</div>
+	<div class="r-search-field">
+		{$latitude_editcontrol1}
+	</div>
+	
+</div>
+
+{END latitude_fieldblock}
+											
+{BEGIN ecoli_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ecoli}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="ecoli{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="ecoli" data-fieldname="ecoli" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ecoli}">
+		{$label al_kualitasair ecoli }	</label>
+	<div class="r-search-option">
+		{$searchtype_ecoli}
+	</div>
+	<div class="r-search-field">
+		{$ecoli_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ecoli_editcontrol1}
+	</div>
+	
+</div>
+
+{END ecoli_fieldblock}
+											
+{BEGIN bod_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_bod}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="bod{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="bod" data-fieldname="bod" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_bod}">
+		{$label al_kualitasair bod }	</label>
+	<div class="r-search-option">
+		{$searchtype_bod}
+	</div>
+	<div class="r-search-field">
+		{$bod_editcontrol}	</div>
+	<div class="r-search-field">
+		{$bod_editcontrol1}
+	</div>
+	
+</div>
+
+{END bod_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Cari			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Tata ulang			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Batal			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

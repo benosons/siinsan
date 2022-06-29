@@ -1,0 +1,530 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-rprint" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="left"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c2" data-pageid="{$pageid}"	{$cell_top_c2}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="print_header" data-itemid="print_header" {$item_print_header} data-pageid="{$pageid}" >{$pagetitlelabel v_al_dataumum_perkotaan_terverifikasi rprint}</h2>
+	 
+		{BEGIN printtabheader}
+<span data-itemtype="print_subheader" data-itemid="print_subheader" {$item_print_subheader} data-pageid="{$pageid}" >
+{$printtabheader_text}
+</span>
+{END printtabheader}
+		</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		<span data-itemtype="print_pages" data-itemid="print_pages" {$item_print_pages} data-pageid="{$pageid}" data-small >
+	{$print_pages_labelprint_pages}
+</span>			{END firstAboveGridCell}	
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+<style>
+	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {
+		background-color: #ffffbb;
+	}
+	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color: #ffe0b0;
+	}
+	.rnr-report {
+		width: 100%;
+	}
+	td {
+		padding: 2px; 4px;
+	}
+			td.group_1{
+			background-color: #FFFFFF;
+		}
+		td.nbgroup_1{
+			background-color: #FFFFFF;
+		}
+		td.header_1 {
+			background-color: #FFFFFF; 
+			font-size: 120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+			td.group_2{
+			background-color: #FFFFFF;
+		}
+		td.nbgroup_2{
+			background-color: #FFFFFF;
+		}
+		td.header_2 {
+			background-color: #FFFFFF; 
+			font-size: 120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+		td.blackshade {
+		font-size: 120%;
+	}
+	.summaryrow > * {
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+		.fieldnamesrow > * 
+	{
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+	</style>
+<div id="grid_block{$id}" class="rnr-report-gridblock">
+						
+
+
+<table class="table table-striped table-bordered rnr-b-grid rnr-gridtable" cellpadding="0" >
+	<tbody>			
+{BEGIN grid_row}
+				<!--  group headers -->
+	 
+		{BEGIN NamaPropinsi_newgroup}							
+		<tr class="group-spliter-1"  >
+			<td class="header_1" colspan="36">
+				{$label v_al_dataumum_perkotaan_terverifikasi NamaPropinsi }:&nbsp;
+				{$xNamaPropinsi_grval}
+								<span data-itemtype="grid_field" data-field="NamaPropinsi" data-itemid="grid_field2" data-pageid={$pageid} data-record-id="{$recId}">
+{$NamaPropinsi_grval}
+</span>			</td>
+		</tr>
+		
+				{END NamaPropinsi_newgroup}
+	 
+		{BEGIN kabupatenkotaname_newgroup}							
+		<tr class="group-spliter-2"  >
+			<td class="header_2" colspan="36">
+				{$label v_al_dataumum_perkotaan_terverifikasi kabupatenkotaname }:&nbsp;
+				{$xkabupatenkotaname_grval}
+								<span data-itemtype="grid_field" data-field="kabupatenkotaname" data-itemid="grid_field3" data-pageid={$pageid} data-record-id="{$recId}">
+{$kabupatenkotaname_grval}
+</span>			</td>
+		</tr>
+		
+				<tr class="fieldnamesrow group-headers">
+																								<td class="blackshade {$fieldclass_dataumumairlimbahid}">{$label v_al_dataumum_perkotaan_terverifikasi dataumumairlimbahid }</td>
+														<td class="blackshade {$fieldclass_provinsiid}">{$label v_al_dataumum_perkotaan_terverifikasi provinsiid }</td>
+														<td class="blackshade {$fieldclass_kabkotaid}">{$label v_al_dataumum_perkotaan_terverifikasi kabkotaid }</td>
+														<td class="blackshade {$fieldclass_kecamatan}">{$label v_al_dataumum_perkotaan_terverifikasi kecamatan }</td>
+														<td class="blackshade {$fieldclass_kelurahan}">{$label v_al_dataumum_perkotaan_terverifikasi kelurahan }</td>
+														<td class="blackshade {$fieldclass_dataumumairlimbahname}">{$label v_al_dataumum_perkotaan_terverifikasi dataumumairlimbahname }</td>
+														<td class="blackshade {$fieldclass_alamat_lengkap}">{$label v_al_dataumum_perkotaan_terverifikasi alamat_lengkap }</td>
+														<td class="blackshade {$fieldclass_longitude}">{$label v_al_dataumum_perkotaan_terverifikasi longitude }</td>
+														<td class="blackshade {$fieldclass_latitude}">{$label v_al_dataumum_perkotaan_terverifikasi latitude }</td>
+														<td class="blackshade {$fieldclass_skalapelayanan}">{$label v_al_dataumum_perkotaan_terverifikasi skalapelayanan }</td>
+														<td class="blackshade {$fieldclass_tahunkontruksi}">{$label v_al_dataumum_perkotaan_terverifikasi tahunkontruksi }</td>
+														<td class="blackshade {$fieldclass_status_keberfungsian}">{$label v_al_dataumum_perkotaan_terverifikasi status_keberfungsian }</td>
+														<td class="blackshade {$fieldclass_kualitas_keberfungsian}">{$label v_al_dataumum_perkotaan_terverifikasi kualitas_keberfungsian }</td>
+														<td class="blackshade {$fieldclass_keterangan_kondisi}">{$label v_al_dataumum_perkotaan_terverifikasi keterangan_kondisi }</td>
+														<td class="blackshade {$fieldclass_status_lahan}">{$label v_al_dataumum_perkotaan_terverifikasi status_lahan }</td>
+														<td class="blackshade {$fieldclass_luas_lahan}">{$label v_al_dataumum_perkotaan_terverifikasi luas_lahan }</td>
+														<td class="blackshade {$fieldclass_pengelolaan}">{$label v_al_dataumum_perkotaan_terverifikasi pengelolaan }</td>
+														<td class="blackshade {$fieldclass_kapasitasdesain}">{$label v_al_dataumum_perkotaan_terverifikasi kapasitasdesain }</td>
+														<td class="blackshade {$fieldclass_kapasitasterpakai}">{$label v_al_dataumum_perkotaan_terverifikasi kapasitasterpakai }</td>
+														<td class="blackshade {$fieldclass_kapasitastidakterpakai}">{$label v_al_dataumum_perkotaan_terverifikasi kapasitastidakterpakai }</td>
+														<td class="blackshade {$fieldclass_jenispengelolaan}">{$label v_al_dataumum_perkotaan_terverifikasi jenispengelolaan }</td>
+														<td class="blackshade {$fieldclass_petacakupanairlimbah}">{$label v_al_dataumum_perkotaan_terverifikasi petacakupanairlimbah }</td>
+														<td class="blackshade {$fieldclass_opsi_teknologi}">{$label v_al_dataumum_perkotaan_terverifikasi opsi_teknologi }</td>
+														<td class="blackshade {$fieldclass_jumlah_stasiun_pompa}">{$label v_al_dataumum_perkotaan_terverifikasi jumlah_stasiun_pompa }</td>
+														<td class="blackshade {$fieldclass_biaya_operasional}">{$label v_al_dataumum_perkotaan_terverifikasi biaya_operasional }</td>
+														<td class="blackshade {$fieldclass_frekuensi_uji_effluent}">{$label v_al_dataumum_perkotaan_terverifikasi frekuensi_uji_effluent }</td>
+														<td class="blackshade {$fieldclass_hasil_uji_effluent}">{$label v_al_dataumum_perkotaan_terverifikasi hasil_uji_effluent }</td>
+														<td class="blackshade {$fieldclass_pH}">{$label v_al_dataumum_perkotaan_terverifikasi pH }</td>
+														<td class="blackshade {$fieldclass_BOD}">{$label v_al_dataumum_perkotaan_terverifikasi BOD }</td>
+														<td class="blackshade {$fieldclass_COD}">{$label v_al_dataumum_perkotaan_terverifikasi COD }</td>
+														<td class="blackshade {$fieldclass_TSS}">{$label v_al_dataumum_perkotaan_terverifikasi TSS }</td>
+														<td class="blackshade {$fieldclass_minyak_dan_lemak}">{$label v_al_dataumum_perkotaan_terverifikasi minyak_dan_lemak }</td>
+														<td class="blackshade {$fieldclass_amonia}">{$label v_al_dataumum_perkotaan_terverifikasi amonia }</td>
+														<td class="blackshade {$fieldclass_total_coliform}">{$label v_al_dataumum_perkotaan_terverifikasi total_coliform }</td>
+														<td class="blackshade {$fieldclass_verifikasi_prov}">{$label v_al_dataumum_perkotaan_terverifikasi verifikasi_prov }</td>
+														<td class="blackshade {$fieldclass_keterangan_verifikasi_prov}">{$label v_al_dataumum_perkotaan_terverifikasi keterangan_verifikasi_prov }</td>
+									</tr>
+				{END kabupatenkotaname_newgroup}
+		
+
+			<!--  data-->
+		{BEGIN row_data}
+		<tr >
+																								<td class="data {$fieldclass_dataumumairlimbahid}">
+			{$xdataumumairlimbahid_value}
+						<span data-itemtype="grid_field" data-field="dataumumairlimbahid" data-itemid="grid_field4" data-pageid={$pageid} data-record-id="{$recId}">
+{$dataumumairlimbahid_value}
+</span>			</td>
+														<td class="data {$fieldclass_provinsiid}">
+			{$xprovinsiid_value}
+						<span data-itemtype="grid_field" data-field="provinsiid" data-itemid="grid_field5" data-pageid={$pageid} data-record-id="{$recId}">
+{$provinsiid_value}
+</span>			</td>
+														<td class="data {$fieldclass_kabkotaid}">
+			{$xkabkotaid_value}
+						<span data-itemtype="grid_field" data-field="kabkotaid" data-itemid="grid_field6" data-pageid={$pageid} data-record-id="{$recId}">
+{$kabkotaid_value}
+</span>			</td>
+														<td class="data {$fieldclass_kecamatan}">
+			{$xkecamatan_value}
+						<span data-itemtype="grid_field" data-field="kecamatan" data-itemid="grid_field7" data-pageid={$pageid} data-record-id="{$recId}">
+{$kecamatan_value}
+</span>			</td>
+														<td class="data {$fieldclass_kelurahan}">
+			{$xkelurahan_value}
+						<span data-itemtype="grid_field" data-field="kelurahan" data-itemid="grid_field8" data-pageid={$pageid} data-record-id="{$recId}">
+{$kelurahan_value}
+</span>			</td>
+														<td class="data {$fieldclass_dataumumairlimbahname}">
+			{$xdataumumairlimbahname_value}
+						<span data-itemtype="grid_field" data-field="dataumumairlimbahname" data-itemid="grid_field9" data-pageid={$pageid} data-record-id="{$recId}">
+{$dataumumairlimbahname_value}
+</span>			</td>
+														<td class="data {$fieldclass_alamat_lengkap}">
+			{$xalamat_lengkap_value}
+						<span data-itemtype="grid_field" data-field="alamat_lengkap" data-itemid="grid_field10" data-pageid={$pageid} data-record-id="{$recId}">
+{$alamat_lengkap_value}
+</span>			</td>
+														<td class="data {$fieldclass_longitude}">
+			{$xlongitude_value}
+						<span data-itemtype="grid_field" data-field="longitude" data-itemid="grid_field11" data-pageid={$pageid} data-record-id="{$recId}">
+{$longitude_value}
+</span>			</td>
+														<td class="data {$fieldclass_latitude}">
+			{$xlatitude_value}
+						<span data-itemtype="grid_field" data-field="latitude" data-itemid="grid_field12" data-pageid={$pageid} data-record-id="{$recId}">
+{$latitude_value}
+</span>			</td>
+														<td class="data {$fieldclass_skalapelayanan}">
+			{$xskalapelayanan_value}
+						<span data-itemtype="grid_field" data-field="skalapelayanan" data-itemid="grid_field13" data-pageid={$pageid} data-record-id="{$recId}">
+{$skalapelayanan_value}
+</span>			</td>
+														<td class="data {$fieldclass_tahunkontruksi}">
+			{$xtahunkontruksi_value}
+						<span data-itemtype="grid_field" data-field="tahunkontruksi" data-itemid="grid_field14" data-pageid={$pageid} data-record-id="{$recId}">
+{$tahunkontruksi_value}
+</span>			</td>
+														<td class="data {$fieldclass_status_keberfungsian}">
+			{$xstatus_keberfungsian_value}
+						<span data-itemtype="grid_field" data-field="status_keberfungsian" data-itemid="grid_field15" data-pageid={$pageid} data-record-id="{$recId}">
+{$status_keberfungsian_value}
+</span>			</td>
+														<td class="data {$fieldclass_kualitas_keberfungsian}">
+			{$xkualitas_keberfungsian_value}
+						<span data-itemtype="grid_field" data-field="kualitas_keberfungsian" data-itemid="grid_field16" data-pageid={$pageid} data-record-id="{$recId}">
+{$kualitas_keberfungsian_value}
+</span>			</td>
+														<td class="data {$fieldclass_keterangan_kondisi}">
+			{$xketerangan_kondisi_value}
+						<span data-itemtype="grid_field" data-field="keterangan_kondisi" data-itemid="grid_field17" data-pageid={$pageid} data-record-id="{$recId}">
+{$keterangan_kondisi_value}
+</span>			</td>
+														<td class="data {$fieldclass_status_lahan}">
+			{$xstatus_lahan_value}
+						<span data-itemtype="grid_field" data-field="status_lahan" data-itemid="grid_field18" data-pageid={$pageid} data-record-id="{$recId}">
+{$status_lahan_value}
+</span>			</td>
+														<td class="data {$fieldclass_luas_lahan}">
+			{$xluas_lahan_value}
+						<span data-itemtype="grid_field" data-field="luas_lahan" data-itemid="grid_field19" data-pageid={$pageid} data-record-id="{$recId}">
+{$luas_lahan_value}
+</span>			</td>
+														<td class="data {$fieldclass_pengelolaan}">
+			{$xpengelolaan_value}
+						<span data-itemtype="grid_field" data-field="pengelolaan" data-itemid="grid_field20" data-pageid={$pageid} data-record-id="{$recId}">
+{$pengelolaan_value}
+</span>			</td>
+														<td class="data {$fieldclass_kapasitasdesain}">
+			{$xkapasitasdesain_value}
+						<span data-itemtype="grid_field" data-field="kapasitasdesain" data-itemid="grid_field21" data-pageid={$pageid} data-record-id="{$recId}">
+{$kapasitasdesain_value}
+</span>			</td>
+														<td class="data {$fieldclass_kapasitasterpakai}">
+			{$xkapasitasterpakai_value}
+						<span data-itemtype="grid_field" data-field="kapasitasterpakai" data-itemid="grid_field22" data-pageid={$pageid} data-record-id="{$recId}">
+{$kapasitasterpakai_value}
+</span>			</td>
+														<td class="data {$fieldclass_kapasitastidakterpakai}">
+			{$xkapasitastidakterpakai_value}
+						<span data-itemtype="grid_field" data-field="kapasitastidakterpakai" data-itemid="grid_field23" data-pageid={$pageid} data-record-id="{$recId}">
+{$kapasitastidakterpakai_value}
+</span>			</td>
+														<td class="data {$fieldclass_jenispengelolaan}">
+			{$xjenispengelolaan_value}
+						<span data-itemtype="grid_field" data-field="jenispengelolaan" data-itemid="grid_field24" data-pageid={$pageid} data-record-id="{$recId}">
+{$jenispengelolaan_value}
+</span>			</td>
+														<td class="data {$fieldclass_petacakupanairlimbah}">
+			{$xpetacakupanairlimbah_value}
+						<span data-itemtype="grid_field" data-field="petacakupanairlimbah" data-itemid="grid_field25" data-pageid={$pageid} data-record-id="{$recId}">
+{$petacakupanairlimbah_value}
+</span>			</td>
+														<td class="data {$fieldclass_opsi_teknologi}">
+			{$xopsi_teknologi_value}
+						<span data-itemtype="grid_field" data-field="opsi_teknologi" data-itemid="grid_field26" data-pageid={$pageid} data-record-id="{$recId}">
+{$opsi_teknologi_value}
+</span>			</td>
+														<td class="data {$fieldclass_jumlah_stasiun_pompa}">
+			{$xjumlah_stasiun_pompa_value}
+						<span data-itemtype="grid_field" data-field="jumlah_stasiun_pompa" data-itemid="grid_field27" data-pageid={$pageid} data-record-id="{$recId}">
+{$jumlah_stasiun_pompa_value}
+</span>			</td>
+														<td class="data {$fieldclass_biaya_operasional}">
+			{$xbiaya_operasional_value}
+						<span data-itemtype="grid_field" data-field="biaya_operasional" data-itemid="grid_field28" data-pageid={$pageid} data-record-id="{$recId}">
+{$biaya_operasional_value}
+</span>			</td>
+														<td class="data {$fieldclass_frekuensi_uji_effluent}">
+			{$xfrekuensi_uji_effluent_value}
+						<span data-itemtype="grid_field" data-field="frekuensi_uji_effluent" data-itemid="grid_field29" data-pageid={$pageid} data-record-id="{$recId}">
+{$frekuensi_uji_effluent_value}
+</span>			</td>
+														<td class="data {$fieldclass_hasil_uji_effluent}">
+			{$xhasil_uji_effluent_value}
+						<span data-itemtype="grid_field" data-field="hasil_uji_effluent" data-itemid="grid_field30" data-pageid={$pageid} data-record-id="{$recId}">
+{$hasil_uji_effluent_value}
+</span>			</td>
+														<td class="data {$fieldclass_pH}">
+			{$xpH_value}
+						<span data-itemtype="grid_field" data-field="pH" data-itemid="grid_field31" data-pageid={$pageid} data-record-id="{$recId}">
+{$pH_value}
+</span>			</td>
+														<td class="data {$fieldclass_BOD}">
+			{$xBOD_value}
+						<span data-itemtype="grid_field" data-field="BOD" data-itemid="grid_field32" data-pageid={$pageid} data-record-id="{$recId}">
+{$BOD_value}
+</span>			</td>
+														<td class="data {$fieldclass_COD}">
+			{$xCOD_value}
+						<span data-itemtype="grid_field" data-field="COD" data-itemid="grid_field33" data-pageid={$pageid} data-record-id="{$recId}">
+{$COD_value}
+</span>			</td>
+														<td class="data {$fieldclass_TSS}">
+			{$xTSS_value}
+						<span data-itemtype="grid_field" data-field="TSS" data-itemid="grid_field34" data-pageid={$pageid} data-record-id="{$recId}">
+{$TSS_value}
+</span>			</td>
+														<td class="data {$fieldclass_minyak_dan_lemak}">
+			{$xminyak_dan_lemak_value}
+						<span data-itemtype="grid_field" data-field="minyak_dan_lemak" data-itemid="grid_field35" data-pageid={$pageid} data-record-id="{$recId}">
+{$minyak_dan_lemak_value}
+</span>			</td>
+														<td class="data {$fieldclass_amonia}">
+			{$xamonia_value}
+						<span data-itemtype="grid_field" data-field="amonia" data-itemid="grid_field36" data-pageid={$pageid} data-record-id="{$recId}">
+{$amonia_value}
+</span>			</td>
+														<td class="data {$fieldclass_total_coliform}">
+			{$xtotal_coliform_value}
+						<span data-itemtype="grid_field" data-field="total_coliform" data-itemid="grid_field37" data-pageid={$pageid} data-record-id="{$recId}">
+{$total_coliform_value}
+</span>			</td>
+														<td class="data {$fieldclass_verifikasi_prov}">
+			{$xverifikasi_prov_value}
+						<span data-itemtype="grid_field" data-field="verifikasi_prov" data-itemid="grid_field38" data-pageid={$pageid} data-record-id="{$recId}">
+{$verifikasi_prov_value}
+</span>			</td>
+														<td class="data {$fieldclass_keterangan_verifikasi_prov}">
+			{$xketerangan_verifikasi_prov_value}
+						<span data-itemtype="grid_field" data-field="keterangan_verifikasi_prov" data-itemid="grid_field39" data-pageid={$pageid} data-record-id="{$recId}">
+{$keterangan_verifikasi_prov_value}
+</span>			</td>
+									</tr>
+		{END row_data}
+	
+	<!---  group summary-->
+					{BEGIN kabupatenkotaname_endgroup}
+
+		<tr >
+					<td class="group_2" colspan="36">
+				Ringkasan untuk {$label v_al_dataumum_perkotaan_terverifikasi kabupatenkotaname } {$kabupatenkotaname_grval} - <span class="summary-2" data-type="summary">
+					{$groupkabupatenkotaname_total_cnt}
+				</span> total catatan			</td>			
+				</tr>
+		
+		
+		
+		
+			
+
+		{END kabupatenkotaname_endgroup}
+							{BEGIN NamaPropinsi_endgroup}
+
+		<tr >
+					<td class="group_1" colspan="36">
+				Ringkasan untuk {$label v_al_dataumum_perkotaan_terverifikasi NamaPropinsi } {$NamaPropinsi_grval} - <span class="summary-1" data-type="summary">
+					{$groupNamaPropinsi_total_cnt}
+				</span> total catatan			</td>			
+				</tr>
+		
+		
+		
+		
+			
+
+		{END NamaPropinsi_endgroup}
+			
+{END grid_row}
+
+	{BEGIN summary_header}
+	<tr class="summary-header">
+						
+						
+							<td class="blackshade {$fieldclass_dataumumairlimbahid}">{$label v_al_dataumum_perkotaan_terverifikasi dataumumairlimbahid }</td>
+				
+							<td class="blackshade {$fieldclass_provinsiid}">{$label v_al_dataumum_perkotaan_terverifikasi provinsiid }</td>
+				
+							<td class="blackshade {$fieldclass_kabkotaid}">{$label v_al_dataumum_perkotaan_terverifikasi kabkotaid }</td>
+				
+							<td class="blackshade {$fieldclass_kecamatan}">{$label v_al_dataumum_perkotaan_terverifikasi kecamatan }</td>
+				
+							<td class="blackshade {$fieldclass_kelurahan}">{$label v_al_dataumum_perkotaan_terverifikasi kelurahan }</td>
+				
+							<td class="blackshade {$fieldclass_dataumumairlimbahname}">{$label v_al_dataumum_perkotaan_terverifikasi dataumumairlimbahname }</td>
+				
+							<td class="blackshade {$fieldclass_alamat_lengkap}">{$label v_al_dataumum_perkotaan_terverifikasi alamat_lengkap }</td>
+				
+							<td class="blackshade {$fieldclass_longitude}">{$label v_al_dataumum_perkotaan_terverifikasi longitude }</td>
+				
+							<td class="blackshade {$fieldclass_latitude}">{$label v_al_dataumum_perkotaan_terverifikasi latitude }</td>
+				
+							<td class="blackshade {$fieldclass_skalapelayanan}">{$label v_al_dataumum_perkotaan_terverifikasi skalapelayanan }</td>
+				
+							<td class="blackshade {$fieldclass_tahunkontruksi}">{$label v_al_dataumum_perkotaan_terverifikasi tahunkontruksi }</td>
+				
+							<td class="blackshade {$fieldclass_status_keberfungsian}">{$label v_al_dataumum_perkotaan_terverifikasi status_keberfungsian }</td>
+				
+							<td class="blackshade {$fieldclass_kualitas_keberfungsian}">{$label v_al_dataumum_perkotaan_terverifikasi kualitas_keberfungsian }</td>
+				
+							<td class="blackshade {$fieldclass_keterangan_kondisi}">{$label v_al_dataumum_perkotaan_terverifikasi keterangan_kondisi }</td>
+				
+							<td class="blackshade {$fieldclass_status_lahan}">{$label v_al_dataumum_perkotaan_terverifikasi status_lahan }</td>
+				
+							<td class="blackshade {$fieldclass_luas_lahan}">{$label v_al_dataumum_perkotaan_terverifikasi luas_lahan }</td>
+				
+							<td class="blackshade {$fieldclass_pengelolaan}">{$label v_al_dataumum_perkotaan_terverifikasi pengelolaan }</td>
+				
+							<td class="blackshade {$fieldclass_kapasitasdesain}">{$label v_al_dataumum_perkotaan_terverifikasi kapasitasdesain }</td>
+				
+							<td class="blackshade {$fieldclass_kapasitasterpakai}">{$label v_al_dataumum_perkotaan_terverifikasi kapasitasterpakai }</td>
+				
+							<td class="blackshade {$fieldclass_kapasitastidakterpakai}">{$label v_al_dataumum_perkotaan_terverifikasi kapasitastidakterpakai }</td>
+				
+							<td class="blackshade {$fieldclass_jenispengelolaan}">{$label v_al_dataumum_perkotaan_terverifikasi jenispengelolaan }</td>
+				
+							<td class="blackshade {$fieldclass_petacakupanairlimbah}">{$label v_al_dataumum_perkotaan_terverifikasi petacakupanairlimbah }</td>
+				
+							<td class="blackshade {$fieldclass_opsi_teknologi}">{$label v_al_dataumum_perkotaan_terverifikasi opsi_teknologi }</td>
+				
+							<td class="blackshade {$fieldclass_jumlah_stasiun_pompa}">{$label v_al_dataumum_perkotaan_terverifikasi jumlah_stasiun_pompa }</td>
+				
+							<td class="blackshade {$fieldclass_biaya_operasional}">{$label v_al_dataumum_perkotaan_terverifikasi biaya_operasional }</td>
+				
+							<td class="blackshade {$fieldclass_frekuensi_uji_effluent}">{$label v_al_dataumum_perkotaan_terverifikasi frekuensi_uji_effluent }</td>
+				
+							<td class="blackshade {$fieldclass_hasil_uji_effluent}">{$label v_al_dataumum_perkotaan_terverifikasi hasil_uji_effluent }</td>
+				
+							<td class="blackshade {$fieldclass_pH}">{$label v_al_dataumum_perkotaan_terverifikasi pH }</td>
+				
+							<td class="blackshade {$fieldclass_BOD}">{$label v_al_dataumum_perkotaan_terverifikasi BOD }</td>
+				
+							<td class="blackshade {$fieldclass_COD}">{$label v_al_dataumum_perkotaan_terverifikasi COD }</td>
+				
+							<td class="blackshade {$fieldclass_TSS}">{$label v_al_dataumum_perkotaan_terverifikasi TSS }</td>
+				
+							<td class="blackshade {$fieldclass_minyak_dan_lemak}">{$label v_al_dataumum_perkotaan_terverifikasi minyak_dan_lemak }</td>
+				
+							<td class="blackshade {$fieldclass_amonia}">{$label v_al_dataumum_perkotaan_terverifikasi amonia }</td>
+				
+							<td class="blackshade {$fieldclass_total_coliform}">{$label v_al_dataumum_perkotaan_terverifikasi total_coliform }</td>
+				
+							<td class="blackshade {$fieldclass_verifikasi_prov}">{$label v_al_dataumum_perkotaan_terverifikasi verifikasi_prov }</td>
+				
+							<td class="blackshade {$fieldclass_keterangan_verifikasi_prov}">{$label v_al_dataumum_perkotaan_terverifikasi keterangan_verifikasi_prov }</td>
+				
+			
+	</tr>
+	{END summary_header}			
+
+
+
+
+    
+    
+
+	<!-- global summary-->
+	{BEGIN global_summary}
+    <tr class="summaryrow summary-global">
+        <td class="globalsummary" colspan="38">
+            Ringkasan global {$global_total_cnt} - total catatan        </td>
+    </tr>
+
+	
+	
+	
+		{END global_summary}
+
+	</tbody>
+</table>			</div>
+{END grid_block}									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+			</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

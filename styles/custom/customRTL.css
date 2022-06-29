@@ -1,0 +1,15 @@
+.function-login .r-panel-page > * {
+background: rgba(17,17,17,0.85) !important;
+}
+
+body.function-login {
+height:100%;
+background:transparent url("http://156.67.216.92/siinsan/images/loginbg.png") no-repeat center center fixed;
+background-size:cover;
+}
+
+body.function-menu {
+height:100%;
+background:transparent url("http://156.67.216.92/siinsan/images/menubg.png") no-repeat center center fixed;
+background-size:cover;
+}

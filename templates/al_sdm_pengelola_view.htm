@@ -1,0 +1,382 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-view" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel al_sdm_pengelola view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN instansiid_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_instansiid}  r-vertical-field" data-fieldname="instansiid" data-signal-error-for="instansiid{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="instansiid" data-fieldname="instansiid" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_instansiid}">
+		
+		{BEGIN instansiid_label}{$label al_sdm_pengelola instansiid }{END instansiid_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$instansiid_value}	</div>
+
+		
+</div>
+
+
+{END instansiid_fieldblock}
+											
+{BEGIN namainstansi_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_namainstansi}  r-vertical-field" data-fieldname="namainstansi" data-signal-error-for="namainstansi{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="namainstansi" data-fieldname="namainstansi" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_namainstansi}">
+		
+		{BEGIN namainstansi_label}{$label al_sdm_pengelola namainstansi }{END namainstansi_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$namainstansi_value}	</div>
+
+		
+</div>
+
+
+{END namainstansi_fieldblock}
+											
+{BEGIN r_kabupatenkotaid_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_r_kabupatenkotaid}  r-vertical-field" data-fieldname="r_kabupatenkotaid" data-signal-error-for="r_kabupatenkotaid{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="r_kabupatenkotaid" data-fieldname="r_kabupatenkotaid" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_r_kabupatenkotaid}">
+		
+		{BEGIN r_kabupatenkotaid_label}{$label al_sdm_pengelola r_kabupatenkotaid }{END r_kabupatenkotaid_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$r_kabupatenkotaid_value}	</div>
+
+		
+</div>
+
+
+{END r_kabupatenkotaid_fieldblock}
+											
+{BEGIN pegawaitetap_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pegawaitetap}  r-vertical-field" data-fieldname="pegawaitetap" data-signal-error-for="pegawaitetap{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="pegawaitetap" data-fieldname="pegawaitetap" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_pegawaitetap}">
+		
+		{BEGIN pegawaitetap_label}{$label al_sdm_pengelola pegawaitetap }{END pegawaitetap_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$pegawaitetap_value}	</div>
+
+		
+</div>
+
+
+{END pegawaitetap_fieldblock}
+											
+{BEGIN pegawaikontrak_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pegawaikontrak}  r-vertical-field" data-fieldname="pegawaikontrak" data-signal-error-for="pegawaikontrak{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="pegawaikontrak" data-fieldname="pegawaikontrak" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_pegawaikontrak}">
+		
+		{BEGIN pegawaikontrak_label}{$label al_sdm_pengelola pegawaikontrak }{END pegawaikontrak_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$pegawaikontrak_value}	</div>
+
+		
+</div>
+
+
+{END pegawaikontrak_fieldblock}
+											
+{BEGIN strukturorganisasi_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_strukturorganisasi}  r-vertical-field" data-fieldname="strukturorganisasi" data-signal-error-for="strukturorganisasi{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="strukturorganisasi" data-fieldname="strukturorganisasi" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_strukturorganisasi}">
+		
+		{BEGIN strukturorganisasi_label}{$label al_sdm_pengelola strukturorganisasi }{END strukturorganisasi_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$strukturorganisasi_value}	</div>
+
+		
+</div>
+
+
+{END strukturorganisasi_fieldblock}
+											
+{BEGIN luluss2s3_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_luluss2s3}  r-vertical-field" data-fieldname="luluss2s3" data-signal-error-for="luluss2s3{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="luluss2s3" data-fieldname="luluss2s3" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_luluss2s3}">
+		
+		{BEGIN luluss2s3_label}{$label al_sdm_pengelola luluss2s3 }{END luluss2s3_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$luluss2s3_value}	</div>
+
+		
+</div>
+
+
+{END luluss2s3_fieldblock}
+											
+{BEGIN luluss1_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_luluss1}  r-vertical-field" data-fieldname="luluss1" data-signal-error-for="luluss1{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="luluss1" data-fieldname="luluss1" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_luluss1}">
+		
+		{BEGIN luluss1_label}{$label al_sdm_pengelola luluss1 }{END luluss1_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$luluss1_value}	</div>
+
+		
+</div>
+
+
+{END luluss1_fieldblock}
+											
+{BEGIN lulusd3_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_lulusd3}  r-vertical-field" data-fieldname="lulusd3" data-signal-error-for="lulusd3{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="lulusd3" data-fieldname="lulusd3" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_lulusd3}">
+		
+		{BEGIN lulusd3_label}{$label al_sdm_pengelola lulusd3 }{END lulusd3_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$lulusd3_value}	</div>
+
+		
+</div>
+
+
+{END lulusd3_fieldblock}
+											
+{BEGIN lulussma_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_lulussma}  r-vertical-field" data-fieldname="lulussma" data-signal-error-for="lulussma{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="lulussma" data-fieldname="lulussma" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_lulussma}">
+		
+		{BEGIN lulussma_label}{$label al_sdm_pengelola lulussma }{END lulussma_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$lulussma_value}	</div>
+
+		
+</div>
+
+
+{END lulussma_fieldblock}
+											
+{BEGIN lulussmp_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_lulussmp}  r-vertical-field" data-fieldname="lulussmp" data-signal-error-for="lulussmp{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="lulussmp" data-fieldname="lulussmp" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_lulussmp}">
+		
+		{BEGIN lulussmp_label}{$label al_sdm_pengelola lulussmp }{END lulussmp_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$lulussmp_value}	</div>
+
+		
+</div>
+
+
+{END lulussmp_fieldblock}
+											
+{BEGIN total_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_total}  r-vertical-field" data-fieldname="total" data-signal-error-for="total{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="total" data-fieldname="total" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_total}">
+		
+		{BEGIN total_label}{$label al_sdm_pengelola total }{END total_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$total_value}	</div>
+
+		
+</div>
+
+
+{END total_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Tutup jendela			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="al_sdm_pengelola_edit.php?{$editlink}" {$edit_page_button_attrs}  title="" >
+				
+		Edit		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

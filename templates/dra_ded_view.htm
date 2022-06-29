@@ -1,0 +1,267 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel dra_ded view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN kd_ded_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_ded}  r-vertical-field" data-fieldname="kd_ded" data-signal-error-for="kd_ded{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="kd_ded" data-fieldname="kd_ded" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kd_ded}">
+		
+		{BEGIN kd_ded_label}{$label dra_ded kd_ded }{END kd_ded_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kd_ded_value}	</div>
+
+		
+</div>
+
+
+{END kd_ded_fieldblock}
+											
+{BEGIN kd_propinsi_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_propinsi}  r-vertical-field" data-fieldname="kd_propinsi" data-signal-error-for="kd_propinsi{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="kd_propinsi" data-fieldname="kd_propinsi" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kd_propinsi}">
+		
+		{BEGIN kd_propinsi_label}{$label dra_ded kd_propinsi }{END kd_propinsi_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kd_propinsi_value}	</div>
+
+		
+</div>
+
+
+{END kd_propinsi_fieldblock}
+											
+{BEGIN kd_kota_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_kota}  r-vertical-field" data-fieldname="kd_kota" data-signal-error-for="kd_kota{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="kd_kota" data-fieldname="kd_kota" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kd_kota}">
+		
+		{BEGIN kd_kota_label}{$label dra_ded kd_kota }{END kd_kota_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kd_kota_value}	</div>
+
+		
+</div>
+
+
+{END kd_kota_fieldblock}
+											
+{BEGIN paket_ded_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_paket_ded}  r-vertical-field" data-fieldname="paket_ded" data-signal-error-for="paket_ded{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="paket_ded" data-fieldname="paket_ded" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_paket_ded}">
+		
+		{BEGIN paket_ded_label}{$label dra_ded paket_ded }{END paket_ded_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$paket_ded_value}	</div>
+
+		
+</div>
+
+
+{END paket_ded_fieldblock}
+											
+{BEGIN tahun_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tahun}  r-vertical-field" data-fieldname="tahun" data-signal-error-for="tahun{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="tahun" data-fieldname="tahun" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_tahun}">
+		
+		{BEGIN tahun_label}{$label dra_ded tahun }{END tahun_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$tahun_value}	</div>
+
+		
+</div>
+
+
+{END tahun_fieldblock}
+											
+{BEGIN jumlah_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jumlah}  r-vertical-field" data-fieldname="jumlah" data-signal-error-for="jumlah{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="jumlah" data-fieldname="jumlah" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_jumlah}">
+		
+		{BEGIN jumlah_label}{$label dra_ded jumlah }{END jumlah_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$jumlah_value}	</div>
+
+		
+</div>
+
+
+{END jumlah_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Tutup jendela			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="dra_ded_edit.php?{$editlink}" {$edit_page_button_attrs}  title="" >
+				
+		Edit		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

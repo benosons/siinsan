@@ -1,0 +1,2274 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="250px" data-fixed class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Memperluas" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main}			</div>
+		
+ 
+
+			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="search_panel" {$item_search_panel} data-topcell-item-type="search_panel" >
+				<!-- Begin Search panel content -->
+<div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}" >
+
+	<div class="panel-heading">
+		<div class="btn-group" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle btn-sm )" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Search in			<span class="caret"></span>
+			</button>
+		</div>
+
+
+		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Show options</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>all conditions</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>any condition</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>hide</a></li>
+			</ul>
+		</div>
+
+
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+																		{BEGIN searchCtrlBlock_total_persen}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_total_persen}" {$filterRow_attrs_total_persen}>
+			<label>{$label v_al_dataumum_keterisian_persen total_persen }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_total_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_total_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_total_persen}</span>
+						</div>
+		{END searchCtrlBlock_total_persen}
+																{BEGIN searchCtrlBlock_tahun_kontruksi_persen}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_tahun_kontruksi_persen}" {$filterRow_attrs_tahun_kontruksi_persen}>
+			<label>{$label v_al_dataumum_keterisian_persen tahun_kontruksi_persen }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_tahun_kontruksi_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_tahun_kontruksi_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_tahun_kontruksi_persen}</span>
+						</div>
+		{END searchCtrlBlock_tahun_kontruksi_persen}
+																{BEGIN searchCtrlBlock_status_lahan_persen}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_status_lahan_persen}" {$filterRow_attrs_status_lahan_persen}>
+			<label>{$label v_al_dataumum_keterisian_persen status_lahan_persen }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_status_lahan_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_status_lahan_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_status_lahan_persen}</span>
+						</div>
+		{END searchCtrlBlock_status_lahan_persen}
+																{BEGIN searchCtrlBlock_status_keberfungsian_persen}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_status_keberfungsian_persen}" {$filterRow_attrs_status_keberfungsian_persen}>
+			<label>{$label v_al_dataumum_keterisian_persen status_keberfungsian_persen }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_status_keberfungsian_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_status_keberfungsian_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_status_keberfungsian_persen}</span>
+						</div>
+		{END searchCtrlBlock_status_keberfungsian_persen}
+																{BEGIN searchCtrlBlock_peta_cakupan_air_limbah_persen}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_peta_cakupan_air_limbah_persen}" {$filterRow_attrs_peta_cakupan_air_limbah_persen}>
+			<label>{$label v_al_dataumum_keterisian_persen peta_cakupan_air_limbah_persen }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_peta_cakupan_air_limbah_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_peta_cakupan_air_limbah_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_peta_cakupan_air_limbah_persen}</span>
+						</div>
+		{END searchCtrlBlock_peta_cakupan_air_limbah_persen}
+																{BEGIN searchCtrlBlock_pengelolaan_persen}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_pengelolaan_persen}" {$filterRow_attrs_pengelolaan_persen}>
+			<label>{$label v_al_dataumum_keterisian_persen pengelolaan_persen }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_pengelolaan_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_pengelolaan_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_pengelolaan_persen}</span>
+						</div>
+		{END searchCtrlBlock_pengelolaan_persen}
+																{BEGIN searchCtrlBlock_luas_lahan_persen}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_luas_lahan_persen}" {$filterRow_attrs_luas_lahan_persen}>
+			<label>{$label v_al_dataumum_keterisian_persen luas_lahan_persen }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_luas_lahan_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_luas_lahan_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_luas_lahan_persen}</span>
+						</div>
+		{END searchCtrlBlock_luas_lahan_persen}
+																{BEGIN searchCtrlBlock_longitude_persen}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_longitude_persen}" {$filterRow_attrs_longitude_persen}>
+			<label>{$label v_al_dataumum_keterisian_persen longitude_persen }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_longitude_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_longitude_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_longitude_persen}</span>
+						</div>
+		{END searchCtrlBlock_longitude_persen}
+																{BEGIN searchCtrlBlock_latitude_persen}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_latitude_persen}" {$filterRow_attrs_latitude_persen}>
+			<label>{$label v_al_dataumum_keterisian_persen latitude_persen }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_latitude_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_latitude_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_latitude_persen}</span>
+						</div>
+		{END searchCtrlBlock_latitude_persen}
+																{BEGIN searchCtrlBlock_lainlain_persen}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_lainlain_persen}" {$filterRow_attrs_lainlain_persen}>
+			<label>{$label v_al_dataumum_keterisian_persen lainlain_persen }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_lainlain_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_lainlain_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_lainlain_persen}</span>
+						</div>
+		{END searchCtrlBlock_lainlain_persen}
+																{BEGIN searchCtrlBlock_kualitas_keberfungsian_persen}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_kualitas_keberfungsian_persen}" {$filterRow_attrs_kualitas_keberfungsian_persen}>
+			<label>{$label v_al_dataumum_keterisian_persen kualitas_keberfungsian_persen }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_kualitas_keberfungsian_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_kualitas_keberfungsian_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_kualitas_keberfungsian_persen}</span>
+						</div>
+		{END searchCtrlBlock_kualitas_keberfungsian_persen}
+																{BEGIN searchCtrlBlock_kapasitas_tidak_terpakai_persen}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_kapasitas_tidak_terpakai_persen}" {$filterRow_attrs_kapasitas_tidak_terpakai_persen}>
+			<label>{$label v_al_dataumum_keterisian_persen kapasitas_tidak_terpakai_persen }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_kapasitas_tidak_terpakai_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_kapasitas_tidak_terpakai_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_kapasitas_tidak_terpakai_persen}</span>
+						</div>
+		{END searchCtrlBlock_kapasitas_tidak_terpakai_persen}
+																{BEGIN searchCtrlBlock_kapasitas_terpakai_persen}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_kapasitas_terpakai_persen}" {$filterRow_attrs_kapasitas_terpakai_persen}>
+			<label>{$label v_al_dataumum_keterisian_persen kapasitas_terpakai_persen }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_kapasitas_terpakai_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_kapasitas_terpakai_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_kapasitas_terpakai_persen}</span>
+						</div>
+		{END searchCtrlBlock_kapasitas_terpakai_persen}
+																{BEGIN searchCtrlBlock_kapasitas_desain_persen}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_kapasitas_desain_persen}" {$filterRow_attrs_kapasitas_desain_persen}>
+			<label>{$label v_al_dataumum_keterisian_persen kapasitas_desain_persen }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_kapasitas_desain_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_kapasitas_desain_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_kapasitas_desain_persen}</span>
+						</div>
+		{END searchCtrlBlock_kapasitas_desain_persen}
+																{BEGIN searchCtrlBlock_jumlah_record}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_jumlah_record}" {$filterRow_attrs_jumlah_record}>
+			<label>{$label v_al_dataumum_keterisian_persen jumlah_record }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_jumlah_record}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_jumlah_record}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_jumlah_record}</span>
+						</div>
+		{END searchCtrlBlock_jumlah_record}
+																{BEGIN searchCtrlBlock_jenis_pengelolaan_persen}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_jenis_pengelolaan_persen}" {$filterRow_attrs_jenis_pengelolaan_persen}>
+			<label>{$label v_al_dataumum_keterisian_persen jenis_pengelolaan_persen }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_jenis_pengelolaan_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_jenis_pengelolaan_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_jenis_pengelolaan_persen}</span>
+						</div>
+		{END searchCtrlBlock_jenis_pengelolaan_persen}
+																{BEGIN searchCtrlBlock_hibah_persen}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_hibah_persen}" {$filterRow_attrs_hibah_persen}>
+			<label>{$label v_al_dataumum_keterisian_persen hibah_persen }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_hibah_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_hibah_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_hibah_persen}</span>
+						</div>
+		{END searchCtrlBlock_hibah_persen}
+																{BEGIN searchCtrlBlock_dak_persen}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_dak_persen}" {$filterRow_attrs_dak_persen}>
+			<label>{$label v_al_dataumum_keterisian_persen dak_persen }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_dak_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_dak_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_dak_persen}</span>
+						</div>
+		{END searchCtrlBlock_dak_persen}
+																{BEGIN searchCtrlBlock_csr_persen}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_csr_persen}" {$filterRow_attrs_csr_persen}>
+			<label>{$label v_al_dataumum_keterisian_persen csr_persen }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_csr_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_csr_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_csr_persen}</span>
+						</div>
+		{END searchCtrlBlock_csr_persen}
+																{BEGIN searchCtrlBlock_apbn_persen}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_apbn_persen}" {$filterRow_attrs_apbn_persen}>
+			<label>{$label v_al_dataumum_keterisian_persen apbn_persen }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_apbn_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_apbn_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_apbn_persen}</span>
+						</div>
+		{END searchCtrlBlock_apbn_persen}
+																{BEGIN searchCtrlBlock_apbd_persen}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_apbd_persen}" {$filterRow_attrs_apbd_persen}>
+			<label>{$label v_al_dataumum_keterisian_persen apbd_persen }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_apbd_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_apbd_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_apbd_persen}</span>
+						</div>
+		{END searchCtrlBlock_apbd_persen}
+																{BEGIN searchCtrlBlock_alamat_lengkap_persen}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_alamat_lengkap_persen}" {$filterRow_attrs_alamat_lengkap_persen}>
+			<label>{$label v_al_dataumum_keterisian_persen alamat_lengkap_persen }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_alamat_lengkap_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_alamat_lengkap_persen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_alamat_lengkap_persen}</span>
+						</div>
+		{END searchCtrlBlock_alamat_lengkap_persen}
+		
+
+	</div>
+
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary btn-sm" id="searchButton{$id}" {$searchbutton_attrs}>Cari</button>
+
+				<button class="btn btn-default btn-sm" {$showAllCont_attrs} {$showallbutton_attrs}>Perlihatkan semua</button>
+	</div>
+</div>
+<!-- End Search panel content -->
+			</div>
+		
+    {END left_block}
+</div>				</div>
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div data-resize-left="leftbar"  data-fixed class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="expand_menu_button" {$item_expand_menu_button} data-topcell-item-type="expand_menu_button" >
+				<span data-itemtype="expand_menu_button" data-itemid="expand_menu_button" {$item_expand_menu_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Menyembunyikan" class="btn-link   
+	 glyphicon glyphicon-menu-hamburger" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Tampilkan menu" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="breadcrumb" {$item_breadcrumb} data-topcell-item-type="breadcrumb" >
+				{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
+				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+
+<div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+				<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Perlihatkan semua">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
+				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-cog"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" data-small >
+				<a   href="v_al_dataumum_keterisian_persen_search.php{$stateLink_full}" {$advsearchlink_attrs}  title="" >
+				
+		Pencarian canggih		
+		</a>
+	</li>
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="showOptPanel{$id}"  title="" >
+				
+		Show search panel		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="hideOptPanel{$id}"  title="" >
+				
+		Hide search panel		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+					</ul>
+	</span>
+</span>
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Login			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+			{BEGIN userbutton_icon}							<span class="glyphicon glyphicon-user"></span>
+						{END userbutton_icon}{$userbutton_image}			{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN logoutbutton}
+	<li data-itemtype="userinfo_link" data-itemid="userinfo_link" {$item_userinfo_link} data-pageid="{$pageid}" data-small >
+				<a  href="userinfo.php"  title="" >
+				
+		Profil pengguna		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Log out		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Admin Area		
+		</a>
+	</li>
+{END adminarea_link}
+							{BEGIN changepwd_link}
+	<li data-itemtype="changepassword_link" data-itemid="changepassword_link" {$item_changepassword_link} data-pageid="{$pageid}" data-small >
+				<a  href="changepwd.php" {$changepwdlink_attrs} id="changePasswordButton{$id}"  title="" >
+				
+		Rubah password		
+		</a>
+	</li>
+{END changepwd_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>	
+				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	</div>		
+{END top_block}
+						</div>
+					<div class="r-above">
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-6
+	
+">
+		{BEGIN firstAboveGridCell}
+				{END firstAboveGridCell}	
+	</div>			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class="r-align-right			col-md-6
+	
+">
+		 
+		<span data-itemtype="details_found" data-itemid="details_found" {$item_details_found} data-pageid="{$pageid}" data-small >
+{$details_found_labeldetails_found}
+</span>	 
+		<span data-itemtype="page_size" data-itemid="page_size" {$item_page_size} data-pageid="{$pageid}" >
+		{$recsPerPage}
+</span>		</div>					</div>
+	</div>		
+{END above-grid_block}
+						</div>
+					<div class="r-grid">
+										{BEGIN grid_block}
+{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}	<style>
+@media screen and (max-width: 767px) {
+		[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="jumlah_record"]:before {
+		content: "{$label v_al_dataumum_keterisian_persen jumlah_record}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="tahun_kontruksi_persen"]:before {
+		content: "{$label v_al_dataumum_keterisian_persen tahun_kontruksi_persen}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="alamat_lengkap_persen"]:before {
+		content: "{$label v_al_dataumum_keterisian_persen alamat_lengkap_persen}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="longitude_persen"]:before {
+		content: "{$label v_al_dataumum_keterisian_persen longitude_persen}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="latitude_persen"]:before {
+		content: "{$label v_al_dataumum_keterisian_persen latitude_persen}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="status_keberfungsian_persen"]:before {
+		content: "{$label v_al_dataumum_keterisian_persen status_keberfungsian_persen}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="kualitas_keberfungsian_persen"]:before {
+		content: "{$label v_al_dataumum_keterisian_persen kualitas_keberfungsian_persen}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="apbn_persen"]:before {
+		content: "{$label v_al_dataumum_keterisian_persen apbn_persen}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="apbd_persen"]:before {
+		content: "{$label v_al_dataumum_keterisian_persen apbd_persen}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="lainlain_persen"]:before {
+		content: "{$label v_al_dataumum_keterisian_persen lainlain_persen}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="dak_persen"]:before {
+		content: "{$label v_al_dataumum_keterisian_persen dak_persen}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="hibah_persen"]:before {
+		content: "{$label v_al_dataumum_keterisian_persen hibah_persen}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="csr_persen"]:before {
+		content: "{$label v_al_dataumum_keterisian_persen csr_persen}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="total_persen"]:before {
+		content: "{$label v_al_dataumum_keterisian_persen total_persen}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="status_lahan_persen"]:before {
+		content: "{$label v_al_dataumum_keterisian_persen status_lahan_persen}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="luas_lahan_persen"]:before {
+		content: "{$label v_al_dataumum_keterisian_persen luas_lahan_persen}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="pengelolaan_persen"]:before {
+		content: "{$label v_al_dataumum_keterisian_persen pengelolaan_persen}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="kapasitas_desain_persen"]:before {
+		content: "{$label v_al_dataumum_keterisian_persen kapasitas_desain_persen}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="kapasitas_terpakai_persen"]:before {
+		content: "{$label v_al_dataumum_keterisian_persen kapasitas_terpakai_persen}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="kapasitas_tidak_terpakai_persen"]:before {
+		content: "{$label v_al_dataumum_keterisian_persen kapasitas_tidak_terpakai_persen}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="jenis_pengelolaan_persen"]:before {
+		content: "{$label v_al_dataumum_keterisian_persen jenis_pengelolaan_persen}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="peta_cakupan_air_limbah_persen"]:before {
+		content: "{$label v_al_dataumum_keterisian_persen peta_cakupan_air_limbah_persen}";
+	}
+	}
+</style>
+<table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes} r-horizontal-grid  r-flexgrid rnr-b-grid rnr-gridtable" 
+	cellpadding="0" 
+	data-body-height="1"
+>
+						<thead>
+			{BEGIN grid_header}
+					
+		 
+						<tr {$rowattrs} {$row_grid_0} class="{$rowclass} 
+									{$gridHeader_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_headcell_icons}
+	<th
+	
+	{$cell_grid_headcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_al_dataumum_keterisian_persen_list"		data-control-cell
+	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_icons}
+				 
+					{BEGIN cellblock_grid_headcell_field}
+	<th
+	
+	{$cell_grid_headcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlah_record_class}
+			"
+
+			data-field="jumlah_record"
+	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlah_record_fieldheadercolumn}
+	{BEGIN jumlah_record_fieldheader}
+	<SPAN {$jumlah_record_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlah_record" data-fieldname="jumlah_record">
+	{$label v_al_dataumum_keterisian_persen jumlah_record }	{$arrow_icon_jumlah_record}
+	</SPAN>
+	{END jumlah_record_fieldheader}
+{END jumlah_record_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field}
+				 
+					{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tahun_kontruksi_persen_class}
+			"
+
+			data-field="tahun_kontruksi_persen"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tahun_kontruksi_persen_fieldheadercolumn}
+	{BEGIN tahun_kontruksi_persen_fieldheader}
+	<SPAN {$tahun_kontruksi_persen_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tahun_kontruksi_persen" data-fieldname="tahun_kontruksi_persen">
+	{$label v_al_dataumum_keterisian_persen tahun_kontruksi_persen }	{$arrow_icon_tahun_kontruksi_persen}
+	</SPAN>
+	{END tahun_kontruksi_persen_fieldheader}
+{END tahun_kontruksi_persen_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+				 
+					{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$alamat_lengkap_persen_class}
+			"
+
+			data-field="alamat_lengkap_persen"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN alamat_lengkap_persen_fieldheadercolumn}
+	{BEGIN alamat_lengkap_persen_fieldheader}
+	<SPAN {$alamat_lengkap_persen_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="alamat_lengkap_persen" data-fieldname="alamat_lengkap_persen">
+	{$label v_al_dataumum_keterisian_persen alamat_lengkap_persen }	{$arrow_icon_alamat_lengkap_persen}
+	</SPAN>
+	{END alamat_lengkap_persen_fieldheader}
+{END alamat_lengkap_persen_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
+				 
+					{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$longitude_persen_class}
+			"
+
+			data-field="longitude_persen"
+	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN longitude_persen_fieldheadercolumn}
+	{BEGIN longitude_persen_fieldheader}
+	<SPAN {$longitude_persen_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="longitude_persen" data-fieldname="longitude_persen">
+	{$label v_al_dataumum_keterisian_persen longitude_persen }	{$arrow_icon_longitude_persen}
+	</SPAN>
+	{END longitude_persen_fieldheader}
+{END longitude_persen_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field3}
+				 
+					{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$latitude_persen_class}
+			"
+
+			data-field="latitude_persen"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN latitude_persen_fieldheadercolumn}
+	{BEGIN latitude_persen_fieldheader}
+	<SPAN {$latitude_persen_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="latitude_persen" data-fieldname="latitude_persen">
+	{$label v_al_dataumum_keterisian_persen latitude_persen }	{$arrow_icon_latitude_persen}
+	</SPAN>
+	{END latitude_persen_fieldheader}
+{END latitude_persen_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field4}
+				 
+					{BEGIN cellblock_grid_headcell_field5}
+	<th
+	
+	{$cell_grid_headcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$status_keberfungsian_persen_class}
+			"
+
+			data-field="status_keberfungsian_persen"
+	
+	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN status_keberfungsian_persen_fieldheadercolumn}
+	{BEGIN status_keberfungsian_persen_fieldheader}
+	<SPAN {$status_keberfungsian_persen_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="status_keberfungsian_persen" data-fieldname="status_keberfungsian_persen">
+	{$label v_al_dataumum_keterisian_persen status_keberfungsian_persen }	{$arrow_icon_status_keberfungsian_persen}
+	</SPAN>
+	{END status_keberfungsian_persen_fieldheader}
+{END status_keberfungsian_persen_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field5}
+				 
+					{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kualitas_keberfungsian_persen_class}
+			"
+
+			data-field="kualitas_keberfungsian_persen"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kualitas_keberfungsian_persen_fieldheadercolumn}
+	{BEGIN kualitas_keberfungsian_persen_fieldheader}
+	<SPAN {$kualitas_keberfungsian_persen_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kualitas_keberfungsian_persen" data-fieldname="kualitas_keberfungsian_persen">
+	{$label v_al_dataumum_keterisian_persen kualitas_keberfungsian_persen }	{$arrow_icon_kualitas_keberfungsian_persen}
+	</SPAN>
+	{END kualitas_keberfungsian_persen_fieldheader}
+{END kualitas_keberfungsian_persen_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field6}
+				 
+					{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$apbn_persen_class}
+			"
+
+			data-field="apbn_persen"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN apbn_persen_fieldheadercolumn}
+	{BEGIN apbn_persen_fieldheader}
+	<SPAN {$apbn_persen_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="apbn_persen" data-fieldname="apbn_persen">
+	{$label v_al_dataumum_keterisian_persen apbn_persen }	{$arrow_icon_apbn_persen}
+	</SPAN>
+	{END apbn_persen_fieldheader}
+{END apbn_persen_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
+				 
+					{BEGIN cellblock_grid_headcell_field8}
+	<th
+	
+	{$cell_grid_headcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$apbd_persen_class}
+			"
+
+			data-field="apbd_persen"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN apbd_persen_fieldheadercolumn}
+	{BEGIN apbd_persen_fieldheader}
+	<SPAN {$apbd_persen_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="apbd_persen" data-fieldname="apbd_persen">
+	{$label v_al_dataumum_keterisian_persen apbd_persen }	{$arrow_icon_apbd_persen}
+	</SPAN>
+	{END apbd_persen_fieldheader}
+{END apbd_persen_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field8}
+				 
+					{BEGIN cellblock_grid_headcell_field9}
+	<th
+	
+	{$cell_grid_headcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$lainlain_persen_class}
+			"
+
+			data-field="lainlain_persen"
+	
+	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN lainlain_persen_fieldheadercolumn}
+	{BEGIN lainlain_persen_fieldheader}
+	<SPAN {$lainlain_persen_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="lainlain_persen" data-fieldname="lainlain_persen">
+	{$label v_al_dataumum_keterisian_persen lainlain_persen }	{$arrow_icon_lainlain_persen}
+	</SPAN>
+	{END lainlain_persen_fieldheader}
+{END lainlain_persen_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field9}
+				 
+					{BEGIN cellblock_grid_headcell_field10}
+	<th
+	
+	{$cell_grid_headcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dak_persen_class}
+			"
+
+			data-field="dak_persen"
+	
+	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dak_persen_fieldheadercolumn}
+	{BEGIN dak_persen_fieldheader}
+	<SPAN {$dak_persen_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dak_persen" data-fieldname="dak_persen">
+	{$label v_al_dataumum_keterisian_persen dak_persen }	{$arrow_icon_dak_persen}
+	</SPAN>
+	{END dak_persen_fieldheader}
+{END dak_persen_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field10}
+				 
+					{BEGIN cellblock_grid_headcell_field11}
+	<th
+	
+	{$cell_grid_headcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$hibah_persen_class}
+			"
+
+			data-field="hibah_persen"
+	
+	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN hibah_persen_fieldheadercolumn}
+	{BEGIN hibah_persen_fieldheader}
+	<SPAN {$hibah_persen_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="hibah_persen" data-fieldname="hibah_persen">
+	{$label v_al_dataumum_keterisian_persen hibah_persen }	{$arrow_icon_hibah_persen}
+	</SPAN>
+	{END hibah_persen_fieldheader}
+{END hibah_persen_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field11}
+				 
+					{BEGIN cellblock_grid_headcell_field12}
+	<th
+	
+	{$cell_grid_headcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$csr_persen_class}
+			"
+
+			data-field="csr_persen"
+	
+	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN csr_persen_fieldheadercolumn}
+	{BEGIN csr_persen_fieldheader}
+	<SPAN {$csr_persen_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="csr_persen" data-fieldname="csr_persen">
+	{$label v_al_dataumum_keterisian_persen csr_persen }	{$arrow_icon_csr_persen}
+	</SPAN>
+	{END csr_persen_fieldheader}
+{END csr_persen_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field12}
+				 
+					{BEGIN cellblock_grid_headcell_field13}
+	<th
+	
+	{$cell_grid_headcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$total_persen_class}
+			"
+
+			data-field="total_persen"
+	
+	data-cellId="grid_headcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN total_persen_fieldheadercolumn}
+	{BEGIN total_persen_fieldheader}
+	<SPAN {$total_persen_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="total_persen" data-fieldname="total_persen">
+	{$label v_al_dataumum_keterisian_persen total_persen }	{$arrow_icon_total_persen}
+	</SPAN>
+	{END total_persen_fieldheader}
+{END total_persen_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field13}
+				 
+					{BEGIN cellblock_grid_headcell_field14}
+	<th
+	
+	{$cell_grid_headcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$status_lahan_persen_class}
+			"
+
+			data-field="status_lahan_persen"
+	
+	data-cellId="grid_headcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN status_lahan_persen_fieldheadercolumn}
+	{BEGIN status_lahan_persen_fieldheader}
+	<SPAN {$status_lahan_persen_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field29" {$item_simple_grid_field29} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="status_lahan_persen" data-fieldname="status_lahan_persen">
+	{$label v_al_dataumum_keterisian_persen status_lahan_persen }	{$arrow_icon_status_lahan_persen}
+	</SPAN>
+	{END status_lahan_persen_fieldheader}
+{END status_lahan_persen_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field14}
+				 
+					{BEGIN cellblock_grid_headcell_field15}
+	<th
+	
+	{$cell_grid_headcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$luas_lahan_persen_class}
+			"
+
+			data-field="luas_lahan_persen"
+	
+	data-cellId="grid_headcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN luas_lahan_persen_fieldheadercolumn}
+	{BEGIN luas_lahan_persen_fieldheader}
+	<SPAN {$luas_lahan_persen_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field31" {$item_simple_grid_field31} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="luas_lahan_persen" data-fieldname="luas_lahan_persen">
+	{$label v_al_dataumum_keterisian_persen luas_lahan_persen }	{$arrow_icon_luas_lahan_persen}
+	</SPAN>
+	{END luas_lahan_persen_fieldheader}
+{END luas_lahan_persen_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field15}
+				 
+					{BEGIN cellblock_grid_headcell_field16}
+	<th
+	
+	{$cell_grid_headcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$pengelolaan_persen_class}
+			"
+
+			data-field="pengelolaan_persen"
+	
+	data-cellId="grid_headcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pengelolaan_persen_fieldheadercolumn}
+	{BEGIN pengelolaan_persen_fieldheader}
+	<SPAN {$pengelolaan_persen_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field33" {$item_simple_grid_field33} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pengelolaan_persen" data-fieldname="pengelolaan_persen">
+	{$label v_al_dataumum_keterisian_persen pengelolaan_persen }	{$arrow_icon_pengelolaan_persen}
+	</SPAN>
+	{END pengelolaan_persen_fieldheader}
+{END pengelolaan_persen_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field16}
+				 
+					{BEGIN cellblock_grid_headcell_field17}
+	<th
+	
+	{$cell_grid_headcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kapasitas_desain_persen_class}
+			"
+
+			data-field="kapasitas_desain_persen"
+	
+	data-cellId="grid_headcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kapasitas_desain_persen_fieldheadercolumn}
+	{BEGIN kapasitas_desain_persen_fieldheader}
+	<SPAN {$kapasitas_desain_persen_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field35" {$item_simple_grid_field35} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kapasitas_desain_persen" data-fieldname="kapasitas_desain_persen">
+	{$label v_al_dataumum_keterisian_persen kapasitas_desain_persen }	{$arrow_icon_kapasitas_desain_persen}
+	</SPAN>
+	{END kapasitas_desain_persen_fieldheader}
+{END kapasitas_desain_persen_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field17}
+				 
+					{BEGIN cellblock_grid_headcell_field18}
+	<th
+	
+	{$cell_grid_headcell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kapasitas_terpakai_persen_class}
+			"
+
+			data-field="kapasitas_terpakai_persen"
+	
+	data-cellId="grid_headcell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kapasitas_terpakai_persen_fieldheadercolumn}
+	{BEGIN kapasitas_terpakai_persen_fieldheader}
+	<SPAN {$kapasitas_terpakai_persen_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field37" {$item_simple_grid_field37} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kapasitas_terpakai_persen" data-fieldname="kapasitas_terpakai_persen">
+	{$label v_al_dataumum_keterisian_persen kapasitas_terpakai_persen }	{$arrow_icon_kapasitas_terpakai_persen}
+	</SPAN>
+	{END kapasitas_terpakai_persen_fieldheader}
+{END kapasitas_terpakai_persen_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field18}
+				 
+					{BEGIN cellblock_grid_headcell_field19}
+	<th
+	
+	{$cell_grid_headcell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kapasitas_tidak_terpakai_persen_class}
+			"
+
+			data-field="kapasitas_tidak_terpakai_persen"
+	
+	data-cellId="grid_headcell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kapasitas_tidak_terpakai_persen_fieldheadercolumn}
+	{BEGIN kapasitas_tidak_terpakai_persen_fieldheader}
+	<SPAN {$kapasitas_tidak_terpakai_persen_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field39" {$item_simple_grid_field39} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kapasitas_tidak_terpakai_persen" data-fieldname="kapasitas_tidak_terpakai_persen">
+	{$label v_al_dataumum_keterisian_persen kapasitas_tidak_terpakai_persen }	{$arrow_icon_kapasitas_tidak_terpakai_persen}
+	</SPAN>
+	{END kapasitas_tidak_terpakai_persen_fieldheader}
+{END kapasitas_tidak_terpakai_persen_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field19}
+				 
+					{BEGIN cellblock_grid_headcell_field20}
+	<th
+	
+	{$cell_grid_headcell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jenis_pengelolaan_persen_class}
+			"
+
+			data-field="jenis_pengelolaan_persen"
+	
+	data-cellId="grid_headcell_field20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jenis_pengelolaan_persen_fieldheadercolumn}
+	{BEGIN jenis_pengelolaan_persen_fieldheader}
+	<SPAN {$jenis_pengelolaan_persen_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field41" {$item_simple_grid_field41} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jenis_pengelolaan_persen" data-fieldname="jenis_pengelolaan_persen">
+	{$label v_al_dataumum_keterisian_persen jenis_pengelolaan_persen }	{$arrow_icon_jenis_pengelolaan_persen}
+	</SPAN>
+	{END jenis_pengelolaan_persen_fieldheader}
+{END jenis_pengelolaan_persen_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field20}
+				 
+					{BEGIN cellblock_grid_headcell_field21}
+	<th
+	
+	{$cell_grid_headcell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$peta_cakupan_air_limbah_persen_class}
+			"
+
+			data-field="peta_cakupan_air_limbah_persen"
+	
+	data-cellId="grid_headcell_field21" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN peta_cakupan_air_limbah_persen_fieldheadercolumn}
+	{BEGIN peta_cakupan_air_limbah_persen_fieldheader}
+	<SPAN {$peta_cakupan_air_limbah_persen_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field43" {$item_simple_grid_field43} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="peta_cakupan_air_limbah_persen" data-fieldname="peta_cakupan_air_limbah_persen">
+	{$label v_al_dataumum_keterisian_persen peta_cakupan_air_limbah_persen }	{$arrow_icon_peta_cakupan_air_limbah_persen}
+	</SPAN>
+	{END peta_cakupan_air_limbah_persen_fieldheader}
+{END peta_cakupan_air_limbah_persen_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field21}
+							</tr>
+					 
+					 
+					
+					{END grid_header}
+			</thead>
+															<tbody>
+					{BEGIN grid_row}
+									
+		 
+					 
+						<tr {$rowattrs} {$row_grid_1} class="{$rowclass} 
+								
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_cell_icons}
+	<td
+	
+	{$cell_grid_cell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_al_dataumum_keterisian_persen_list"		data-control-cell
+	
+	>
+
+	 
+		{BEGIN view_column}
+{BEGIN view_link}
+<span data-itemtype="grid_view" data-itemid="grid_view" {$item_grid_view} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Lihat Catatan" class="btn-link   
+	 glyphicon glyphicon-search" href="v_al_dataumum_keterisian_persen_view.php?{$editlink}" {$viewlink_attrs} title="Lihat" >		
+				
+								</a>
+</span>
+{END view_link}
+{END view_column}
+	
+	</td>
+	{END cellblock_grid_cell_icons}
+				 
+					{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlah_record_class}
+			"
+
+			data-field="jumlah_record"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlah_record_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlah_record" data-fieldname="jumlah_record" data-default-width >
+{$jumlah_record_value}
+</span>
+{END jumlah_record_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+				 
+					{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tahun_kontruksi_persen_class}
+			"
+
+			data-field="tahun_kontruksi_persen"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tahun_kontruksi_persen_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tahun_kontruksi_persen" data-fieldname="tahun_kontruksi_persen" data-default-width >
+{$tahun_kontruksi_persen_value}
+</span>
+{END tahun_kontruksi_persen_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+				 
+					{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$alamat_lengkap_persen_class}
+			"
+
+			data-field="alamat_lengkap_persen"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN alamat_lengkap_persen_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="alamat_lengkap_persen" data-fieldname="alamat_lengkap_persen" data-default-width >
+{$alamat_lengkap_persen_value}
+</span>
+{END alamat_lengkap_persen_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+				 
+					{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$longitude_persen_class}
+			"
+
+			data-field="longitude_persen"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN longitude_persen_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="longitude_persen" data-fieldname="longitude_persen" data-default-width >
+{$longitude_persen_value}
+</span>
+{END longitude_persen_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+				 
+					{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$latitude_persen_class}
+			"
+
+			data-field="latitude_persen"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN latitude_persen_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="latitude_persen" data-fieldname="latitude_persen" data-default-width >
+{$latitude_persen_value}
+</span>
+{END latitude_persen_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+				 
+					{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$status_keberfungsian_persen_class}
+			"
+
+			data-field="status_keberfungsian_persen"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN status_keberfungsian_persen_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="status_keberfungsian_persen" data-fieldname="status_keberfungsian_persen" data-default-width >
+{$status_keberfungsian_persen_value}
+</span>
+{END status_keberfungsian_persen_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+				 
+					{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kualitas_keberfungsian_persen_class}
+			"
+
+			data-field="kualitas_keberfungsian_persen"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kualitas_keberfungsian_persen_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kualitas_keberfungsian_persen" data-fieldname="kualitas_keberfungsian_persen" data-default-width >
+{$kualitas_keberfungsian_persen_value}
+</span>
+{END kualitas_keberfungsian_persen_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+				 
+					{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$apbn_persen_class}
+			"
+
+			data-field="apbn_persen"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN apbn_persen_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="apbn_persen" data-fieldname="apbn_persen" data-default-width >
+{$apbn_persen_value}
+</span>
+{END apbn_persen_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+				 
+					{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$apbd_persen_class}
+			"
+
+			data-field="apbd_persen"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN apbd_persen_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="apbd_persen" data-fieldname="apbd_persen" data-default-width >
+{$apbd_persen_value}
+</span>
+{END apbd_persen_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+				 
+					{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$lainlain_persen_class}
+			"
+
+			data-field="lainlain_persen"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN lainlain_persen_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="lainlain_persen" data-fieldname="lainlain_persen" data-default-width >
+{$lainlain_persen_value}
+</span>
+{END lainlain_persen_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
+				 
+					{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dak_persen_class}
+			"
+
+			data-field="dak_persen"
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dak_persen_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dak_persen" data-fieldname="dak_persen" data-default-width >
+{$dak_persen_value}
+</span>
+{END dak_persen_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field10}
+				 
+					{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$hibah_persen_class}
+			"
+
+			data-field="hibah_persen"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN hibah_persen_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="hibah_persen" data-fieldname="hibah_persen" data-default-width >
+{$hibah_persen_value}
+</span>
+{END hibah_persen_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
+				 
+					{BEGIN cellblock_grid_cell_field12}
+	<td
+	
+	{$cell_grid_cell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$csr_persen_class}
+			"
+
+			data-field="csr_persen"
+	
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN csr_persen_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="csr_persen" data-fieldname="csr_persen" data-default-width >
+{$csr_persen_value}
+</span>
+{END csr_persen_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field12}
+				 
+					{BEGIN cellblock_grid_cell_field13}
+	<td
+	
+	{$cell_grid_cell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$total_persen_class}
+			"
+
+			data-field="total_persen"
+	
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN total_persen_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="total_persen" data-fieldname="total_persen" data-default-width >
+{$total_persen_value}
+</span>
+{END total_persen_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field13}
+				 
+					{BEGIN cellblock_grid_cell_field14}
+	<td
+	
+	{$cell_grid_cell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$status_lahan_persen_class}
+			"
+
+			data-field="status_lahan_persen"
+	
+	data-cellId="grid_cell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN status_lahan_persen_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field28" {$item_simple_grid_field28} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="status_lahan_persen" data-fieldname="status_lahan_persen" data-default-width >
+{$status_lahan_persen_value}
+</span>
+{END status_lahan_persen_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field14}
+				 
+					{BEGIN cellblock_grid_cell_field15}
+	<td
+	
+	{$cell_grid_cell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$luas_lahan_persen_class}
+			"
+
+			data-field="luas_lahan_persen"
+	
+	data-cellId="grid_cell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN luas_lahan_persen_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field30" {$item_simple_grid_field30} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="luas_lahan_persen" data-fieldname="luas_lahan_persen" data-default-width >
+{$luas_lahan_persen_value}
+</span>
+{END luas_lahan_persen_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field15}
+				 
+					{BEGIN cellblock_grid_cell_field16}
+	<td
+	
+	{$cell_grid_cell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$pengelolaan_persen_class}
+			"
+
+			data-field="pengelolaan_persen"
+	
+	data-cellId="grid_cell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pengelolaan_persen_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field32" {$item_simple_grid_field32} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pengelolaan_persen" data-fieldname="pengelolaan_persen" data-default-width >
+{$pengelolaan_persen_value}
+</span>
+{END pengelolaan_persen_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field16}
+				 
+					{BEGIN cellblock_grid_cell_field17}
+	<td
+	
+	{$cell_grid_cell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kapasitas_desain_persen_class}
+			"
+
+			data-field="kapasitas_desain_persen"
+	
+	data-cellId="grid_cell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kapasitas_desain_persen_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field34" {$item_simple_grid_field34} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kapasitas_desain_persen" data-fieldname="kapasitas_desain_persen" data-default-width >
+{$kapasitas_desain_persen_value}
+</span>
+{END kapasitas_desain_persen_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field17}
+				 
+					{BEGIN cellblock_grid_cell_field18}
+	<td
+	
+	{$cell_grid_cell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kapasitas_terpakai_persen_class}
+			"
+
+			data-field="kapasitas_terpakai_persen"
+	
+	data-cellId="grid_cell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kapasitas_terpakai_persen_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field36" {$item_simple_grid_field36} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kapasitas_terpakai_persen" data-fieldname="kapasitas_terpakai_persen" data-default-width >
+{$kapasitas_terpakai_persen_value}
+</span>
+{END kapasitas_terpakai_persen_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field18}
+				 
+					{BEGIN cellblock_grid_cell_field19}
+	<td
+	
+	{$cell_grid_cell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kapasitas_tidak_terpakai_persen_class}
+			"
+
+			data-field="kapasitas_tidak_terpakai_persen"
+	
+	data-cellId="grid_cell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kapasitas_tidak_terpakai_persen_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field38" {$item_simple_grid_field38} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kapasitas_tidak_terpakai_persen" data-fieldname="kapasitas_tidak_terpakai_persen" data-default-width >
+{$kapasitas_tidak_terpakai_persen_value}
+</span>
+{END kapasitas_tidak_terpakai_persen_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field19}
+				 
+					{BEGIN cellblock_grid_cell_field20}
+	<td
+	
+	{$cell_grid_cell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jenis_pengelolaan_persen_class}
+			"
+
+			data-field="jenis_pengelolaan_persen"
+	
+	data-cellId="grid_cell_field20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jenis_pengelolaan_persen_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field40" {$item_simple_grid_field40} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jenis_pengelolaan_persen" data-fieldname="jenis_pengelolaan_persen" data-default-width >
+{$jenis_pengelolaan_persen_value}
+</span>
+{END jenis_pengelolaan_persen_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field20}
+				 
+					{BEGIN cellblock_grid_cell_field21}
+	<td
+	
+	{$cell_grid_cell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$peta_cakupan_air_limbah_persen_class}
+			"
+
+			data-field="peta_cakupan_air_limbah_persen"
+	
+	data-cellId="grid_cell_field21" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN peta_cakupan_air_limbah_persen_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field42" {$item_simple_grid_field42} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="peta_cakupan_air_limbah_persen" data-fieldname="peta_cakupan_air_limbah_persen" data-default-width >
+{$peta_cakupan_air_limbah_persen_value}
+</span>
+{END peta_cakupan_air_limbah_persen_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field21}
+							</tr>
+					 
+					
+											{END grid_row}
+					</tbody>
+													<tfoot>
+					
+		 
+					 
+					 
+						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
+									{$gridFooter_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_footcell_icons}
+	<td
+	
+	{$cell_grid_footcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_icons}
+				 
+					{BEGIN cellblock_grid_footcell_field}
+	<td
+	
+	{$cell_grid_footcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_al_dataumum_keterisian_persen_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field}
+				 
+					{BEGIN cellblock_grid_footcell_field1}
+	<td
+	
+	{$cell_grid_footcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_al_dataumum_keterisian_persen_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field1}
+				 
+					{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_al_dataumum_keterisian_persen_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
+				 
+					{BEGIN cellblock_grid_footcell_field3}
+	<td
+	
+	{$cell_grid_footcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_al_dataumum_keterisian_persen_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field3}
+				 
+					{BEGIN cellblock_grid_footcell_field4}
+	<td
+	
+	{$cell_grid_footcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_al_dataumum_keterisian_persen_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field4}
+				 
+					{BEGIN cellblock_grid_footcell_field5}
+	<td
+	
+	{$cell_grid_footcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_al_dataumum_keterisian_persen_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field5}
+				 
+					{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_al_dataumum_keterisian_persen_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
+				 
+					{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_al_dataumum_keterisian_persen_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
+				 
+					{BEGIN cellblock_grid_footcell_field8}
+	<td
+	
+	{$cell_grid_footcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_al_dataumum_keterisian_persen_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field8}
+				 
+					{BEGIN cellblock_grid_footcell_field9}
+	<td
+	
+	{$cell_grid_footcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_al_dataumum_keterisian_persen_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field9}
+				 
+					{BEGIN cellblock_grid_footcell_field10}
+	<td
+	
+	{$cell_grid_footcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_al_dataumum_keterisian_persen_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field10}
+				 
+					{BEGIN cellblock_grid_footcell_field11}
+	<td
+	
+	{$cell_grid_footcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_al_dataumum_keterisian_persen_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field11}
+				 
+					{BEGIN cellblock_grid_footcell_field12}
+	<td
+	
+	{$cell_grid_footcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_al_dataumum_keterisian_persen_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field12}
+				 
+					{BEGIN cellblock_grid_footcell_field13}
+	<td
+	
+	{$cell_grid_footcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_al_dataumum_keterisian_persen_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field13}
+				 
+					{BEGIN cellblock_grid_footcell_field14}
+	<td
+	
+	{$cell_grid_footcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_al_dataumum_keterisian_persen_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field14}
+				 
+					{BEGIN cellblock_grid_footcell_field15}
+	<td
+	
+	{$cell_grid_footcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_al_dataumum_keterisian_persen_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field15}
+				 
+					{BEGIN cellblock_grid_footcell_field16}
+	<td
+	
+	{$cell_grid_footcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_al_dataumum_keterisian_persen_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field16}
+				 
+					{BEGIN cellblock_grid_footcell_field17}
+	<td
+	
+	{$cell_grid_footcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_al_dataumum_keterisian_persen_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field17}
+				 
+					{BEGIN cellblock_grid_footcell_field18}
+	<td
+	
+	{$cell_grid_footcell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field18" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_al_dataumum_keterisian_persen_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field18}
+				 
+					{BEGIN cellblock_grid_footcell_field19}
+	<td
+	
+	{$cell_grid_footcell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field19" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_al_dataumum_keterisian_persen_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field19}
+				 
+					{BEGIN cellblock_grid_footcell_field20}
+	<td
+	
+	{$cell_grid_footcell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field20" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_al_dataumum_keterisian_persen_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field20}
+				 
+					{BEGIN cellblock_grid_footcell_field21}
+	<td
+	
+	{$cell_grid_footcell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field21" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_al_dataumum_keterisian_persen_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field21}
+							</tr>
+					
+					</tfoot>
+				</table>
+{END grid_block}
+						</div>
+					<div class="r-below">
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="r-align-center r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN pagination_block}
+<span data-itemtype="pagination" data-itemid="pagination" {$item_pagination} data-pageid="{$pageid}" >
+{$pagination}
+</span>
+{END pagination_block}
+		</div>					</div>
+	</div>		
+{END below-grid_block}
+						</div>
+					{$footer}
+				</div>	
+			</div>	
+			<div class="r-body-shadow">
+			</div>
+		</div>
+	{END body}
+	</body>
+</html>

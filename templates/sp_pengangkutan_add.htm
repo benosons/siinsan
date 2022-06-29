@@ -1,0 +1,802 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel sp_pengangkutan add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>Balik ke daftar</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Lihat</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Edit</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN propinsiid_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_propinsiid}  r-vertical-field" 
+	data-signal-error-for="propinsiid{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="propinsiid" data-fieldname="propinsiid" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_propinsiid}">
+		{BEGIN propinsiid_label}{$label sp_pengangkutan propinsiid }{END propinsiid_label}
+	</label>
+	<div class="r-edit-field">
+		{$propinsiid_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="propinsiid">
+		<div class="text-muted" >
+		{$tooltip sp_pengangkutan propinsiid }		</div>
+	</div>
+</div>
+
+
+{END propinsiid_fieldblock}
+											
+{BEGIN kabupatenkotaid_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kabupatenkotaid}  r-vertical-field" 
+	data-signal-error-for="kabupatenkotaid{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="kabupatenkotaid" data-fieldname="kabupatenkotaid" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_kabupatenkotaid}">
+		{BEGIN kabupatenkotaid_label}{$label sp_pengangkutan kabupatenkotaid }{END kabupatenkotaid_label}
+	</label>
+	<div class="r-edit-field">
+		{$kabupatenkotaid_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="kabupatenkotaid">
+		<div class="text-muted" >
+		{$tooltip sp_pengangkutan kabupatenkotaid }		</div>
+	</div>
+</div>
+
+
+{END kabupatenkotaid_fieldblock}
+										</td>
+			{END cellblock_grid_c3}
+										</tr>
+										</tbody></table>
+				 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section5" {$item_section5} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section1_headattrs} data-toggle="collapse"   
+
+				href="#section1{$pageid}" aria-expanded="true" aria-controls="section1"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				Dump Truck			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section1_xtrclass}" role="tabpanel"  {$section_section1_attrs}
+
+				id="section1{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section5_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section5" id="form_section5_{$pageid}" data-makeup="small" {$form_section5} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section5_0} >
+										
+
+{BEGIN cellblock_section5_c1}
+<td
+	{$cell_section5_c1}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="section5_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN dumptruck_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dumptruck}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="dumptruck{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="dumptruck" data-fieldname="dumptruck" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_dumptruck}">
+		{BEGIN dumptruck_label}{$label sp_pengangkutan dumptruck }{END dumptruck_label}
+	</label>
+	<div class="r-edit-field">
+		{$dumptruck_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="dumptruck">
+		<div class="text-muted" >
+		{$tooltip sp_pengangkutan dumptruck }		</div>
+	</div>
+</div>
+
+
+{END dumptruck_fieldblock}
+											
+{BEGIN ritasidumptruck_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ritasidumptruck}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="ritasidumptruck{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="ritasidumptruck" data-fieldname="ritasidumptruck" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ritasidumptruck}">
+		{BEGIN ritasidumptruck_label}{$label sp_pengangkutan ritasidumptruck }{END ritasidumptruck_label}
+	</label>
+	<div class="r-edit-field">
+		{$ritasidumptruck_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ritasidumptruck">
+		<div class="text-muted" >
+		{$tooltip sp_pengangkutan ritasidumptruck }		</div>
+	</div>
+</div>
+
+
+{END ritasidumptruck_fieldblock}
+	
+								</td>
+			{END cellblock_section5_c1}
+								</tr>
+			</tbody></table>
+{END section5_block}
+		  </div>
+		</div>
+	</div>
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section4" {$item_section4} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section2_headattrs} data-toggle="collapse"   
+
+				href="#section2{$pageid}" aria-expanded="true" aria-controls="section2"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				Arm Roll			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section2_xtrclass}" role="tabpanel"  {$section_section2_attrs}
+
+				id="section2{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section4_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section4" id="form_section4_{$pageid}" data-makeup="small" {$form_section4} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section4_0} >
+										
+
+{BEGIN cellblock_section4_c1}
+<td
+	{$cell_section4_c1}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="section4_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN armroll_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_armroll}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="armroll{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="armroll" data-fieldname="armroll" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_armroll}">
+		{BEGIN armroll_label}{$label sp_pengangkutan armroll }{END armroll_label}
+	</label>
+	<div class="r-edit-field">
+		{$armroll_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="armroll">
+		<div class="text-muted" >
+		{$tooltip sp_pengangkutan armroll }		</div>
+	</div>
+</div>
+
+
+{END armroll_fieldblock}
+											
+{BEGIN ritasiarmroll_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ritasiarmroll}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="ritasiarmroll{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="ritasiarmroll" data-fieldname="ritasiarmroll" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ritasiarmroll}">
+		{BEGIN ritasiarmroll_label}{$label sp_pengangkutan ritasiarmroll }{END ritasiarmroll_label}
+	</label>
+	<div class="r-edit-field">
+		{$ritasiarmroll_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ritasiarmroll">
+		<div class="text-muted" >
+		{$tooltip sp_pengangkutan ritasiarmroll }		</div>
+	</div>
+</div>
+
+
+{END ritasiarmroll_fieldblock}
+	
+								</td>
+			{END cellblock_section4_c1}
+								</tr>
+			</tbody></table>
+{END section4_block}
+		  </div>
+		</div>
+	</div>
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section3" {$item_section3} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section3_headattrs} data-toggle="collapse"   
+
+				href="#section3{$pageid}" aria-expanded="true" aria-controls="section3"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				Compactor			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section3_xtrclass}" role="tabpanel"  {$section_section3_attrs}
+
+				id="section3{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section3_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section3" id="form_section3_{$pageid}" data-makeup="small" {$form_section3} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section3_0} >
+										
+
+{BEGIN cellblock_section3_c1}
+<td
+	{$cell_section3_c1}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="section3_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN compactortruck_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_compactortruck}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="compactortruck{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="compactortruck" data-fieldname="compactortruck" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_compactortruck}">
+		{BEGIN compactortruck_label}{$label sp_pengangkutan compactortruck }{END compactortruck_label}
+	</label>
+	<div class="r-edit-field">
+		{$compactortruck_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="compactortruck">
+		<div class="text-muted" >
+		{$tooltip sp_pengangkutan compactortruck }		</div>
+	</div>
+</div>
+
+
+{END compactortruck_fieldblock}
+											
+{BEGIN ritasicompactortruck_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ritasicompactortruck}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="ritasicompactortruck{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="ritasicompactortruck" data-fieldname="ritasicompactortruck" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ritasicompactortruck}">
+		{BEGIN ritasicompactortruck_label}{$label sp_pengangkutan ritasicompactortruck }{END ritasicompactortruck_label}
+	</label>
+	<div class="r-edit-field">
+		{$ritasicompactortruck_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ritasicompactortruck">
+		<div class="text-muted" >
+		{$tooltip sp_pengangkutan ritasicompactortruck }		</div>
+	</div>
+</div>
+
+
+{END ritasicompactortruck_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c1}
+								</tr>
+			</tbody></table>
+{END section3_block}
+		  </div>
+		</div>
+	</div>
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section2" {$item_section2} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section4_headattrs} data-toggle="collapse"   
+
+				href="#section4{$pageid}" aria-expanded="true" aria-controls="section4"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				Gerobak Sampah			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section4_xtrclass}" role="tabpanel"  {$section_section4_attrs}
+
+				id="section4{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section2_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section2" id="form_section2_{$pageid}" data-makeup="small" {$form_section2} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section2_0} >
+										
+
+{BEGIN cellblock_section2_c1}
+<td
+	{$cell_section2_c1}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="section2_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN gerobaksampah_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_gerobaksampah}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="gerobaksampah{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="gerobaksampah" data-fieldname="gerobaksampah" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_gerobaksampah}">
+		{BEGIN gerobaksampah_label}{$label sp_pengangkutan gerobaksampah }{END gerobaksampah_label}
+	</label>
+	<div class="r-edit-field">
+		{$gerobaksampah_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="gerobaksampah">
+		<div class="text-muted" >
+		{$tooltip sp_pengangkutan gerobaksampah }		</div>
+	</div>
+</div>
+
+
+{END gerobaksampah_fieldblock}
+											
+{BEGIN ritasigerobaksampah_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ritasigerobaksampah}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="ritasigerobaksampah{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="ritasigerobaksampah" data-fieldname="ritasigerobaksampah" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ritasigerobaksampah}">
+		{BEGIN ritasigerobaksampah_label}{$label sp_pengangkutan ritasigerobaksampah }{END ritasigerobaksampah_label}
+	</label>
+	<div class="r-edit-field">
+		{$ritasigerobaksampah_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ritasigerobaksampah">
+		<div class="text-muted" >
+		{$tooltip sp_pengangkutan ritasigerobaksampah }		</div>
+	</div>
+</div>
+
+
+{END ritasigerobaksampah_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c1}
+								</tr>
+			</tbody></table>
+{END section2_block}
+		  </div>
+		</div>
+	</div>
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section1" {$item_section1} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section5_headattrs} data-toggle="collapse"   
+
+				href="#section5{$pageid}" aria-expanded="true" aria-controls="section5"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				Pickup			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section5_xtrclass}" role="tabpanel"  {$section_section5_attrs}
+
+				id="section5{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section1_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section1" id="form_section1_{$pageid}" data-makeup="small" {$form_section1} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section1_0} >
+										
+
+{BEGIN cellblock_section1_c1}
+<td
+	{$cell_section1_c1}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="section1_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN pickup_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pickup}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="pickup{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="pickup" data-fieldname="pickup" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_pickup}">
+		{BEGIN pickup_label}{$label sp_pengangkutan pickup }{END pickup_label}
+	</label>
+	<div class="r-edit-field">
+		{$pickup_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="pickup">
+		<div class="text-muted" >
+		{$tooltip sp_pengangkutan pickup }		</div>
+	</div>
+</div>
+
+
+{END pickup_fieldblock}
+											
+{BEGIN ritasipickup_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ritasipickup}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="ritasipickup{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="ritasipickup" data-fieldname="ritasipickup" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ritasipickup}">
+		{BEGIN ritasipickup_label}{$label sp_pengangkutan ritasipickup }{END ritasipickup_label}
+	</label>
+	<div class="r-edit-field">
+		{$ritasipickup_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ritasipickup">
+		<div class="text-muted" >
+		{$tooltip sp_pengangkutan ritasipickup }		</div>
+	</div>
+</div>
+
+
+{END ritasipickup_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c1}
+								</tr>
+			</tbody></table>
+{END section1_block}
+		  </div>
+		</div>
+	</div>
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section" {$item_section} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section6_headattrs} data-toggle="collapse"   
+
+				href="#section6{$pageid}" aria-expanded="true" aria-controls="section6"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				Motor Sampah			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section6_xtrclass}" role="tabpanel"  {$section_section6_attrs}
+
+				id="section6{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section" id="form_section_{$pageid}" data-makeup="small" {$form_section} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section_0} >
+										
+
+{BEGIN cellblock_section_c1}
+<td
+	{$cell_section_c1}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="section_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN motorsampah_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_motorsampah}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="motorsampah{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="motorsampah" data-fieldname="motorsampah" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_motorsampah}">
+		{BEGIN motorsampah_label}{$label sp_pengangkutan motorsampah }{END motorsampah_label}
+	</label>
+	<div class="r-edit-field">
+		{$motorsampah_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="motorsampah">
+		<div class="text-muted" >
+		{$tooltip sp_pengangkutan motorsampah }		</div>
+	</div>
+</div>
+
+
+{END motorsampah_fieldblock}
+											
+{BEGIN ritasimotorsampah_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ritasimotorsampah}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="ritasimotorsampah{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="ritasimotorsampah" data-fieldname="ritasimotorsampah" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ritasimotorsampah}">
+		{BEGIN ritasimotorsampah_label}{$label sp_pengangkutan ritasimotorsampah }{END ritasimotorsampah_label}
+	</label>
+	<div class="r-edit-field">
+		{$ritasimotorsampah_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ritasimotorsampah">
+		<div class="text-muted" >
+		{$tooltip sp_pengangkutan ritasimotorsampah }		</div>
+	</div>
+</div>
+
+
+{END ritasimotorsampah_fieldblock}
+	
+								</td>
+			{END cellblock_section_c1}
+								</tr>
+			</tbody></table>
+{END section_block}
+		  </div>
+		</div>
+	</div>
+	
+				{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Simpan			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Batal			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

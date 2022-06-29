@@ -1,0 +1,494 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel sp_pengangkutan search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN NamaPropinsi_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_NamaPropinsi}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="NamaPropinsi{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="NamaPropinsi" data-fieldname="NamaPropinsi" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_NamaPropinsi}">
+		{$label sp_pengangkutan NamaPropinsi }	</label>
+	<div class="r-search-option">
+		{$searchtype_NamaPropinsi}
+	</div>
+	<div class="r-search-field">
+		{$NamaPropinsi_editcontrol}	</div>
+	<div class="r-search-field">
+		{$NamaPropinsi_editcontrol1}
+	</div>
+	
+</div>
+
+{END NamaPropinsi_fieldblock}
+											
+{BEGIN kd_propinsi_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_propinsi}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kd_propinsi{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="kd_propinsi" data-fieldname="kd_propinsi" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kd_propinsi}">
+		{$label sp_pengangkutan kd_propinsi }	</label>
+	<div class="r-search-option">
+		{$searchtype_kd_propinsi}
+	</div>
+	<div class="r-search-field">
+		{$kd_propinsi_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kd_propinsi_editcontrol1}
+	</div>
+	
+</div>
+
+{END kd_propinsi_fieldblock}
+											
+{BEGIN kabupatenkotaname_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kabupatenkotaname}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kabupatenkotaname{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="kabupatenkotaname" data-fieldname="kabupatenkotaname" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kabupatenkotaname}">
+		{$label sp_pengangkutan kabupatenkotaname }	</label>
+	<div class="r-search-option">
+		{$searchtype_kabupatenkotaname}
+	</div>
+	<div class="r-search-field">
+		{$kabupatenkotaname_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kabupatenkotaname_editcontrol1}
+	</div>
+	
+</div>
+
+{END kabupatenkotaname_fieldblock}
+											
+{BEGIN kabupatenkotaid_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kabupatenkotaid}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kabupatenkotaid{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="kabupatenkotaid" data-fieldname="kabupatenkotaid" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kabupatenkotaid}">
+		{$label sp_pengangkutan kabupatenkotaid }	</label>
+	<div class="r-search-option">
+		{$searchtype_kabupatenkotaid}
+	</div>
+	<div class="r-search-field">
+		{$kabupatenkotaid_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kabupatenkotaid_editcontrol1}
+	</div>
+	
+</div>
+
+{END kabupatenkotaid_fieldblock}
+											
+{BEGIN dumptruck_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dumptruck}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="dumptruck{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="dumptruck" data-fieldname="dumptruck" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_dumptruck}">
+		{$label sp_pengangkutan dumptruck }	</label>
+	<div class="r-search-option">
+		{$searchtype_dumptruck}
+	</div>
+	<div class="r-search-field">
+		{$dumptruck_editcontrol}	</div>
+	<div class="r-search-field">
+		{$dumptruck_editcontrol1}
+	</div>
+	
+</div>
+
+{END dumptruck_fieldblock}
+											
+{BEGIN armroll_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_armroll}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="armroll{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="armroll" data-fieldname="armroll" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_armroll}">
+		{$label sp_pengangkutan armroll }	</label>
+	<div class="r-search-option">
+		{$searchtype_armroll}
+	</div>
+	<div class="r-search-field">
+		{$armroll_editcontrol}	</div>
+	<div class="r-search-field">
+		{$armroll_editcontrol1}
+	</div>
+	
+</div>
+
+{END armroll_fieldblock}
+											
+{BEGIN compactortruck_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_compactortruck}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="compactortruck{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="compactortruck" data-fieldname="compactortruck" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_compactortruck}">
+		{$label sp_pengangkutan compactortruck }	</label>
+	<div class="r-search-option">
+		{$searchtype_compactortruck}
+	</div>
+	<div class="r-search-field">
+		{$compactortruck_editcontrol}	</div>
+	<div class="r-search-field">
+		{$compactortruck_editcontrol1}
+	</div>
+	
+</div>
+
+{END compactortruck_fieldblock}
+											
+{BEGIN gerobaksampah_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_gerobaksampah}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="gerobaksampah{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="gerobaksampah" data-fieldname="gerobaksampah" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_gerobaksampah}">
+		{$label sp_pengangkutan gerobaksampah }	</label>
+	<div class="r-search-option">
+		{$searchtype_gerobaksampah}
+	</div>
+	<div class="r-search-field">
+		{$gerobaksampah_editcontrol}	</div>
+	<div class="r-search-field">
+		{$gerobaksampah_editcontrol1}
+	</div>
+	
+</div>
+
+{END gerobaksampah_fieldblock}
+											
+{BEGIN motorsampah_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_motorsampah}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="motorsampah{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="motorsampah" data-fieldname="motorsampah" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_motorsampah}">
+		{$label sp_pengangkutan motorsampah }	</label>
+	<div class="r-search-option">
+		{$searchtype_motorsampah}
+	</div>
+	<div class="r-search-field">
+		{$motorsampah_editcontrol}	</div>
+	<div class="r-search-field">
+		{$motorsampah_editcontrol1}
+	</div>
+	
+</div>
+
+{END motorsampah_fieldblock}
+											
+{BEGIN pickup_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pickup}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="pickup{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="pickup" data-fieldname="pickup" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_pickup}">
+		{$label sp_pengangkutan pickup }	</label>
+	<div class="r-search-option">
+		{$searchtype_pickup}
+	</div>
+	<div class="r-search-field">
+		{$pickup_editcontrol}	</div>
+	<div class="r-search-field">
+		{$pickup_editcontrol1}
+	</div>
+	
+</div>
+
+{END pickup_fieldblock}
+											
+{BEGIN ritasidumptruck_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ritasidumptruck}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="ritasidumptruck{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="ritasidumptruck" data-fieldname="ritasidumptruck" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ritasidumptruck}">
+		{$label sp_pengangkutan ritasidumptruck }	</label>
+	<div class="r-search-option">
+		{$searchtype_ritasidumptruck}
+	</div>
+	<div class="r-search-field">
+		{$ritasidumptruck_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ritasidumptruck_editcontrol1}
+	</div>
+	
+</div>
+
+{END ritasidumptruck_fieldblock}
+											
+{BEGIN ritasiarmroll_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ritasiarmroll}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="ritasiarmroll{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="ritasiarmroll" data-fieldname="ritasiarmroll" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ritasiarmroll}">
+		{$label sp_pengangkutan ritasiarmroll }	</label>
+	<div class="r-search-option">
+		{$searchtype_ritasiarmroll}
+	</div>
+	<div class="r-search-field">
+		{$ritasiarmroll_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ritasiarmroll_editcontrol1}
+	</div>
+	
+</div>
+
+{END ritasiarmroll_fieldblock}
+											
+{BEGIN ritasicompactortruck_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ritasicompactortruck}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="ritasicompactortruck{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="ritasicompactortruck" data-fieldname="ritasicompactortruck" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ritasicompactortruck}">
+		{$label sp_pengangkutan ritasicompactortruck }	</label>
+	<div class="r-search-option">
+		{$searchtype_ritasicompactortruck}
+	</div>
+	<div class="r-search-field">
+		{$ritasicompactortruck_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ritasicompactortruck_editcontrol1}
+	</div>
+	
+</div>
+
+{END ritasicompactortruck_fieldblock}
+											
+{BEGIN ritasigerobaksampah_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ritasigerobaksampah}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="ritasigerobaksampah{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="ritasigerobaksampah" data-fieldname="ritasigerobaksampah" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ritasigerobaksampah}">
+		{$label sp_pengangkutan ritasigerobaksampah }	</label>
+	<div class="r-search-option">
+		{$searchtype_ritasigerobaksampah}
+	</div>
+	<div class="r-search-field">
+		{$ritasigerobaksampah_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ritasigerobaksampah_editcontrol1}
+	</div>
+	
+</div>
+
+{END ritasigerobaksampah_fieldblock}
+											
+{BEGIN ritasimotorsampah_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ritasimotorsampah}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="ritasimotorsampah{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="ritasimotorsampah" data-fieldname="ritasimotorsampah" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ritasimotorsampah}">
+		{$label sp_pengangkutan ritasimotorsampah }	</label>
+	<div class="r-search-option">
+		{$searchtype_ritasimotorsampah}
+	</div>
+	<div class="r-search-field">
+		{$ritasimotorsampah_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ritasimotorsampah_editcontrol1}
+	</div>
+	
+</div>
+
+{END ritasimotorsampah_fieldblock}
+											
+{BEGIN ritasipickup_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ritasipickup}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="ritasipickup{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="ritasipickup" data-fieldname="ritasipickup" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ritasipickup}">
+		{$label sp_pengangkutan ritasipickup }	</label>
+	<div class="r-search-option">
+		{$searchtype_ritasipickup}
+	</div>
+	<div class="r-search-field">
+		{$ritasipickup_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ritasipickup_editcontrol1}
+	</div>
+	
+</div>
+
+{END ritasipickup_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Cari			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Tata ulang			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Batal			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

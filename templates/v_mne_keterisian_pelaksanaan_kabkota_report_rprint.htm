@@ -1,0 +1,426 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-rprint" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="left"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c2" data-pageid="{$pageid}"	{$cell_top_c2}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="print_header" data-itemid="print_header" {$item_print_header} data-pageid="{$pageid}" >{$pagetitlelabel v_mne_keterisian_pelaksanaan_kabkota_Report rprint}</h2>
+	 
+		{BEGIN printtabheader}
+<span data-itemtype="print_subheader" data-itemid="print_subheader" {$item_print_subheader} data-pageid="{$pageid}" >
+{$printtabheader_text}
+</span>
+{END printtabheader}
+		</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		<span data-itemtype="print_pages" data-itemid="print_pages" {$item_print_pages} data-pageid="{$pageid}" data-small >
+	{$print_pages_labelprint_pages}
+</span>			{END firstAboveGridCell}	
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+<style>
+	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {
+		background-color: #ffffbb;
+	}
+	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color: #ffe0b0;
+	}
+	.rnr-report {
+		width: 100%;
+	}
+	td {
+		padding: 2px; 4px;
+	}
+			td.group_1{
+			background-color: #FFFFFF;
+		}
+		td.nbgroup_1{
+			background-color: #FFFFFF;
+		}
+		td.header_1 {
+			background-color: #FFFFFF; 
+			font-size: 120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+		td.blackshade {
+		font-size: 120%;
+	}
+	.summaryrow > * {
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+		.fieldnamesrow > * 
+	{
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+	</style>
+<div id="grid_block{$id}" class="rnr-report-gridblock">
+						
+
+
+<table class="table table-striped table-bordered rnr-b-grid rnr-gridtable" cellpadding="0" >
+	<tbody>			
+{BEGIN grid_row}
+				<!--  group headers -->
+	 
+		{BEGIN provinsiname_newgroup}							
+		<tr class="group-spliter-1"  >
+			<td class="header_1" colspan="28">
+				{$label v_mne_keterisian_pelaksanaan_kabkota_Report provinsiname }:&nbsp;
+				{$xprovinsiname_grval}
+								<span data-itemtype="grid_field" data-field="provinsiname" data-itemid="grid_field2" data-pageid={$pageid} data-record-id="{$recId}">
+{$provinsiname_grval}
+</span>			</td>
+		</tr>
+		
+				<tr class="fieldnamesrow group-headers">
+																	<td class="blackshade {$fieldclass_jumlah_record}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report jumlah_record }</td>
+														<td class="blackshade {$fieldclass_lokasi_pelaksanaan}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report lokasi_pelaksanaan }</td>
+														<td class="blackshade {$fieldclass_longitude}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report longitude }</td>
+														<td class="blackshade {$fieldclass_latitude}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report latitude }</td>
+														<td class="blackshade {$fieldclass_nilai_kontrak}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report nilai_kontrak }</td>
+														<td class="blackshade {$fieldclass_nama_satker}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report nama_satker }</td>
+														<td class="blackshade {$fieldclass_jenis_kontrak}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report jenis_kontrak }</td>
+														<td class="blackshade {$fieldclass_tanggal_kontrak}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report tanggal_kontrak }</td>
+														<td class="blackshade {$fieldclass_dokumen_kontrak}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report dokumen_kontrak }</td>
+														<td class="blackshade {$fieldclass_pagu_pelaksanaan}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report pagu_pelaksanaan }</td>
+														<td class="blackshade {$fieldclass_nilai_adendum1}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report nilai_adendum1 }</td>
+														<td class="blackshade {$fieldclass_tanggal_adendum1}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report tanggal_adendum1 }</td>
+														<td class="blackshade {$fieldclass_waktu_adendum1}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report waktu_adendum1 }</td>
+														<td class="blackshade {$fieldclass_dokumen_adendum1}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report dokumen_adendum1 }</td>
+														<td class="blackshade {$fieldclass_nilai_adendum2}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report nilai_adendum2 }</td>
+														<td class="blackshade {$fieldclass_tanggal_adendum2}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report tanggal_adendum2 }</td>
+														<td class="blackshade {$fieldclass_waktu_adendum2}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report waktu_adendum2 }</td>
+														<td class="blackshade {$fieldclass_dokumen_adendum2}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report dokumen_adendum2 }</td>
+														<td class="blackshade {$fieldclass_nilai_adendum3}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report nilai_adendum3 }</td>
+														<td class="blackshade {$fieldclass_tanggal_adendum3}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report tanggal_adendum3 }</td>
+														<td class="blackshade {$fieldclass_waktu_adendum3}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report waktu_adendum3 }</td>
+														<td class="blackshade {$fieldclass_dokumen_adendum3}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report dokumen_adendum3 }</td>
+														<td class="blackshade {$fieldclass_foto_kegiatan_pelaksanaan1}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report foto_kegiatan_pelaksanaan1 }</td>
+														<td class="blackshade {$fieldclass_foto_kegiatan_pelaksanaan2}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report foto_kegiatan_pelaksanaan2 }</td>
+														<td class="blackshade {$fieldclass_kesimpulan_pelaksanaan}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report kesimpulan_pelaksanaan }</td>
+														<td class="blackshade {$fieldclass_catatan_pelaksanaan}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report catatan_pelaksanaan }</td>
+														<td class="blackshade {$fieldclass_tindak_lanjut_pelaksanaan}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report tindak_lanjut_pelaksanaan }</td>
+														<td class="blackshade {$fieldclass_kabupatenkotaname}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report kabupatenkotaname }</td>
+									</tr>
+				{END provinsiname_newgroup}
+		
+
+			<!--  data-->
+		{BEGIN row_data}
+		<tr >
+																	<td class="data {$fieldclass_jumlah_record}">
+			{$xjumlah_record_value}
+						<span data-itemtype="grid_field" data-field="jumlah_record" data-itemid="grid_field3" data-pageid={$pageid} data-record-id="{$recId}">
+{$jumlah_record_value}
+</span>			</td>
+														<td class="data {$fieldclass_lokasi_pelaksanaan}">
+			{$xlokasi_pelaksanaan_value}
+						<span data-itemtype="grid_field" data-field="lokasi_pelaksanaan" data-itemid="grid_field4" data-pageid={$pageid} data-record-id="{$recId}">
+{$lokasi_pelaksanaan_value}
+</span>			</td>
+														<td class="data {$fieldclass_longitude}">
+			{$xlongitude_value}
+						<span data-itemtype="grid_field" data-field="longitude" data-itemid="grid_field5" data-pageid={$pageid} data-record-id="{$recId}">
+{$longitude_value}
+</span>			</td>
+														<td class="data {$fieldclass_latitude}">
+			{$xlatitude_value}
+						<span data-itemtype="grid_field" data-field="latitude" data-itemid="grid_field6" data-pageid={$pageid} data-record-id="{$recId}">
+{$latitude_value}
+</span>			</td>
+														<td class="data {$fieldclass_nilai_kontrak}">
+			{$xnilai_kontrak_value}
+						<span data-itemtype="grid_field" data-field="nilai_kontrak" data-itemid="grid_field7" data-pageid={$pageid} data-record-id="{$recId}">
+{$nilai_kontrak_value}
+</span>			</td>
+														<td class="data {$fieldclass_nama_satker}">
+			{$xnama_satker_value}
+						<span data-itemtype="grid_field" data-field="nama_satker" data-itemid="grid_field8" data-pageid={$pageid} data-record-id="{$recId}">
+{$nama_satker_value}
+</span>			</td>
+														<td class="data {$fieldclass_jenis_kontrak}">
+			{$xjenis_kontrak_value}
+						<span data-itemtype="grid_field" data-field="jenis_kontrak" data-itemid="grid_field9" data-pageid={$pageid} data-record-id="{$recId}">
+{$jenis_kontrak_value}
+</span>			</td>
+														<td class="data {$fieldclass_tanggal_kontrak}">
+			{$xtanggal_kontrak_value}
+						<span data-itemtype="grid_field" data-field="tanggal_kontrak" data-itemid="grid_field10" data-pageid={$pageid} data-record-id="{$recId}">
+{$tanggal_kontrak_value}
+</span>			</td>
+														<td class="data {$fieldclass_dokumen_kontrak}">
+			{$xdokumen_kontrak_value}
+						<span data-itemtype="grid_field" data-field="dokumen_kontrak" data-itemid="grid_field11" data-pageid={$pageid} data-record-id="{$recId}">
+{$dokumen_kontrak_value}
+</span>			</td>
+														<td class="data {$fieldclass_pagu_pelaksanaan}">
+			{$xpagu_pelaksanaan_value}
+						<span data-itemtype="grid_field" data-field="pagu_pelaksanaan" data-itemid="grid_field12" data-pageid={$pageid} data-record-id="{$recId}">
+{$pagu_pelaksanaan_value}
+</span>			</td>
+														<td class="data {$fieldclass_nilai_adendum1}">
+			{$xnilai_adendum1_value}
+						<span data-itemtype="grid_field" data-field="nilai_adendum1" data-itemid="grid_field13" data-pageid={$pageid} data-record-id="{$recId}">
+{$nilai_adendum1_value}
+</span>			</td>
+														<td class="data {$fieldclass_tanggal_adendum1}">
+			{$xtanggal_adendum1_value}
+						<span data-itemtype="grid_field" data-field="tanggal_adendum1" data-itemid="grid_field14" data-pageid={$pageid} data-record-id="{$recId}">
+{$tanggal_adendum1_value}
+</span>			</td>
+														<td class="data {$fieldclass_waktu_adendum1}">
+			{$xwaktu_adendum1_value}
+						<span data-itemtype="grid_field" data-field="waktu_adendum1" data-itemid="grid_field15" data-pageid={$pageid} data-record-id="{$recId}">
+{$waktu_adendum1_value}
+</span>			</td>
+														<td class="data {$fieldclass_dokumen_adendum1}">
+			{$xdokumen_adendum1_value}
+						<span data-itemtype="grid_field" data-field="dokumen_adendum1" data-itemid="grid_field16" data-pageid={$pageid} data-record-id="{$recId}">
+{$dokumen_adendum1_value}
+</span>			</td>
+														<td class="data {$fieldclass_nilai_adendum2}">
+			{$xnilai_adendum2_value}
+						<span data-itemtype="grid_field" data-field="nilai_adendum2" data-itemid="grid_field17" data-pageid={$pageid} data-record-id="{$recId}">
+{$nilai_adendum2_value}
+</span>			</td>
+														<td class="data {$fieldclass_tanggal_adendum2}">
+			{$xtanggal_adendum2_value}
+						<span data-itemtype="grid_field" data-field="tanggal_adendum2" data-itemid="grid_field18" data-pageid={$pageid} data-record-id="{$recId}">
+{$tanggal_adendum2_value}
+</span>			</td>
+														<td class="data {$fieldclass_waktu_adendum2}">
+			{$xwaktu_adendum2_value}
+						<span data-itemtype="grid_field" data-field="waktu_adendum2" data-itemid="grid_field19" data-pageid={$pageid} data-record-id="{$recId}">
+{$waktu_adendum2_value}
+</span>			</td>
+														<td class="data {$fieldclass_dokumen_adendum2}">
+			{$xdokumen_adendum2_value}
+						<span data-itemtype="grid_field" data-field="dokumen_adendum2" data-itemid="grid_field20" data-pageid={$pageid} data-record-id="{$recId}">
+{$dokumen_adendum2_value}
+</span>			</td>
+														<td class="data {$fieldclass_nilai_adendum3}">
+			{$xnilai_adendum3_value}
+						<span data-itemtype="grid_field" data-field="nilai_adendum3" data-itemid="grid_field21" data-pageid={$pageid} data-record-id="{$recId}">
+{$nilai_adendum3_value}
+</span>			</td>
+														<td class="data {$fieldclass_tanggal_adendum3}">
+			{$xtanggal_adendum3_value}
+						<span data-itemtype="grid_field" data-field="tanggal_adendum3" data-itemid="grid_field22" data-pageid={$pageid} data-record-id="{$recId}">
+{$tanggal_adendum3_value}
+</span>			</td>
+														<td class="data {$fieldclass_waktu_adendum3}">
+			{$xwaktu_adendum3_value}
+						<span data-itemtype="grid_field" data-field="waktu_adendum3" data-itemid="grid_field23" data-pageid={$pageid} data-record-id="{$recId}">
+{$waktu_adendum3_value}
+</span>			</td>
+														<td class="data {$fieldclass_dokumen_adendum3}">
+			{$xdokumen_adendum3_value}
+						<span data-itemtype="grid_field" data-field="dokumen_adendum3" data-itemid="grid_field24" data-pageid={$pageid} data-record-id="{$recId}">
+{$dokumen_adendum3_value}
+</span>			</td>
+														<td class="data {$fieldclass_foto_kegiatan_pelaksanaan1}">
+			{$xfoto_kegiatan_pelaksanaan1_value}
+						<span data-itemtype="grid_field" data-field="foto_kegiatan_pelaksanaan1" data-itemid="grid_field25" data-pageid={$pageid} data-record-id="{$recId}">
+{$foto_kegiatan_pelaksanaan1_value}
+</span>			</td>
+														<td class="data {$fieldclass_foto_kegiatan_pelaksanaan2}">
+			{$xfoto_kegiatan_pelaksanaan2_value}
+						<span data-itemtype="grid_field" data-field="foto_kegiatan_pelaksanaan2" data-itemid="grid_field26" data-pageid={$pageid} data-record-id="{$recId}">
+{$foto_kegiatan_pelaksanaan2_value}
+</span>			</td>
+														<td class="data {$fieldclass_kesimpulan_pelaksanaan}">
+			{$xkesimpulan_pelaksanaan_value}
+						<span data-itemtype="grid_field" data-field="kesimpulan_pelaksanaan" data-itemid="grid_field27" data-pageid={$pageid} data-record-id="{$recId}">
+{$kesimpulan_pelaksanaan_value}
+</span>			</td>
+														<td class="data {$fieldclass_catatan_pelaksanaan}">
+			{$xcatatan_pelaksanaan_value}
+						<span data-itemtype="grid_field" data-field="catatan_pelaksanaan" data-itemid="grid_field28" data-pageid={$pageid} data-record-id="{$recId}">
+{$catatan_pelaksanaan_value}
+</span>			</td>
+														<td class="data {$fieldclass_tindak_lanjut_pelaksanaan}">
+			{$xtindak_lanjut_pelaksanaan_value}
+						<span data-itemtype="grid_field" data-field="tindak_lanjut_pelaksanaan" data-itemid="grid_field29" data-pageid={$pageid} data-record-id="{$recId}">
+{$tindak_lanjut_pelaksanaan_value}
+</span>			</td>
+														<td class="data {$fieldclass_kabupatenkotaname}">
+			{$xkabupatenkotaname_value}
+						<span data-itemtype="grid_field" data-field="kabupatenkotaname" data-itemid="grid_field30" data-pageid={$pageid} data-record-id="{$recId}">
+{$kabupatenkotaname_value}
+</span>			</td>
+									</tr>
+		{END row_data}
+	
+	<!---  group summary-->
+					{BEGIN provinsiname_endgroup}
+
+		<tr >
+					<td class="group_1" colspan="28">
+				Ringkasan untuk {$label v_mne_keterisian_pelaksanaan_kabkota_Report provinsiname } {$provinsiname_grval} - <span class="summary-1" data-type="summary">
+					{$groupprovinsiname_total_cnt}
+				</span> total catatan			</td>			
+				</tr>
+		
+		
+		
+		
+			
+
+		{END provinsiname_endgroup}
+			
+{END grid_row}
+
+	{BEGIN summary_header}
+	<tr class="summary-header">
+						
+							<td class="blackshade {$fieldclass_jumlah_record}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report jumlah_record }</td>
+				
+							<td class="blackshade {$fieldclass_lokasi_pelaksanaan}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report lokasi_pelaksanaan }</td>
+				
+							<td class="blackshade {$fieldclass_longitude}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report longitude }</td>
+				
+							<td class="blackshade {$fieldclass_latitude}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report latitude }</td>
+				
+							<td class="blackshade {$fieldclass_nilai_kontrak}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report nilai_kontrak }</td>
+				
+							<td class="blackshade {$fieldclass_nama_satker}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report nama_satker }</td>
+				
+							<td class="blackshade {$fieldclass_jenis_kontrak}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report jenis_kontrak }</td>
+				
+							<td class="blackshade {$fieldclass_tanggal_kontrak}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report tanggal_kontrak }</td>
+				
+							<td class="blackshade {$fieldclass_dokumen_kontrak}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report dokumen_kontrak }</td>
+				
+							<td class="blackshade {$fieldclass_pagu_pelaksanaan}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report pagu_pelaksanaan }</td>
+				
+							<td class="blackshade {$fieldclass_nilai_adendum1}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report nilai_adendum1 }</td>
+				
+							<td class="blackshade {$fieldclass_tanggal_adendum1}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report tanggal_adendum1 }</td>
+				
+							<td class="blackshade {$fieldclass_waktu_adendum1}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report waktu_adendum1 }</td>
+				
+							<td class="blackshade {$fieldclass_dokumen_adendum1}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report dokumen_adendum1 }</td>
+				
+							<td class="blackshade {$fieldclass_nilai_adendum2}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report nilai_adendum2 }</td>
+				
+							<td class="blackshade {$fieldclass_tanggal_adendum2}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report tanggal_adendum2 }</td>
+				
+							<td class="blackshade {$fieldclass_waktu_adendum2}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report waktu_adendum2 }</td>
+				
+							<td class="blackshade {$fieldclass_dokumen_adendum2}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report dokumen_adendum2 }</td>
+				
+							<td class="blackshade {$fieldclass_nilai_adendum3}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report nilai_adendum3 }</td>
+				
+							<td class="blackshade {$fieldclass_tanggal_adendum3}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report tanggal_adendum3 }</td>
+				
+							<td class="blackshade {$fieldclass_waktu_adendum3}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report waktu_adendum3 }</td>
+				
+							<td class="blackshade {$fieldclass_dokumen_adendum3}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report dokumen_adendum3 }</td>
+				
+							<td class="blackshade {$fieldclass_foto_kegiatan_pelaksanaan1}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report foto_kegiatan_pelaksanaan1 }</td>
+				
+							<td class="blackshade {$fieldclass_foto_kegiatan_pelaksanaan2}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report foto_kegiatan_pelaksanaan2 }</td>
+				
+							<td class="blackshade {$fieldclass_kesimpulan_pelaksanaan}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report kesimpulan_pelaksanaan }</td>
+				
+							<td class="blackshade {$fieldclass_catatan_pelaksanaan}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report catatan_pelaksanaan }</td>
+				
+							<td class="blackshade {$fieldclass_tindak_lanjut_pelaksanaan}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report tindak_lanjut_pelaksanaan }</td>
+				
+							<td class="blackshade {$fieldclass_kabupatenkotaname}">{$label v_mne_keterisian_pelaksanaan_kabkota_Report kabupatenkotaname }</td>
+				
+			
+	</tr>
+	{END summary_header}			
+
+
+
+
+    
+    
+
+	<!-- global summary-->
+	{BEGIN global_summary}
+    <tr class="summaryrow summary-global">
+        <td class="globalsummary" colspan="29">
+            Ringkasan global {$global_total_cnt} - total catatan        </td>
+    </tr>
+
+	
+	
+	
+		{END global_summary}
+
+	</tbody>
+</table>			</div>
+{END grid_block}									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+			</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,2122 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-list" >
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="250px" data-fixed class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Memperluas" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main}			</div>
+		
+ 
+
+			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="search_panel" {$item_search_panel} data-topcell-item-type="search_panel" >
+				<!-- Begin Search panel content -->
+<div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}" >
+
+	<div class="panel-heading">
+		<div class="btn-group" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle btn-sm )" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Search in			<span class="caret"></span>
+			</button>
+		</div>
+
+
+		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Show options</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>all conditions</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>any condition</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>hide</a></li>
+			</ul>
+		</div>
+
+
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+																		{BEGIN searchCtrlBlock_akses_jamban_baseline}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_akses_jamban_baseline}" {$filterRow_attrs_akses_jamban_baseline}>
+			<label>{$label san_spm_stbm_ver akses_jamban_baseline }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_akses_jamban_baseline}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_akses_jamban_baseline}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_akses_jamban_baseline}</span>
+						</div>
+		{END searchCtrlBlock_akses_jamban_baseline}
+																{BEGIN searchCtrlBlock_keterangan_verifikasi}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_keterangan_verifikasi}" {$filterRow_attrs_keterangan_verifikasi}>
+			<label>{$label san_spm_stbm_ver keterangan_verifikasi }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_keterangan_verifikasi}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_keterangan_verifikasi}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_keterangan_verifikasi}</span>
+						</div>
+		{END searchCtrlBlock_keterangan_verifikasi}
+																{BEGIN searchCtrlBlock_verifikasi}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_verifikasi}" {$filterRow_attrs_verifikasi}>
+			<label>{$label san_spm_stbm_ver verifikasi }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_verifikasi}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_verifikasi}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_verifikasi}</span>
+						</div>
+		{END searchCtrlBlock_verifikasi}
+																{BEGIN searchCtrlBlock_sharing_kemajuan}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sharing_kemajuan}" {$filterRow_attrs_sharing_kemajuan}>
+			<label>{$label san_spm_stbm_ver sharing_kemajuan }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sharing_kemajuan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sharing_kemajuan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sharing_kemajuan}</span>
+						</div>
+		{END searchCtrlBlock_sharing_kemajuan}
+																{BEGIN searchCtrlBlock_sharing_baseline}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sharing_baseline}" {$filterRow_attrs_sharing_baseline}>
+			<label>{$label san_spm_stbm_ver sharing_baseline }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sharing_baseline}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sharing_baseline}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sharing_baseline}</span>
+						</div>
+		{END searchCtrlBlock_sharing_baseline}
+																{BEGIN searchCtrlBlock_provinsi}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_provinsi}" {$filterRow_attrs_provinsi}>
+			<label>{$label san_spm_stbm_ver provinsi }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_provinsi}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_provinsi}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_provinsi}</span>
+						</div>
+		{END searchCtrlBlock_provinsi}
+																{BEGIN searchCtrlBlock_kecamatan}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_kecamatan}" {$filterRow_attrs_kecamatan}>
+			<label>{$label san_spm_stbm_ver kecamatan }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_kecamatan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_kecamatan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_kecamatan}</span>
+						</div>
+		{END searchCtrlBlock_kecamatan}
+																{BEGIN searchCtrlBlock_kabupaten}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_kabupaten}" {$filterRow_attrs_kabupaten}>
+			<label>{$label san_spm_stbm_ver kabupaten }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_kabupaten}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_kabupaten}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_kabupaten}</span>
+						</div>
+		{END searchCtrlBlock_kabupaten}
+																{BEGIN searchCtrlBlock_jssp_kemajuan}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_jssp_kemajuan}" {$filterRow_attrs_jssp_kemajuan}>
+			<label>{$label san_spm_stbm_ver jssp_kemajuan }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_jssp_kemajuan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_jssp_kemajuan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_jssp_kemajuan}</span>
+						</div>
+		{END searchCtrlBlock_jssp_kemajuan}
+																{BEGIN searchCtrlBlock_jssp_baseline}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_jssp_baseline}" {$filterRow_attrs_jssp_baseline}>
+			<label>{$label san_spm_stbm_ver jssp_baseline }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_jssp_baseline}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_jssp_baseline}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_jssp_baseline}</span>
+						</div>
+		{END searchCtrlBlock_jssp_baseline}
+																{BEGIN searchCtrlBlock_jsp_kemajuan}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_jsp_kemajuan}" {$filterRow_attrs_jsp_kemajuan}>
+			<label>{$label san_spm_stbm_ver jsp_kemajuan }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_jsp_kemajuan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_jsp_kemajuan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_jsp_kemajuan}</span>
+						</div>
+		{END searchCtrlBlock_jsp_kemajuan}
+																{BEGIN searchCtrlBlock_jsp_baseline}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_jsp_baseline}" {$filterRow_attrs_jsp_baseline}>
+			<label>{$label san_spm_stbm_ver jsp_baseline }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_jsp_baseline}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_jsp_baseline}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_jsp_baseline}</span>
+						</div>
+		{END searchCtrlBlock_jsp_baseline}
+																{BEGIN searchCtrlBlock_jml_kk}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_jml_kk}" {$filterRow_attrs_jml_kk}>
+			<label>{$label san_spm_stbm_ver jml_kk }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_jml_kk}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_jml_kk}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_jml_kk}</span>
+						</div>
+		{END searchCtrlBlock_jml_kk}
+																{BEGIN searchCtrlBlock_id_stbm}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_id_stbm}" {$filterRow_attrs_id_stbm}>
+			<label>{$label san_spm_stbm_ver id_stbm }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_id_stbm}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_id_stbm}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_id_stbm}</span>
+						</div>
+		{END searchCtrlBlock_id_stbm}
+																{BEGIN searchCtrlBlock_desa}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_desa}" {$filterRow_attrs_desa}>
+			<label>{$label san_spm_stbm_ver desa }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_desa}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_desa}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_desa}</span>
+						</div>
+		{END searchCtrlBlock_desa}
+																{BEGIN searchCtrlBlock_babs_kk_baseline}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_babs_kk_baseline}" {$filterRow_attrs_babs_kk_baseline}>
+			<label>{$label san_spm_stbm_ver babs_kk_baseline }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_babs_kk_baseline}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_babs_kk_baseline}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_babs_kk_baseline}</span>
+						</div>
+		{END searchCtrlBlock_babs_kk_baseline}
+																{BEGIN searchCtrlBlock_babs_kemajuan}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_babs_kemajuan}" {$filterRow_attrs_babs_kemajuan}>
+			<label>{$label san_spm_stbm_ver babs_kemajuan }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_babs_kemajuan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_babs_kemajuan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_babs_kemajuan}</span>
+						</div>
+		{END searchCtrlBlock_babs_kemajuan}
+																{BEGIN searchCtrlBlock_akses_jamban_kemajuan}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_akses_jamban_kemajuan}" {$filterRow_attrs_akses_jamban_kemajuan}>
+			<label>{$label san_spm_stbm_ver akses_jamban_kemajuan }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_akses_jamban_kemajuan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_akses_jamban_kemajuan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_akses_jamban_kemajuan}</span>
+						</div>
+		{END searchCtrlBlock_akses_jamban_kemajuan}
+		
+
+	</div>
+
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary btn-sm" id="searchButton{$id}" {$searchbutton_attrs}>Cari</button>
+
+				<button class="btn btn-default btn-sm" {$showAllCont_attrs} {$showallbutton_attrs}>Perlihatkan semua</button>
+	</div>
+</div>
+<!-- End Search panel content -->
+			</div>
+		
+    {END left_block}
+</div>				</div>
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div data-resize-left="leftbar"  data-fixed class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="expand_menu_button" {$item_expand_menu_button} data-topcell-item-type="expand_menu_button" >
+				<span data-itemtype="expand_menu_button" data-itemid="expand_menu_button" {$item_expand_menu_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Menyembunyikan" class="btn-link   
+	 glyphicon glyphicon-menu-hamburger" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Tampilkan menu" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="breadcrumb" {$item_breadcrumb} data-topcell-item-type="breadcrumb" >
+				{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
+				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+
+<div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+				<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Perlihatkan semua">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
+				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-cog"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN editselected_link}
+	<li data-itemtype="edit_selected" data-itemid="edit_selected" {$item_edit_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$editselectedlink_attrs} {$editselectedlink_span}  title="" >
+				
+		Edit yang dipilih		
+		</a>
+	</li>
+{END editselected_link}
+							{BEGIN exportselected_link}
+	<li data-itemtype="export_selected" data-itemid="export_selected" {$item_export_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}  title="" >
+				
+		Pilihan Ekspor		
+		</a>
+	</li>
+{END exportselected_link}
+							{BEGIN deleteselected_link}
+	<li data-itemtype="delete_selected" data-itemid="delete_selected" {$item_delete_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}  title="" >
+				
+		Hapus dipilih		
+		</a>
+	</li>
+{END deleteselected_link}
+							<li role="separator" class="divider"></li>								<li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" data-small >
+				<a   href="san_spm_stbm_ver_search.php{$stateLink_full}" {$advsearchlink_attrs}  title="" >
+				
+		Pencarian canggih		
+		</a>
+	</li>
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="showOptPanel{$id}"  title="" >
+				
+		Show search panel		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="hideOptPanel{$id}"  title="" >
+				
+		Hide search panel		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							<li role="separator" class="divider"></li>							{BEGIN export_link}
+	<li data-itemtype="export" data-itemid="export" {$item_export} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportlink_attrs}  title="" >
+				
+		Ekspor hasil		
+		</a>
+	</li>
+{END export_link}
+					</ul>
+	</span>
+</span>
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Login			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+			{BEGIN userbutton_icon}							<span class="glyphicon glyphicon-user"></span>
+						{END userbutton_icon}{$userbutton_image}			{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN userinfo_link}
+	<li data-itemtype="userinfo_link" data-itemid="userinfo_link" {$item_userinfo_link} data-pageid="{$pageid}" data-small >
+				<a  href="userinfo.php"  title="" >
+				
+		Profil pengguna		
+		</a>
+	</li>
+{END userinfo_link}
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Log out		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Admin Area		
+		</a>
+	</li>
+{END adminarea_link}
+							{BEGIN changepwd_link}
+	<li data-itemtype="changepassword_link" data-itemid="changepassword_link" {$item_changepassword_link} data-pageid="{$pageid}" data-small >
+				<a  href="changepwd.php" {$changepwdlink_attrs} id="changePasswordButton{$id}"  title="" >
+				
+		Rubah password		
+		</a>
+	</li>
+{END changepwd_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>	
+				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	</div>		
+{END top_block}
+						</div>
+					<div class="r-above">
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class="			col-md-6
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		{BEGIN add_link}
+<span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$addlink_attrs} href="san_spm_stbm_ver_add.php{$stateLink_full}" >
+							Tambah baru			</a>
+</span>
+{END add_link}
+	 
+		{BEGIN saveall_link}
+<span data-itemtype="inline_save_all" data-itemid="inline_save_all" {$item_inline_save_all} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savealllink_attrs} {$savealllink_span} >
+							Simpan Semua			</a>
+</span>
+{END saveall_link}
+	 
+		{BEGIN cancelall_link}
+<span data-itemtype="inline_cancel_all" data-itemid="inline_cancel_all" {$item_inline_cancel_all} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$cancelalllink_attrs} {$cancelalllink_span} >
+							Batalkan Edit			</a>
+</span>
+{END cancelall_link}
+	 
+		{BEGIN deleteselected_link}
+<span data-itemtype="delete" data-itemid="delete" {$item_delete} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled >
+							Hapus			</a>
+</span>
+{END deleteselected_link}
+			{END firstAboveGridCell}	
+	</div>			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class="r-align-right			col-md-6
+	
+">
+		 
+		<span data-itemtype="details_found" data-itemid="details_found" {$item_details_found} data-pageid="{$pageid}" data-small >
+{$mlp_push}{$mlparam first var first_shown}{$mlparam last var last_shown}{$mlparam total var records_found}{mlang_message DISPLAYING}{$mlp_pop}</span>	 
+		<span data-itemtype="page_size" data-itemid="page_size" {$item_page_size} data-pageid="{$pageid}" >
+		{$recsPerPage}
+</span>	 
+		{BEGIN print_friendly}
+<span id="printpanelblock{$id}"  data-pageid="{$pageid}" {$printpanel_hiddenattr} data-itemtype="print_panel" data-itemid="print_panel" {$item_print_panel} data-pageid="{$pageid}">
+	<button title="Print-friendly page" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<span class="glyphicon glyphicon-print"></span>
+				<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu pull-right">
+										 
+				 
+					<li class="container-fluid 
+										">
+									<div id="print_friendly_scope{$id}">
+	<div class="row">
+		<div class="col-md-4">
+			Scope:		</div>
+
+			 
+		{BEGIN print_friendly_all}
+		<div class="col-md-8">
+			<label for="printAll{$id}">
+				<input type="radio" id="printAll{$id}" data-href="san_spm_stbm_ver_print.php?all=1&amp;{$crosstable_attrs}" name="printScope" >
+									Print all pages							</label>
+		</div>
+		{END print_friendly_all}
+		</div>
+		<div class="row">
+		<div class="col-md-4">&nbsp;</div>
+		<div class="col-md-8">
+			<label for="printPage{$id}">
+				<input name="printScope" id="printPage{$id}" type="radio" checked data-href="san_spm_stbm_ver_print.php?{$crosstable_attrs}">
+				Print this page			</label>
+		</div>
+	</div>
+		
+		 
+	<div class="row">
+		<div class="col-md-4">
+			&nbsp;
+		</div>
+		<div class="col-md-8">
+			<label style="color: gray;" for="printSelection{$id}">
+			<input name="printScope" disabled="disabled" id="printSelection{$id}" type="radio" >
+			Print selected			</label>
+		</div>
+	</div>
+	</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									<div>
+	<label for="printPerPage{$id}">
+					Catatan per halaman							
+	</label>
+	<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
+</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+					 text-center 					">
+									<span data-itemtype="print_button" data-itemid="print_button" {$item_print_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" id="print_friendly_button{$id}" >
+							Print			</a>
+</span>
+				 
+					</li>
+															</ul>
+</span>
+{END print_friendly}
+		</div>					</div>
+	</div>		
+{END above-grid_block}
+						</div>
+					<div class="r-grid">
+										{BEGIN grid_block}
+{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}	<style>
+@media screen and (max-width: 767px) {
+		[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="id_stbm"]:before {
+		content: "{$label san_spm_stbm_ver id_stbm}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="provinsi"]:before {
+		content: "{$label san_spm_stbm_ver provinsi}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="kabupaten"]:before {
+		content: "{$label san_spm_stbm_ver kabupaten}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="kecamatan"]:before {
+		content: "{$label san_spm_stbm_ver kecamatan}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="desa"]:before {
+		content: "{$label san_spm_stbm_ver desa}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="jml_kk"]:before {
+		content: "{$label san_spm_stbm_ver jml_kk}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="jsp_baseline"]:before {
+		content: "{$label san_spm_stbm_ver jsp_baseline}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="jssp_baseline"]:before {
+		content: "{$label san_spm_stbm_ver jssp_baseline}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="sharing_baseline"]:before {
+		content: "{$label san_spm_stbm_ver sharing_baseline}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="babs_kk_baseline"]:before {
+		content: "{$label san_spm_stbm_ver babs_kk_baseline}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="akses_jamban_baseline"]:before {
+		content: "{$label san_spm_stbm_ver akses_jamban_baseline}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="jsp_kemajuan"]:before {
+		content: "{$label san_spm_stbm_ver jsp_kemajuan}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="jssp_kemajuan"]:before {
+		content: "{$label san_spm_stbm_ver jssp_kemajuan}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="sharing_kemajuan"]:before {
+		content: "{$label san_spm_stbm_ver sharing_kemajuan}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="babs_kemajuan"]:before {
+		content: "{$label san_spm_stbm_ver babs_kemajuan}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="akses_jamban_kemajuan"]:before {
+		content: "{$label san_spm_stbm_ver akses_jamban_kemajuan}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="verifikasi"]:before {
+		content: "{$label san_spm_stbm_ver verifikasi}";
+	}
+		}
+</style>
+<table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes} r-horizontal-grid  r-flexgrid rnr-b-grid rnr-gridtable" 
+	cellpadding="0" 
+	data-body-height="1"
+>
+						<thead>
+			{BEGIN grid_header}
+					
+		 
+						<tr {$rowattrs} {$row_grid_0} class="{$rowclass} 
+									{$gridHeader_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_headcell_icons}
+	<th
+	
+	{$cell_grid_headcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="san_spm_stbm_ver_list"		data-control-cell
+	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_icons}
+				 
+					{BEGIN cellblock_grid_headcell_checkbox}
+	<th
+	
+	{$cell_grid_headcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="san_spm_stbm_ver_list"	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox_head" data-itemid="grid_checkbox_head" {$item_grid_checkbox_head} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkboxheader_attrs}>
+</span>
+{END checkbox_column}
+	
+	</th>
+	{END cellblock_grid_headcell_checkbox}
+				 
+					{BEGIN cellblock_grid_headcell_field}
+	<th
+	
+	{$cell_grid_headcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$id_stbm_class}
+			"
+
+			data-field="id_stbm"
+	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_stbm_fieldheadercolumn}
+	{BEGIN id_stbm_fieldheader}
+	<SPAN {$id_stbm_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_stbm" data-fieldname="id_stbm">
+	{$label san_spm_stbm_ver id_stbm }	{$arrow_icon_id_stbm}
+	</SPAN>
+	{END id_stbm_fieldheader}
+{END id_stbm_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field}
+				 
+					{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$provinsi_class}
+			"
+
+			data-field="provinsi"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN provinsi_fieldheadercolumn}
+	{BEGIN provinsi_fieldheader}
+	<SPAN {$provinsi_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="provinsi" data-fieldname="provinsi">
+	{$label san_spm_stbm_ver provinsi }	{$arrow_icon_provinsi}
+	</SPAN>
+	{END provinsi_fieldheader}
+{END provinsi_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+				 
+					{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kabupaten_class}
+			"
+
+			data-field="kabupaten"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kabupaten_fieldheadercolumn}
+	{BEGIN kabupaten_fieldheader}
+	<SPAN {$kabupaten_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kabupaten" data-fieldname="kabupaten">
+	{$label san_spm_stbm_ver kabupaten }	{$arrow_icon_kabupaten}
+	</SPAN>
+	{END kabupaten_fieldheader}
+{END kabupaten_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
+				 
+					{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kecamatan_class}
+			"
+
+			data-field="kecamatan"
+	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kecamatan_fieldheadercolumn}
+	{BEGIN kecamatan_fieldheader}
+	<SPAN {$kecamatan_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kecamatan" data-fieldname="kecamatan">
+	{$label san_spm_stbm_ver kecamatan }	{$arrow_icon_kecamatan}
+	</SPAN>
+	{END kecamatan_fieldheader}
+{END kecamatan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field3}
+				 
+					{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$desa_class}
+			"
+
+			data-field="desa"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN desa_fieldheadercolumn}
+	{BEGIN desa_fieldheader}
+	<SPAN {$desa_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="desa" data-fieldname="desa">
+	{$label san_spm_stbm_ver desa }	{$arrow_icon_desa}
+	</SPAN>
+	{END desa_fieldheader}
+{END desa_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field4}
+				 
+					{BEGIN cellblock_grid_headcell_field5}
+	<th
+	
+	{$cell_grid_headcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jml_kk_class}
+			"
+
+			data-field="jml_kk"
+	
+	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jml_kk_fieldheadercolumn}
+	{BEGIN jml_kk_fieldheader}
+	<SPAN {$jml_kk_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jml_kk" data-fieldname="jml_kk">
+	{$label san_spm_stbm_ver jml_kk }	{$arrow_icon_jml_kk}
+	</SPAN>
+	{END jml_kk_fieldheader}
+{END jml_kk_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field5}
+				 
+					{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jsp_baseline_class}
+			"
+
+			data-field="jsp_baseline"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jsp_baseline_fieldheadercolumn}
+	{BEGIN jsp_baseline_fieldheader}
+	<SPAN {$jsp_baseline_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jsp_baseline" data-fieldname="jsp_baseline">
+	{$label san_spm_stbm_ver jsp_baseline }	{$arrow_icon_jsp_baseline}
+	</SPAN>
+	{END jsp_baseline_fieldheader}
+{END jsp_baseline_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field6}
+				 
+					{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jssp_baseline_class}
+			"
+
+			data-field="jssp_baseline"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jssp_baseline_fieldheadercolumn}
+	{BEGIN jssp_baseline_fieldheader}
+	<SPAN {$jssp_baseline_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jssp_baseline" data-fieldname="jssp_baseline">
+	{$label san_spm_stbm_ver jssp_baseline }	{$arrow_icon_jssp_baseline}
+	</SPAN>
+	{END jssp_baseline_fieldheader}
+{END jssp_baseline_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
+				 
+					{BEGIN cellblock_grid_headcell_field8}
+	<th
+	
+	{$cell_grid_headcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$sharing_baseline_class}
+			"
+
+			data-field="sharing_baseline"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sharing_baseline_fieldheadercolumn}
+	{BEGIN sharing_baseline_fieldheader}
+	<SPAN {$sharing_baseline_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sharing_baseline" data-fieldname="sharing_baseline">
+	{$label san_spm_stbm_ver sharing_baseline }	{$arrow_icon_sharing_baseline}
+	</SPAN>
+	{END sharing_baseline_fieldheader}
+{END sharing_baseline_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field8}
+				 
+					{BEGIN cellblock_grid_headcell_field9}
+	<th
+	
+	{$cell_grid_headcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$babs_kk_baseline_class}
+			"
+
+			data-field="babs_kk_baseline"
+	
+	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN babs_kk_baseline_fieldheadercolumn}
+	{BEGIN babs_kk_baseline_fieldheader}
+	<SPAN {$babs_kk_baseline_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="babs_kk_baseline" data-fieldname="babs_kk_baseline">
+	{$label san_spm_stbm_ver babs_kk_baseline }	{$arrow_icon_babs_kk_baseline}
+	</SPAN>
+	{END babs_kk_baseline_fieldheader}
+{END babs_kk_baseline_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field9}
+				 
+					{BEGIN cellblock_grid_headcell_field10}
+	<th
+	
+	{$cell_grid_headcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$akses_jamban_baseline_class}
+			"
+
+			data-field="akses_jamban_baseline"
+	
+	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN akses_jamban_baseline_fieldheadercolumn}
+	{BEGIN akses_jamban_baseline_fieldheader}
+	<SPAN {$akses_jamban_baseline_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="akses_jamban_baseline" data-fieldname="akses_jamban_baseline">
+	{$label san_spm_stbm_ver akses_jamban_baseline }	{$arrow_icon_akses_jamban_baseline}
+	</SPAN>
+	{END akses_jamban_baseline_fieldheader}
+{END akses_jamban_baseline_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field10}
+				 
+					{BEGIN cellblock_grid_headcell_field11}
+	<th
+	
+	{$cell_grid_headcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jsp_kemajuan_class}
+			"
+
+			data-field="jsp_kemajuan"
+	
+	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jsp_kemajuan_fieldheadercolumn}
+	{BEGIN jsp_kemajuan_fieldheader}
+	<SPAN {$jsp_kemajuan_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field28" {$item_simple_grid_field28} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jsp_kemajuan" data-fieldname="jsp_kemajuan">
+	{$label san_spm_stbm_ver jsp_kemajuan }	{$arrow_icon_jsp_kemajuan}
+	</SPAN>
+	{END jsp_kemajuan_fieldheader}
+{END jsp_kemajuan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field11}
+				 
+					{BEGIN cellblock_grid_headcell_field12}
+	<th
+	
+	{$cell_grid_headcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jssp_kemajuan_class}
+			"
+
+			data-field="jssp_kemajuan"
+	
+	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jssp_kemajuan_fieldheadercolumn}
+	{BEGIN jssp_kemajuan_fieldheader}
+	<SPAN {$jssp_kemajuan_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field29" {$item_simple_grid_field29} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jssp_kemajuan" data-fieldname="jssp_kemajuan">
+	{$label san_spm_stbm_ver jssp_kemajuan }	{$arrow_icon_jssp_kemajuan}
+	</SPAN>
+	{END jssp_kemajuan_fieldheader}
+{END jssp_kemajuan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field12}
+				 
+					{BEGIN cellblock_grid_headcell_field13}
+	<th
+	
+	{$cell_grid_headcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$sharing_kemajuan_class}
+			"
+
+			data-field="sharing_kemajuan"
+	
+	data-cellId="grid_headcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sharing_kemajuan_fieldheadercolumn}
+	{BEGIN sharing_kemajuan_fieldheader}
+	<SPAN {$sharing_kemajuan_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field30" {$item_simple_grid_field30} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sharing_kemajuan" data-fieldname="sharing_kemajuan">
+	{$label san_spm_stbm_ver sharing_kemajuan }	{$arrow_icon_sharing_kemajuan}
+	</SPAN>
+	{END sharing_kemajuan_fieldheader}
+{END sharing_kemajuan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field13}
+				 
+					{BEGIN cellblock_grid_headcell_field14}
+	<th
+	
+	{$cell_grid_headcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$babs_kemajuan_class}
+			"
+
+			data-field="babs_kemajuan"
+	
+	data-cellId="grid_headcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN babs_kemajuan_fieldheadercolumn}
+	{BEGIN babs_kemajuan_fieldheader}
+	<SPAN {$babs_kemajuan_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field31" {$item_simple_grid_field31} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="babs_kemajuan" data-fieldname="babs_kemajuan">
+	{$label san_spm_stbm_ver babs_kemajuan }	{$arrow_icon_babs_kemajuan}
+	</SPAN>
+	{END babs_kemajuan_fieldheader}
+{END babs_kemajuan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field14}
+				 
+					{BEGIN cellblock_grid_headcell_field15}
+	<th
+	
+	{$cell_grid_headcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$akses_jamban_kemajuan_class}
+			"
+
+			data-field="akses_jamban_kemajuan"
+	
+	data-cellId="grid_headcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN akses_jamban_kemajuan_fieldheadercolumn}
+	{BEGIN akses_jamban_kemajuan_fieldheader}
+	<SPAN {$akses_jamban_kemajuan_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field32" {$item_simple_grid_field32} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="akses_jamban_kemajuan" data-fieldname="akses_jamban_kemajuan">
+	{$label san_spm_stbm_ver akses_jamban_kemajuan }	{$arrow_icon_akses_jamban_kemajuan}
+	</SPAN>
+	{END akses_jamban_kemajuan_fieldheader}
+{END akses_jamban_kemajuan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field15}
+				 
+					{BEGIN cellblock_grid_headcell_field16}
+	<th
+	
+	{$cell_grid_headcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$verifikasi_class}
+			"
+
+			data-field="verifikasi"
+	
+	data-cellId="grid_headcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN verifikasi_fieldheadercolumn}
+	{BEGIN verifikasi_fieldheader}
+	<SPAN {$verifikasi_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field33" {$item_simple_grid_field33} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="verifikasi" data-fieldname="verifikasi">
+	{$label san_spm_stbm_ver verifikasi }	{$arrow_icon_verifikasi}
+	</SPAN>
+	{END verifikasi_fieldheader}
+{END verifikasi_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field16}
+							</tr>
+					 
+					 
+					
+					{END grid_header}
+			</thead>
+															<tbody>
+					{BEGIN grid_row}
+									
+		 
+					 
+						<tr {$rowattrs} {$row_grid_1} class="{$rowclass} 
+								
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_cell_icons}
+	<td
+	
+	{$cell_grid_cell_icons}
+	{$recordattrs}
+	class="
+					"
+
+	
+	data-cellId="grid_cell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="san_spm_stbm_ver_list"		data-control-cell
+	
+	>
+
+	 
+		{BEGIN edit_column}
+{BEGIN edit_link}
+<span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Edit" class="btn-link   
+	 glyphicon glyphicon-pencil" href="san_spm_stbm_ver_edit.php?{$editlink}" {$editlink_attrs} title="Edit" >		
+				
+								</a>
+</span>
+{END edit_link}
+{END edit_column}
+	 
+		{BEGIN inlineedit_column}
+{BEGIN inlineedit_link}
+<span data-itemtype="grid_inline_edit" data-itemid="grid_inline_edit" {$item_grid_inline_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Edit" class="btn-link   
+	 glyphicon glyphicon-edit" {$inlineeditlink_attrs} title="Edit" >		
+				
+								</a>
+</span>
+{END inlineedit_link}
+{END inlineedit_column}
+	 
+		{BEGIN inline_save}
+<span data-itemtype="grid_inline_save" data-itemid="grid_inline_save" {$item_grid_inline_save} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Simpan" class="btn-link   
+	 glyphicon glyphicon-ok" {$inlinesavelink_attrs} title="Simpan" >		
+				
+								</a>
+</span>
+{END inline_save}
+	 
+		{BEGIN inline_cancel}
+<span data-itemtype="grid_inline_cancel" data-itemid="grid_inline_cancel" {$item_grid_inline_cancel} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Batal" class="btn-link   
+	 glyphicon glyphicon-remove" {$inlinerevertlink_attrs} title="Batal" >		
+				
+								</a>
+</span>
+{END inline_cancel}
+	 
+		{BEGIN view_column}
+{BEGIN view_link}
+<span data-itemtype="grid_view" data-itemid="grid_view" {$item_grid_view} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Lihat Catatan" class="btn-link   
+	 glyphicon glyphicon-search" href="san_spm_stbm_ver_view.php?{$editlink}" {$viewlink_attrs} title="Lihat" >		
+				
+								</a>
+</span>
+{END view_link}
+{END view_column}
+	
+	</td>
+	{END cellblock_grid_cell_icons}
+				 
+					{BEGIN cellblock_grid_cell_checkbox}
+	<td
+	
+	{$cell_grid_cell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"		data-control-cell
+	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox" data-itemid="grid_checkbox" {$item_grid_checkbox} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkbox_attrs}
+		>
+</span>	
+{END checkbox_column}
+	
+	</td>
+	{END cellblock_grid_cell_checkbox}
+				 
+					{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$id_stbm_class}
+			"
+
+			data-field="id_stbm"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_stbm_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_stbm" data-fieldname="id_stbm" data-default-width >
+{$id_stbm_value}
+</span>
+{END id_stbm_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+				 
+					{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$provinsi_class}
+			"
+
+			data-field="provinsi"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN provinsi_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="provinsi" data-fieldname="provinsi" data-default-width >
+{$provinsi_value}
+</span>
+{END provinsi_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+				 
+					{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kabupaten_class}
+			"
+
+			data-field="kabupaten"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kabupaten_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kabupaten" data-fieldname="kabupaten" data-default-width >
+{$kabupaten_value}
+</span>
+{END kabupaten_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+				 
+					{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kecamatan_class}
+			"
+
+			data-field="kecamatan"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kecamatan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kecamatan" data-fieldname="kecamatan" data-default-width >
+{$kecamatan_value}
+</span>
+{END kecamatan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+				 
+					{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$desa_class}
+			"
+
+			data-field="desa"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN desa_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="desa" data-fieldname="desa" data-default-width >
+{$desa_value}
+</span>
+{END desa_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+				 
+					{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jml_kk_class}
+			"
+
+			data-field="jml_kk"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jml_kk_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jml_kk" data-fieldname="jml_kk" data-default-width >
+{$jml_kk_value}
+</span>
+{END jml_kk_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+				 
+					{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jsp_baseline_class}
+			"
+
+			data-field="jsp_baseline"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jsp_baseline_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jsp_baseline" data-fieldname="jsp_baseline" data-default-width >
+{$jsp_baseline_value}
+</span>
+{END jsp_baseline_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+				 
+					{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jssp_baseline_class}
+			"
+
+			data-field="jssp_baseline"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jssp_baseline_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jssp_baseline" data-fieldname="jssp_baseline" data-default-width >
+{$jssp_baseline_value}
+</span>
+{END jssp_baseline_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+				 
+					{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$sharing_baseline_class}
+			"
+
+			data-field="sharing_baseline"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sharing_baseline_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sharing_baseline" data-fieldname="sharing_baseline" data-default-width >
+{$sharing_baseline_value}
+</span>
+{END sharing_baseline_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+				 
+					{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$babs_kk_baseline_class}
+			"
+
+			data-field="babs_kk_baseline"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN babs_kk_baseline_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="babs_kk_baseline" data-fieldname="babs_kk_baseline" data-default-width >
+{$babs_kk_baseline_value}
+</span>
+{END babs_kk_baseline_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
+				 
+					{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$akses_jamban_baseline_class}
+			"
+
+			data-field="akses_jamban_baseline"
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN akses_jamban_baseline_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="akses_jamban_baseline" data-fieldname="akses_jamban_baseline" data-default-width >
+{$akses_jamban_baseline_value}
+</span>
+{END akses_jamban_baseline_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field10}
+				 
+					{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jsp_kemajuan_class}
+			"
+
+			data-field="jsp_kemajuan"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jsp_kemajuan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jsp_kemajuan" data-fieldname="jsp_kemajuan" data-default-width >
+{$jsp_kemajuan_value}
+</span>
+{END jsp_kemajuan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
+				 
+					{BEGIN cellblock_grid_cell_field12}
+	<td
+	
+	{$cell_grid_cell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jssp_kemajuan_class}
+			"
+
+			data-field="jssp_kemajuan"
+	
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jssp_kemajuan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jssp_kemajuan" data-fieldname="jssp_kemajuan" data-default-width >
+{$jssp_kemajuan_value}
+</span>
+{END jssp_kemajuan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field12}
+				 
+					{BEGIN cellblock_grid_cell_field13}
+	<td
+	
+	{$cell_grid_cell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$sharing_kemajuan_class}
+			"
+
+			data-field="sharing_kemajuan"
+	
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sharing_kemajuan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sharing_kemajuan" data-fieldname="sharing_kemajuan" data-default-width >
+{$sharing_kemajuan_value}
+</span>
+{END sharing_kemajuan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field13}
+				 
+					{BEGIN cellblock_grid_cell_field14}
+	<td
+	
+	{$cell_grid_cell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$babs_kemajuan_class}
+			"
+
+			data-field="babs_kemajuan"
+	
+	data-cellId="grid_cell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN babs_kemajuan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="babs_kemajuan" data-fieldname="babs_kemajuan" data-default-width >
+{$babs_kemajuan_value}
+</span>
+{END babs_kemajuan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field14}
+				 
+					{BEGIN cellblock_grid_cell_field15}
+	<td
+	
+	{$cell_grid_cell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$akses_jamban_kemajuan_class}
+			"
+
+			data-field="akses_jamban_kemajuan"
+	
+	data-cellId="grid_cell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN akses_jamban_kemajuan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="akses_jamban_kemajuan" data-fieldname="akses_jamban_kemajuan" data-default-width >
+{$akses_jamban_kemajuan_value}
+</span>
+{END akses_jamban_kemajuan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field15}
+				 
+					{BEGIN cellblock_grid_cell_field16}
+	<td
+	
+	{$cell_grid_cell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$verifikasi_class}
+			"
+
+			data-field="verifikasi"
+	
+	data-cellId="grid_cell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN verifikasi_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="verifikasi" data-fieldname="verifikasi" data-default-width >
+{$verifikasi_value}
+</span>
+{END verifikasi_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field16}
+							</tr>
+					 
+					
+											{END grid_row}
+					</tbody>
+													<tfoot>
+					
+		 
+					 
+					 
+						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
+									{$gridFooter_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_footcell_icons}
+	<td
+	
+	{$cell_grid_footcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_icons}
+				 
+					{BEGIN cellblock_grid_footcell_checkbox}
+	<td
+	
+	{$cell_grid_footcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_checkbox}
+				 
+					{BEGIN cellblock_grid_footcell_field}
+	<td
+	
+	{$cell_grid_footcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="san_spm_stbm_ver_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field}
+				 
+					{BEGIN cellblock_grid_footcell_field1}
+	<td
+	
+	{$cell_grid_footcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="san_spm_stbm_ver_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field1}
+				 
+					{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="san_spm_stbm_ver_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
+				 
+					{BEGIN cellblock_grid_footcell_field3}
+	<td
+	
+	{$cell_grid_footcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="san_spm_stbm_ver_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field3}
+				 
+					{BEGIN cellblock_grid_footcell_field4}
+	<td
+	
+	{$cell_grid_footcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="san_spm_stbm_ver_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field4}
+				 
+					{BEGIN cellblock_grid_footcell_field5}
+	<td
+	
+	{$cell_grid_footcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="san_spm_stbm_ver_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field5}
+				 
+					{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="san_spm_stbm_ver_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
+				 
+					{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="san_spm_stbm_ver_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
+				 
+					{BEGIN cellblock_grid_footcell_field8}
+	<td
+	
+	{$cell_grid_footcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="san_spm_stbm_ver_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field8}
+				 
+					{BEGIN cellblock_grid_footcell_field9}
+	<td
+	
+	{$cell_grid_footcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="san_spm_stbm_ver_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field9}
+				 
+					{BEGIN cellblock_grid_footcell_field10}
+	<td
+	
+	{$cell_grid_footcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="san_spm_stbm_ver_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field10}
+				 
+					{BEGIN cellblock_grid_footcell_field11}
+	<td
+	
+	{$cell_grid_footcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="san_spm_stbm_ver_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field11}
+				 
+					{BEGIN cellblock_grid_footcell_field12}
+	<td
+	
+	{$cell_grid_footcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="san_spm_stbm_ver_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field12}
+				 
+					{BEGIN cellblock_grid_footcell_field13}
+	<td
+	
+	{$cell_grid_footcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="san_spm_stbm_ver_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field13}
+				 
+					{BEGIN cellblock_grid_footcell_field14}
+	<td
+	
+	{$cell_grid_footcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="san_spm_stbm_ver_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field14}
+				 
+					{BEGIN cellblock_grid_footcell_field15}
+	<td
+	
+	{$cell_grid_footcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="san_spm_stbm_ver_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field15}
+				 
+					{BEGIN cellblock_grid_footcell_field16}
+	<td
+	
+	{$cell_grid_footcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="san_spm_stbm_ver_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field16}
+							</tr>
+					
+					</tfoot>
+				</table>
+{END grid_block}
+						</div>
+					<div class="r-below">
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="r-align-center r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN pagination_block}
+<span data-itemtype="pagination" data-itemid="pagination" {$item_pagination} data-pageid="{$pageid}" >
+{$pagination}
+</span>
+{END pagination_block}
+		</div>					</div>
+	</div>		
+{END below-grid_block}
+						</div>
+					{$footer}
+				</div>	
+			</div>	
+			<div class="r-body-shadow">
+			</div>
+		</div>
+	{END body}
+	</body>
+</html>

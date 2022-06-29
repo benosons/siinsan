@@ -1,0 +1,504 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-view" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel v_spaldt_permukiman_keterisian_prov view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN r_provinsiid_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_r_provinsiid}  r-vertical-field" data-fieldname="r_provinsiid" data-signal-error-for="r_provinsiid{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="r_provinsiid" data-fieldname="r_provinsiid" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_r_provinsiid}">
+		
+		{BEGIN r_provinsiid_label}{$label v_spaldt_permukiman_keterisian_prov r_provinsiid }{END r_provinsiid_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$r_provinsiid_value}	</div>
+
+		
+</div>
+
+
+{END r_provinsiid_fieldblock}
+											
+{BEGIN provinsiname_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_provinsiname}  r-vertical-field" data-fieldname="provinsiname" data-signal-error-for="provinsiname{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="provinsiname" data-fieldname="provinsiname" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_provinsiname}">
+		
+		{BEGIN provinsiname_label}{$label v_spaldt_permukiman_keterisian_prov provinsiname }{END provinsiname_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$provinsiname_value}	</div>
+
+		
+</div>
+
+
+{END provinsiname_fieldblock}
+											
+{BEGIN jumlah_record_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jumlah_record}  r-vertical-field" data-fieldname="jumlah_record" data-signal-error-for="jumlah_record{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="jumlah_record" data-fieldname="jumlah_record" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_jumlah_record}">
+		
+		{BEGIN jumlah_record_label}{$label v_spaldt_permukiman_keterisian_prov jumlah_record }{END jumlah_record_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$jumlah_record_value}	</div>
+
+		
+</div>
+
+
+{END jumlah_record_fieldblock}
+											
+{BEGIN tahun_kontruksi_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tahun_kontruksi}  r-vertical-field" data-fieldname="tahun_kontruksi" data-signal-error-for="tahun_kontruksi{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="tahun_kontruksi" data-fieldname="tahun_kontruksi" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_tahun_kontruksi}">
+		
+		{BEGIN tahun_kontruksi_label}{$label v_spaldt_permukiman_keterisian_prov tahun_kontruksi }{END tahun_kontruksi_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$tahun_kontruksi_value}	</div>
+
+		
+</div>
+
+
+{END tahun_kontruksi_fieldblock}
+											
+{BEGIN alamat_lengkap_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_alamat_lengkap}  r-vertical-field" data-fieldname="alamat_lengkap" data-signal-error-for="alamat_lengkap{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="alamat_lengkap" data-fieldname="alamat_lengkap" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_alamat_lengkap}">
+		
+		{BEGIN alamat_lengkap_label}{$label v_spaldt_permukiman_keterisian_prov alamat_lengkap }{END alamat_lengkap_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$alamat_lengkap_value}	</div>
+
+		
+</div>
+
+
+{END alamat_lengkap_fieldblock}
+											
+{BEGIN longitude_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_longitude}  r-vertical-field" data-fieldname="longitude" data-signal-error-for="longitude{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="longitude" data-fieldname="longitude" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_longitude}">
+		
+		{BEGIN longitude_label}{$label v_spaldt_permukiman_keterisian_prov longitude }{END longitude_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$longitude_value}	</div>
+
+		
+</div>
+
+
+{END longitude_fieldblock}
+											
+{BEGIN latitude_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_latitude}  r-vertical-field" data-fieldname="latitude" data-signal-error-for="latitude{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="latitude" data-fieldname="latitude" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_latitude}">
+		
+		{BEGIN latitude_label}{$label v_spaldt_permukiman_keterisian_prov latitude }{END latitude_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$latitude_value}	</div>
+
+		
+</div>
+
+
+{END latitude_fieldblock}
+											
+{BEGIN status_keberfungsian_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_status_keberfungsian}  r-vertical-field" data-fieldname="status_keberfungsian" data-signal-error-for="status_keberfungsian{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="status_keberfungsian" data-fieldname="status_keberfungsian" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_status_keberfungsian}">
+		
+		{BEGIN status_keberfungsian_label}{$label v_spaldt_permukiman_keterisian_prov status_keberfungsian }{END status_keberfungsian_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$status_keberfungsian_value}	</div>
+
+		
+</div>
+
+
+{END status_keberfungsian_fieldblock}
+											
+{BEGIN kualitas_keberfungsian_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kualitas_keberfungsian}  r-vertical-field" data-fieldname="kualitas_keberfungsian" data-signal-error-for="kualitas_keberfungsian{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="kualitas_keberfungsian" data-fieldname="kualitas_keberfungsian" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kualitas_keberfungsian}">
+		
+		{BEGIN kualitas_keberfungsian_label}{$label v_spaldt_permukiman_keterisian_prov kualitas_keberfungsian }{END kualitas_keberfungsian_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kualitas_keberfungsian_value}	</div>
+
+		
+</div>
+
+
+{END kualitas_keberfungsian_fieldblock}
+											
+{BEGIN total_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_total}  r-vertical-field" data-fieldname="total" data-signal-error-for="total{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="total" data-fieldname="total" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_total}">
+		
+		{BEGIN total_label}{$label v_spaldt_permukiman_keterisian_prov total }{END total_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$total_value}	</div>
+
+		
+</div>
+
+
+{END total_fieldblock}
+											
+{BEGIN status_lahan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_status_lahan}  r-vertical-field" data-fieldname="status_lahan" data-signal-error-for="status_lahan{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="status_lahan" data-fieldname="status_lahan" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_status_lahan}">
+		
+		{BEGIN status_lahan_label}{$label v_spaldt_permukiman_keterisian_prov status_lahan }{END status_lahan_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$status_lahan_value}	</div>
+
+		
+</div>
+
+
+{END status_lahan_fieldblock}
+											
+{BEGIN luas_lahan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_luas_lahan}  r-vertical-field" data-fieldname="luas_lahan" data-signal-error-for="luas_lahan{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="luas_lahan" data-fieldname="luas_lahan" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_luas_lahan}">
+		
+		{BEGIN luas_lahan_label}{$label v_spaldt_permukiman_keterisian_prov luas_lahan }{END luas_lahan_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$luas_lahan_value}	</div>
+
+		
+</div>
+
+
+{END luas_lahan_fieldblock}
+											
+{BEGIN pengelolaan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pengelolaan}  r-vertical-field" data-fieldname="pengelolaan" data-signal-error-for="pengelolaan{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="pengelolaan" data-fieldname="pengelolaan" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_pengelolaan}">
+		
+		{BEGIN pengelolaan_label}{$label v_spaldt_permukiman_keterisian_prov pengelolaan }{END pengelolaan_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$pengelolaan_value}	</div>
+
+		
+</div>
+
+
+{END pengelolaan_fieldblock}
+											
+{BEGIN kapasitas_desain_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kapasitas_desain}  r-vertical-field" data-fieldname="kapasitas_desain" data-signal-error-for="kapasitas_desain{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="kapasitas_desain" data-fieldname="kapasitas_desain" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kapasitas_desain}">
+		
+		{BEGIN kapasitas_desain_label}{$label v_spaldt_permukiman_keterisian_prov kapasitas_desain }{END kapasitas_desain_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kapasitas_desain_value}	</div>
+
+		
+</div>
+
+
+{END kapasitas_desain_fieldblock}
+											
+{BEGIN kapasitas_terpakai_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kapasitas_terpakai}  r-vertical-field" data-fieldname="kapasitas_terpakai" data-signal-error-for="kapasitas_terpakai{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="kapasitas_terpakai" data-fieldname="kapasitas_terpakai" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kapasitas_terpakai}">
+		
+		{BEGIN kapasitas_terpakai_label}{$label v_spaldt_permukiman_keterisian_prov kapasitas_terpakai }{END kapasitas_terpakai_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kapasitas_terpakai_value}	</div>
+
+		
+</div>
+
+
+{END kapasitas_terpakai_fieldblock}
+											
+{BEGIN kapasitas_tidak_terpakai_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kapasitas_tidak_terpakai}  r-vertical-field" data-fieldname="kapasitas_tidak_terpakai" data-signal-error-for="kapasitas_tidak_terpakai{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="kapasitas_tidak_terpakai" data-fieldname="kapasitas_tidak_terpakai" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kapasitas_tidak_terpakai}">
+		
+		{BEGIN kapasitas_tidak_terpakai_label}{$label v_spaldt_permukiman_keterisian_prov kapasitas_tidak_terpakai }{END kapasitas_tidak_terpakai_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kapasitas_tidak_terpakai_value}	</div>
+
+		
+</div>
+
+
+{END kapasitas_tidak_terpakai_fieldblock}
+											
+{BEGIN jenis_pengelolaan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jenis_pengelolaan}  r-vertical-field" data-fieldname="jenis_pengelolaan" data-signal-error-for="jenis_pengelolaan{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="jenis_pengelolaan" data-fieldname="jenis_pengelolaan" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_jenis_pengelolaan}">
+		
+		{BEGIN jenis_pengelolaan_label}{$label v_spaldt_permukiman_keterisian_prov jenis_pengelolaan }{END jenis_pengelolaan_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$jenis_pengelolaan_value}	</div>
+
+		
+</div>
+
+
+{END jenis_pengelolaan_fieldblock}
+											
+{BEGIN peta_cakupan_air_limbah_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_peta_cakupan_air_limbah}  r-vertical-field" data-fieldname="peta_cakupan_air_limbah" data-signal-error-for="peta_cakupan_air_limbah{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="peta_cakupan_air_limbah" data-fieldname="peta_cakupan_air_limbah" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_peta_cakupan_air_limbah}">
+		
+		{BEGIN peta_cakupan_air_limbah_label}{$label v_spaldt_permukiman_keterisian_prov peta_cakupan_air_limbah }{END peta_cakupan_air_limbah_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$peta_cakupan_air_limbah_value}	</div>
+
+		
+</div>
+
+
+{END peta_cakupan_air_limbah_fieldblock}
+											
+{BEGIN status_verifikasi_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_status_verifikasi}  r-vertical-field" data-fieldname="status_verifikasi" data-signal-error-for="status_verifikasi{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="status_verifikasi" data-fieldname="status_verifikasi" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_status_verifikasi}">
+		
+		{BEGIN status_verifikasi_label}{$label v_spaldt_permukiman_keterisian_prov status_verifikasi }{END status_verifikasi_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$status_verifikasi_value}	</div>
+
+		
+</div>
+
+
+{END status_verifikasi_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Tutup jendela			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

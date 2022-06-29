@@ -1,0 +1,546 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel v_dra_keterisian_genangan_kabkota_Report search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN kd_provinsi_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_provinsi}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kd_provinsi{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="kd_provinsi" data-fieldname="kd_provinsi" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kd_provinsi}">
+		{$label v_dra_keterisian_genangan_kabkota_Report kd_provinsi }	</label>
+	<div class="r-search-option">
+		{$searchtype_kd_provinsi}
+	</div>
+	<div class="r-search-field">
+		{$kd_provinsi_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kd_provinsi_editcontrol1}
+	</div>
+	
+</div>
+
+{END kd_provinsi_fieldblock}
+											
+{BEGIN provinsi_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_provinsi}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="provinsi{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="provinsi" data-fieldname="provinsi" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_provinsi}">
+		{$label v_dra_keterisian_genangan_kabkota_Report provinsi }	</label>
+	<div class="r-search-option">
+		{$searchtype_provinsi}
+	</div>
+	<div class="r-search-field">
+		{$provinsi_editcontrol}	</div>
+	<div class="r-search-field">
+		{$provinsi_editcontrol1}
+	</div>
+	
+</div>
+
+{END provinsi_fieldblock}
+											
+{BEGIN kabkota_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kabkota}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kabkota{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="kabkota" data-fieldname="kabkota" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kabkota}">
+		{$label v_dra_keterisian_genangan_kabkota_Report kabkota }	</label>
+	<div class="r-search-option">
+		{$searchtype_kabkota}
+	</div>
+	<div class="r-search-field">
+		{$kabkota_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kabkota_editcontrol1}
+	</div>
+	
+</div>
+
+{END kabkota_fieldblock}
+											
+{BEGIN jumlah_record_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jumlah_record}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jumlah_record{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="jumlah_record" data-fieldname="jumlah_record" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jumlah_record}">
+		{$label v_dra_keterisian_genangan_kabkota_Report jumlah_record }	</label>
+	<div class="r-search-option">
+		{$searchtype_jumlah_record}
+	</div>
+	<div class="r-search-field">
+		{$jumlah_record_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jumlah_record_editcontrol1}
+	</div>
+	
+</div>
+
+{END jumlah_record_fieldblock}
+											
+{BEGIN kecamatan_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kecamatan}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kecamatan{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="kecamatan" data-fieldname="kecamatan" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kecamatan}">
+		{$label v_dra_keterisian_genangan_kabkota_Report kecamatan }	</label>
+	<div class="r-search-option">
+		{$searchtype_kecamatan}
+	</div>
+	<div class="r-search-field">
+		{$kecamatan_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kecamatan_editcontrol1}
+	</div>
+	
+</div>
+
+{END kecamatan_fieldblock}
+											
+{BEGIN kelurahan_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kelurahan}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kelurahan{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="kelurahan" data-fieldname="kelurahan" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kelurahan}">
+		{$label v_dra_keterisian_genangan_kabkota_Report kelurahan }	</label>
+	<div class="r-search-option">
+		{$searchtype_kelurahan}
+	</div>
+	<div class="r-search-field">
+		{$kelurahan_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kelurahan_editcontrol1}
+	</div>
+	
+</div>
+
+{END kelurahan_fieldblock}
+											
+{BEGIN detail_lokasi_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_detail_lokasi}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="detail_lokasi{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="detail_lokasi" data-fieldname="detail_lokasi" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_detail_lokasi}">
+		{$label v_dra_keterisian_genangan_kabkota_Report detail_lokasi }	</label>
+	<div class="r-search-option">
+		{$searchtype_detail_lokasi}
+	</div>
+	<div class="r-search-field">
+		{$detail_lokasi_editcontrol}	</div>
+	<div class="r-search-field">
+		{$detail_lokasi_editcontrol1}
+	</div>
+	
+</div>
+
+{END detail_lokasi_fieldblock}
+											
+{BEGIN foto_genangan_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_foto_genangan}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="foto_genangan{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="foto_genangan" data-fieldname="foto_genangan" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_foto_genangan}">
+		{$label v_dra_keterisian_genangan_kabkota_Report foto_genangan }	</label>
+	<div class="r-search-option">
+		{$searchtype_foto_genangan}
+	</div>
+	<div class="r-search-field">
+		{$foto_genangan_editcontrol}	</div>
+	<div class="r-search-field">
+		{$foto_genangan_editcontrol1}
+	</div>
+	
+</div>
+
+{END foto_genangan_fieldblock}
+											
+{BEGIN koordinat_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_koordinat}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="koordinat{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="koordinat" data-fieldname="koordinat" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_koordinat}">
+		{$label v_dra_keterisian_genangan_kabkota_Report koordinat }	</label>
+	<div class="r-search-option">
+		{$searchtype_koordinat}
+	</div>
+	<div class="r-search-field">
+		{$koordinat_editcontrol}	</div>
+	<div class="r-search-field">
+		{$koordinat_editcontrol1}
+	</div>
+	
+</div>
+
+{END koordinat_fieldblock}
+											
+{BEGIN sistem_drainase_terkait_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sistem_drainase_terkait}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sistem_drainase_terkait{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="sistem_drainase_terkait" data-fieldname="sistem_drainase_terkait" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sistem_drainase_terkait}">
+		{$label v_dra_keterisian_genangan_kabkota_Report sistem_drainase_terkait }	</label>
+	<div class="r-search-option">
+		{$searchtype_sistem_drainase_terkait}
+	</div>
+	<div class="r-search-field">
+		{$sistem_drainase_terkait_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sistem_drainase_terkait_editcontrol1}
+	</div>
+	
+</div>
+
+{END sistem_drainase_terkait_fieldblock}
+											
+{BEGIN keliling_genangan_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_keliling_genangan}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="keliling_genangan{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="keliling_genangan" data-fieldname="keliling_genangan" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_keliling_genangan}">
+		{$label v_dra_keterisian_genangan_kabkota_Report keliling_genangan }	</label>
+	<div class="r-search-option">
+		{$searchtype_keliling_genangan}
+	</div>
+	<div class="r-search-field">
+		{$keliling_genangan_editcontrol}	</div>
+	<div class="r-search-field">
+		{$keliling_genangan_editcontrol1}
+	</div>
+	
+</div>
+
+{END keliling_genangan_fieldblock}
+											
+{BEGIN luas_genangan_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_luas_genangan}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="luas_genangan{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="luas_genangan" data-fieldname="luas_genangan" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_luas_genangan}">
+		{$label v_dra_keterisian_genangan_kabkota_Report luas_genangan }	</label>
+	<div class="r-search-option">
+		{$searchtype_luas_genangan}
+	</div>
+	<div class="r-search-field">
+		{$luas_genangan_editcontrol}	</div>
+	<div class="r-search-field">
+		{$luas_genangan_editcontrol1}
+	</div>
+	
+</div>
+
+{END luas_genangan_fieldblock}
+											
+{BEGIN lama_genangan_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_lama_genangan}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="lama_genangan{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="lama_genangan" data-fieldname="lama_genangan" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_lama_genangan}">
+		{$label v_dra_keterisian_genangan_kabkota_Report lama_genangan }	</label>
+	<div class="r-search-option">
+		{$searchtype_lama_genangan}
+	</div>
+	<div class="r-search-field">
+		{$lama_genangan_editcontrol}	</div>
+	<div class="r-search-field">
+		{$lama_genangan_editcontrol1}
+	</div>
+	
+</div>
+
+{END lama_genangan_fieldblock}
+											
+{BEGIN tinggi_genangan_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tinggi_genangan}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="tinggi_genangan{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="tinggi_genangan" data-fieldname="tinggi_genangan" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_tinggi_genangan}">
+		{$label v_dra_keterisian_genangan_kabkota_Report tinggi_genangan }	</label>
+	<div class="r-search-option">
+		{$searchtype_tinggi_genangan}
+	</div>
+	<div class="r-search-field">
+		{$tinggi_genangan_editcontrol}	</div>
+	<div class="r-search-field">
+		{$tinggi_genangan_editcontrol1}
+	</div>
+	
+</div>
+
+{END tinggi_genangan_fieldblock}
+											
+{BEGIN frek_genangan_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_frek_genangan}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="frek_genangan{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="frek_genangan" data-fieldname="frek_genangan" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_frek_genangan}">
+		{$label v_dra_keterisian_genangan_kabkota_Report frek_genangan }	</label>
+	<div class="r-search-option">
+		{$searchtype_frek_genangan}
+	</div>
+	<div class="r-search-field">
+		{$frek_genangan_editcontrol}	</div>
+	<div class="r-search-field">
+		{$frek_genangan_editcontrol1}
+	</div>
+	
+</div>
+
+{END frek_genangan_fieldblock}
+											
+{BEGIN jml_penerima_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jml_penerima}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jml_penerima{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="jml_penerima" data-fieldname="jml_penerima" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jml_penerima}">
+		{$label v_dra_keterisian_genangan_kabkota_Report jml_penerima }	</label>
+	<div class="r-search-option">
+		{$searchtype_jml_penerima}
+	</div>
+	<div class="r-search-field">
+		{$jml_penerima_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jml_penerima_editcontrol1}
+	</div>
+	
+</div>
+
+{END jml_penerima_fieldblock}
+											
+{BEGIN rasio_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_rasio}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="rasio{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field17" {$item_integrated_search_field17} data-pageid="{$pageid}" data-field="rasio" data-fieldname="rasio" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_rasio}">
+		{$label v_dra_keterisian_genangan_kabkota_Report rasio }	</label>
+	<div class="r-search-option">
+		{$searchtype_rasio}
+	</div>
+	<div class="r-search-field">
+		{$rasio_editcontrol}	</div>
+	<div class="r-search-field">
+		{$rasio_editcontrol1}
+	</div>
+	
+</div>
+
+{END rasio_fieldblock}
+											
+{BEGIN tahun_data_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tahun_data}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="tahun_data{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field18" {$item_integrated_search_field18} data-pageid="{$pageid}" data-field="tahun_data" data-fieldname="tahun_data" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_tahun_data}">
+		{$label v_dra_keterisian_genangan_kabkota_Report tahun_data }	</label>
+	<div class="r-search-option">
+		{$searchtype_tahun_data}
+	</div>
+	<div class="r-search-field">
+		{$tahun_data_editcontrol}	</div>
+	<div class="r-search-field">
+		{$tahun_data_editcontrol1}
+	</div>
+	
+</div>
+
+{END tahun_data_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Cari			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Tata ulang			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Batal			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

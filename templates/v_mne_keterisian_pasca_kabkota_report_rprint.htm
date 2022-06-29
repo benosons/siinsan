@@ -1,0 +1,330 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-rprint" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="left"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c2" data-pageid="{$pageid}"	{$cell_top_c2}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="print_header" data-itemid="print_header" {$item_print_header} data-pageid="{$pageid}" >{$pagetitlelabel v_mne_keterisian_pasca_kabkota_Report rprint}</h2>
+	 
+		{BEGIN printtabheader}
+<span data-itemtype="print_subheader" data-itemid="print_subheader" {$item_print_subheader} data-pageid="{$pageid}" >
+{$printtabheader_text}
+</span>
+{END printtabheader}
+		</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		<span data-itemtype="print_pages" data-itemid="print_pages" {$item_print_pages} data-pageid="{$pageid}" data-small >
+	{$print_pages_labelprint_pages}
+</span>			{END firstAboveGridCell}	
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+<style>
+	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {
+		background-color: #ffffbb;
+	}
+	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color: #ffe0b0;
+	}
+	.rnr-report {
+		width: 100%;
+	}
+	td {
+		padding: 2px; 4px;
+	}
+			td.group_1{
+			background-color: #FFFFFF;
+		}
+		td.nbgroup_1{
+			background-color: #FFFFFF;
+		}
+		td.header_1 {
+			background-color: #FFFFFF; 
+			font-size: 120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+		td.blackshade {
+		font-size: 120%;
+	}
+	.summaryrow > * {
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+		.fieldnamesrow > * 
+	{
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+	</style>
+<div id="grid_block{$id}" class="rnr-report-gridblock">
+						
+
+
+<table class="table table-striped table-bordered rnr-b-grid rnr-gridtable" cellpadding="0" >
+	<tbody>			
+{BEGIN grid_row}
+				<!--  group headers -->
+	 
+		{BEGIN provinsiname_newgroup}							
+		<tr class="group-spliter-1"  >
+			<td class="header_1" colspan="16">
+				{$label v_mne_keterisian_pasca_kabkota_Report provinsiname }:&nbsp;
+				{$xprovinsiname_grval}
+								<span data-itemtype="grid_field" data-field="provinsiname" data-itemid="grid_field2" data-pageid={$pageid} data-record-id="{$recId}">
+{$provinsiname_grval}
+</span>			</td>
+		</tr>
+		
+				<tr class="fieldnamesrow group-headers">
+																	<td class="blackshade {$fieldclass_jumlah_record}">{$label v_mne_keterisian_pasca_kabkota_Report jumlah_record }</td>
+														<td class="blackshade {$fieldclass_kapasitas_terbangun}">{$label v_mne_keterisian_pasca_kabkota_Report kapasitas_terbangun }</td>
+														<td class="blackshade {$fieldclass_tanggal_mulai_commissioning}">{$label v_mne_keterisian_pasca_kabkota_Report tanggal_mulai_commissioning }</td>
+														<td class="blackshade {$fieldclass_tanggal_selesai_commissioning}">{$label v_mne_keterisian_pasca_kabkota_Report tanggal_selesai_commissioning }</td>
+														<td class="blackshade {$fieldclass_berita_acara_commissioning}">{$label v_mne_keterisian_pasca_kabkota_Report berita_acara_commissioning }</td>
+														<td class="blackshade {$fieldclass_foto_commissioning1}">{$label v_mne_keterisian_pasca_kabkota_Report foto_commissioning1 }</td>
+														<td class="blackshade {$fieldclass_foto_commissioning2}">{$label v_mne_keterisian_pasca_kabkota_Report foto_commissioning2 }</td>
+														<td class="blackshade {$fieldclass_status_BAST}">{$label v_mne_keterisian_pasca_kabkota_Report status_BAST }</td>
+														<td class="blackshade {$fieldclass_tanggal_BAST}">{$label v_mne_keterisian_pasca_kabkota_Report tanggal_BAST }</td>
+														<td class="blackshade {$fieldclass_file_BAST}">{$label v_mne_keterisian_pasca_kabkota_Report file_BAST }</td>
+														<td class="blackshade {$fieldclass_foto_kegiatan_pasca1}">{$label v_mne_keterisian_pasca_kabkota_Report foto_kegiatan_pasca1 }</td>
+														<td class="blackshade {$fieldclass_foto_kegiatan_pasca2}">{$label v_mne_keterisian_pasca_kabkota_Report foto_kegiatan_pasca2 }</td>
+														<td class="blackshade {$fieldclass_kesimpulan_pasca}">{$label v_mne_keterisian_pasca_kabkota_Report kesimpulan_pasca }</td>
+														<td class="blackshade {$fieldclass_catatan_pasca}">{$label v_mne_keterisian_pasca_kabkota_Report catatan_pasca }</td>
+														<td class="blackshade {$fieldclass_tindak_lanjut_pasca}">{$label v_mne_keterisian_pasca_kabkota_Report tindak_lanjut_pasca }</td>
+														<td class="blackshade {$fieldclass_kabupatenkotaname}">{$label v_mne_keterisian_pasca_kabkota_Report kabupatenkotaname }</td>
+									</tr>
+				{END provinsiname_newgroup}
+		
+
+			<!--  data-->
+		{BEGIN row_data}
+		<tr >
+																	<td class="data {$fieldclass_jumlah_record}">
+			{$xjumlah_record_value}
+						<span data-itemtype="grid_field" data-field="jumlah_record" data-itemid="grid_field3" data-pageid={$pageid} data-record-id="{$recId}">
+{$jumlah_record_value}
+</span>			</td>
+														<td class="data {$fieldclass_kapasitas_terbangun}">
+			{$xkapasitas_terbangun_value}
+						<span data-itemtype="grid_field" data-field="kapasitas_terbangun" data-itemid="grid_field4" data-pageid={$pageid} data-record-id="{$recId}">
+{$kapasitas_terbangun_value}
+</span>			</td>
+														<td class="data {$fieldclass_tanggal_mulai_commissioning}">
+			{$xtanggal_mulai_commissioning_value}
+						<span data-itemtype="grid_field" data-field="tanggal_mulai_commissioning" data-itemid="grid_field5" data-pageid={$pageid} data-record-id="{$recId}">
+{$tanggal_mulai_commissioning_value}
+</span>			</td>
+														<td class="data {$fieldclass_tanggal_selesai_commissioning}">
+			{$xtanggal_selesai_commissioning_value}
+						<span data-itemtype="grid_field" data-field="tanggal_selesai_commissioning" data-itemid="grid_field6" data-pageid={$pageid} data-record-id="{$recId}">
+{$tanggal_selesai_commissioning_value}
+</span>			</td>
+														<td class="data {$fieldclass_berita_acara_commissioning}">
+			{$xberita_acara_commissioning_value}
+						<span data-itemtype="grid_field" data-field="berita_acara_commissioning" data-itemid="grid_field7" data-pageid={$pageid} data-record-id="{$recId}">
+{$berita_acara_commissioning_value}
+</span>			</td>
+														<td class="data {$fieldclass_foto_commissioning1}">
+			{$xfoto_commissioning1_value}
+						<span data-itemtype="grid_field" data-field="foto_commissioning1" data-itemid="grid_field8" data-pageid={$pageid} data-record-id="{$recId}">
+{$foto_commissioning1_value}
+</span>			</td>
+														<td class="data {$fieldclass_foto_commissioning2}">
+			{$xfoto_commissioning2_value}
+						<span data-itemtype="grid_field" data-field="foto_commissioning2" data-itemid="grid_field9" data-pageid={$pageid} data-record-id="{$recId}">
+{$foto_commissioning2_value}
+</span>			</td>
+														<td class="data {$fieldclass_status_BAST}">
+			{$xstatus_BAST_value}
+						<span data-itemtype="grid_field" data-field="status_BAST" data-itemid="grid_field10" data-pageid={$pageid} data-record-id="{$recId}">
+{$status_BAST_value}
+</span>			</td>
+														<td class="data {$fieldclass_tanggal_BAST}">
+			{$xtanggal_BAST_value}
+						<span data-itemtype="grid_field" data-field="tanggal_BAST" data-itemid="grid_field11" data-pageid={$pageid} data-record-id="{$recId}">
+{$tanggal_BAST_value}
+</span>			</td>
+														<td class="data {$fieldclass_file_BAST}">
+			{$xfile_BAST_value}
+						<span data-itemtype="grid_field" data-field="file_BAST" data-itemid="grid_field12" data-pageid={$pageid} data-record-id="{$recId}">
+{$file_BAST_value}
+</span>			</td>
+														<td class="data {$fieldclass_foto_kegiatan_pasca1}">
+			{$xfoto_kegiatan_pasca1_value}
+						<span data-itemtype="grid_field" data-field="foto_kegiatan_pasca1" data-itemid="grid_field13" data-pageid={$pageid} data-record-id="{$recId}">
+{$foto_kegiatan_pasca1_value}
+</span>			</td>
+														<td class="data {$fieldclass_foto_kegiatan_pasca2}">
+			{$xfoto_kegiatan_pasca2_value}
+						<span data-itemtype="grid_field" data-field="foto_kegiatan_pasca2" data-itemid="grid_field14" data-pageid={$pageid} data-record-id="{$recId}">
+{$foto_kegiatan_pasca2_value}
+</span>			</td>
+														<td class="data {$fieldclass_kesimpulan_pasca}">
+			{$xkesimpulan_pasca_value}
+						<span data-itemtype="grid_field" data-field="kesimpulan_pasca" data-itemid="grid_field15" data-pageid={$pageid} data-record-id="{$recId}">
+{$kesimpulan_pasca_value}
+</span>			</td>
+														<td class="data {$fieldclass_catatan_pasca}">
+			{$xcatatan_pasca_value}
+						<span data-itemtype="grid_field" data-field="catatan_pasca" data-itemid="grid_field16" data-pageid={$pageid} data-record-id="{$recId}">
+{$catatan_pasca_value}
+</span>			</td>
+														<td class="data {$fieldclass_tindak_lanjut_pasca}">
+			{$xtindak_lanjut_pasca_value}
+						<span data-itemtype="grid_field" data-field="tindak_lanjut_pasca" data-itemid="grid_field17" data-pageid={$pageid} data-record-id="{$recId}">
+{$tindak_lanjut_pasca_value}
+</span>			</td>
+														<td class="data {$fieldclass_kabupatenkotaname}">
+			{$xkabupatenkotaname_value}
+						<span data-itemtype="grid_field" data-field="kabupatenkotaname" data-itemid="grid_field18" data-pageid={$pageid} data-record-id="{$recId}">
+{$kabupatenkotaname_value}
+</span>			</td>
+									</tr>
+		{END row_data}
+	
+	<!---  group summary-->
+					{BEGIN provinsiname_endgroup}
+
+		<tr >
+					<td class="group_1" colspan="16">
+				Ringkasan untuk {$label v_mne_keterisian_pasca_kabkota_Report provinsiname } {$provinsiname_grval} - <span class="summary-1" data-type="summary">
+					{$groupprovinsiname_total_cnt}
+				</span> total catatan			</td>			
+				</tr>
+		
+		
+		
+		
+			
+
+		{END provinsiname_endgroup}
+			
+{END grid_row}
+
+	{BEGIN summary_header}
+	<tr class="summary-header">
+						
+							<td class="blackshade {$fieldclass_jumlah_record}">{$label v_mne_keterisian_pasca_kabkota_Report jumlah_record }</td>
+				
+							<td class="blackshade {$fieldclass_kapasitas_terbangun}">{$label v_mne_keterisian_pasca_kabkota_Report kapasitas_terbangun }</td>
+				
+							<td class="blackshade {$fieldclass_tanggal_mulai_commissioning}">{$label v_mne_keterisian_pasca_kabkota_Report tanggal_mulai_commissioning }</td>
+				
+							<td class="blackshade {$fieldclass_tanggal_selesai_commissioning}">{$label v_mne_keterisian_pasca_kabkota_Report tanggal_selesai_commissioning }</td>
+				
+							<td class="blackshade {$fieldclass_berita_acara_commissioning}">{$label v_mne_keterisian_pasca_kabkota_Report berita_acara_commissioning }</td>
+				
+							<td class="blackshade {$fieldclass_foto_commissioning1}">{$label v_mne_keterisian_pasca_kabkota_Report foto_commissioning1 }</td>
+				
+							<td class="blackshade {$fieldclass_foto_commissioning2}">{$label v_mne_keterisian_pasca_kabkota_Report foto_commissioning2 }</td>
+				
+							<td class="blackshade {$fieldclass_status_BAST}">{$label v_mne_keterisian_pasca_kabkota_Report status_BAST }</td>
+				
+							<td class="blackshade {$fieldclass_tanggal_BAST}">{$label v_mne_keterisian_pasca_kabkota_Report tanggal_BAST }</td>
+				
+							<td class="blackshade {$fieldclass_file_BAST}">{$label v_mne_keterisian_pasca_kabkota_Report file_BAST }</td>
+				
+							<td class="blackshade {$fieldclass_foto_kegiatan_pasca1}">{$label v_mne_keterisian_pasca_kabkota_Report foto_kegiatan_pasca1 }</td>
+				
+							<td class="blackshade {$fieldclass_foto_kegiatan_pasca2}">{$label v_mne_keterisian_pasca_kabkota_Report foto_kegiatan_pasca2 }</td>
+				
+							<td class="blackshade {$fieldclass_kesimpulan_pasca}">{$label v_mne_keterisian_pasca_kabkota_Report kesimpulan_pasca }</td>
+				
+							<td class="blackshade {$fieldclass_catatan_pasca}">{$label v_mne_keterisian_pasca_kabkota_Report catatan_pasca }</td>
+				
+							<td class="blackshade {$fieldclass_tindak_lanjut_pasca}">{$label v_mne_keterisian_pasca_kabkota_Report tindak_lanjut_pasca }</td>
+				
+							<td class="blackshade {$fieldclass_kabupatenkotaname}">{$label v_mne_keterisian_pasca_kabkota_Report kabupatenkotaname }</td>
+				
+			
+	</tr>
+	{END summary_header}			
+
+
+
+
+    
+    
+
+	<!-- global summary-->
+	{BEGIN global_summary}
+    <tr class="summaryrow summary-global">
+        <td class="globalsummary" colspan="17">
+            Ringkasan global {$global_total_cnt} - total catatan        </td>
+    </tr>
+
+	
+	
+	
+		{END global_summary}
+
+	</tbody>
+</table>			</div>
+{END grid_block}									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+			</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,370 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-rprint" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="left"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c2" data-pageid="{$pageid}"	{$cell_top_c2}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="print_header" data-itemid="print_header" {$item_print_header} data-pageid="{$pageid}" >{$pagetitlelabel v_tpa_Report rprint}</h2>
+	 
+		{BEGIN printtabheader}
+<span data-itemtype="print_subheader" data-itemid="print_subheader" {$item_print_subheader} data-pageid="{$pageid}" >
+{$printtabheader_text}
+</span>
+{END printtabheader}
+		</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		<span data-itemtype="print_pages" data-itemid="print_pages" {$item_print_pages} data-pageid="{$pageid}" data-small >
+	{$print_pages_labelprint_pages}
+</span>			{END firstAboveGridCell}	
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+<style>
+	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {
+		background-color: #ffffbb;
+	}
+	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color: #ffe0b0;
+	}
+	.rnr-report {
+		width: 100%;
+	}
+	td {
+		padding: 2px; 4px;
+	}
+			td.group_1{
+			background-color: #90EE90;
+		}
+		td.nbgroup_1{
+			background-color: #90EE90;
+		}
+		td.header_1 {
+			background-color: #90EE90; 
+			font-size: 120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+			td.group_2{
+			background-color: #ADD8E6;
+		}
+		td.nbgroup_2{
+			background-color: #ADD8E6;
+		}
+		td.header_2 {
+			background-color: #ADD8E6; 
+			font-size: 120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+		td.blackshade {
+		font-size: 120%;
+	}
+	.summaryrow > * {
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+		.fieldnamesrow > * 
+	{
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+	</style>
+<div id="grid_block{$id}" class="rnr-report-gridblock">
+						
+
+
+<table class="table table-striped table-bordered rnr-b-grid rnr-gridtable" cellpadding="0" >
+	<tbody>			
+{BEGIN grid_row}
+				<!--  group headers -->
+	 
+		{BEGIN jenis_tpa_newgroup}							
+		<tr class="group-spliter-1"  >
+			<td class="header_1" colspan="16">
+				{$label v_tpa_Report jenis_tpa }:&nbsp;
+				{$xjenis_tpa_grval}
+								<span data-itemtype="grid_field" data-field="jenis_tpa" data-itemid="grid_field2" data-pageid={$pageid} data-record-id="{$recId}">
+{$jenis_tpa_grval}
+</span>			</td>
+		</tr>
+		
+				{END jenis_tpa_newgroup}
+	 
+		{BEGIN provinsi_newgroup}							
+		<tr class="group-spliter-2"  >
+			<td class="header_2" colspan="16">
+				{$label v_tpa_Report provinsi }:&nbsp;
+				{$xprovinsi_grval}
+								<span data-itemtype="grid_field" data-field="provinsi" data-itemid="grid_field3" data-pageid={$pageid} data-record-id="{$recId}">
+{$provinsi_grval}
+</span>			</td>
+		</tr>
+		
+				<tr class="fieldnamesrow group-headers">
+																								<td class="blackshade {$fieldclass_kabupatenkota}">{$label v_tpa_Report kabupatenkota }</td>
+														<td class="blackshade {$fieldclass_kecamatandistrik}">{$label v_tpa_Report kecamatandistrik }</td>
+														<td class="blackshade {$fieldclass_desakelurahan}">{$label v_tpa_Report desakelurahan }</td>
+														<td class="blackshade {$fieldclass_kondisifasilitas}">{$label v_tpa_Report kondisifasilitas }</td>
+														<td class="blackshade {$fieldclass_kategoripelayanan}">{$label v_tpa_Report kategoripelayanan }</td>
+														<td class="blackshade {$fieldclass_tahunpembangunan}">{$label v_tpa_Report tahunpembangunan }</td>
+														<td class="blackshade {$fieldclass_sumberdanapembangunan}">{$label v_tpa_Report sumberdanapembangunan }</td>
+														<td class="blackshade {$fieldclass_biayapembangunan}">{$label v_tpa_Report biayapembangunan }</td>
+														<td class="blackshade {$fieldclass_sumberdana2}">{$label v_tpa_Report sumberdana2 }</td>
+														<td class="blackshade {$fieldclass_biayadana2}">{$label v_tpa_Report biayadana2 }</td>
+														<td class="blackshade {$fieldclass_luaswilayahfasiitas}">{$label v_tpa_Report luaswilayahfasiitas }</td>
+														<td class="blackshade {$fieldclass_luaswilayahoperasional}">{$label v_tpa_Report luaswilayahoperasional }</td>
+														<td class="blackshade {$fieldclass_kapasitassampahmasuk}">{$label v_tpa_Report kapasitassampahmasuk }</td>
+														<td class="blackshade {$fieldclass_kapasitassampahterolah}">{$label v_tpa_Report kapasitassampahterolah }</td>
+														<td class="blackshade {$fieldclass_sistempengolahansampah}">{$label v_tpa_Report sistempengolahansampah }</td>
+														<td class="blackshade {$fieldclass_status}">{$label v_tpa_Report status }</td>
+									</tr>
+				{END provinsi_newgroup}
+		
+
+			<!--  data-->
+		{BEGIN row_data}
+		<tr >
+																								<td class="data {$fieldclass_kabupatenkota}">
+			{$xkabupatenkota_value}
+						<span data-itemtype="grid_field" data-field="kabupatenkota" data-itemid="grid_field4" data-pageid={$pageid} data-record-id="{$recId}">
+{$kabupatenkota_value}
+</span>			</td>
+														<td class="data {$fieldclass_kecamatandistrik}">
+			{$xkecamatandistrik_value}
+						<span data-itemtype="grid_field" data-field="kecamatandistrik" data-itemid="grid_field5" data-pageid={$pageid} data-record-id="{$recId}">
+{$kecamatandistrik_value}
+</span>			</td>
+														<td class="data {$fieldclass_desakelurahan}">
+			{$xdesakelurahan_value}
+						<span data-itemtype="grid_field" data-field="desakelurahan" data-itemid="grid_field6" data-pageid={$pageid} data-record-id="{$recId}">
+{$desakelurahan_value}
+</span>			</td>
+														<td class="data {$fieldclass_kondisifasilitas}">
+			{$xkondisifasilitas_value}
+						<span data-itemtype="grid_field" data-field="kondisifasilitas" data-itemid="grid_field7" data-pageid={$pageid} data-record-id="{$recId}">
+{$kondisifasilitas_value}
+</span>			</td>
+														<td class="data {$fieldclass_kategoripelayanan}">
+			{$xkategoripelayanan_value}
+						<span data-itemtype="grid_field" data-field="kategoripelayanan" data-itemid="grid_field8" data-pageid={$pageid} data-record-id="{$recId}">
+{$kategoripelayanan_value}
+</span>			</td>
+														<td class="data {$fieldclass_tahunpembangunan}">
+			{$xtahunpembangunan_value}
+						<span data-itemtype="grid_field" data-field="tahunpembangunan" data-itemid="grid_field9" data-pageid={$pageid} data-record-id="{$recId}">
+{$tahunpembangunan_value}
+</span>			</td>
+														<td class="data {$fieldclass_sumberdanapembangunan}">
+			{$xsumberdanapembangunan_value}
+						<span data-itemtype="grid_field" data-field="sumberdanapembangunan" data-itemid="grid_field10" data-pageid={$pageid} data-record-id="{$recId}">
+{$sumberdanapembangunan_value}
+</span>			</td>
+														<td class="data {$fieldclass_biayapembangunan}">
+			{$xbiayapembangunan_value}
+						<span data-itemtype="grid_field" data-field="biayapembangunan" data-itemid="grid_field11" data-pageid={$pageid} data-record-id="{$recId}">
+{$biayapembangunan_value}
+</span>			</td>
+														<td class="data {$fieldclass_sumberdana2}">
+			{$xsumberdana2_value}
+						<span data-itemtype="grid_field" data-field="sumberdana2" data-itemid="grid_field12" data-pageid={$pageid} data-record-id="{$recId}">
+{$sumberdana2_value}
+</span>			</td>
+														<td class="data {$fieldclass_biayadana2}">
+			{$xbiayadana2_value}
+						<span data-itemtype="grid_field" data-field="biayadana2" data-itemid="grid_field13" data-pageid={$pageid} data-record-id="{$recId}">
+{$biayadana2_value}
+</span>			</td>
+														<td class="data {$fieldclass_luaswilayahfasiitas}">
+			{$xluaswilayahfasiitas_value}
+						<span data-itemtype="grid_field" data-field="luaswilayahfasiitas" data-itemid="grid_field14" data-pageid={$pageid} data-record-id="{$recId}">
+{$luaswilayahfasiitas_value}
+</span>			</td>
+														<td class="data {$fieldclass_luaswilayahoperasional}">
+			{$xluaswilayahoperasional_value}
+						<span data-itemtype="grid_field" data-field="luaswilayahoperasional" data-itemid="grid_field15" data-pageid={$pageid} data-record-id="{$recId}">
+{$luaswilayahoperasional_value}
+</span>			</td>
+														<td class="data {$fieldclass_kapasitassampahmasuk}">
+			{$xkapasitassampahmasuk_value}
+						<span data-itemtype="grid_field" data-field="kapasitassampahmasuk" data-itemid="grid_field16" data-pageid={$pageid} data-record-id="{$recId}">
+{$kapasitassampahmasuk_value}
+</span>			</td>
+														<td class="data {$fieldclass_kapasitassampahterolah}">
+			{$xkapasitassampahterolah_value}
+						<span data-itemtype="grid_field" data-field="kapasitassampahterolah" data-itemid="grid_field17" data-pageid={$pageid} data-record-id="{$recId}">
+{$kapasitassampahterolah_value}
+</span>			</td>
+														<td class="data {$fieldclass_sistempengolahansampah}">
+			{$xsistempengolahansampah_value}
+						<span data-itemtype="grid_field" data-field="sistempengolahansampah" data-itemid="grid_field18" data-pageid={$pageid} data-record-id="{$recId}">
+{$sistempengolahansampah_value}
+</span>			</td>
+														<td class="data {$fieldclass_status}">
+			{$xstatus_value}
+						<span data-itemtype="grid_field" data-field="status" data-itemid="grid_field19" data-pageid={$pageid} data-record-id="{$recId}">
+{$status_value}
+</span>			</td>
+									</tr>
+		{END row_data}
+	
+	<!---  group summary-->
+					{BEGIN provinsi_endgroup}
+
+		<tr >
+					<td class="group_2" colspan="16">
+				Ringkasan untuk {$label v_tpa_Report provinsi } {$provinsi_grval} - <span class="summary-2" data-type="summary">
+					{$groupprovinsi_total_cnt}
+				</span> total catatan			</td>			
+				</tr>
+		
+		
+		
+		
+			
+
+		{END provinsi_endgroup}
+							{BEGIN jenis_tpa_endgroup}
+
+		<tr >
+					<td class="group_1" colspan="16">
+				Ringkasan untuk {$label v_tpa_Report jenis_tpa } {$jenis_tpa_grval} - <span class="summary-1" data-type="summary">
+					{$groupjenis_tpa_total_cnt}
+				</span> total catatan			</td>			
+				</tr>
+		
+		
+		
+		
+			
+
+		{END jenis_tpa_endgroup}
+			
+{END grid_row}
+
+	{BEGIN summary_header}
+	<tr class="summary-header">
+						
+						
+							<td class="blackshade {$fieldclass_kabupatenkota}">{$label v_tpa_Report kabupatenkota }</td>
+				
+							<td class="blackshade {$fieldclass_kecamatandistrik}">{$label v_tpa_Report kecamatandistrik }</td>
+				
+							<td class="blackshade {$fieldclass_desakelurahan}">{$label v_tpa_Report desakelurahan }</td>
+				
+							<td class="blackshade {$fieldclass_kondisifasilitas}">{$label v_tpa_Report kondisifasilitas }</td>
+				
+							<td class="blackshade {$fieldclass_kategoripelayanan}">{$label v_tpa_Report kategoripelayanan }</td>
+				
+							<td class="blackshade {$fieldclass_tahunpembangunan}">{$label v_tpa_Report tahunpembangunan }</td>
+				
+							<td class="blackshade {$fieldclass_sumberdanapembangunan}">{$label v_tpa_Report sumberdanapembangunan }</td>
+				
+							<td class="blackshade {$fieldclass_biayapembangunan}">{$label v_tpa_Report biayapembangunan }</td>
+				
+							<td class="blackshade {$fieldclass_sumberdana2}">{$label v_tpa_Report sumberdana2 }</td>
+				
+							<td class="blackshade {$fieldclass_biayadana2}">{$label v_tpa_Report biayadana2 }</td>
+				
+							<td class="blackshade {$fieldclass_luaswilayahfasiitas}">{$label v_tpa_Report luaswilayahfasiitas }</td>
+				
+							<td class="blackshade {$fieldclass_luaswilayahoperasional}">{$label v_tpa_Report luaswilayahoperasional }</td>
+				
+							<td class="blackshade {$fieldclass_kapasitassampahmasuk}">{$label v_tpa_Report kapasitassampahmasuk }</td>
+				
+							<td class="blackshade {$fieldclass_kapasitassampahterolah}">{$label v_tpa_Report kapasitassampahterolah }</td>
+				
+							<td class="blackshade {$fieldclass_sistempengolahansampah}">{$label v_tpa_Report sistempengolahansampah }</td>
+				
+							<td class="blackshade {$fieldclass_status}">{$label v_tpa_Report status }</td>
+				
+			
+	</tr>
+	{END summary_header}			
+
+
+
+
+    
+    
+
+	<!-- global summary-->
+	{BEGIN global_summary}
+    <tr class="summaryrow summary-global">
+        <td class="globalsummary" colspan="18">
+            Ringkasan global {$global_total_cnt} - total catatan        </td>
+    </tr>
+
+	
+	
+	
+		{END global_summary}
+
+	</tbody>
+</table>			</div>
+{END grid_block}									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+			</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

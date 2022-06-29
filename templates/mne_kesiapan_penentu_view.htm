@@ -1,0 +1,260 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-view" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel mne_kesiapan_penentu view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_mne_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_mne}  r-vertical-field" data-fieldname="id_mne" data-signal-error-for="id_mne{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="id_mne" data-fieldname="id_mne" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_mne}">
+		
+		{BEGIN id_mne_label}{$label mne_kesiapan_penentu id_mne }{END id_mne_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_mne_value}	</div>
+
+		
+</div>
+
+
+{END id_mne_fieldblock}
+											
+{BEGIN kd_sektor_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_sektor}  r-vertical-field" data-fieldname="kd_sektor" data-signal-error-for="kd_sektor{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="kd_sektor" data-fieldname="kd_sektor" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kd_sektor}">
+		
+		{BEGIN kd_sektor_label}{$label mne_kesiapan_penentu kd_sektor }{END kd_sektor_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kd_sektor_value}	</div>
+
+		
+</div>
+
+
+{END kd_sektor_fieldblock}
+											
+{BEGIN parameter_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_parameter}  r-vertical-field" data-fieldname="parameter" data-signal-error-for="parameter{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="parameter" data-fieldname="parameter" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_parameter}">
+		
+		{BEGIN parameter_label}{$label mne_kesiapan_penentu parameter }{END parameter_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$parameter_value}	</div>
+
+		
+</div>
+
+
+{END parameter_fieldblock}
+											
+{BEGIN keterangan_dokumen_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_keterangan_dokumen}  r-vertical-field" data-fieldname="keterangan_dokumen" data-signal-error-for="keterangan_dokumen{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="keterangan_dokumen" data-fieldname="keterangan_dokumen" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_keterangan_dokumen}">
+		
+		{BEGIN keterangan_dokumen_label}{$label mne_kesiapan_penentu keterangan_dokumen }{END keterangan_dokumen_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$keterangan_dokumen_value}	</div>
+
+		
+</div>
+
+
+{END keterangan_dokumen_fieldblock}
+											
+{BEGIN dokumen_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dokumen}  r-vertical-field" data-fieldname="dokumen" data-signal-error-for="dokumen{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="dokumen" data-fieldname="dokumen" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_dokumen}">
+		
+		{BEGIN dokumen_label}{$label mne_kesiapan_penentu dokumen }{END dokumen_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$dokumen_value}	</div>
+
+		
+</div>
+
+
+{END dokumen_fieldblock}
+											
+{BEGIN terpenuhi_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_terpenuhi}  r-vertical-field" data-fieldname="terpenuhi" data-signal-error-for="terpenuhi{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="terpenuhi" data-fieldname="terpenuhi" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_terpenuhi}">
+		
+		{BEGIN terpenuhi_label}{$label mne_kesiapan_penentu terpenuhi }{END terpenuhi_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$terpenuhi_value}	</div>
+
+		
+</div>
+
+
+{END terpenuhi_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Tutup jendela			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

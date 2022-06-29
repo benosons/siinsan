@@ -1,0 +1,392 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel v_tparegional_prov search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN kd_propinsi_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_propinsi}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kd_propinsi{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="kd_propinsi" data-fieldname="kd_propinsi" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kd_propinsi}">
+		{$label v_tparegional_prov kd_propinsi }	</label>
+	<div class="r-search-option">
+		{$searchtype_kd_propinsi}
+	</div>
+	<div class="r-search-field">
+		{$kd_propinsi_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kd_propinsi_editcontrol1}
+	</div>
+	
+</div>
+
+{END kd_propinsi_fieldblock}
+											
+{BEGIN provinsi_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_provinsi}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="provinsi{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="provinsi" data-fieldname="provinsi" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_provinsi}">
+		{$label v_tparegional_prov provinsi }	</label>
+	<div class="r-search-option">
+		{$searchtype_provinsi}
+	</div>
+	<div class="r-search-field">
+		{$provinsi_editcontrol}	</div>
+	<div class="r-search-field">
+		{$provinsi_editcontrol1}
+	</div>
+	
+</div>
+
+{END provinsi_fieldblock}
+											
+{BEGIN jumlah_unit_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jumlah_unit}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jumlah_unit{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="jumlah_unit" data-fieldname="jumlah_unit" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jumlah_unit}">
+		{$label v_tparegional_prov jumlah_unit }	</label>
+	<div class="r-search-option">
+		{$searchtype_jumlah_unit}
+	</div>
+	<div class="r-search-field">
+		{$jumlah_unit_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jumlah_unit_editcontrol1}
+	</div>
+	
+</div>
+
+{END jumlah_unit_fieldblock}
+											
+{BEGIN total_biayapembangunan_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_total_biayapembangunan}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="total_biayapembangunan{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="total_biayapembangunan" data-fieldname="total_biayapembangunan" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_total_biayapembangunan}">
+		{$label v_tparegional_prov total_biayapembangunan }	</label>
+	<div class="r-search-option">
+		{$searchtype_total_biayapembangunan}
+	</div>
+	<div class="r-search-field">
+		{$total_biayapembangunan_editcontrol}	</div>
+	<div class="r-search-field">
+		{$total_biayapembangunan_editcontrol1}
+	</div>
+	
+</div>
+
+{END total_biayapembangunan_fieldblock}
+											
+{BEGIN rekapitulasi_biaya_operasional_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_rekapitulasi_biaya_operasional}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="rekapitulasi_biaya_operasional{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="rekapitulasi_biaya_operasional" data-fieldname="rekapitulasi_biaya_operasional" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_rekapitulasi_biaya_operasional}">
+		{$label v_tparegional_prov rekapitulasi_biaya_operasional }	</label>
+	<div class="r-search-option">
+		{$searchtype_rekapitulasi_biaya_operasional}
+	</div>
+	<div class="r-search-field">
+		{$rekapitulasi_biaya_operasional_editcontrol}	</div>
+	<div class="r-search-field">
+		{$rekapitulasi_biaya_operasional_editcontrol1}
+	</div>
+	
+</div>
+
+{END rekapitulasi_biaya_operasional_fieldblock}
+											
+{BEGIN infrastruktur_berfungsi_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_infrastruktur_berfungsi}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="infrastruktur_berfungsi{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="infrastruktur_berfungsi" data-fieldname="infrastruktur_berfungsi" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_infrastruktur_berfungsi}">
+		{$label v_tparegional_prov infrastruktur_berfungsi }	</label>
+	<div class="r-search-option">
+		{$searchtype_infrastruktur_berfungsi}
+	</div>
+	<div class="r-search-field">
+		{$infrastruktur_berfungsi_editcontrol}	</div>
+	<div class="r-search-field">
+		{$infrastruktur_berfungsi_editcontrol1}
+	</div>
+	
+</div>
+
+{END infrastruktur_berfungsi_fieldblock}
+											
+{BEGIN sanitary_landfill_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sanitary_landfill}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sanitary_landfill{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="sanitary_landfill" data-fieldname="sanitary_landfill" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sanitary_landfill}">
+		{$label v_tparegional_prov sanitary_landfill }	</label>
+	<div class="r-search-option">
+		{$searchtype_sanitary_landfill}
+	</div>
+	<div class="r-search-field">
+		{$sanitary_landfill_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sanitary_landfill_editcontrol1}
+	</div>
+	
+</div>
+
+{END sanitary_landfill_fieldblock}
+											
+{BEGIN controlled_landfill_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_controlled_landfill}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="controlled_landfill{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="controlled_landfill" data-fieldname="controlled_landfill" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_controlled_landfill}">
+		{$label v_tparegional_prov controlled_landfill }	</label>
+	<div class="r-search-option">
+		{$searchtype_controlled_landfill}
+	</div>
+	<div class="r-search-field">
+		{$controlled_landfill_editcontrol}	</div>
+	<div class="r-search-field">
+		{$controlled_landfill_editcontrol1}
+	</div>
+	
+</div>
+
+{END controlled_landfill_fieldblock}
+											
+{BEGIN kapasitas_desain_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kapasitas_desain}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kapasitas_desain{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="kapasitas_desain" data-fieldname="kapasitas_desain" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kapasitas_desain}">
+		{$label v_tparegional_prov kapasitas_desain }	</label>
+	<div class="r-search-option">
+		{$searchtype_kapasitas_desain}
+	</div>
+	<div class="r-search-field">
+		{$kapasitas_desain_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kapasitas_desain_editcontrol1}
+	</div>
+	
+</div>
+
+{END kapasitas_desain_fieldblock}
+											
+{BEGIN kapasitas_sampah_masuk_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kapasitas_sampah_masuk}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kapasitas_sampah_masuk{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="kapasitas_sampah_masuk" data-fieldname="kapasitas_sampah_masuk" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kapasitas_sampah_masuk}">
+		{$label v_tparegional_prov kapasitas_sampah_masuk }	</label>
+	<div class="r-search-option">
+		{$searchtype_kapasitas_sampah_masuk}
+	</div>
+	<div class="r-search-field">
+		{$kapasitas_sampah_masuk_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kapasitas_sampah_masuk_editcontrol1}
+	</div>
+	
+</div>
+
+{END kapasitas_sampah_masuk_fieldblock}
+											
+{BEGIN potensi_penurunan_GRK_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_potensi_penurunan_GRK}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="potensi_penurunan_GRK{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="potensi_penurunan_GRK" data-fieldname="potensi_penurunan_GRK" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_potensi_penurunan_GRK}">
+		{$label v_tparegional_prov potensi_penurunan_GRK }	</label>
+	<div class="r-search-option">
+		{$searchtype_potensi_penurunan_GRK}
+	</div>
+	<div class="r-search-field">
+		{$potensi_penurunan_GRK_editcontrol}	</div>
+	<div class="r-search-field">
+		{$potensi_penurunan_GRK_editcontrol1}
+	</div>
+	
+</div>
+
+{END potensi_penurunan_GRK_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Cari			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Tata ulang			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Batal			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

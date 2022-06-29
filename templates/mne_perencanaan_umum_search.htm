@@ -1,0 +1,611 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel mne_perencanaan_umum search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN kd_perencanaan_umum_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_perencanaan_umum}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kd_perencanaan_umum{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="kd_perencanaan_umum" data-fieldname="kd_perencanaan_umum" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kd_perencanaan_umum}">
+		{$label mne_perencanaan_umum kd_perencanaan_umum }	</label>
+	<div class="r-search-option">
+		{$searchtype_kd_perencanaan_umum}
+	</div>
+	<div class="r-search-field">
+		{$kd_perencanaan_umum_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kd_perencanaan_umum_editcontrol1}
+	</div>
+	
+</div>
+
+{END kd_perencanaan_umum_fieldblock}
+											
+{BEGIN kd_sektor_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_sektor}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kd_sektor{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="kd_sektor" data-fieldname="kd_sektor" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kd_sektor}">
+		{$label mne_perencanaan_umum kd_sektor }	</label>
+	<div class="r-search-option">
+		{$searchtype_kd_sektor}
+	</div>
+	<div class="r-search-field">
+		{$kd_sektor_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kd_sektor_editcontrol1}
+	</div>
+	
+</div>
+
+{END kd_sektor_fieldblock}
+											
+{BEGIN provinsiid_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_provinsiid}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="provinsiid{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="provinsiid" data-fieldname="provinsiid" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_provinsiid}">
+		{$label mne_perencanaan_umum provinsiid }	</label>
+	<div class="r-search-option">
+		{$searchtype_provinsiid}
+	</div>
+	<div class="r-search-field">
+		{$provinsiid_editcontrol}	</div>
+	<div class="r-search-field">
+		{$provinsiid_editcontrol1}
+	</div>
+	
+</div>
+
+{END provinsiid_fieldblock}
+											
+{BEGIN kabupatenkotaid_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kabupatenkotaid}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kabupatenkotaid{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="kabupatenkotaid" data-fieldname="kabupatenkotaid" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kabupatenkotaid}">
+		{$label mne_perencanaan_umum kabupatenkotaid }	</label>
+	<div class="r-search-option">
+		{$searchtype_kabupatenkotaid}
+	</div>
+	<div class="r-search-field">
+		{$kabupatenkotaid_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kabupatenkotaid_editcontrol1}
+	</div>
+	
+</div>
+
+{END kabupatenkotaid_fieldblock}
+											
+{BEGIN tahun_data_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tahun_data}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="tahun_data{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="tahun_data" data-fieldname="tahun_data" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_tahun_data}">
+		{$label mne_perencanaan_umum tahun_data }	</label>
+	<div class="r-search-option">
+		{$searchtype_tahun_data}
+	</div>
+	<div class="r-search-field">
+		{$tahun_data_editcontrol}	</div>
+	<div class="r-search-field">
+		{$tahun_data_editcontrol1}
+	</div>
+	
+</div>
+
+{END tahun_data_fieldblock}
+											
+{BEGIN nm_kegiatan_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nm_kegiatan}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="nm_kegiatan{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="nm_kegiatan" data-fieldname="nm_kegiatan" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_nm_kegiatan}">
+		{$label mne_perencanaan_umum nm_kegiatan }	</label>
+	<div class="r-search-option">
+		{$searchtype_nm_kegiatan}
+	</div>
+	<div class="r-search-field">
+		{$nm_kegiatan_editcontrol}	</div>
+	<div class="r-search-field">
+		{$nm_kegiatan_editcontrol1}
+	</div>
+	
+</div>
+
+{END nm_kegiatan_fieldblock}
+											
+{BEGIN kd_jenisInfra_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_jenisInfra}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kd_jenisInfra{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="kd_jenisInfra" data-fieldname="kd_jenisInfra" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kd_jenisInfra}">
+		{$label mne_perencanaan_umum kd_jenisInfra }	</label>
+	<div class="r-search-option">
+		{$searchtype_kd_jenisInfra}
+	</div>
+	<div class="r-search-field">
+		{$kd_jenisInfra_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kd_jenisInfra_editcontrol1}
+	</div>
+	
+</div>
+
+{END kd_jenisInfra_fieldblock}
+											
+{BEGIN pagu_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pagu}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="pagu{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="pagu" data-fieldname="pagu" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_pagu}">
+		{$label mne_perencanaan_umum pagu }	</label>
+	<div class="r-search-option">
+		{$searchtype_pagu}
+	</div>
+	<div class="r-search-field">
+		{$pagu_editcontrol}	</div>
+	<div class="r-search-field">
+		{$pagu_editcontrol1}
+	</div>
+	
+</div>
+
+{END pagu_fieldblock}
+											
+{BEGIN sumber_dana_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sumber_dana}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sumber_dana{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="sumber_dana" data-fieldname="sumber_dana" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sumber_dana}">
+		{$label mne_perencanaan_umum sumber_dana }	</label>
+	<div class="r-search-option">
+		{$searchtype_sumber_dana}
+	</div>
+	<div class="r-search-field">
+		{$sumber_dana_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sumber_dana_editcontrol1}
+	</div>
+	
+</div>
+
+{END sumber_dana_fieldblock}
+											
+{BEGIN status_usulan_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_status_usulan}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="status_usulan{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="status_usulan" data-fieldname="status_usulan" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_status_usulan}">
+		{$label mne_perencanaan_umum status_usulan }	</label>
+	<div class="r-search-option">
+		{$searchtype_status_usulan}
+	</div>
+	<div class="r-search-field">
+		{$status_usulan_editcontrol}	</div>
+	<div class="r-search-field">
+		{$status_usulan_editcontrol1}
+	</div>
+	
+</div>
+
+{END status_usulan_fieldblock}
+											
+{BEGIN lokasi_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_lokasi}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="lokasi{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="lokasi" data-fieldname="lokasi" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_lokasi}">
+		{$label mne_perencanaan_umum lokasi }	</label>
+	<div class="r-search-option">
+		{$searchtype_lokasi}
+	</div>
+	<div class="r-search-field">
+		{$lokasi_editcontrol}	</div>
+	<div class="r-search-field">
+		{$lokasi_editcontrol1}
+	</div>
+	
+</div>
+
+{END lokasi_fieldblock}
+											
+{BEGIN kategori_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kategori}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kategori{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="kategori" data-fieldname="kategori" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kategori}">
+		{$label mne_perencanaan_umum kategori }	</label>
+	<div class="r-search-option">
+		{$searchtype_kategori}
+	</div>
+	<div class="r-search-field">
+		{$kategori_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kategori_editcontrol1}
+	</div>
+	
+</div>
+
+{END kategori_fieldblock}
+											
+{BEGIN deskripsi_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_deskripsi}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="deskripsi{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="deskripsi" data-fieldname="deskripsi" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_deskripsi}">
+		{$label mne_perencanaan_umum deskripsi }	</label>
+	<div class="r-search-option">
+		{$searchtype_deskripsi}
+	</div>
+	<div class="r-search-field">
+		{$deskripsi_editcontrol}	</div>
+	<div class="r-search-field">
+		{$deskripsi_editcontrol1}
+	</div>
+	
+</div>
+
+{END deskripsi_fieldblock}
+											
+{BEGIN ruangLingkup_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ruangLingkup}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="ruangLingkup{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="ruangLingkup" data-fieldname="ruangLingkup" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ruangLingkup}">
+		{$label mne_perencanaan_umum ruangLingkup }	</label>
+	<div class="r-search-option">
+		{$searchtype_ruangLingkup}
+	</div>
+	<div class="r-search-field">
+		{$ruangLingkup_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ruangLingkup_editcontrol1}
+	</div>
+	
+</div>
+
+{END ruangLingkup_fieldblock}
+											
+{BEGIN kapasitas_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kapasitas}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kapasitas{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="kapasitas" data-fieldname="kapasitas" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kapasitas}">
+		{$label mne_perencanaan_umum kapasitas }	</label>
+	<div class="r-search-option">
+		{$searchtype_kapasitas}
+	</div>
+	<div class="r-search-field">
+		{$kapasitas_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kapasitas_editcontrol1}
+	</div>
+	
+</div>
+
+{END kapasitas_fieldblock}
+											
+{BEGIN penerimaManfaat_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_penerimaManfaat}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="penerimaManfaat{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="penerimaManfaat" data-fieldname="penerimaManfaat" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_penerimaManfaat}">
+		{$label mne_perencanaan_umum penerimaManfaat }	</label>
+	<div class="r-search-option">
+		{$searchtype_penerimaManfaat}
+	</div>
+	<div class="r-search-field">
+		{$penerimaManfaat_editcontrol}	</div>
+	<div class="r-search-field">
+		{$penerimaManfaat_editcontrol1}
+	</div>
+	
+</div>
+
+{END penerimaManfaat_fieldblock}
+											
+{BEGIN kesimpulan_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kesimpulan}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kesimpulan{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field17" {$item_integrated_search_field17} data-pageid="{$pageid}" data-field="kesimpulan" data-fieldname="kesimpulan" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kesimpulan}">
+		{$label mne_perencanaan_umum kesimpulan }	</label>
+	<div class="r-search-option">
+		{$searchtype_kesimpulan}
+	</div>
+	<div class="r-search-field">
+		{$kesimpulan_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kesimpulan_editcontrol1}
+	</div>
+	
+</div>
+
+{END kesimpulan_fieldblock}
+											
+{BEGIN catatan_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_catatan}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="catatan{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field18" {$item_integrated_search_field18} data-pageid="{$pageid}" data-field="catatan" data-fieldname="catatan" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_catatan}">
+		{$label mne_perencanaan_umum catatan }	</label>
+	<div class="r-search-option">
+		{$searchtype_catatan}
+	</div>
+	<div class="r-search-field">
+		{$catatan_editcontrol}	</div>
+	<div class="r-search-field">
+		{$catatan_editcontrol1}
+	</div>
+	
+</div>
+
+{END catatan_fieldblock}
+											
+{BEGIN foto_kegiatan1_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_foto_kegiatan1}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="foto_kegiatan1{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field19" {$item_integrated_search_field19} data-pageid="{$pageid}" data-field="foto_kegiatan1" data-fieldname="foto_kegiatan1" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_foto_kegiatan1}">
+		{$label mne_perencanaan_umum foto_kegiatan1 }	</label>
+	<div class="r-search-option">
+		{$searchtype_foto_kegiatan1}
+	</div>
+	<div class="r-search-field">
+		{$foto_kegiatan1_editcontrol}	</div>
+	<div class="r-search-field">
+		{$foto_kegiatan1_editcontrol1}
+	</div>
+	
+</div>
+
+{END foto_kegiatan1_fieldblock}
+											
+{BEGIN foto_kegiatan2_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_foto_kegiatan2}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="foto_kegiatan2{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field20" {$item_integrated_search_field20} data-pageid="{$pageid}" data-field="foto_kegiatan2" data-fieldname="foto_kegiatan2" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_foto_kegiatan2}">
+		{$label mne_perencanaan_umum foto_kegiatan2 }	</label>
+	<div class="r-search-option">
+		{$searchtype_foto_kegiatan2}
+	</div>
+	<div class="r-search-field">
+		{$foto_kegiatan2_editcontrol}	</div>
+	<div class="r-search-field">
+		{$foto_kegiatan2_editcontrol1}
+	</div>
+	
+</div>
+
+{END foto_kegiatan2_fieldblock}
+											
+{BEGIN tindak_lanjut_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tindak_lanjut}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="tindak_lanjut{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="tindak_lanjut" data-fieldname="tindak_lanjut" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_tindak_lanjut}">
+		{$label mne_perencanaan_umum tindak_lanjut }	</label>
+	<div class="r-search-option">
+		{$searchtype_tindak_lanjut}
+	</div>
+	<div class="r-search-field">
+		{$tindak_lanjut_editcontrol}	</div>
+	<div class="r-search-field">
+		{$tindak_lanjut_editcontrol1}
+	</div>
+	
+</div>
+
+{END tindak_lanjut_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Cari			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Tata ulang			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Batal			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

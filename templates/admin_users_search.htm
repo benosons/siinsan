@@ -1,0 +1,524 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel admin_users search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN userid_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_userid}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="userid{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="userid" data-fieldname="userid" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_userid}">
+		{$label admin_users userid }	</label>
+	<div class="r-search-option">
+		{$searchtype_userid}
+	</div>
+	<div class="r-search-field">
+		{$userid_editcontrol}	</div>
+	<div class="r-search-field">
+		{$userid_editcontrol1}
+	</div>
+	
+</div>
+
+{END userid_fieldblock}
+											
+{BEGIN username_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_username}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="username{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="username" data-fieldname="username" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_username}">
+		{$label admin_users username }	</label>
+	<div class="r-search-option">
+		{$searchtype_username}
+	</div>
+	<div class="r-search-field">
+		{$username_editcontrol}	</div>
+	<div class="r-search-field">
+		{$username_editcontrol1}
+	</div>
+	
+</div>
+
+{END username_fieldblock}
+											
+{BEGIN userpassword_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_userpassword}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="userpassword{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="userpassword" data-fieldname="userpassword" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_userpassword}">
+		{$label admin_users userpassword }	</label>
+	<div class="r-search-option">
+		{$searchtype_userpassword}
+	</div>
+	<div class="r-search-field">
+		{$userpassword_editcontrol}	</div>
+	<div class="r-search-field">
+		{$userpassword_editcontrol1}
+	</div>
+	
+</div>
+
+{END userpassword_fieldblock}
+											
+{BEGIN r_provinsiid_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_r_provinsiid}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="r_provinsiid{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="r_provinsiid" data-fieldname="r_provinsiid" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_r_provinsiid}">
+		{$label admin_users r_provinsiid }	</label>
+	<div class="r-search-option">
+		{$searchtype_r_provinsiid}
+	</div>
+	<div class="r-search-field">
+		{$r_provinsiid_editcontrol}	</div>
+	<div class="r-search-field">
+		{$r_provinsiid_editcontrol1}
+	</div>
+	
+</div>
+
+{END r_provinsiid_fieldblock}
+											
+{BEGIN r_prov_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_r_prov}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="r_prov{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="r_prov" data-fieldname="r_prov" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_r_prov}">
+		{$label admin_users r_prov }	</label>
+	<div class="r-search-option">
+		{$searchtype_r_prov}
+	</div>
+	<div class="r-search-field">
+		{$r_prov_editcontrol}	</div>
+	<div class="r-search-field">
+		{$r_prov_editcontrol1}
+	</div>
+	
+</div>
+
+{END r_prov_fieldblock}
+											
+{BEGIN r_kabupatenkotaid_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_r_kabupatenkotaid}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="r_kabupatenkotaid{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="r_kabupatenkotaid" data-fieldname="r_kabupatenkotaid" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_r_kabupatenkotaid}">
+		{$label admin_users r_kabupatenkotaid }	</label>
+	<div class="r-search-option">
+		{$searchtype_r_kabupatenkotaid}
+	</div>
+	<div class="r-search-field">
+		{$r_kabupatenkotaid_editcontrol}	</div>
+	<div class="r-search-field">
+		{$r_kabupatenkotaid_editcontrol1}
+	</div>
+	
+</div>
+
+{END r_kabupatenkotaid_fieldblock}
+											
+{BEGIN prov_al_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_prov_al}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="prov_al{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="prov_al" data-fieldname="prov_al" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_prov_al}">
+		{$label admin_users prov_al }	</label>
+	<div class="r-search-option">
+		{$searchtype_prov_al}
+	</div>
+	<div class="r-search-field">
+		{$prov_al_editcontrol}	</div>
+	<div class="r-search-field">
+		{$prov_al_editcontrol1}
+	</div>
+	
+</div>
+
+{END prov_al_fieldblock}
+											
+{BEGIN kabkota_al_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kabkota_al}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kabkota_al{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="kabkota_al" data-fieldname="kabkota_al" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kabkota_al}">
+		{$label admin_users kabkota_al }	</label>
+	<div class="r-search-option">
+		{$searchtype_kabkota_al}
+	</div>
+	<div class="r-search-field">
+		{$kabkota_al_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kabkota_al_editcontrol1}
+	</div>
+	
+</div>
+
+{END kabkota_al_fieldblock}
+											
+{BEGIN prov_dra_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_prov_dra}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="prov_dra{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="prov_dra" data-fieldname="prov_dra" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_prov_dra}">
+		{$label admin_users prov_dra }	</label>
+	<div class="r-search-option">
+		{$searchtype_prov_dra}
+	</div>
+	<div class="r-search-field">
+		{$prov_dra_editcontrol}	</div>
+	<div class="r-search-field">
+		{$prov_dra_editcontrol1}
+	</div>
+	
+</div>
+
+{END prov_dra_fieldblock}
+											
+{BEGIN kabkota_dra_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kabkota_dra}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kabkota_dra{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="kabkota_dra" data-fieldname="kabkota_dra" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kabkota_dra}">
+		{$label admin_users kabkota_dra }	</label>
+	<div class="r-search-option">
+		{$searchtype_kabkota_dra}
+	</div>
+	<div class="r-search-field">
+		{$kabkota_dra_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kabkota_dra_editcontrol1}
+	</div>
+	
+</div>
+
+{END kabkota_dra_fieldblock}
+											
+{BEGIN usercreated_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_usercreated}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="usercreated{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="usercreated" data-fieldname="usercreated" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_usercreated}">
+		{$label admin_users usercreated }	</label>
+	<div class="r-search-option">
+		{$searchtype_usercreated}
+	</div>
+	<div class="r-search-field">
+		{$usercreated_editcontrol}	</div>
+	<div class="r-search-field">
+		{$usercreated_editcontrol1}
+	</div>
+	
+</div>
+
+{END usercreated_fieldblock}
+											
+{BEGIN userlastlogin_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_userlastlogin}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="userlastlogin{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="userlastlogin" data-fieldname="userlastlogin" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_userlastlogin}">
+		{$label admin_users userlastlogin }	</label>
+	<div class="r-search-option">
+		{$searchtype_userlastlogin}
+	</div>
+	<div class="r-search-field">
+		{$userlastlogin_editcontrol}	</div>
+	<div class="r-search-field">
+		{$userlastlogin_editcontrol1}
+	</div>
+	
+</div>
+
+{END userlastlogin_fieldblock}
+											
+{BEGIN userexpired_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_userexpired}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="userexpired{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="userexpired" data-fieldname="userexpired" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_userexpired}">
+		{$label admin_users userexpired }	</label>
+	<div class="r-search-option">
+		{$searchtype_userexpired}
+	</div>
+	<div class="r-search-field">
+		{$userexpired_editcontrol}	</div>
+	<div class="r-search-field">
+		{$userexpired_editcontrol1}
+	</div>
+	
+</div>
+
+{END userexpired_fieldblock}
+											
+{BEGIN usertype_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_usertype}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="usertype{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="usertype" data-fieldname="usertype" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_usertype}">
+		{$label admin_users usertype }	</label>
+	<div class="r-search-option">
+		{$searchtype_usertype}
+	</div>
+	<div class="r-search-field">
+		{$usertype_editcontrol}	</div>
+	<div class="r-search-field">
+		{$usertype_editcontrol1}
+	</div>
+	
+</div>
+
+{END usertype_fieldblock}
+											
+{BEGIN usertype2_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_usertype2}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="usertype2{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="usertype2" data-fieldname="usertype2" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_usertype2}">
+		{$label admin_users usertype2 }	</label>
+	<div class="r-search-option">
+		{$searchtype_usertype2}
+	</div>
+	<div class="r-search-field">
+		{$usertype2_editcontrol}	</div>
+	<div class="r-search-field">
+		{$usertype2_editcontrol1}
+	</div>
+	
+</div>
+
+{END usertype2_fieldblock}
+											
+{BEGIN email_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_email}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="email{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="email" data-fieldname="email" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_email}">
+		{$label admin_users email }	</label>
+	<div class="r-search-option">
+		{$searchtype_email}
+	</div>
+	<div class="r-search-field">
+		{$email_editcontrol}	</div>
+	<div class="r-search-field">
+		{$email_editcontrol1}
+	</div>
+	
+</div>
+
+{END email_fieldblock}
+											
+{BEGIN apikey_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_apikey}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="apikey{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="apikey" data-fieldname="apikey" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_apikey}">
+		{$label admin_users apikey }	</label>
+	<div class="r-search-option">
+		{$searchtype_apikey}
+	</div>
+	<div class="r-search-field">
+		{$apikey_editcontrol}	</div>
+	<div class="r-search-field">
+		{$apikey_editcontrol1}
+	</div>
+	
+</div>
+
+{END apikey_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Cari			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Tata ulang			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Batal			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

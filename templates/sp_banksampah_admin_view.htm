@@ -1,0 +1,542 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-view" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel sp_banksampah_admin view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id}  r-vertical-field" data-fieldname="id" data-signal-error-for="id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="id" data-fieldname="id" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id}">
+		
+		{BEGIN id_label}{$label sp_banksampah_admin id }{END id_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_value}	</div>
+
+		
+</div>
+
+
+{END id_fieldblock}
+											
+{BEGIN propinsiid_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_propinsiid}  r-vertical-field" data-fieldname="propinsiid" data-signal-error-for="propinsiid{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="propinsiid" data-fieldname="propinsiid" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_propinsiid}">
+		
+		{BEGIN propinsiid_label}{$label sp_banksampah_admin propinsiid }{END propinsiid_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$propinsiid_value}	</div>
+
+		
+</div>
+
+
+{END propinsiid_fieldblock}
+											
+{BEGIN kabupatenkotaid_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kabupatenkotaid}  r-vertical-field" data-fieldname="kabupatenkotaid" data-signal-error-for="kabupatenkotaid{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="kabupatenkotaid" data-fieldname="kabupatenkotaid" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kabupatenkotaid}">
+		
+		{BEGIN kabupatenkotaid_label}{$label sp_banksampah_admin kabupatenkotaid }{END kabupatenkotaid_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kabupatenkotaid_value}	</div>
+
+		
+</div>
+
+
+{END kabupatenkotaid_fieldblock}
+											
+{BEGIN namafasilitas_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_namafasilitas}  r-vertical-field" data-fieldname="namafasilitas" data-signal-error-for="namafasilitas{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="namafasilitas" data-fieldname="namafasilitas" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_namafasilitas}">
+		
+		{BEGIN namafasilitas_label}{$label sp_banksampah_admin namafasilitas }{END namafasilitas_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$namafasilitas_value}	</div>
+
+		
+</div>
+
+
+{END namafasilitas_fieldblock}
+											
+{BEGIN jenisfasilitas_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jenisfasilitas}  r-vertical-field" data-fieldname="jenisfasilitas" data-signal-error-for="jenisfasilitas{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="jenisfasilitas" data-fieldname="jenisfasilitas" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_jenisfasilitas}">
+		
+		{BEGIN jenisfasilitas_label}{$label sp_banksampah_admin jenisfasilitas }{END jenisfasilitas_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$jenisfasilitas_value}	</div>
+
+		
+</div>
+
+
+{END jenisfasilitas_fieldblock}
+											
+{BEGIN kondisifasilitas_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kondisifasilitas}  r-vertical-field" data-fieldname="kondisifasilitas" data-signal-error-for="kondisifasilitas{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="kondisifasilitas" data-fieldname="kondisifasilitas" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kondisifasilitas}">
+		
+		{BEGIN kondisifasilitas_label}{$label sp_banksampah_admin kondisifasilitas }{END kondisifasilitas_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kondisifasilitas_value}	</div>
+
+		
+</div>
+
+
+{END kondisifasilitas_fieldblock}
+											
+{BEGIN kategoripelayanan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kategoripelayanan}  r-vertical-field" data-fieldname="kategoripelayanan" data-signal-error-for="kategoripelayanan{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="kategoripelayanan" data-fieldname="kategoripelayanan" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kategoripelayanan}">
+		
+		{BEGIN kategoripelayanan_label}{$label sp_banksampah_admin kategoripelayanan }{END kategoripelayanan_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kategoripelayanan_value}	</div>
+
+		
+</div>
+
+
+{END kategoripelayanan_fieldblock}
+											
+{BEGIN kecamatandistrik_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kecamatandistrik}  r-vertical-field" data-fieldname="kecamatandistrik" data-signal-error-for="kecamatandistrik{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="kecamatandistrik" data-fieldname="kecamatandistrik" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kecamatandistrik}">
+		
+		{BEGIN kecamatandistrik_label}{$label sp_banksampah_admin kecamatandistrik }{END kecamatandistrik_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kecamatandistrik_value}	</div>
+
+		
+</div>
+
+
+{END kecamatandistrik_fieldblock}
+											
+{BEGIN desakelurahan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_desakelurahan}  r-vertical-field" data-fieldname="desakelurahan" data-signal-error-for="desakelurahan{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="desakelurahan" data-fieldname="desakelurahan" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_desakelurahan}">
+		
+		{BEGIN desakelurahan_label}{$label sp_banksampah_admin desakelurahan }{END desakelurahan_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$desakelurahan_value}	</div>
+
+		
+</div>
+
+
+{END desakelurahan_fieldblock}
+											
+{BEGIN pengelola_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pengelola}  r-vertical-field" data-fieldname="pengelola" data-signal-error-for="pengelola{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="pengelola" data-fieldname="pengelola" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_pengelola}">
+		
+		{BEGIN pengelola_label}{$label sp_banksampah_admin pengelola }{END pengelola_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$pengelola_value}	</div>
+
+		
+</div>
+
+
+{END pengelola_fieldblock}
+											
+{BEGIN jenispengelola_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jenispengelola}  r-vertical-field" data-fieldname="jenispengelola" data-signal-error-for="jenispengelola{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="jenispengelola" data-fieldname="jenispengelola" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_jenispengelola}">
+		
+		{BEGIN jenispengelola_label}{$label sp_banksampah_admin jenispengelola }{END jenispengelola_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$jenispengelola_value}	</div>
+
+		
+</div>
+
+
+{END jenispengelola_fieldblock}
+											
+{BEGIN namakepalafasilitas_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_namakepalafasilitas}  r-vertical-field" data-fieldname="namakepalafasilitas" data-signal-error-for="namakepalafasilitas{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="namakepalafasilitas" data-fieldname="namakepalafasilitas" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_namakepalafasilitas}">
+		
+		{BEGIN namakepalafasilitas_label}{$label sp_banksampah_admin namakepalafasilitas }{END namakepalafasilitas_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$namakepalafasilitas_value}	</div>
+
+		
+</div>
+
+
+{END namakepalafasilitas_fieldblock}
+											
+{BEGIN alamatfasilitas_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_alamatfasilitas}  r-vertical-field" data-fieldname="alamatfasilitas" data-signal-error-for="alamatfasilitas{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="alamatfasilitas" data-fieldname="alamatfasilitas" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_alamatfasilitas}">
+		
+		{BEGIN alamatfasilitas_label}{$label sp_banksampah_admin alamatfasilitas }{END alamatfasilitas_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$alamatfasilitas_value}	</div>
+
+		
+</div>
+
+
+{END alamatfasilitas_fieldblock}
+											
+{BEGIN phonefasilitas_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_phonefasilitas}  r-vertical-field" data-fieldname="phonefasilitas" data-signal-error-for="phonefasilitas{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="phonefasilitas" data-fieldname="phonefasilitas" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_phonefasilitas}">
+		
+		{BEGIN phonefasilitas_label}{$label sp_banksampah_admin phonefasilitas }{END phonefasilitas_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$phonefasilitas_value}	</div>
+
+		
+</div>
+
+
+{END phonefasilitas_fieldblock}
+											
+{BEGIN emailfasilitas_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_emailfasilitas}  r-vertical-field" data-fieldname="emailfasilitas" data-signal-error-for="emailfasilitas{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="emailfasilitas" data-fieldname="emailfasilitas" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_emailfasilitas}">
+		
+		{BEGIN emailfasilitas_label}{$label sp_banksampah_admin emailfasilitas }{END emailfasilitas_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$emailfasilitas_value}	</div>
+
+		
+</div>
+
+
+{END emailfasilitas_fieldblock}
+											
+{BEGIN tahunpembangunan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tahunpembangunan}  r-vertical-field" data-fieldname="tahunpembangunan" data-signal-error-for="tahunpembangunan{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="tahunpembangunan" data-fieldname="tahunpembangunan" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_tahunpembangunan}">
+		
+		{BEGIN tahunpembangunan_label}{$label sp_banksampah_admin tahunpembangunan }{END tahunpembangunan_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$tahunpembangunan_value}	</div>
+
+		
+</div>
+
+
+{END tahunpembangunan_fieldblock}
+											
+{BEGIN sumberdanapembangunan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sumberdanapembangunan}  r-vertical-field" data-fieldname="sumberdanapembangunan" data-signal-error-for="sumberdanapembangunan{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="sumberdanapembangunan" data-fieldname="sumberdanapembangunan" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_sumberdanapembangunan}">
+		
+		{BEGIN sumberdanapembangunan_label}{$label sp_banksampah_admin sumberdanapembangunan }{END sumberdanapembangunan_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$sumberdanapembangunan_value}	</div>
+
+		
+</div>
+
+
+{END sumberdanapembangunan_fieldblock}
+											
+{BEGIN biayapembangunan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_biayapembangunan}  r-vertical-field" data-fieldname="biayapembangunan" data-signal-error-for="biayapembangunan{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="biayapembangunan" data-fieldname="biayapembangunan" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_biayapembangunan}">
+		
+		{BEGIN biayapembangunan_label}{$label sp_banksampah_admin biayapembangunan }{END biayapembangunan_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$biayapembangunan_value}	</div>
+
+		
+</div>
+
+
+{END biayapembangunan_fieldblock}
+											
+{BEGIN latitude_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_latitude}  r-vertical-field" data-fieldname="latitude" data-signal-error-for="latitude{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="latitude" data-fieldname="latitude" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_latitude}">
+		
+		{BEGIN latitude_label}{$label sp_banksampah_admin latitude }{END latitude_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$latitude_value}	</div>
+
+		
+</div>
+
+
+{END latitude_fieldblock}
+											
+{BEGIN longitude_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_longitude}  r-vertical-field" data-fieldname="longitude" data-signal-error-for="longitude{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="longitude" data-fieldname="longitude" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_longitude}">
+		
+		{BEGIN longitude_label}{$label sp_banksampah_admin longitude }{END longitude_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$longitude_value}	</div>
+
+		
+</div>
+
+
+{END longitude_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Tutup jendela			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="sp_banksampah_admin_edit.php?{$editlink}" {$edit_page_button_attrs}  title="" >
+				
+		Edit		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

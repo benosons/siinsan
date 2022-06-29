@@ -1,0 +1,446 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel dra_kolam_retensi view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN kd_kolam_retensi_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_kolam_retensi}  r-vertical-field" data-fieldname="kd_kolam_retensi" data-signal-error-for="kd_kolam_retensi{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="kd_kolam_retensi" data-fieldname="kd_kolam_retensi" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kd_kolam_retensi}">
+		
+		{BEGIN kd_kolam_retensi_label}{$label dra_kolam_retensi kd_kolam_retensi }{END kd_kolam_retensi_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kd_kolam_retensi_value}	</div>
+
+		
+</div>
+
+
+{END kd_kolam_retensi_fieldblock}
+											
+{BEGIN kd_propinsi_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_propinsi}  r-vertical-field" data-fieldname="kd_propinsi" data-signal-error-for="kd_propinsi{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="kd_propinsi" data-fieldname="kd_propinsi" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kd_propinsi}">
+		
+		{BEGIN kd_propinsi_label}{$label dra_kolam_retensi kd_propinsi }{END kd_propinsi_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kd_propinsi_value}	</div>
+
+		
+</div>
+
+
+{END kd_propinsi_fieldblock}
+											
+{BEGIN kd_kota_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_kota}  r-vertical-field" data-fieldname="kd_kota" data-signal-error-for="kd_kota{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="kd_kota" data-fieldname="kd_kota" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kd_kota}">
+		
+		{BEGIN kd_kota_label}{$label dra_kolam_retensi kd_kota }{END kd_kota_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kd_kota_value}	</div>
+
+		
+</div>
+
+
+{END kd_kota_fieldblock}
+											
+{BEGIN kd_kecamatan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_kecamatan}  r-vertical-field" data-fieldname="kd_kecamatan" data-signal-error-for="kd_kecamatan{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="kd_kecamatan" data-fieldname="kd_kecamatan" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kd_kecamatan}">
+		
+		{BEGIN kd_kecamatan_label}{$label dra_kolam_retensi kd_kecamatan }{END kd_kecamatan_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kd_kecamatan_value}	</div>
+
+		
+</div>
+
+
+{END kd_kecamatan_fieldblock}
+											
+{BEGIN kd_kelurahan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_kelurahan}  r-vertical-field" data-fieldname="kd_kelurahan" data-signal-error-for="kd_kelurahan{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="kd_kelurahan" data-fieldname="kd_kelurahan" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kd_kelurahan}">
+		
+		{BEGIN kd_kelurahan_label}{$label dra_kolam_retensi kd_kelurahan }{END kd_kelurahan_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kd_kelurahan_value}	</div>
+
+		
+</div>
+
+
+{END kd_kelurahan_fieldblock}
+											
+{BEGIN jmlUnit_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jmlUnit}  r-vertical-field" data-fieldname="jmlUnit" data-signal-error-for="jmlUnit{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="jmlUnit" data-fieldname="jmlUnit" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_jmlUnit}">
+		
+		{BEGIN jmlUnit_label}{$label dra_kolam_retensi jmlUnit }{END jmlUnit_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$jmlUnit_value}	</div>
+
+		
+</div>
+
+
+{END jmlUnit_fieldblock}
+											
+{BEGIN kd_bahan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_bahan}  r-vertical-field" data-fieldname="kd_bahan" data-signal-error-for="kd_bahan{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="kd_bahan" data-fieldname="kd_bahan" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kd_bahan}">
+		
+		{BEGIN kd_bahan_label}{$label dra_kolam_retensi kd_bahan }{END kd_bahan_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kd_bahan_value}	</div>
+
+		
+</div>
+
+
+{END kd_bahan_fieldblock}
+											
+{BEGIN lebarMin_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_lebarMin}  r-vertical-field" data-fieldname="lebarMin" data-signal-error-for="lebarMin{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="lebarMin" data-fieldname="lebarMin" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_lebarMin}">
+		
+		{BEGIN lebarMin_label}{$label dra_kolam_retensi lebarMin }{END lebarMin_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$lebarMin_value}	</div>
+
+		
+</div>
+
+
+{END lebarMin_fieldblock}
+											
+{BEGIN lebarMax_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_lebarMax}  r-vertical-field" data-fieldname="lebarMax" data-signal-error-for="lebarMax{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="lebarMax" data-fieldname="lebarMax" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_lebarMax}">
+		
+		{BEGIN lebarMax_label}{$label dra_kolam_retensi lebarMax }{END lebarMax_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$lebarMax_value}	</div>
+
+		
+</div>
+
+
+{END lebarMax_fieldblock}
+											
+{BEGIN panjangMin_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_panjangMin}  r-vertical-field" data-fieldname="panjangMin" data-signal-error-for="panjangMin{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="panjangMin" data-fieldname="panjangMin" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_panjangMin}">
+		
+		{BEGIN panjangMin_label}{$label dra_kolam_retensi panjangMin }{END panjangMin_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$panjangMin_value}	</div>
+
+		
+</div>
+
+
+{END panjangMin_fieldblock}
+											
+{BEGIN panjangMax_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_panjangMax}  r-vertical-field" data-fieldname="panjangMax" data-signal-error-for="panjangMax{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="panjangMax" data-fieldname="panjangMax" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_panjangMax}">
+		
+		{BEGIN panjangMax_label}{$label dra_kolam_retensi panjangMax }{END panjangMax_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$panjangMax_value}	</div>
+
+		
+</div>
+
+
+{END panjangMax_fieldblock}
+											
+{BEGIN dalamMin_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dalamMin}  r-vertical-field" data-fieldname="dalamMin" data-signal-error-for="dalamMin{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="dalamMin" data-fieldname="dalamMin" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_dalamMin}">
+		
+		{BEGIN dalamMin_label}{$label dra_kolam_retensi dalamMin }{END dalamMin_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$dalamMin_value}	</div>
+
+		
+</div>
+
+
+{END dalamMin_fieldblock}
+											
+{BEGIN dalamMax_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dalamMax}  r-vertical-field" data-fieldname="dalamMax" data-signal-error-for="dalamMax{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="dalamMax" data-fieldname="dalamMax" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_dalamMax}">
+		
+		{BEGIN dalamMax_label}{$label dra_kolam_retensi dalamMax }{END dalamMax_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$dalamMax_value}	</div>
+
+		
+</div>
+
+
+{END dalamMax_fieldblock}
+											
+{BEGIN tahun_data_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tahun_data}  r-vertical-field" data-fieldname="tahun_data" data-signal-error-for="tahun_data{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="tahun_data" data-fieldname="tahun_data" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_tahun_data}">
+		
+		{BEGIN tahun_data_label}{$label dra_kolam_retensi tahun_data }{END tahun_data_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$tahun_data_value}	</div>
+
+		
+</div>
+
+
+{END tahun_data_fieldblock}
+											
+{BEGIN entryDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_entryDate}  r-vertical-field" data-fieldname="entryDate" data-signal-error-for="entryDate{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="entryDate" data-fieldname="entryDate" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_entryDate}">
+		
+		{BEGIN entryDate_label}{$label dra_kolam_retensi entryDate }{END entryDate_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$entryDate_value}	</div>
+
+		
+</div>
+
+
+{END entryDate_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Tutup jendela			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="dra_kolam_retensi_edit.php?{$editlink}" {$edit_page_button_attrs}  title="" >
+				
+		Edit		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

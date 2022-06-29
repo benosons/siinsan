@@ -1,0 +1,382 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-view" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel al_kualitasair view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN kualitasairid_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kualitasairid}  r-vertical-field" data-fieldname="kualitasairid" data-signal-error-for="kualitasairid{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="kualitasairid" data-fieldname="kualitasairid" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kualitasairid}">
+		
+		{BEGIN kualitasairid_label}{$label al_kualitasair kualitasairid }{END kualitasairid_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kualitasairid_value}	</div>
+
+		
+</div>
+
+
+{END kualitasairid_fieldblock}
+											
+{BEGIN r_provinsiid_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_r_provinsiid}  r-vertical-field" data-fieldname="r_provinsiid" data-signal-error-for="r_provinsiid{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="r_provinsiid" data-fieldname="r_provinsiid" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_r_provinsiid}">
+		
+		{BEGIN r_provinsiid_label}{$label al_kualitasair r_provinsiid }{END r_provinsiid_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$r_provinsiid_value}	</div>
+
+		
+</div>
+
+
+{END r_provinsiid_fieldblock}
+											
+{BEGIN r_kabupatenkotaid_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_r_kabupatenkotaid}  r-vertical-field" data-fieldname="r_kabupatenkotaid" data-signal-error-for="r_kabupatenkotaid{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="r_kabupatenkotaid" data-fieldname="r_kabupatenkotaid" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_r_kabupatenkotaid}">
+		
+		{BEGIN r_kabupatenkotaid_label}{$label al_kualitasair r_kabupatenkotaid }{END r_kabupatenkotaid_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$r_kabupatenkotaid_value}	</div>
+
+		
+</div>
+
+
+{END r_kabupatenkotaid_fieldblock}
+											
+{BEGIN r_kecamatanid_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_r_kecamatanid}  r-vertical-field" data-fieldname="r_kecamatanid" data-signal-error-for="r_kecamatanid{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="r_kecamatanid" data-fieldname="r_kecamatanid" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_r_kecamatanid}">
+		
+		{BEGIN r_kecamatanid_label}{$label al_kualitasair r_kecamatanid }{END r_kecamatanid_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$r_kecamatanid_value}	</div>
+
+		
+</div>
+
+
+{END r_kecamatanid_fieldblock}
+											
+{BEGIN r_kelurahanid_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_r_kelurahanid}  r-vertical-field" data-fieldname="r_kelurahanid" data-signal-error-for="r_kelurahanid{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="r_kelurahanid" data-fieldname="r_kelurahanid" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_r_kelurahanid}">
+		
+		{BEGIN r_kelurahanid_label}{$label al_kualitasair r_kelurahanid }{END r_kelurahanid_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$r_kelurahanid_value}	</div>
+
+		
+</div>
+
+
+{END r_kelurahanid_fieldblock}
+											
+{BEGIN kualitasairtype_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kualitasairtype}  r-vertical-field" data-fieldname="kualitasairtype" data-signal-error-for="kualitasairtype{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="kualitasairtype" data-fieldname="kualitasairtype" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kualitasairtype}">
+		
+		{BEGIN kualitasairtype_label}{$label al_kualitasair kualitasairtype }{END kualitasairtype_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kualitasairtype_value}	</div>
+
+		
+</div>
+
+
+{END kualitasairtype_fieldblock}
+											
+{BEGIN namasungai_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_namasungai}  r-vertical-field" data-fieldname="namasungai" data-signal-error-for="namasungai{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="namasungai" data-fieldname="namasungai" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_namasungai}">
+		
+		{BEGIN namasungai_label}{$label al_kualitasair namasungai }{END namasungai_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$namasungai_value}	</div>
+
+		
+</div>
+
+
+{END namasungai_fieldblock}
+											
+{BEGIN tahun_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tahun}  r-vertical-field" data-fieldname="tahun" data-signal-error-for="tahun{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="tahun" data-fieldname="tahun" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_tahun}">
+		
+		{BEGIN tahun_label}{$label al_kualitasair tahun }{END tahun_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$tahun_value}	</div>
+
+		
+</div>
+
+
+{END tahun_fieldblock}
+											
+{BEGIN longitude_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_longitude}  r-vertical-field" data-fieldname="longitude" data-signal-error-for="longitude{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="longitude" data-fieldname="longitude" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_longitude}">
+		
+		{BEGIN longitude_label}{$label al_kualitasair longitude }{END longitude_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$longitude_value}	</div>
+
+		
+</div>
+
+
+{END longitude_fieldblock}
+											
+{BEGIN latitude_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_latitude}  r-vertical-field" data-fieldname="latitude" data-signal-error-for="latitude{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="latitude" data-fieldname="latitude" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_latitude}">
+		
+		{BEGIN latitude_label}{$label al_kualitasair latitude }{END latitude_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$latitude_value}	</div>
+
+		
+</div>
+
+
+{END latitude_fieldblock}
+											
+{BEGIN ecoli_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ecoli}  r-vertical-field" data-fieldname="ecoli" data-signal-error-for="ecoli{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="ecoli" data-fieldname="ecoli" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ecoli}">
+		
+		{BEGIN ecoli_label}{$label al_kualitasair ecoli }{END ecoli_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ecoli_value}	</div>
+
+		
+</div>
+
+
+{END ecoli_fieldblock}
+											
+{BEGIN bod_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_bod}  r-vertical-field" data-fieldname="bod" data-signal-error-for="bod{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="bod" data-fieldname="bod" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_bod}">
+		
+		{BEGIN bod_label}{$label al_kualitasair bod }{END bod_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$bod_value}	</div>
+
+		
+</div>
+
+
+{END bod_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Tutup jendela			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="al_kualitasair_edit.php?{$editlink}" {$edit_page_button_attrs}  title="" >
+				
+		Edit		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

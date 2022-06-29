@@ -1,0 +1,700 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel v_spaldt_tertentu_keterisian_prov search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN r_provinsiid_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_r_provinsiid}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="r_provinsiid{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="r_provinsiid" data-fieldname="r_provinsiid" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_r_provinsiid}">
+		{$label v_spaldt_tertentu_keterisian_prov r_provinsiid }	</label>
+	<div class="r-search-option">
+		{$searchtype_r_provinsiid}
+	</div>
+	<div class="r-search-field">
+		{$r_provinsiid_editcontrol}	</div>
+	<div class="r-search-field">
+		{$r_provinsiid_editcontrol1}
+	</div>
+	
+</div>
+
+{END r_provinsiid_fieldblock}
+											
+{BEGIN provinsiname_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_provinsiname}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="provinsiname{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="provinsiname" data-fieldname="provinsiname" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_provinsiname}">
+		{$label v_spaldt_tertentu_keterisian_prov provinsiname }	</label>
+	<div class="r-search-option">
+		{$searchtype_provinsiname}
+	</div>
+	<div class="r-search-field">
+		{$provinsiname_editcontrol}	</div>
+	<div class="r-search-field">
+		{$provinsiname_editcontrol1}
+	</div>
+	
+</div>
+
+{END provinsiname_fieldblock}
+											
+{BEGIN jumlah_record_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jumlah_record}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jumlah_record{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="jumlah_record" data-fieldname="jumlah_record" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jumlah_record}">
+		{$label v_spaldt_tertentu_keterisian_prov jumlah_record }	</label>
+	<div class="r-search-option">
+		{$searchtype_jumlah_record}
+	</div>
+	<div class="r-search-field">
+		{$jumlah_record_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jumlah_record_editcontrol1}
+	</div>
+	
+</div>
+
+{END jumlah_record_fieldblock}
+											
+{BEGIN tahun_kontruksi_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tahun_kontruksi}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="tahun_kontruksi{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="tahun_kontruksi" data-fieldname="tahun_kontruksi" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_tahun_kontruksi}">
+		{$label v_spaldt_tertentu_keterisian_prov tahun_kontruksi }	</label>
+	<div class="r-search-option">
+		{$searchtype_tahun_kontruksi}
+	</div>
+	<div class="r-search-field">
+		{$tahun_kontruksi_editcontrol}	</div>
+	<div class="r-search-field">
+		{$tahun_kontruksi_editcontrol1}
+	</div>
+	
+</div>
+
+{END tahun_kontruksi_fieldblock}
+											
+{BEGIN alamat_lengkap_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_alamat_lengkap}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="alamat_lengkap{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="alamat_lengkap" data-fieldname="alamat_lengkap" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_alamat_lengkap}">
+		{$label v_spaldt_tertentu_keterisian_prov alamat_lengkap }	</label>
+	<div class="r-search-option">
+		{$searchtype_alamat_lengkap}
+	</div>
+	<div class="r-search-field">
+		{$alamat_lengkap_editcontrol}	</div>
+	<div class="r-search-field">
+		{$alamat_lengkap_editcontrol1}
+	</div>
+	
+</div>
+
+{END alamat_lengkap_fieldblock}
+											
+{BEGIN longitude_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_longitude}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="longitude{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="longitude" data-fieldname="longitude" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_longitude}">
+		{$label v_spaldt_tertentu_keterisian_prov longitude }	</label>
+	<div class="r-search-option">
+		{$searchtype_longitude}
+	</div>
+	<div class="r-search-field">
+		{$longitude_editcontrol}	</div>
+	<div class="r-search-field">
+		{$longitude_editcontrol1}
+	</div>
+	
+</div>
+
+{END longitude_fieldblock}
+											
+{BEGIN latitude_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_latitude}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="latitude{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="latitude" data-fieldname="latitude" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_latitude}">
+		{$label v_spaldt_tertentu_keterisian_prov latitude }	</label>
+	<div class="r-search-option">
+		{$searchtype_latitude}
+	</div>
+	<div class="r-search-field">
+		{$latitude_editcontrol}	</div>
+	<div class="r-search-field">
+		{$latitude_editcontrol1}
+	</div>
+	
+</div>
+
+{END latitude_fieldblock}
+											
+{BEGIN status_keberfungsian_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_status_keberfungsian}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="status_keberfungsian{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="status_keberfungsian" data-fieldname="status_keberfungsian" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_status_keberfungsian}">
+		{$label v_spaldt_tertentu_keterisian_prov status_keberfungsian }	</label>
+	<div class="r-search-option">
+		{$searchtype_status_keberfungsian}
+	</div>
+	<div class="r-search-field">
+		{$status_keberfungsian_editcontrol}	</div>
+	<div class="r-search-field">
+		{$status_keberfungsian_editcontrol1}
+	</div>
+	
+</div>
+
+{END status_keberfungsian_fieldblock}
+											
+{BEGIN kualitas_keberfungsian_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kualitas_keberfungsian}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kualitas_keberfungsian{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="kualitas_keberfungsian" data-fieldname="kualitas_keberfungsian" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kualitas_keberfungsian}">
+		{$label v_spaldt_tertentu_keterisian_prov kualitas_keberfungsian }	</label>
+	<div class="r-search-option">
+		{$searchtype_kualitas_keberfungsian}
+	</div>
+	<div class="r-search-field">
+		{$kualitas_keberfungsian_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kualitas_keberfungsian_editcontrol1}
+	</div>
+	
+</div>
+
+{END kualitas_keberfungsian_fieldblock}
+											
+{BEGIN apbn_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_apbn}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="apbn{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="apbn" data-fieldname="apbn" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_apbn}">
+		{$label v_spaldt_tertentu_keterisian_prov apbn }	</label>
+	<div class="r-search-option">
+		{$searchtype_apbn}
+	</div>
+	<div class="r-search-field">
+		{$apbn_editcontrol}	</div>
+	<div class="r-search-field">
+		{$apbn_editcontrol1}
+	</div>
+	
+</div>
+
+{END apbn_fieldblock}
+											
+{BEGIN apbd_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_apbd}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="apbd{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="apbd" data-fieldname="apbd" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_apbd}">
+		{$label v_spaldt_tertentu_keterisian_prov apbd }	</label>
+	<div class="r-search-option">
+		{$searchtype_apbd}
+	</div>
+	<div class="r-search-field">
+		{$apbd_editcontrol}	</div>
+	<div class="r-search-field">
+		{$apbd_editcontrol1}
+	</div>
+	
+</div>
+
+{END apbd_fieldblock}
+											
+{BEGIN lainlain_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_lainlain}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="lainlain{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="lainlain" data-fieldname="lainlain" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_lainlain}">
+		{$label v_spaldt_tertentu_keterisian_prov lainlain }	</label>
+	<div class="r-search-option">
+		{$searchtype_lainlain}
+	</div>
+	<div class="r-search-field">
+		{$lainlain_editcontrol}	</div>
+	<div class="r-search-field">
+		{$lainlain_editcontrol1}
+	</div>
+	
+</div>
+
+{END lainlain_fieldblock}
+											
+{BEGIN dak_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dak}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="dak{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="dak" data-fieldname="dak" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_dak}">
+		{$label v_spaldt_tertentu_keterisian_prov dak }	</label>
+	<div class="r-search-option">
+		{$searchtype_dak}
+	</div>
+	<div class="r-search-field">
+		{$dak_editcontrol}	</div>
+	<div class="r-search-field">
+		{$dak_editcontrol1}
+	</div>
+	
+</div>
+
+{END dak_fieldblock}
+											
+{BEGIN hibah_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_hibah}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="hibah{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="hibah" data-fieldname="hibah" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_hibah}">
+		{$label v_spaldt_tertentu_keterisian_prov hibah }	</label>
+	<div class="r-search-option">
+		{$searchtype_hibah}
+	</div>
+	<div class="r-search-field">
+		{$hibah_editcontrol}	</div>
+	<div class="r-search-field">
+		{$hibah_editcontrol1}
+	</div>
+	
+</div>
+
+{END hibah_fieldblock}
+											
+{BEGIN csr_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_csr}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="csr{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="csr" data-fieldname="csr" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_csr}">
+		{$label v_spaldt_tertentu_keterisian_prov csr }	</label>
+	<div class="r-search-option">
+		{$searchtype_csr}
+	</div>
+	<div class="r-search-field">
+		{$csr_editcontrol}	</div>
+	<div class="r-search-field">
+		{$csr_editcontrol1}
+	</div>
+	
+</div>
+
+{END csr_fieldblock}
+											
+{BEGIN total_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_total}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="total{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="total" data-fieldname="total" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_total}">
+		{$label v_spaldt_tertentu_keterisian_prov total }	</label>
+	<div class="r-search-option">
+		{$searchtype_total}
+	</div>
+	<div class="r-search-field">
+		{$total_editcontrol}	</div>
+	<div class="r-search-field">
+		{$total_editcontrol1}
+	</div>
+	
+</div>
+
+{END total_fieldblock}
+											
+{BEGIN status_lahan_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_status_lahan}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="status_lahan{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="status_lahan" data-fieldname="status_lahan" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_status_lahan}">
+		{$label v_spaldt_tertentu_keterisian_prov status_lahan }	</label>
+	<div class="r-search-option">
+		{$searchtype_status_lahan}
+	</div>
+	<div class="r-search-field">
+		{$status_lahan_editcontrol}	</div>
+	<div class="r-search-field">
+		{$status_lahan_editcontrol1}
+	</div>
+	
+</div>
+
+{END status_lahan_fieldblock}
+											
+{BEGIN luas_lahan_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_luas_lahan}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="luas_lahan{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field17" {$item_integrated_search_field17} data-pageid="{$pageid}" data-field="luas_lahan" data-fieldname="luas_lahan" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_luas_lahan}">
+		{$label v_spaldt_tertentu_keterisian_prov luas_lahan }	</label>
+	<div class="r-search-option">
+		{$searchtype_luas_lahan}
+	</div>
+	<div class="r-search-field">
+		{$luas_lahan_editcontrol}	</div>
+	<div class="r-search-field">
+		{$luas_lahan_editcontrol1}
+	</div>
+	
+</div>
+
+{END luas_lahan_fieldblock}
+											
+{BEGIN pengelolaan_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pengelolaan}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="pengelolaan{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field18" {$item_integrated_search_field18} data-pageid="{$pageid}" data-field="pengelolaan" data-fieldname="pengelolaan" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_pengelolaan}">
+		{$label v_spaldt_tertentu_keterisian_prov pengelolaan }	</label>
+	<div class="r-search-option">
+		{$searchtype_pengelolaan}
+	</div>
+	<div class="r-search-field">
+		{$pengelolaan_editcontrol}	</div>
+	<div class="r-search-field">
+		{$pengelolaan_editcontrol1}
+	</div>
+	
+</div>
+
+{END pengelolaan_fieldblock}
+											
+{BEGIN kapasitas_desain_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kapasitas_desain}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kapasitas_desain{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field19" {$item_integrated_search_field19} data-pageid="{$pageid}" data-field="kapasitas_desain" data-fieldname="kapasitas_desain" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kapasitas_desain}">
+		{$label v_spaldt_tertentu_keterisian_prov kapasitas_desain }	</label>
+	<div class="r-search-option">
+		{$searchtype_kapasitas_desain}
+	</div>
+	<div class="r-search-field">
+		{$kapasitas_desain_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kapasitas_desain_editcontrol1}
+	</div>
+	
+</div>
+
+{END kapasitas_desain_fieldblock}
+											
+{BEGIN kapasitas_terpakai_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kapasitas_terpakai}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kapasitas_terpakai{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field20" {$item_integrated_search_field20} data-pageid="{$pageid}" data-field="kapasitas_terpakai" data-fieldname="kapasitas_terpakai" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kapasitas_terpakai}">
+		{$label v_spaldt_tertentu_keterisian_prov kapasitas_terpakai }	</label>
+	<div class="r-search-option">
+		{$searchtype_kapasitas_terpakai}
+	</div>
+	<div class="r-search-field">
+		{$kapasitas_terpakai_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kapasitas_terpakai_editcontrol1}
+	</div>
+	
+</div>
+
+{END kapasitas_terpakai_fieldblock}
+											
+{BEGIN kapasitas_tidak_terpakai_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kapasitas_tidak_terpakai}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kapasitas_tidak_terpakai{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field21" {$item_integrated_search_field21} data-pageid="{$pageid}" data-field="kapasitas_tidak_terpakai" data-fieldname="kapasitas_tidak_terpakai" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kapasitas_tidak_terpakai}">
+		{$label v_spaldt_tertentu_keterisian_prov kapasitas_tidak_terpakai }	</label>
+	<div class="r-search-option">
+		{$searchtype_kapasitas_tidak_terpakai}
+	</div>
+	<div class="r-search-field">
+		{$kapasitas_tidak_terpakai_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kapasitas_tidak_terpakai_editcontrol1}
+	</div>
+	
+</div>
+
+{END kapasitas_tidak_terpakai_fieldblock}
+											
+{BEGIN jenis_pengelolaan_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jenis_pengelolaan}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jenis_pengelolaan{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field22" {$item_integrated_search_field22} data-pageid="{$pageid}" data-field="jenis_pengelolaan" data-fieldname="jenis_pengelolaan" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jenis_pengelolaan}">
+		{$label v_spaldt_tertentu_keterisian_prov jenis_pengelolaan }	</label>
+	<div class="r-search-option">
+		{$searchtype_jenis_pengelolaan}
+	</div>
+	<div class="r-search-field">
+		{$jenis_pengelolaan_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jenis_pengelolaan_editcontrol1}
+	</div>
+	
+</div>
+
+{END jenis_pengelolaan_fieldblock}
+											
+{BEGIN peta_cakupan_air_limbah_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_peta_cakupan_air_limbah}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="peta_cakupan_air_limbah{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field23" {$item_integrated_search_field23} data-pageid="{$pageid}" data-field="peta_cakupan_air_limbah" data-fieldname="peta_cakupan_air_limbah" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_peta_cakupan_air_limbah}">
+		{$label v_spaldt_tertentu_keterisian_prov peta_cakupan_air_limbah }	</label>
+	<div class="r-search-option">
+		{$searchtype_peta_cakupan_air_limbah}
+	</div>
+	<div class="r-search-field">
+		{$peta_cakupan_air_limbah_editcontrol}	</div>
+	<div class="r-search-field">
+		{$peta_cakupan_air_limbah_editcontrol1}
+	</div>
+	
+</div>
+
+{END peta_cakupan_air_limbah_fieldblock}
+											
+{BEGIN status_verifikasi_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_status_verifikasi}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="status_verifikasi{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field24" {$item_integrated_search_field24} data-pageid="{$pageid}" data-field="status_verifikasi" data-fieldname="status_verifikasi" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_status_verifikasi}">
+		{$label v_spaldt_tertentu_keterisian_prov status_verifikasi }	</label>
+	<div class="r-search-option">
+		{$searchtype_status_verifikasi}
+	</div>
+	<div class="r-search-field">
+		{$status_verifikasi_editcontrol}	</div>
+	<div class="r-search-field">
+		{$status_verifikasi_editcontrol1}
+	</div>
+	
+</div>
+
+{END status_verifikasi_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Cari			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Tata ulang			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Batal			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

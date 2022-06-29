@@ -1,0 +1,934 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel sp_pengolahan_ver search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="id" data-fieldname="id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id}">
+		{$label sp_pengolahan_ver id }	</label>
+	<div class="r-search-option">
+		{$searchtype_id}
+	</div>
+	<div class="r-search-field">
+		{$id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_fieldblock}
+											
+{BEGIN propinsiid_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_propinsiid}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="propinsiid{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="propinsiid" data-fieldname="propinsiid" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_propinsiid}">
+		{$label sp_pengolahan_ver propinsiid }	</label>
+	<div class="r-search-option">
+		{$searchtype_propinsiid}
+	</div>
+	<div class="r-search-field">
+		{$propinsiid_editcontrol}	</div>
+	<div class="r-search-field">
+		{$propinsiid_editcontrol1}
+	</div>
+	
+</div>
+
+{END propinsiid_fieldblock}
+											
+{BEGIN kabupatenkotaid_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kabupatenkotaid}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kabupatenkotaid{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="kabupatenkotaid" data-fieldname="kabupatenkotaid" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kabupatenkotaid}">
+		{$label sp_pengolahan_ver kabupatenkotaid }	</label>
+	<div class="r-search-option">
+		{$searchtype_kabupatenkotaid}
+	</div>
+	<div class="r-search-field">
+		{$kabupatenkotaid_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kabupatenkotaid_editcontrol1}
+	</div>
+	
+</div>
+
+{END kabupatenkotaid_fieldblock}
+											
+{BEGIN namafasilitas_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_namafasilitas}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="namafasilitas{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="namafasilitas" data-fieldname="namafasilitas" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_namafasilitas}">
+		{$label sp_pengolahan_ver namafasilitas }	</label>
+	<div class="r-search-option">
+		{$searchtype_namafasilitas}
+	</div>
+	<div class="r-search-field">
+		{$namafasilitas_editcontrol}	</div>
+	<div class="r-search-field">
+		{$namafasilitas_editcontrol1}
+	</div>
+	
+</div>
+
+{END namafasilitas_fieldblock}
+											
+{BEGIN jenisfasilitas_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jenisfasilitas}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jenisfasilitas{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="jenisfasilitas" data-fieldname="jenisfasilitas" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jenisfasilitas}">
+		{$label sp_pengolahan_ver jenisfasilitas }	</label>
+	<div class="r-search-option">
+		{$searchtype_jenisfasilitas}
+	</div>
+	<div class="r-search-field">
+		{$jenisfasilitas_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jenisfasilitas_editcontrol1}
+	</div>
+	
+</div>
+
+{END jenisfasilitas_fieldblock}
+											
+{BEGIN kondisifasilitas_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kondisifasilitas}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kondisifasilitas{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="kondisifasilitas" data-fieldname="kondisifasilitas" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kondisifasilitas}">
+		{$label sp_pengolahan_ver kondisifasilitas }	</label>
+	<div class="r-search-option">
+		{$searchtype_kondisifasilitas}
+	</div>
+	<div class="r-search-field">
+		{$kondisifasilitas_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kondisifasilitas_editcontrol1}
+	</div>
+	
+</div>
+
+{END kondisifasilitas_fieldblock}
+											
+{BEGIN kategoripelayanan_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kategoripelayanan}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kategoripelayanan{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="kategoripelayanan" data-fieldname="kategoripelayanan" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kategoripelayanan}">
+		{$label sp_pengolahan_ver kategoripelayanan }	</label>
+	<div class="r-search-option">
+		{$searchtype_kategoripelayanan}
+	</div>
+	<div class="r-search-field">
+		{$kategoripelayanan_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kategoripelayanan_editcontrol1}
+	</div>
+	
+</div>
+
+{END kategoripelayanan_fieldblock}
+											
+{BEGIN kecamatandistrik_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kecamatandistrik}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kecamatandistrik{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="kecamatandistrik" data-fieldname="kecamatandistrik" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kecamatandistrik}">
+		{$label sp_pengolahan_ver kecamatandistrik }	</label>
+	<div class="r-search-option">
+		{$searchtype_kecamatandistrik}
+	</div>
+	<div class="r-search-field">
+		{$kecamatandistrik_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kecamatandistrik_editcontrol1}
+	</div>
+	
+</div>
+
+{END kecamatandistrik_fieldblock}
+											
+{BEGIN desakelurahan_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_desakelurahan}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="desakelurahan{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="desakelurahan" data-fieldname="desakelurahan" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_desakelurahan}">
+		{$label sp_pengolahan_ver desakelurahan }	</label>
+	<div class="r-search-option">
+		{$searchtype_desakelurahan}
+	</div>
+	<div class="r-search-field">
+		{$desakelurahan_editcontrol}	</div>
+	<div class="r-search-field">
+		{$desakelurahan_editcontrol1}
+	</div>
+	
+</div>
+
+{END desakelurahan_fieldblock}
+											
+{BEGIN pengelola_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pengelola}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="pengelola{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="pengelola" data-fieldname="pengelola" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_pengelola}">
+		{$label sp_pengolahan_ver pengelola }	</label>
+	<div class="r-search-option">
+		{$searchtype_pengelola}
+	</div>
+	<div class="r-search-field">
+		{$pengelola_editcontrol}	</div>
+	<div class="r-search-field">
+		{$pengelola_editcontrol1}
+	</div>
+	
+</div>
+
+{END pengelola_fieldblock}
+											
+{BEGIN jenispengelola_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jenispengelola}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jenispengelola{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="jenispengelola" data-fieldname="jenispengelola" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jenispengelola}">
+		{$label sp_pengolahan_ver jenispengelola }	</label>
+	<div class="r-search-option">
+		{$searchtype_jenispengelola}
+	</div>
+	<div class="r-search-field">
+		{$jenispengelola_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jenispengelola_editcontrol1}
+	</div>
+	
+</div>
+
+{END jenispengelola_fieldblock}
+											
+{BEGIN namakepalafasilitas_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_namakepalafasilitas}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="namakepalafasilitas{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="namakepalafasilitas" data-fieldname="namakepalafasilitas" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_namakepalafasilitas}">
+		{$label sp_pengolahan_ver namakepalafasilitas }	</label>
+	<div class="r-search-option">
+		{$searchtype_namakepalafasilitas}
+	</div>
+	<div class="r-search-field">
+		{$namakepalafasilitas_editcontrol}	</div>
+	<div class="r-search-field">
+		{$namakepalafasilitas_editcontrol1}
+	</div>
+	
+</div>
+
+{END namakepalafasilitas_fieldblock}
+											
+{BEGIN alamatfasilitas_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_alamatfasilitas}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="alamatfasilitas{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="alamatfasilitas" data-fieldname="alamatfasilitas" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_alamatfasilitas}">
+		{$label sp_pengolahan_ver alamatfasilitas }	</label>
+	<div class="r-search-option">
+		{$searchtype_alamatfasilitas}
+	</div>
+	<div class="r-search-field">
+		{$alamatfasilitas_editcontrol}	</div>
+	<div class="r-search-field">
+		{$alamatfasilitas_editcontrol1}
+	</div>
+	
+</div>
+
+{END alamatfasilitas_fieldblock}
+											
+{BEGIN phonefasilitas_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_phonefasilitas}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="phonefasilitas{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="phonefasilitas" data-fieldname="phonefasilitas" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_phonefasilitas}">
+		{$label sp_pengolahan_ver phonefasilitas }	</label>
+	<div class="r-search-option">
+		{$searchtype_phonefasilitas}
+	</div>
+	<div class="r-search-field">
+		{$phonefasilitas_editcontrol}	</div>
+	<div class="r-search-field">
+		{$phonefasilitas_editcontrol1}
+	</div>
+	
+</div>
+
+{END phonefasilitas_fieldblock}
+											
+{BEGIN emailfasilitas_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_emailfasilitas}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="emailfasilitas{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="emailfasilitas" data-fieldname="emailfasilitas" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_emailfasilitas}">
+		{$label sp_pengolahan_ver emailfasilitas }	</label>
+	<div class="r-search-option">
+		{$searchtype_emailfasilitas}
+	</div>
+	<div class="r-search-field">
+		{$emailfasilitas_editcontrol}	</div>
+	<div class="r-search-field">
+		{$emailfasilitas_editcontrol1}
+	</div>
+	
+</div>
+
+{END emailfasilitas_fieldblock}
+											
+{BEGIN tahunpembangunan_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tahunpembangunan}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="tahunpembangunan{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="tahunpembangunan" data-fieldname="tahunpembangunan" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_tahunpembangunan}">
+		{$label sp_pengolahan_ver tahunpembangunan }	</label>
+	<div class="r-search-option">
+		{$searchtype_tahunpembangunan}
+	</div>
+	<div class="r-search-field">
+		{$tahunpembangunan_editcontrol}	</div>
+	<div class="r-search-field">
+		{$tahunpembangunan_editcontrol1}
+	</div>
+	
+</div>
+
+{END tahunpembangunan_fieldblock}
+											
+{BEGIN sumberdanapembangunan_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sumberdanapembangunan}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sumberdanapembangunan{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="sumberdanapembangunan" data-fieldname="sumberdanapembangunan" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sumberdanapembangunan}">
+		{$label sp_pengolahan_ver sumberdanapembangunan }	</label>
+	<div class="r-search-option">
+		{$searchtype_sumberdanapembangunan}
+	</div>
+	<div class="r-search-field">
+		{$sumberdanapembangunan_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sumberdanapembangunan_editcontrol1}
+	</div>
+	
+</div>
+
+{END sumberdanapembangunan_fieldblock}
+											
+{BEGIN biayapembangunan_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_biayapembangunan}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="biayapembangunan{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field17" {$item_integrated_search_field17} data-pageid="{$pageid}" data-field="biayapembangunan" data-fieldname="biayapembangunan" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_biayapembangunan}">
+		{$label sp_pengolahan_ver biayapembangunan }	</label>
+	<div class="r-search-option">
+		{$searchtype_biayapembangunan}
+	</div>
+	<div class="r-search-field">
+		{$biayapembangunan_editcontrol}	</div>
+	<div class="r-search-field">
+		{$biayapembangunan_editcontrol1}
+	</div>
+	
+</div>
+
+{END biayapembangunan_fieldblock}
+											
+{BEGIN kapasitassampahmasuk_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kapasitassampahmasuk}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kapasitassampahmasuk{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field25" {$item_integrated_search_field25} data-pageid="{$pageid}" data-field="kapasitassampahmasuk" data-fieldname="kapasitassampahmasuk" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kapasitassampahmasuk}">
+		{$label sp_pengolahan_ver kapasitassampahmasuk }	</label>
+	<div class="r-search-option">
+		{$searchtype_kapasitassampahmasuk}
+	</div>
+	<div class="r-search-field">
+		{$kapasitassampahmasuk_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kapasitassampahmasuk_editcontrol1}
+	</div>
+	
+</div>
+
+{END kapasitassampahmasuk_fieldblock}
+											
+{BEGIN jumlahpendudukterlayani_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jumlahpendudukterlayani}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jumlahpendudukterlayani{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field36" {$item_integrated_search_field36} data-pageid="{$pageid}" data-field="jumlahpendudukterlayani" data-fieldname="jumlahpendudukterlayani" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jumlahpendudukterlayani}">
+		{$label sp_pengolahan_ver jumlahpendudukterlayani }	</label>
+	<div class="r-search-option">
+		{$searchtype_jumlahpendudukterlayani}
+	</div>
+	<div class="r-search-field">
+		{$jumlahpendudukterlayani_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jumlahpendudukterlayani_editcontrol1}
+	</div>
+	
+</div>
+
+{END jumlahpendudukterlayani_fieldblock}
+											
+{BEGIN verifikasi_prov_user_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_verifikasi_prov_user}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="verifikasi_prov_user{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field18" {$item_integrated_search_field18} data-pageid="{$pageid}" data-field="verifikasi_prov_user" data-fieldname="verifikasi_prov_user" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_verifikasi_prov_user}">
+		{$label sp_pengolahan_ver verifikasi_prov_user }	</label>
+	<div class="r-search-option">
+		{$searchtype_verifikasi_prov_user}
+	</div>
+	<div class="r-search-field">
+		{$verifikasi_prov_user_editcontrol}	</div>
+	<div class="r-search-field">
+		{$verifikasi_prov_user_editcontrol1}
+	</div>
+	
+</div>
+
+{END verifikasi_prov_user_fieldblock}
+											
+{BEGIN tanggal_verifikasi_prov_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tanggal_verifikasi_prov}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="tanggal_verifikasi_prov{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field19" {$item_integrated_search_field19} data-pageid="{$pageid}" data-field="tanggal_verifikasi_prov" data-fieldname="tanggal_verifikasi_prov" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_tanggal_verifikasi_prov}">
+		{$label sp_pengolahan_ver tanggal_verifikasi_prov }	</label>
+	<div class="r-search-option">
+		{$searchtype_tanggal_verifikasi_prov}
+	</div>
+	<div class="r-search-field">
+		{$tanggal_verifikasi_prov_editcontrol}	</div>
+	<div class="r-search-field">
+		{$tanggal_verifikasi_prov_editcontrol1}
+	</div>
+	
+</div>
+
+{END tanggal_verifikasi_prov_fieldblock}
+											
+{BEGIN verifikasi_prov_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_verifikasi_prov}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="verifikasi_prov{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field20" {$item_integrated_search_field20} data-pageid="{$pageid}" data-field="verifikasi_prov" data-fieldname="verifikasi_prov" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_verifikasi_prov}">
+		{$label sp_pengolahan_ver verifikasi_prov }	</label>
+	<div class="r-search-option">
+		{$searchtype_verifikasi_prov}
+	</div>
+	<div class="r-search-field">
+		{$verifikasi_prov_editcontrol}	</div>
+	<div class="r-search-field">
+		{$verifikasi_prov_editcontrol1}
+	</div>
+	
+</div>
+
+{END verifikasi_prov_fieldblock}
+											
+{BEGIN keterangan_verifikasi_prov_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_keterangan_verifikasi_prov}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="keterangan_verifikasi_prov{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field21" {$item_integrated_search_field21} data-pageid="{$pageid}" data-field="keterangan_verifikasi_prov" data-fieldname="keterangan_verifikasi_prov" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_keterangan_verifikasi_prov}">
+		{$label sp_pengolahan_ver keterangan_verifikasi_prov }	</label>
+	<div class="r-search-option">
+		{$searchtype_keterangan_verifikasi_prov}
+	</div>
+	<div class="r-search-field">
+		{$keterangan_verifikasi_prov_editcontrol}	</div>
+	<div class="r-search-field">
+		{$keterangan_verifikasi_prov_editcontrol1}
+	</div>
+	
+</div>
+
+{END keterangan_verifikasi_prov_fieldblock}
+											
+{BEGIN verifikasi_pusat_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_verifikasi_pusat}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="verifikasi_pusat{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field22" {$item_integrated_search_field22} data-pageid="{$pageid}" data-field="verifikasi_pusat" data-fieldname="verifikasi_pusat" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_verifikasi_pusat}">
+		{$label sp_pengolahan_ver verifikasi_pusat }	</label>
+	<div class="r-search-option">
+		{$searchtype_verifikasi_pusat}
+	</div>
+	<div class="r-search-field">
+		{$verifikasi_pusat_editcontrol}	</div>
+	<div class="r-search-field">
+		{$verifikasi_pusat_editcontrol1}
+	</div>
+	
+</div>
+
+{END verifikasi_pusat_fieldblock}
+											
+{BEGIN tanggal_verifikasi_pusat_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tanggal_verifikasi_pusat}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="tanggal_verifikasi_pusat{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field23" {$item_integrated_search_field23} data-pageid="{$pageid}" data-field="tanggal_verifikasi_pusat" data-fieldname="tanggal_verifikasi_pusat" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_tanggal_verifikasi_pusat}">
+		{$label sp_pengolahan_ver tanggal_verifikasi_pusat }	</label>
+	<div class="r-search-option">
+		{$searchtype_tanggal_verifikasi_pusat}
+	</div>
+	<div class="r-search-field">
+		{$tanggal_verifikasi_pusat_editcontrol}	</div>
+	<div class="r-search-field">
+		{$tanggal_verifikasi_pusat_editcontrol1}
+	</div>
+	
+</div>
+
+{END tanggal_verifikasi_pusat_fieldblock}
+											
+{BEGIN keterangan_verifikasi_pusat_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_keterangan_verifikasi_pusat}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="keterangan_verifikasi_pusat{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field24" {$item_integrated_search_field24} data-pageid="{$pageid}" data-field="keterangan_verifikasi_pusat" data-fieldname="keterangan_verifikasi_pusat" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_keterangan_verifikasi_pusat}">
+		{$label sp_pengolahan_ver keterangan_verifikasi_pusat }	</label>
+	<div class="r-search-option">
+		{$searchtype_keterangan_verifikasi_pusat}
+	</div>
+	<div class="r-search-field">
+		{$keterangan_verifikasi_pusat_editcontrol}	</div>
+	<div class="r-search-field">
+		{$keterangan_verifikasi_pusat_editcontrol1}
+	</div>
+	
+</div>
+
+{END keterangan_verifikasi_pusat_fieldblock}
+											
+{BEGIN status_keberfungsian_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_status_keberfungsian}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="status_keberfungsian{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field26" {$item_integrated_search_field26} data-pageid="{$pageid}" data-field="status_keberfungsian" data-fieldname="status_keberfungsian" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_status_keberfungsian}">
+		{$label sp_pengolahan_ver status_keberfungsian }	</label>
+	<div class="r-search-option">
+		{$searchtype_status_keberfungsian}
+	</div>
+	<div class="r-search-field">
+		{$status_keberfungsian_editcontrol}	</div>
+	<div class="r-search-field">
+		{$status_keberfungsian_editcontrol1}
+	</div>
+	
+</div>
+
+{END status_keberfungsian_fieldblock}
+											
+{BEGIN kualitas_keberfungsian_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kualitas_keberfungsian}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kualitas_keberfungsian{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field27" {$item_integrated_search_field27} data-pageid="{$pageid}" data-field="kualitas_keberfungsian" data-fieldname="kualitas_keberfungsian" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kualitas_keberfungsian}">
+		{$label sp_pengolahan_ver kualitas_keberfungsian }	</label>
+	<div class="r-search-option">
+		{$searchtype_kualitas_keberfungsian}
+	</div>
+	<div class="r-search-field">
+		{$kualitas_keberfungsian_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kualitas_keberfungsian_editcontrol1}
+	</div>
+	
+</div>
+
+{END kualitas_keberfungsian_fieldblock}
+											
+{BEGIN latitude_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_latitude}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="latitude{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field28" {$item_integrated_search_field28} data-pageid="{$pageid}" data-field="latitude" data-fieldname="latitude" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_latitude}">
+		{$label sp_pengolahan_ver latitude }	</label>
+	<div class="r-search-option">
+		{$searchtype_latitude}
+	</div>
+	<div class="r-search-field">
+		{$latitude_editcontrol}	</div>
+	<div class="r-search-field">
+		{$latitude_editcontrol1}
+	</div>
+	
+</div>
+
+{END latitude_fieldblock}
+											
+{BEGIN longitude_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_longitude}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="longitude{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field29" {$item_integrated_search_field29} data-pageid="{$pageid}" data-field="longitude" data-fieldname="longitude" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_longitude}">
+		{$label sp_pengolahan_ver longitude }	</label>
+	<div class="r-search-option">
+		{$searchtype_longitude}
+	</div>
+	<div class="r-search-field">
+		{$longitude_editcontrol}	</div>
+	<div class="r-search-field">
+		{$longitude_editcontrol1}
+	</div>
+	
+</div>
+
+{END longitude_fieldblock}
+											
+{BEGIN sumberdana2_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sumberdana2}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sumberdana2{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field30" {$item_integrated_search_field30} data-pageid="{$pageid}" data-field="sumberdana2" data-fieldname="sumberdana2" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sumberdana2}">
+		{$label sp_pengolahan_ver sumberdana2 }	</label>
+	<div class="r-search-option">
+		{$searchtype_sumberdana2}
+	</div>
+	<div class="r-search-field">
+		{$sumberdana2_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sumberdana2_editcontrol1}
+	</div>
+	
+</div>
+
+{END sumberdana2_fieldblock}
+											
+{BEGIN biayadana2_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_biayadana2}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="biayadana2{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field31" {$item_integrated_search_field31} data-pageid="{$pageid}" data-field="biayadana2" data-fieldname="biayadana2" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_biayadana2}">
+		{$label sp_pengolahan_ver biayadana2 }	</label>
+	<div class="r-search-option">
+		{$searchtype_biayadana2}
+	</div>
+	<div class="r-search-field">
+		{$biayadana2_editcontrol}	</div>
+	<div class="r-search-field">
+		{$biayadana2_editcontrol1}
+	</div>
+	
+</div>
+
+{END biayadana2_fieldblock}
+											
+{BEGIN jumlah_pemanfaat_KK_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jumlah_pemanfaat_KK}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jumlah_pemanfaat_KK{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field32" {$item_integrated_search_field32} data-pageid="{$pageid}" data-field="jumlah_pemanfaat_KK" data-fieldname="jumlah_pemanfaat_KK" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jumlah_pemanfaat_KK}">
+		{$label sp_pengolahan_ver jumlah_pemanfaat_KK }	</label>
+	<div class="r-search-option">
+		{$searchtype_jumlah_pemanfaat_KK}
+	</div>
+	<div class="r-search-field">
+		{$jumlah_pemanfaat_KK_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jumlah_pemanfaat_KK_editcontrol1}
+	</div>
+	
+</div>
+
+{END jumlah_pemanfaat_KK_fieldblock}
+											
+{BEGIN opsi_teknologi_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_opsi_teknologi}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="opsi_teknologi{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field33" {$item_integrated_search_field33} data-pageid="{$pageid}" data-field="opsi_teknologi" data-fieldname="opsi_teknologi" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_opsi_teknologi}">
+		{$label sp_pengolahan_ver opsi_teknologi }	</label>
+	<div class="r-search-option">
+		{$searchtype_opsi_teknologi}
+	</div>
+	<div class="r-search-field">
+		{$opsi_teknologi_editcontrol}	</div>
+	<div class="r-search-field">
+		{$opsi_teknologi_editcontrol1}
+	</div>
+	
+</div>
+
+{END opsi_teknologi_fieldblock}
+											
+{BEGIN opsi_teknologi_anorganik_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_opsi_teknologi_anorganik}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="opsi_teknologi_anorganik{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field34" {$item_integrated_search_field34} data-pageid="{$pageid}" data-field="opsi_teknologi_anorganik" data-fieldname="opsi_teknologi_anorganik" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_opsi_teknologi_anorganik}">
+		{$label sp_pengolahan_ver opsi_teknologi_anorganik }	</label>
+	<div class="r-search-option">
+		{$searchtype_opsi_teknologi_anorganik}
+	</div>
+	<div class="r-search-field">
+		{$opsi_teknologi_anorganik_editcontrol}	</div>
+	<div class="r-search-field">
+		{$opsi_teknologi_anorganik_editcontrol1}
+	</div>
+	
+</div>
+
+{END opsi_teknologi_anorganik_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Cari			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Tata ulang			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Batal			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

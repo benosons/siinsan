@@ -1,0 +1,524 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel al_mck search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN mckid_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mckid}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="mckid{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="mckid" data-fieldname="mckid" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_mckid}">
+		{$label al_mck mckid }	</label>
+	<div class="r-search-option">
+		{$searchtype_mckid}
+	</div>
+	<div class="r-search-field">
+		{$mckid_editcontrol}	</div>
+	<div class="r-search-field">
+		{$mckid_editcontrol1}
+	</div>
+	
+</div>
+
+{END mckid_fieldblock}
+											
+{BEGIN r_provinsiid_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_r_provinsiid}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="r_provinsiid{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="r_provinsiid" data-fieldname="r_provinsiid" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_r_provinsiid}">
+		{$label al_mck r_provinsiid }	</label>
+	<div class="r-search-option">
+		{$searchtype_r_provinsiid}
+	</div>
+	<div class="r-search-field">
+		{$r_provinsiid_editcontrol}	</div>
+	<div class="r-search-field">
+		{$r_provinsiid_editcontrol1}
+	</div>
+	
+</div>
+
+{END r_provinsiid_fieldblock}
+											
+{BEGIN r_kabupatenkotaid_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_r_kabupatenkotaid}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="r_kabupatenkotaid{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="r_kabupatenkotaid" data-fieldname="r_kabupatenkotaid" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_r_kabupatenkotaid}">
+		{$label al_mck r_kabupatenkotaid }	</label>
+	<div class="r-search-option">
+		{$searchtype_r_kabupatenkotaid}
+	</div>
+	<div class="r-search-field">
+		{$r_kabupatenkotaid_editcontrol}	</div>
+	<div class="r-search-field">
+		{$r_kabupatenkotaid_editcontrol1}
+	</div>
+	
+</div>
+
+{END r_kabupatenkotaid_fieldblock}
+											
+{BEGIN r_kecamatanid_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_r_kecamatanid}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="r_kecamatanid{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="r_kecamatanid" data-fieldname="r_kecamatanid" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_r_kecamatanid}">
+		{$label al_mck r_kecamatanid }	</label>
+	<div class="r-search-option">
+		{$searchtype_r_kecamatanid}
+	</div>
+	<div class="r-search-field">
+		{$r_kecamatanid_editcontrol}	</div>
+	<div class="r-search-field">
+		{$r_kecamatanid_editcontrol1}
+	</div>
+	
+</div>
+
+{END r_kecamatanid_fieldblock}
+											
+{BEGIN r_kelurahanid_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_r_kelurahanid}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="r_kelurahanid{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="r_kelurahanid" data-fieldname="r_kelurahanid" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_r_kelurahanid}">
+		{$label al_mck r_kelurahanid }	</label>
+	<div class="r-search-option">
+		{$searchtype_r_kelurahanid}
+	</div>
+	<div class="r-search-field">
+		{$r_kelurahanid_editcontrol}	</div>
+	<div class="r-search-field">
+		{$r_kelurahanid_editcontrol1}
+	</div>
+	
+</div>
+
+{END r_kelurahanid_fieldblock}
+											
+{BEGIN longitude_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_longitude}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="longitude{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="longitude" data-fieldname="longitude" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_longitude}">
+		{$label al_mck longitude }	</label>
+	<div class="r-search-option">
+		{$searchtype_longitude}
+	</div>
+	<div class="r-search-field">
+		{$longitude_editcontrol}	</div>
+	<div class="r-search-field">
+		{$longitude_editcontrol1}
+	</div>
+	
+</div>
+
+{END longitude_fieldblock}
+											
+{BEGIN latitude_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_latitude}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="latitude{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="latitude" data-fieldname="latitude" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_latitude}">
+		{$label al_mck latitude }	</label>
+	<div class="r-search-option">
+		{$searchtype_latitude}
+	</div>
+	<div class="r-search-field">
+		{$latitude_editcontrol}	</div>
+	<div class="r-search-field">
+		{$latitude_editcontrol1}
+	</div>
+	
+</div>
+
+{END latitude_fieldblock}
+											
+{BEGIN sumberair_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sumberair}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sumberair{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="sumberair" data-fieldname="sumberair" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sumberair}">
+		{$label al_mck sumberair }	</label>
+	<div class="r-search-option">
+		{$searchtype_sumberair}
+	</div>
+	<div class="r-search-field">
+		{$sumberair_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sumberair_editcontrol1}
+	</div>
+	
+</div>
+
+{END sumberair_fieldblock}
+											
+{BEGIN tahunpembangunan_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tahunpembangunan}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="tahunpembangunan{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="tahunpembangunan" data-fieldname="tahunpembangunan" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_tahunpembangunan}">
+		{$label al_mck tahunpembangunan }	</label>
+	<div class="r-search-option">
+		{$searchtype_tahunpembangunan}
+	</div>
+	<div class="r-search-field">
+		{$tahunpembangunan_editcontrol}	</div>
+	<div class="r-search-field">
+		{$tahunpembangunan_editcontrol1}
+	</div>
+	
+</div>
+
+{END tahunpembangunan_fieldblock}
+											
+{BEGIN apbn_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_apbn}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="apbn{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="apbn" data-fieldname="apbn" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_apbn}">
+		{$label al_mck apbn }	</label>
+	<div class="r-search-option">
+		{$searchtype_apbn}
+	</div>
+	<div class="r-search-field">
+		{$apbn_editcontrol}	</div>
+	<div class="r-search-field">
+		{$apbn_editcontrol1}
+	</div>
+	
+</div>
+
+{END apbn_fieldblock}
+											
+{BEGIN apbd_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_apbd}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="apbd{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="apbd" data-fieldname="apbd" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_apbd}">
+		{$label al_mck apbd }	</label>
+	<div class="r-search-option">
+		{$searchtype_apbd}
+	</div>
+	<div class="r-search-field">
+		{$apbd_editcontrol}	</div>
+	<div class="r-search-field">
+		{$apbd_editcontrol1}
+	</div>
+	
+</div>
+
+{END apbd_fieldblock}
+											
+{BEGIN lainlain_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_lainlain}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="lainlain{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="lainlain" data-fieldname="lainlain" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_lainlain}">
+		{$label al_mck lainlain }	</label>
+	<div class="r-search-option">
+		{$searchtype_lainlain}
+	</div>
+	<div class="r-search-field">
+		{$lainlain_editcontrol}	</div>
+	<div class="r-search-field">
+		{$lainlain_editcontrol1}
+	</div>
+	
+</div>
+
+{END lainlain_fieldblock}
+											
+{BEGIN dak_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dak}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="dak{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="dak" data-fieldname="dak" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_dak}">
+		{$label al_mck dak }	</label>
+	<div class="r-search-option">
+		{$searchtype_dak}
+	</div>
+	<div class="r-search-field">
+		{$dak_editcontrol}	</div>
+	<div class="r-search-field">
+		{$dak_editcontrol1}
+	</div>
+	
+</div>
+
+{END dak_fieldblock}
+											
+{BEGIN hibah_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_hibah}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="hibah{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="hibah" data-fieldname="hibah" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_hibah}">
+		{$label al_mck hibah }	</label>
+	<div class="r-search-option">
+		{$searchtype_hibah}
+	</div>
+	<div class="r-search-field">
+		{$hibah_editcontrol}	</div>
+	<div class="r-search-field">
+		{$hibah_editcontrol1}
+	</div>
+	
+</div>
+
+{END hibah_fieldblock}
+											
+{BEGIN csr_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_csr}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="csr{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="csr" data-fieldname="csr" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_csr}">
+		{$label al_mck csr }	</label>
+	<div class="r-search-option">
+		{$searchtype_csr}
+	</div>
+	<div class="r-search-field">
+		{$csr_editcontrol}	</div>
+	<div class="r-search-field">
+		{$csr_editcontrol1}
+	</div>
+	
+</div>
+
+{END csr_fieldblock}
+											
+{BEGIN total_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_total}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="total{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="total" data-fieldname="total" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_total}">
+		{$label al_mck total }	</label>
+	<div class="r-search-option">
+		{$searchtype_total}
+	</div>
+	<div class="r-search-field">
+		{$total_editcontrol}	</div>
+	<div class="r-search-field">
+		{$total_editcontrol1}
+	</div>
+	
+</div>
+
+{END total_fieldblock}
+											
+{BEGIN jumlahpemakai_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jumlahpemakai}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jumlahpemakai{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="jumlahpemakai" data-fieldname="jumlahpemakai" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jumlahpemakai}">
+		{$label al_mck jumlahpemakai }	</label>
+	<div class="r-search-option">
+		{$searchtype_jumlahpemakai}
+	</div>
+	<div class="r-search-field">
+		{$jumlahpemakai_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jumlahpemakai_editcontrol1}
+	</div>
+	
+</div>
+
+{END jumlahpemakai_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Cari			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Tata ulang			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Batal			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

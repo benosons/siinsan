@@ -1,0 +1,346 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-rprint" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="left"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c2" data-pageid="{$pageid}"	{$cell_top_c2}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="print_header" data-itemid="print_header" {$item_print_header} data-pageid="{$pageid}" >{$pagetitlelabel v_pasca_eval_total_Report rprint}</h2>
+	 
+		{BEGIN printtabheader}
+<span data-itemtype="print_subheader" data-itemid="print_subheader" {$item_print_subheader} data-pageid="{$pageid}" >
+{$printtabheader_text}
+</span>
+{END printtabheader}
+		</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		<span data-itemtype="print_pages" data-itemid="print_pages" {$item_print_pages} data-pageid="{$pageid}" data-small >
+	{$print_pages_labelprint_pages}
+</span>			{END firstAboveGridCell}	
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+<style>
+	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {
+		background-color: #ffffbb;
+	}
+	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color: #ffe0b0;
+	}
+	.rnr-report {
+		width: 100%;
+	}
+	td {
+		padding: 2px; 4px;
+	}
+			td.group_1{
+			background-color: #FFFFFF;
+		}
+		td.nbgroup_1{
+			background-color: #FFFFFF;
+		}
+		td.header_1 {
+			background-color: #FFFFFF; 
+			font-size: 120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+			td.group_2{
+			background-color: #FFFFFF;
+		}
+		td.nbgroup_2{
+			background-color: #FFFFFF;
+		}
+		td.header_2 {
+			background-color: #FFFFFF; 
+			font-size: 120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+			td.group_3{
+			background-color: #FFFFFF;
+		}
+		td.nbgroup_3{
+			background-color: #FFFFFF;
+		}
+		td.header_3 {
+			background-color: #FFFFFF; 
+			font-size: 120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+		td.blackshade {
+		font-size: 120%;
+	}
+	.summaryrow > * {
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+		.fieldnamesrow > * 
+	{
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+	</style>
+<div id="grid_block{$id}" class="rnr-report-gridblock">
+						
+
+
+<table class="table table-striped table-bordered rnr-b-grid rnr-gridtable" cellpadding="0" >
+	<tbody>			
+{BEGIN grid_row}
+				<!--  group headers -->
+	 
+		{BEGIN nm_sektor_newgroup}							
+		<tr class="group-spliter-1"  >
+			<td class="header_1" colspan="8">
+				{$label v_pasca_eval_total_Report nm_sektor }:&nbsp;
+				{$xnm_sektor_grval}
+								<span data-itemtype="grid_field" data-field="nm_sektor" data-itemid="grid_field2" data-pageid={$pageid} data-record-id="{$recId}">
+{$nm_sektor_grval}
+</span>			</td>
+		</tr>
+		
+				{END nm_sektor_newgroup}
+	 
+		{BEGIN provinsiname_newgroup}							
+		<tr class="group-spliter-2"  >
+			<td class="header_2" colspan="8">
+				{$label v_pasca_eval_total_Report provinsiname }:&nbsp;
+				{$xprovinsiname_grval}
+								<span data-itemtype="grid_field" data-field="provinsiname" data-itemid="grid_field3" data-pageid={$pageid} data-record-id="{$recId}">
+{$provinsiname_grval}
+</span>			</td>
+		</tr>
+		
+				{END provinsiname_newgroup}
+	 
+		{BEGIN kabupatenkotaname_newgroup}							
+		<tr class="group-spliter-3"  >
+			<td class="header_3" colspan="8">
+				{$label v_pasca_eval_total_Report kabupatenkotaname }:&nbsp;
+				{$xkabupatenkotaname_grval}
+								<span data-itemtype="grid_field" data-field="kabupatenkotaname" data-itemid="grid_field4" data-pageid={$pageid} data-record-id="{$recId}">
+{$kabupatenkotaname_grval}
+</span>			</td>
+		</tr>
+		
+				<tr class="fieldnamesrow group-headers">
+																															<td class="blackshade {$fieldclass_nmJenisInfra}">{$label v_pasca_eval_total_Report nmJenisInfra }</td>
+														<td class="blackshade {$fieldclass_tahun_data}">{$label v_pasca_eval_total_Report tahun_data }</td>
+														<td class="blackshade {$fieldclass_nm_kegiatan}">{$label v_pasca_eval_total_Report nm_kegiatan }</td>
+														<td class="blackshade {$fieldclass_sumber_dana}">{$label v_pasca_eval_total_Report sumber_dana }</td>
+														<td class="blackshade {$fieldclass_pagu}">{$label v_pasca_eval_total_Report pagu }</td>
+														<td class="blackshade {$fieldclass_jumlah_indikator_dinilai}">{$label v_pasca_eval_total_Report jumlah_indikator_dinilai }</td>
+														<td class="blackshade {$fieldclass_nilai_total}">{$label v_pasca_eval_total_Report nilai_total }</td>
+														<td class="blackshade {$fieldclass_keterangan}">{$label v_pasca_eval_total_Report keterangan }</td>
+									</tr>
+				{END kabupatenkotaname_newgroup}
+		
+
+			<!--  data-->
+		{BEGIN row_data}
+		<tr >
+																															<td class="data {$fieldclass_nmJenisInfra}">
+			{$xnmJenisInfra_value}
+						<span data-itemtype="grid_field" data-field="nmJenisInfra" data-itemid="grid_field5" data-pageid={$pageid} data-record-id="{$recId}">
+{$nmJenisInfra_value}
+</span>			</td>
+														<td class="data {$fieldclass_tahun_data}">
+			{$xtahun_data_value}
+						<span data-itemtype="grid_field" data-field="tahun_data" data-itemid="grid_field6" data-pageid={$pageid} data-record-id="{$recId}">
+{$tahun_data_value}
+</span>			</td>
+														<td class="data {$fieldclass_nm_kegiatan}">
+			{$xnm_kegiatan_value}
+						<span data-itemtype="grid_field" data-field="nm_kegiatan" data-itemid="grid_field7" data-pageid={$pageid} data-record-id="{$recId}">
+{$nm_kegiatan_value}
+</span>			</td>
+														<td class="data {$fieldclass_sumber_dana}">
+			{$xsumber_dana_value}
+						<span data-itemtype="grid_field" data-field="sumber_dana" data-itemid="grid_field8" data-pageid={$pageid} data-record-id="{$recId}">
+{$sumber_dana_value}
+</span>			</td>
+														<td class="data {$fieldclass_pagu}">
+			{$xpagu_value}
+						<span data-itemtype="grid_field" data-field="pagu" data-itemid="grid_field9" data-pageid={$pageid} data-record-id="{$recId}">
+{$pagu_value}
+</span>			</td>
+														<td class="data {$fieldclass_jumlah_indikator_dinilai}">
+			{$xjumlah_indikator_dinilai_value}
+						<span data-itemtype="grid_field" data-field="jumlah_indikator_dinilai" data-itemid="grid_field10" data-pageid={$pageid} data-record-id="{$recId}">
+{$jumlah_indikator_dinilai_value}
+</span>			</td>
+														<td class="data {$fieldclass_nilai_total}">
+			{$xnilai_total_value}
+						<span data-itemtype="grid_field" data-field="nilai_total" data-itemid="grid_field11" data-pageid={$pageid} data-record-id="{$recId}">
+{$nilai_total_value}
+</span>			</td>
+														<td class="data {$fieldclass_keterangan}">
+			{$xketerangan_value}
+						<span data-itemtype="grid_field" data-field="keterangan" data-itemid="grid_field12" data-pageid={$pageid} data-record-id="{$recId}">
+{$keterangan_value}
+</span>			</td>
+									</tr>
+		{END row_data}
+	
+	<!---  group summary-->
+					{BEGIN kabupatenkotaname_endgroup}
+
+		<tr >
+					<td class="group_3" colspan="8">
+				Ringkasan untuk {$label v_pasca_eval_total_Report kabupatenkotaname } {$kabupatenkotaname_grval} - <span class="summary-3" data-type="summary">
+					{$groupkabupatenkotaname_total_cnt}
+				</span> total catatan			</td>			
+				</tr>
+		
+		
+		
+		
+			
+
+		{END kabupatenkotaname_endgroup}
+							{BEGIN provinsiname_endgroup}
+
+		<tr >
+					<td class="group_2" colspan="8">
+				Ringkasan untuk {$label v_pasca_eval_total_Report provinsiname } {$provinsiname_grval} - <span class="summary-2" data-type="summary">
+					{$groupprovinsiname_total_cnt}
+				</span> total catatan			</td>			
+				</tr>
+		
+		
+		
+		
+			
+
+		{END provinsiname_endgroup}
+							{BEGIN nm_sektor_endgroup}
+
+		<tr >
+					<td class="group_1" colspan="8">
+				Ringkasan untuk {$label v_pasca_eval_total_Report nm_sektor } {$nm_sektor_grval} - <span class="summary-1" data-type="summary">
+					{$groupnm_sektor_total_cnt}
+				</span> total catatan			</td>			
+				</tr>
+		
+		
+		
+		
+			
+
+		{END nm_sektor_endgroup}
+			
+{END grid_row}
+
+	{BEGIN summary_header}
+	<tr class="summary-header">
+						
+						
+						
+							<td class="blackshade {$fieldclass_nmJenisInfra}">{$label v_pasca_eval_total_Report nmJenisInfra }</td>
+				
+							<td class="blackshade {$fieldclass_tahun_data}">{$label v_pasca_eval_total_Report tahun_data }</td>
+				
+							<td class="blackshade {$fieldclass_nm_kegiatan}">{$label v_pasca_eval_total_Report nm_kegiatan }</td>
+				
+							<td class="blackshade {$fieldclass_sumber_dana}">{$label v_pasca_eval_total_Report sumber_dana }</td>
+				
+							<td class="blackshade {$fieldclass_pagu}">{$label v_pasca_eval_total_Report pagu }</td>
+				
+							<td class="blackshade {$fieldclass_jumlah_indikator_dinilai}">{$label v_pasca_eval_total_Report jumlah_indikator_dinilai }</td>
+				
+							<td class="blackshade {$fieldclass_nilai_total}">{$label v_pasca_eval_total_Report nilai_total }</td>
+				
+							<td class="blackshade {$fieldclass_keterangan}">{$label v_pasca_eval_total_Report keterangan }</td>
+				
+			
+	</tr>
+	{END summary_header}			
+
+
+
+
+    
+    
+
+	<!-- global summary-->
+	{BEGIN global_summary}
+    <tr class="summaryrow summary-global">
+        <td class="globalsummary" colspan="11">
+            Ringkasan global {$global_total_cnt} - total catatan        </td>
+    </tr>
+
+	
+	
+	
+		{END global_summary}
+
+	</tbody>
+</table>			</div>
+{END grid_block}									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+			</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

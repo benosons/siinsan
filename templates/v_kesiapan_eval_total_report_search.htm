@@ -1,0 +1,436 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel v_kesiapan_eval_total_Report search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN nm_sektor_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nm_sektor}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="nm_sektor{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="nm_sektor" data-fieldname="nm_sektor" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_nm_sektor}">
+		{$label v_kesiapan_eval_total_Report nm_sektor }	</label>
+	<div class="r-search-option">
+		{$searchtype_nm_sektor}
+	</div>
+	<div class="r-search-field">
+		{$nm_sektor_editcontrol}	</div>
+	<div class="r-search-field">
+		{$nm_sektor_editcontrol1}
+	</div>
+	
+</div>
+
+{END nm_sektor_fieldblock}
+											
+{BEGIN nmJenisInfra_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nmJenisInfra}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="nmJenisInfra{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="nmJenisInfra" data-fieldname="nmJenisInfra" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_nmJenisInfra}">
+		{$label v_kesiapan_eval_total_Report nmJenisInfra }	</label>
+	<div class="r-search-option">
+		{$searchtype_nmJenisInfra}
+	</div>
+	<div class="r-search-field">
+		{$nmJenisInfra_editcontrol}	</div>
+	<div class="r-search-field">
+		{$nmJenisInfra_editcontrol1}
+	</div>
+	
+</div>
+
+{END nmJenisInfra_fieldblock}
+											
+{BEGIN provinsiid_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_provinsiid}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="provinsiid{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="provinsiid" data-fieldname="provinsiid" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_provinsiid}">
+		{$label v_kesiapan_eval_total_Report provinsiid }	</label>
+	<div class="r-search-option">
+		{$searchtype_provinsiid}
+	</div>
+	<div class="r-search-field">
+		{$provinsiid_editcontrol}	</div>
+	<div class="r-search-field">
+		{$provinsiid_editcontrol1}
+	</div>
+	
+</div>
+
+{END provinsiid_fieldblock}
+											
+{BEGIN provinsiname_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_provinsiname}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="provinsiname{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="provinsiname" data-fieldname="provinsiname" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_provinsiname}">
+		{$label v_kesiapan_eval_total_Report provinsiname }	</label>
+	<div class="r-search-option">
+		{$searchtype_provinsiname}
+	</div>
+	<div class="r-search-field">
+		{$provinsiname_editcontrol}	</div>
+	<div class="r-search-field">
+		{$provinsiname_editcontrol1}
+	</div>
+	
+</div>
+
+{END provinsiname_fieldblock}
+											
+{BEGIN kabupatenkotaname_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kabupatenkotaname}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kabupatenkotaname{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="kabupatenkotaname" data-fieldname="kabupatenkotaname" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kabupatenkotaname}">
+		{$label v_kesiapan_eval_total_Report kabupatenkotaname }	</label>
+	<div class="r-search-option">
+		{$searchtype_kabupatenkotaname}
+	</div>
+	<div class="r-search-field">
+		{$kabupatenkotaname_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kabupatenkotaname_editcontrol1}
+	</div>
+	
+</div>
+
+{END kabupatenkotaname_fieldblock}
+											
+{BEGIN tahun_data_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tahun_data}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="tahun_data{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="tahun_data" data-fieldname="tahun_data" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_tahun_data}">
+		{$label v_kesiapan_eval_total_Report tahun_data }	</label>
+	<div class="r-search-option">
+		{$searchtype_tahun_data}
+	</div>
+	<div class="r-search-field">
+		{$tahun_data_editcontrol}	</div>
+	<div class="r-search-field">
+		{$tahun_data_editcontrol1}
+	</div>
+	
+</div>
+
+{END tahun_data_fieldblock}
+											
+{BEGIN nm_kegiatan_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nm_kegiatan}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="nm_kegiatan{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="nm_kegiatan" data-fieldname="nm_kegiatan" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_nm_kegiatan}">
+		{$label v_kesiapan_eval_total_Report nm_kegiatan }	</label>
+	<div class="r-search-option">
+		{$searchtype_nm_kegiatan}
+	</div>
+	<div class="r-search-field">
+		{$nm_kegiatan_editcontrol}	</div>
+	<div class="r-search-field">
+		{$nm_kegiatan_editcontrol1}
+	</div>
+	
+</div>
+
+{END nm_kegiatan_fieldblock}
+											
+{BEGIN sumber_dana_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sumber_dana}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sumber_dana{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="sumber_dana" data-fieldname="sumber_dana" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sumber_dana}">
+		{$label v_kesiapan_eval_total_Report sumber_dana }	</label>
+	<div class="r-search-option">
+		{$searchtype_sumber_dana}
+	</div>
+	<div class="r-search-field">
+		{$sumber_dana_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sumber_dana_editcontrol1}
+	</div>
+	
+</div>
+
+{END sumber_dana_fieldblock}
+											
+{BEGIN pagu_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pagu}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="pagu{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="pagu" data-fieldname="pagu" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_pagu}">
+		{$label v_kesiapan_eval_total_Report pagu }	</label>
+	<div class="r-search-option">
+		{$searchtype_pagu}
+	</div>
+	<div class="r-search-field">
+		{$pagu_editcontrol}	</div>
+	<div class="r-search-field">
+		{$pagu_editcontrol1}
+	</div>
+	
+</div>
+
+{END pagu_fieldblock}
+											
+{BEGIN jumlah_indikator_dinilai_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jumlah_indikator_dinilai}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jumlah_indikator_dinilai{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="jumlah_indikator_dinilai" data-fieldname="jumlah_indikator_dinilai" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jumlah_indikator_dinilai}">
+		{$label v_kesiapan_eval_total_Report jumlah_indikator_dinilai }	</label>
+	<div class="r-search-option">
+		{$searchtype_jumlah_indikator_dinilai}
+	</div>
+	<div class="r-search-field">
+		{$jumlah_indikator_dinilai_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jumlah_indikator_dinilai_editcontrol1}
+	</div>
+	
+</div>
+
+{END jumlah_indikator_dinilai_fieldblock}
+											
+{BEGIN nilai_total_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nilai_total}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="nilai_total{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="nilai_total" data-fieldname="nilai_total" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_nilai_total}">
+		{$label v_kesiapan_eval_total_Report nilai_total }	</label>
+	<div class="r-search-option">
+		{$searchtype_nilai_total}
+	</div>
+	<div class="r-search-field">
+		{$nilai_total_editcontrol}	</div>
+	<div class="r-search-field">
+		{$nilai_total_editcontrol1}
+	</div>
+	
+</div>
+
+{END nilai_total_fieldblock}
+											
+{BEGIN keterangan_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_keterangan}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="keterangan{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="keterangan" data-fieldname="keterangan" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_keterangan}">
+		{$label v_kesiapan_eval_total_Report keterangan }	</label>
+	<div class="r-search-option">
+		{$searchtype_keterangan}
+	</div>
+	<div class="r-search-field">
+		{$keterangan_editcontrol}	</div>
+	<div class="r-search-field">
+		{$keterangan_editcontrol1}
+	</div>
+	
+</div>
+
+{END keterangan_fieldblock}
+											
+{BEGIN kabupatenkotaid_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kabupatenkotaid}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kabupatenkotaid{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="kabupatenkotaid" data-fieldname="kabupatenkotaid" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kabupatenkotaid}">
+		{$label v_kesiapan_eval_total_Report kabupatenkotaid }	</label>
+	<div class="r-search-option">
+		{$searchtype_kabupatenkotaid}
+	</div>
+	<div class="r-search-field">
+		{$kabupatenkotaid_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kabupatenkotaid_editcontrol1}
+	</div>
+	
+</div>
+
+{END kabupatenkotaid_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Cari			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Tata ulang			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Batal			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,314 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-view" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel san_peraturan view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN peraturanid_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_peraturanid}  r-vertical-field" data-fieldname="peraturanid" data-signal-error-for="peraturanid{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="peraturanid" data-fieldname="peraturanid" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_peraturanid}">
+		
+		{BEGIN peraturanid_label}{$label san_peraturan peraturanid }{END peraturanid_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$peraturanid_value}	</div>
+
+		
+</div>
+
+
+{END peraturanid_fieldblock}
+											
+{BEGIN r_sektorid_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_r_sektorid}  r-vertical-field" data-fieldname="r_sektorid" data-signal-error-for="r_sektorid{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="r_sektorid" data-fieldname="r_sektorid" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_r_sektorid}">
+		
+		{BEGIN r_sektorid_label}{$label san_peraturan r_sektorid }{END r_sektorid_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$r_sektorid_value}	</div>
+
+		
+</div>
+
+
+{END r_sektorid_fieldblock}
+											
+{BEGIN peraturanjenis_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_peraturanjenis}  r-vertical-field" data-fieldname="peraturanjenis" data-signal-error-for="peraturanjenis{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="peraturanjenis" data-fieldname="peraturanjenis" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_peraturanjenis}">
+		
+		{BEGIN peraturanjenis_label}{$label san_peraturan peraturanjenis }{END peraturanjenis_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$peraturanjenis_value}	</div>
+
+		
+</div>
+
+
+{END peraturanjenis_fieldblock}
+											
+{BEGIN r_provinsiid_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_r_provinsiid}  r-vertical-field" data-fieldname="r_provinsiid" data-signal-error-for="r_provinsiid{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="r_provinsiid" data-fieldname="r_provinsiid" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_r_provinsiid}">
+		
+		{BEGIN r_provinsiid_label}{$label san_peraturan r_provinsiid }{END r_provinsiid_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$r_provinsiid_value}	</div>
+
+		
+</div>
+
+
+{END r_provinsiid_fieldblock}
+											
+{BEGIN r_kabupatenkotaid_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_r_kabupatenkotaid}  r-vertical-field" data-fieldname="r_kabupatenkotaid" data-signal-error-for="r_kabupatenkotaid{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="r_kabupatenkotaid" data-fieldname="r_kabupatenkotaid" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_r_kabupatenkotaid}">
+		
+		{BEGIN r_kabupatenkotaid_label}{$label san_peraturan r_kabupatenkotaid }{END r_kabupatenkotaid_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$r_kabupatenkotaid_value}	</div>
+
+		
+</div>
+
+
+{END r_kabupatenkotaid_fieldblock}
+											
+{BEGIN peraturanname_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_peraturanname}  r-vertical-field" data-fieldname="peraturanname" data-signal-error-for="peraturanname{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="peraturanname" data-fieldname="peraturanname" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_peraturanname}">
+		
+		{BEGIN peraturanname_label}{$label san_peraturan peraturanname }{END peraturanname_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$peraturanname_value}	</div>
+
+		
+</div>
+
+
+{END peraturanname_fieldblock}
+											
+{BEGIN peraturanremarks_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_peraturanremarks}  r-vertical-field" data-fieldname="peraturanremarks" data-signal-error-for="peraturanremarks{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="peraturanremarks" data-fieldname="peraturanremarks" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_peraturanremarks}">
+		
+		{BEGIN peraturanremarks_label}{$label san_peraturan peraturanremarks }{END peraturanremarks_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$peraturanremarks_value}	</div>
+
+		
+</div>
+
+
+{END peraturanremarks_fieldblock}
+											
+{BEGIN dokumen_peraturan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dokumen_peraturan}  r-vertical-field" data-fieldname="dokumen_peraturan" data-signal-error-for="dokumen_peraturan{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="dokumen_peraturan" data-fieldname="dokumen_peraturan" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_dokumen_peraturan}">
+		
+		{BEGIN dokumen_peraturan_label}{$label san_peraturan dokumen_peraturan }{END dokumen_peraturan_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$dokumen_peraturan_value}	</div>
+
+		
+</div>
+
+
+{END dokumen_peraturan_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Tutup jendela			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="san_peraturan_edit.php?{$editlink}" {$edit_page_button_attrs}  title="" >
+				
+		Edit		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

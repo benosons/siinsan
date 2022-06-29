@@ -1,0 +1,314 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-rprint" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="left"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c2" data-pageid="{$pageid}"	{$cell_top_c2}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="print_header" data-itemid="print_header" {$item_print_header} data-pageid="{$pageid}" >{$pagetitlelabel v_mne_keterisian_perencanaan_kabkota_Report rprint}</h2>
+	 
+		{BEGIN printtabheader}
+<span data-itemtype="print_subheader" data-itemid="print_subheader" {$item_print_subheader} data-pageid="{$pageid}" >
+{$printtabheader_text}
+</span>
+{END printtabheader}
+		</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		<span data-itemtype="print_pages" data-itemid="print_pages" {$item_print_pages} data-pageid="{$pageid}" data-small >
+	{$print_pages_labelprint_pages}
+</span>			{END firstAboveGridCell}	
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+<style>
+	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {
+		background-color: #ffffbb;
+	}
+	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color: #ffe0b0;
+	}
+	.rnr-report {
+		width: 100%;
+	}
+	td {
+		padding: 2px; 4px;
+	}
+			td.group_1{
+			background-color: #FFFFFF;
+		}
+		td.nbgroup_1{
+			background-color: #FFFFFF;
+		}
+		td.header_1 {
+			background-color: #FFFFFF; 
+			font-size: 120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+		td.blackshade {
+		font-size: 120%;
+	}
+	.summaryrow > * {
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+		.fieldnamesrow > * 
+	{
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+	</style>
+<div id="grid_block{$id}" class="rnr-report-gridblock">
+						
+
+
+<table class="table table-striped table-bordered rnr-b-grid rnr-gridtable" cellpadding="0" >
+	<tbody>			
+{BEGIN grid_row}
+				<!--  group headers -->
+	 
+		{BEGIN provinsiname_newgroup}							
+		<tr class="group-spliter-1"  >
+			<td class="header_1" colspan="14">
+				{$label v_mne_keterisian_perencanaan_kabkota_Report provinsiname }:&nbsp;
+				{$xprovinsiname_grval}
+								<span data-itemtype="grid_field" data-field="provinsiname" data-itemid="grid_field2" data-pageid={$pageid} data-record-id="{$recId}">
+{$provinsiname_grval}
+</span>			</td>
+		</tr>
+		
+				<tr class="fieldnamesrow group-headers">
+																	<td class="blackshade {$fieldclass_jumlah_record}">{$label v_mne_keterisian_perencanaan_kabkota_Report jumlah_record }</td>
+														<td class="blackshade {$fieldclass_tahun_data}">{$label v_mne_keterisian_perencanaan_kabkota_Report tahun_data }</td>
+														<td class="blackshade {$fieldclass_nama_kegiatan}">{$label v_mne_keterisian_perencanaan_kabkota_Report nama_kegiatan }</td>
+														<td class="blackshade {$fieldclass_jenis_infrastruktur}">{$label v_mne_keterisian_perencanaan_kabkota_Report jenis_infrastruktur }</td>
+														<td class="blackshade {$fieldclass_pagu}">{$label v_mne_keterisian_perencanaan_kabkota_Report pagu }</td>
+														<td class="blackshade {$fieldclass_sumber_dana}">{$label v_mne_keterisian_perencanaan_kabkota_Report sumber_dana }</td>
+														<td class="blackshade {$fieldclass_status_usulan}">{$label v_mne_keterisian_perencanaan_kabkota_Report status_usulan }</td>
+														<td class="blackshade {$fieldclass_lokasi}">{$label v_mne_keterisian_perencanaan_kabkota_Report lokasi }</td>
+														<td class="blackshade {$fieldclass_kategori}">{$label v_mne_keterisian_perencanaan_kabkota_Report kategori }</td>
+														<td class="blackshade {$fieldclass_deskripsi}">{$label v_mne_keterisian_perencanaan_kabkota_Report deskripsi }</td>
+														<td class="blackshade {$fieldclass_ruang_lingkup}">{$label v_mne_keterisian_perencanaan_kabkota_Report ruang_lingkup }</td>
+														<td class="blackshade {$fieldclass_kapasitas}">{$label v_mne_keterisian_perencanaan_kabkota_Report kapasitas }</td>
+														<td class="blackshade {$fieldclass_penerima_manfaat}">{$label v_mne_keterisian_perencanaan_kabkota_Report penerima_manfaat }</td>
+														<td class="blackshade {$fieldclass_kabupatenkotaname}">{$label v_mne_keterisian_perencanaan_kabkota_Report kabupatenkotaname }</td>
+									</tr>
+				{END provinsiname_newgroup}
+		
+
+			<!--  data-->
+		{BEGIN row_data}
+		<tr >
+																	<td class="data {$fieldclass_jumlah_record}">
+			{$xjumlah_record_value}
+						<span data-itemtype="grid_field" data-field="jumlah_record" data-itemid="grid_field3" data-pageid={$pageid} data-record-id="{$recId}">
+{$jumlah_record_value}
+</span>			</td>
+														<td class="data {$fieldclass_tahun_data}">
+			{$xtahun_data_value}
+						<span data-itemtype="grid_field" data-field="tahun_data" data-itemid="grid_field4" data-pageid={$pageid} data-record-id="{$recId}">
+{$tahun_data_value}
+</span>			</td>
+														<td class="data {$fieldclass_nama_kegiatan}">
+			{$xnama_kegiatan_value}
+						<span data-itemtype="grid_field" data-field="nama_kegiatan" data-itemid="grid_field5" data-pageid={$pageid} data-record-id="{$recId}">
+{$nama_kegiatan_value}
+</span>			</td>
+														<td class="data {$fieldclass_jenis_infrastruktur}">
+			{$xjenis_infrastruktur_value}
+						<span data-itemtype="grid_field" data-field="jenis_infrastruktur" data-itemid="grid_field6" data-pageid={$pageid} data-record-id="{$recId}">
+{$jenis_infrastruktur_value}
+</span>			</td>
+														<td class="data {$fieldclass_pagu}">
+			{$xpagu_value}
+						<span data-itemtype="grid_field" data-field="pagu" data-itemid="grid_field7" data-pageid={$pageid} data-record-id="{$recId}">
+{$pagu_value}
+</span>			</td>
+														<td class="data {$fieldclass_sumber_dana}">
+			{$xsumber_dana_value}
+						<span data-itemtype="grid_field" data-field="sumber_dana" data-itemid="grid_field8" data-pageid={$pageid} data-record-id="{$recId}">
+{$sumber_dana_value}
+</span>			</td>
+														<td class="data {$fieldclass_status_usulan}">
+			{$xstatus_usulan_value}
+						<span data-itemtype="grid_field" data-field="status_usulan" data-itemid="grid_field9" data-pageid={$pageid} data-record-id="{$recId}">
+{$status_usulan_value}
+</span>			</td>
+														<td class="data {$fieldclass_lokasi}">
+			{$xlokasi_value}
+						<span data-itemtype="grid_field" data-field="lokasi" data-itemid="grid_field10" data-pageid={$pageid} data-record-id="{$recId}">
+{$lokasi_value}
+</span>			</td>
+														<td class="data {$fieldclass_kategori}">
+			{$xkategori_value}
+						<span data-itemtype="grid_field" data-field="kategori" data-itemid="grid_field11" data-pageid={$pageid} data-record-id="{$recId}">
+{$kategori_value}
+</span>			</td>
+														<td class="data {$fieldclass_deskripsi}">
+			{$xdeskripsi_value}
+						<span data-itemtype="grid_field" data-field="deskripsi" data-itemid="grid_field12" data-pageid={$pageid} data-record-id="{$recId}">
+{$deskripsi_value}
+</span>			</td>
+														<td class="data {$fieldclass_ruang_lingkup}">
+			{$xruang_lingkup_value}
+						<span data-itemtype="grid_field" data-field="ruang_lingkup" data-itemid="grid_field13" data-pageid={$pageid} data-record-id="{$recId}">
+{$ruang_lingkup_value}
+</span>			</td>
+														<td class="data {$fieldclass_kapasitas}">
+			{$xkapasitas_value}
+						<span data-itemtype="grid_field" data-field="kapasitas" data-itemid="grid_field14" data-pageid={$pageid} data-record-id="{$recId}">
+{$kapasitas_value}
+</span>			</td>
+														<td class="data {$fieldclass_penerima_manfaat}">
+			{$xpenerima_manfaat_value}
+						<span data-itemtype="grid_field" data-field="penerima_manfaat" data-itemid="grid_field15" data-pageid={$pageid} data-record-id="{$recId}">
+{$penerima_manfaat_value}
+</span>			</td>
+														<td class="data {$fieldclass_kabupatenkotaname}">
+			{$xkabupatenkotaname_value}
+						<span data-itemtype="grid_field" data-field="kabupatenkotaname" data-itemid="grid_field16" data-pageid={$pageid} data-record-id="{$recId}">
+{$kabupatenkotaname_value}
+</span>			</td>
+									</tr>
+		{END row_data}
+	
+	<!---  group summary-->
+					{BEGIN provinsiname_endgroup}
+
+		<tr >
+					<td class="group_1" colspan="14">
+				Ringkasan untuk {$label v_mne_keterisian_perencanaan_kabkota_Report provinsiname } {$provinsiname_grval} - <span class="summary-1" data-type="summary">
+					{$groupprovinsiname_total_cnt}
+				</span> total catatan			</td>			
+				</tr>
+		
+		
+		
+		
+			
+
+		{END provinsiname_endgroup}
+			
+{END grid_row}
+
+	{BEGIN summary_header}
+	<tr class="summary-header">
+						
+							<td class="blackshade {$fieldclass_jumlah_record}">{$label v_mne_keterisian_perencanaan_kabkota_Report jumlah_record }</td>
+				
+							<td class="blackshade {$fieldclass_tahun_data}">{$label v_mne_keterisian_perencanaan_kabkota_Report tahun_data }</td>
+				
+							<td class="blackshade {$fieldclass_nama_kegiatan}">{$label v_mne_keterisian_perencanaan_kabkota_Report nama_kegiatan }</td>
+				
+							<td class="blackshade {$fieldclass_jenis_infrastruktur}">{$label v_mne_keterisian_perencanaan_kabkota_Report jenis_infrastruktur }</td>
+				
+							<td class="blackshade {$fieldclass_pagu}">{$label v_mne_keterisian_perencanaan_kabkota_Report pagu }</td>
+				
+							<td class="blackshade {$fieldclass_sumber_dana}">{$label v_mne_keterisian_perencanaan_kabkota_Report sumber_dana }</td>
+				
+							<td class="blackshade {$fieldclass_status_usulan}">{$label v_mne_keterisian_perencanaan_kabkota_Report status_usulan }</td>
+				
+							<td class="blackshade {$fieldclass_lokasi}">{$label v_mne_keterisian_perencanaan_kabkota_Report lokasi }</td>
+				
+							<td class="blackshade {$fieldclass_kategori}">{$label v_mne_keterisian_perencanaan_kabkota_Report kategori }</td>
+				
+							<td class="blackshade {$fieldclass_deskripsi}">{$label v_mne_keterisian_perencanaan_kabkota_Report deskripsi }</td>
+				
+							<td class="blackshade {$fieldclass_ruang_lingkup}">{$label v_mne_keterisian_perencanaan_kabkota_Report ruang_lingkup }</td>
+				
+							<td class="blackshade {$fieldclass_kapasitas}">{$label v_mne_keterisian_perencanaan_kabkota_Report kapasitas }</td>
+				
+							<td class="blackshade {$fieldclass_penerima_manfaat}">{$label v_mne_keterisian_perencanaan_kabkota_Report penerima_manfaat }</td>
+				
+							<td class="blackshade {$fieldclass_kabupatenkotaname}">{$label v_mne_keterisian_perencanaan_kabkota_Report kabupatenkotaname }</td>
+				
+			
+	</tr>
+	{END summary_header}			
+
+
+
+
+    
+    
+
+	<!-- global summary-->
+	{BEGIN global_summary}
+    <tr class="summaryrow summary-global">
+        <td class="globalsummary" colspan="15">
+            Ringkasan global {$global_total_cnt} - total catatan        </td>
+    </tr>
+
+	
+	
+	
+		{END global_summary}
+
+	</tbody>
+</table>			</div>
+{END grid_block}									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+			</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

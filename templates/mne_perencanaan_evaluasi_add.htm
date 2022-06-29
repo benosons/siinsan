@@ -1,0 +1,376 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel mne_perencanaan_evaluasi add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>Balik ke daftar</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Lihat</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Edit</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN kd_perencanaan_umum_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_perencanaan_umum}  r-vertical-field" 
+	data-signal-error-for="kd_perencanaan_umum{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="kd_perencanaan_umum" data-fieldname="kd_perencanaan_umum" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_kd_perencanaan_umum}">
+		{BEGIN kd_perencanaan_umum_label}{$label mne_perencanaan_evaluasi kd_perencanaan_umum }{END kd_perencanaan_umum_label}
+	</label>
+	<div class="r-edit-field">
+		{$kd_perencanaan_umum_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="kd_perencanaan_umum">
+		<div class="text-muted" >
+		{$tooltip mne_perencanaan_evaluasi kd_perencanaan_umum }		</div>
+	</div>
+</div>
+
+
+{END kd_perencanaan_umum_fieldblock}
+											
+{BEGIN kd_sektor_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_sektor}  r-vertical-field" 
+	data-signal-error-for="kd_sektor{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="kd_sektor" data-fieldname="kd_sektor" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_kd_sektor}">
+		{BEGIN kd_sektor_label}{$label mne_perencanaan_evaluasi kd_sektor }{END kd_sektor_label}
+	</label>
+	<div class="r-edit-field">
+		{$kd_sektor_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="kd_sektor">
+		<div class="text-muted" >
+		{$tooltip mne_perencanaan_evaluasi kd_sektor }		</div>
+	</div>
+</div>
+
+
+{END kd_sektor_fieldblock}
+											
+{BEGIN kd_tahap_perencanaan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_tahap_perencanaan}  r-vertical-field" 
+	data-signal-error-for="kd_tahap_perencanaan{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="kd_tahap_perencanaan" data-fieldname="kd_tahap_perencanaan" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_kd_tahap_perencanaan}">
+		{BEGIN kd_tahap_perencanaan_label}{$label mne_perencanaan_evaluasi kd_tahap_perencanaan }{END kd_tahap_perencanaan_label}
+	</label>
+	<div class="r-edit-field">
+		{$kd_tahap_perencanaan_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="kd_tahap_perencanaan">
+		<div class="text-muted" >
+		{$tooltip mne_perencanaan_evaluasi kd_tahap_perencanaan }		</div>
+	</div>
+</div>
+
+
+{END kd_tahap_perencanaan_fieldblock}
+											
+{BEGIN bobot_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_bobot}  r-vertical-field" 
+	data-signal-error-for="bobot{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="bobot" data-fieldname="bobot" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_bobot}">
+		{BEGIN bobot_label}{$label mne_perencanaan_evaluasi bobot }{END bobot_label}
+	</label>
+	<div class="r-edit-field">
+		{$bobot_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="bobot">
+		<div class="text-muted" >
+		{$tooltip mne_perencanaan_evaluasi bobot }		</div>
+	</div>
+</div>
+
+
+{END bobot_fieldblock}
+											
+{BEGIN kd_sub_tahap_perencanaan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_sub_tahap_perencanaan}  r-vertical-field" 
+	data-signal-error-for="kd_sub_tahap_perencanaan{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="kd_sub_tahap_perencanaan" data-fieldname="kd_sub_tahap_perencanaan" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_kd_sub_tahap_perencanaan}">
+		{BEGIN kd_sub_tahap_perencanaan_label}{$label mne_perencanaan_evaluasi kd_sub_tahap_perencanaan }{END kd_sub_tahap_perencanaan_label}
+	</label>
+	<div class="r-edit-field">
+		{$kd_sub_tahap_perencanaan_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="kd_sub_tahap_perencanaan">
+		<div class="text-muted" >
+		{$tooltip mne_perencanaan_evaluasi kd_sub_tahap_perencanaan }		</div>
+	</div>
+</div>
+
+
+{END kd_sub_tahap_perencanaan_fieldblock}
+											
+{BEGIN kd_parameter_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_parameter}  r-vertical-field" 
+	data-signal-error-for="kd_parameter{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="kd_parameter" data-fieldname="kd_parameter" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_kd_parameter}">
+		{BEGIN kd_parameter_label}{$label mne_perencanaan_evaluasi kd_parameter }{END kd_parameter_label}
+	</label>
+	<div class="r-edit-field">
+		{$kd_parameter_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="kd_parameter">
+		<div class="text-muted" >
+		{$tooltip mne_perencanaan_evaluasi kd_parameter }		</div>
+	</div>
+</div>
+
+
+{END kd_parameter_fieldblock}
+											
+{BEGIN nilai_harkat_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nilai_harkat}  r-vertical-field" 
+	data-signal-error-for="nilai_harkat{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="nilai_harkat" data-fieldname="nilai_harkat" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_nilai_harkat}">
+		{BEGIN nilai_harkat_label}{$label mne_perencanaan_evaluasi nilai_harkat }{END nilai_harkat_label}
+	</label>
+	<div class="r-edit-field">
+		{$nilai_harkat_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nilai_harkat">
+		<div class="text-muted" >
+		{$tooltip mne_perencanaan_evaluasi nilai_harkat }		</div>
+	</div>
+</div>
+
+
+{END nilai_harkat_fieldblock}
+											
+{BEGIN skor_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_skor}  r-vertical-field" 
+	data-signal-error-for="skor{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="skor" data-fieldname="skor" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_skor}">
+		{BEGIN skor_label}{$label mne_perencanaan_evaluasi skor }{END skor_label}
+	</label>
+	<div class="r-edit-field">
+		{$skor_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="skor">
+		<div class="text-muted" >
+		{$tooltip mne_perencanaan_evaluasi skor }		</div>
+	</div>
+</div>
+
+
+{END skor_fieldblock}
+											
+{BEGIN dokumen_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dokumen}  r-vertical-field" 
+	data-signal-error-for="dokumen{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="dokumen" data-fieldname="dokumen" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_dokumen}">
+		{BEGIN dokumen_label}{$label mne_perencanaan_evaluasi dokumen }{END dokumen_label}
+	</label>
+	<div class="r-edit-field">
+		{$dokumen_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="dokumen">
+		<div class="text-muted" >
+		{$tooltip mne_perencanaan_evaluasi dokumen }		</div>
+	</div>
+</div>
+
+
+{END dokumen_fieldblock}
+											
+{BEGIN keterangan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_keterangan}  r-vertical-field" 
+	data-signal-error-for="keterangan{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="keterangan" data-fieldname="keterangan" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_keterangan}">
+		{BEGIN keterangan_label}{$label mne_perencanaan_evaluasi keterangan }{END keterangan_label}
+	</label>
+	<div class="r-edit-field">
+		{$keterangan_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="keterangan">
+		<div class="text-muted" >
+		{$tooltip mne_perencanaan_evaluasi keterangan }		</div>
+	</div>
+</div>
+
+
+{END keterangan_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Simpan			</a>
+</span>
+	 
+		<span data-itemtype="add_reset" data-itemid="add_reset" {$item_add_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="resetButton{$id}" >
+							Tata ulang			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Batal			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

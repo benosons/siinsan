@@ -1,0 +1,5119 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="left"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c2" data-pageid="{$pageid}"	{$cell_top_c2}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="print_header" data-itemid="print_header" {$item_print_header} data-pageid="{$pageid}" >{$pagetitlelabel ibm_vsanimas print}</h2>
+	 
+		{BEGIN printtabheader}
+<span data-itemtype="print_subheader" data-itemid="print_subheader" {$item_print_subheader} data-pageid="{$pageid}" >
+{$printtabheader_text}
+</span>
+{END printtabheader}
+		</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		<span data-itemtype="print_pages" data-itemid="print_pages" {$item_print_pages} data-pageid="{$pageid}" data-small >
+	{$print_pages_labelprint_pages}
+</span>			{END firstAboveGridCell}	
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}<table data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes} r-horizontal-grid  rnr-b-grid rnr-gridtable" 
+	cellpadding="0" 
+	data-body-height="1"
+>
+						<thead>
+			{BEGIN grid_header}
+					
+		 
+						<tr {$rowattrs} {$row_grid_0} class="{$rowclass} 
+									{$gridHeader_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_headcell_field}
+	<th
+	
+	{$cell_grid_headcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$id_class}
+			"
+
+			data-field="id"
+	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field78" {$item_simple_grid_field78} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id" data-fieldname="id">
+	{$label ibm_vsanimas id }	</span>
+{END id_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field}
+				 
+					{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$propinsiid_class}
+			"
+
+			data-field="propinsiid"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN propinsiid_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field79" {$item_simple_grid_field79} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="propinsiid" data-fieldname="propinsiid">
+	{$label ibm_vsanimas propinsiid }	</span>
+{END propinsiid_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+				 
+					{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$propinsiname_class}
+			"
+
+			data-field="propinsiname"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN propinsiname_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field80" {$item_simple_grid_field80} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="propinsiname" data-fieldname="propinsiname">
+	{$label ibm_vsanimas propinsiname }	</span>
+{END propinsiname_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
+				 
+					{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kabupatenkotaname_class}
+			"
+
+			data-field="kabupatenkotaname"
+	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kabupatenkotaname_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field81" {$item_simple_grid_field81} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kabupatenkotaname" data-fieldname="kabupatenkotaname">
+	{$label ibm_vsanimas kabupatenkotaname }	</span>
+{END kabupatenkotaname_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field3}
+				 
+					{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kecamatanname_class}
+			"
+
+			data-field="kecamatanname"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kecamatanname_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field82" {$item_simple_grid_field82} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kecamatanname" data-fieldname="kecamatanname">
+	{$label ibm_vsanimas kecamatanname }	</span>
+{END kecamatanname_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field4}
+				 
+					{BEGIN cellblock_grid_headcell_field5}
+	<th
+	
+	{$cell_grid_headcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$desaname_class}
+			"
+
+			data-field="desaname"
+	
+	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN desaname_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field83" {$item_simple_grid_field83} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="desaname" data-fieldname="desaname">
+	{$label ibm_vsanimas desaname }	</span>
+{END desaname_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field5}
+				 
+					{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$luaswilayah_class}
+			"
+
+			data-field="luaswilayah"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN luaswilayah_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field84" {$item_simple_grid_field84} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="luaswilayah" data-fieldname="luaswilayah">
+	{$label ibm_vsanimas luaswilayah }	</span>
+{END luaswilayah_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field6}
+				 
+					{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahpenduduk_class}
+			"
+
+			data-field="jumlahpenduduk"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahpenduduk_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field85" {$item_simple_grid_field85} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahpenduduk" data-fieldname="jumlahpenduduk">
+	{$label ibm_vsanimas jumlahpenduduk }	</span>
+{END jumlahpenduduk_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
+				 
+					{BEGIN cellblock_grid_headcell_field8}
+	<th
+	
+	{$cell_grid_headcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahpendudukpria_class}
+			"
+
+			data-field="jumlahpendudukpria"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahpendudukpria_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field86" {$item_simple_grid_field86} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahpendudukpria" data-fieldname="jumlahpendudukpria">
+	{$label ibm_vsanimas jumlahpendudukpria }	</span>
+{END jumlahpendudukpria_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field8}
+				 
+					{BEGIN cellblock_grid_headcell_field9}
+	<th
+	
+	{$cell_grid_headcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahpendudukwanita_class}
+			"
+
+			data-field="jumlahpendudukwanita"
+	
+	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahpendudukwanita_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field87" {$item_simple_grid_field87} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahpendudukwanita" data-fieldname="jumlahpendudukwanita">
+	{$label ibm_vsanimas jumlahpendudukwanita }	</span>
+{END jumlahpendudukwanita_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field9}
+				 
+					{BEGIN cellblock_grid_headcell_field10}
+	<th
+	
+	{$cell_grid_headcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahkk_class}
+			"
+
+			data-field="jumlahkk"
+	
+	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahkk_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field88" {$item_simple_grid_field88} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahkk" data-fieldname="jumlahkk">
+	{$label ibm_vsanimas jumlahkk }	</span>
+{END jumlahkk_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field10}
+				 
+					{BEGIN cellblock_grid_headcell_field11}
+	<th
+	
+	{$cell_grid_headcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahmbr_class}
+			"
+
+			data-field="jumlahmbr"
+	
+	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahmbr_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field89" {$item_simple_grid_field89} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahmbr" data-fieldname="jumlahmbr">
+	{$label ibm_vsanimas jumlahmbr }	</span>
+{END jumlahmbr_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field11}
+				 
+					{BEGIN cellblock_grid_headcell_field12}
+	<th
+	
+	{$cell_grid_headcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahrw_class}
+			"
+
+			data-field="jumlahrw"
+	
+	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahrw_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field90" {$item_simple_grid_field90} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahrw" data-fieldname="jumlahrw">
+	{$label ibm_vsanimas jumlahrw }	</span>
+{END jumlahrw_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field12}
+				 
+					{BEGIN cellblock_grid_headcell_field13}
+	<th
+	
+	{$cell_grid_headcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahrt_class}
+			"
+
+			data-field="jumlahrt"
+	
+	data-cellId="grid_headcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahrt_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field91" {$item_simple_grid_field91} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahrt" data-fieldname="jumlahrt">
+	{$label ibm_vsanimas jumlahrt }	</span>
+{END jumlahrt_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field13}
+				 
+					{BEGIN cellblock_grid_headcell_field14}
+	<th
+	
+	{$cell_grid_headcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahjamban_class}
+			"
+
+			data-field="jumlahjamban"
+	
+	data-cellId="grid_headcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahjamban_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field92" {$item_simple_grid_field92} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahjamban" data-fieldname="jumlahjamban">
+	{$label ibm_vsanimas jumlahjamban }	</span>
+{END jumlahjamban_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field14}
+				 
+					{BEGIN cellblock_grid_headcell_field15}
+	<th
+	
+	{$cell_grid_headcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahseptictank_class}
+			"
+
+			data-field="jumlahseptictank"
+	
+	data-cellId="grid_headcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahseptictank_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field93" {$item_simple_grid_field93} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahseptictank" data-fieldname="jumlahseptictank">
+	{$label ibm_vsanimas jumlahseptictank }	</span>
+{END jumlahseptictank_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field15}
+				 
+					{BEGIN cellblock_grid_headcell_field16}
+	<th
+	
+	{$cell_grid_headcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahmck_class}
+			"
+
+			data-field="jumlahmck"
+	
+	data-cellId="grid_headcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahmck_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field94" {$item_simple_grid_field94} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahmck" data-fieldname="jumlahmck">
+	{$label ibm_vsanimas jumlahmck }	</span>
+{END jumlahmck_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field16}
+				 
+					{BEGIN cellblock_grid_headcell_field17}
+	<th
+	
+	{$cell_grid_headcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahsumurgali_class}
+			"
+
+			data-field="jumlahsumurgali"
+	
+	data-cellId="grid_headcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahsumurgali_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field95" {$item_simple_grid_field95} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahsumurgali" data-fieldname="jumlahsumurgali">
+	{$label ibm_vsanimas jumlahsumurgali }	</span>
+{END jumlahsumurgali_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field17}
+				 
+					{BEGIN cellblock_grid_headcell_field18}
+	<th
+	
+	{$cell_grid_headcell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahsumurpompa_class}
+			"
+
+			data-field="jumlahsumurpompa"
+	
+	data-cellId="grid_headcell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahsumurpompa_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field96" {$item_simple_grid_field96} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahsumurpompa" data-fieldname="jumlahsumurpompa">
+	{$label ibm_vsanimas jumlahsumurpompa }	</span>
+{END jumlahsumurpompa_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field18}
+				 
+					{BEGIN cellblock_grid_headcell_field19}
+	<th
+	
+	{$cell_grid_headcell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahsambunganpdam_class}
+			"
+
+			data-field="jumlahsambunganpdam"
+	
+	data-cellId="grid_headcell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahsambunganpdam_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field97" {$item_simple_grid_field97} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahsambunganpdam" data-fieldname="jumlahsambunganpdam">
+	{$label ibm_vsanimas jumlahsambunganpdam }	</span>
+{END jumlahsambunganpdam_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field19}
+				 
+					{BEGIN cellblock_grid_headcell_field20}
+	<th
+	
+	{$cell_grid_headcell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahkranumum_class}
+			"
+
+			data-field="jumlahkranumum"
+	
+	data-cellId="grid_headcell_field20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahkranumum_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field98" {$item_simple_grid_field98} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahkranumum" data-fieldname="jumlahkranumum">
+	{$label ibm_vsanimas jumlahkranumum }	</span>
+{END jumlahkranumum_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field20}
+				 
+					{BEGIN cellblock_grid_headcell_field21}
+	<th
+	
+	{$cell_grid_headcell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahpenampunganair_class}
+			"
+
+			data-field="jumlahpenampunganair"
+	
+	data-cellId="grid_headcell_field21" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahpenampunganair_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field99" {$item_simple_grid_field99} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahpenampunganair" data-fieldname="jumlahpenampunganair">
+	{$label ibm_vsanimas jumlahpenampunganair }	</span>
+{END jumlahpenampunganair_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field21}
+				 
+					{BEGIN cellblock_grid_headcell_field22}
+	<th
+	
+	{$cell_grid_headcell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$koordinatx_class}
+			"
+
+			data-field="koordinatx"
+	
+	data-cellId="grid_headcell_field22" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN koordinatx_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field100" {$item_simple_grid_field100} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="koordinatx" data-fieldname="koordinatx">
+	{$label ibm_vsanimas koordinatx }	</span>
+{END koordinatx_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field22}
+				 
+					{BEGIN cellblock_grid_headcell_field23}
+	<th
+	
+	{$cell_grid_headcell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$koordinaty_class}
+			"
+
+			data-field="koordinaty"
+	
+	data-cellId="grid_headcell_field23" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN koordinaty_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field101" {$item_simple_grid_field101} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="koordinaty" data-fieldname="koordinaty">
+	{$label ibm_vsanimas koordinaty }	</span>
+{END koordinaty_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field23}
+				 
+					{BEGIN cellblock_grid_headcell_field24}
+	<th
+	
+	{$cell_grid_headcell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$pagu2_class}
+			"
+
+			data-field="pagu2"
+	
+	data-cellId="grid_headcell_field24" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pagu2_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field102" {$item_simple_grid_field102} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pagu2" data-fieldname="pagu2">
+	{$label ibm_vsanimas pagu2 }	</span>
+{END pagu2_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field24}
+				 
+					{BEGIN cellblock_grid_headcell_field25}
+	<th
+	
+	{$cell_grid_headcell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tahun2_class}
+			"
+
+			data-field="tahun2"
+	
+	data-cellId="grid_headcell_field25" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tahun2_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field103" {$item_simple_grid_field103} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tahun2" data-fieldname="tahun2">
+	{$label ibm_vsanimas tahun2 }	</span>
+{END tahun2_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field25}
+				 
+					{BEGIN cellblock_grid_headcell_field26}
+	<th
+	
+	{$cell_grid_headcell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$sumberdana2_class}
+			"
+
+			data-field="sumberdana2"
+	
+	data-cellId="grid_headcell_field26" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sumberdana2_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field104" {$item_simple_grid_field104} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sumberdana2" data-fieldname="sumberdana2">
+	{$label ibm_vsanimas sumberdana2 }	</span>
+{END sumberdana2_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field26}
+				 
+					{BEGIN cellblock_grid_headcell_field27}
+	<th
+	
+	{$cell_grid_headcell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$keberfungsian_class}
+			"
+
+			data-field="keberfungsian"
+	
+	data-cellId="grid_headcell_field27" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN keberfungsian_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field105" {$item_simple_grid_field105} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="keberfungsian" data-fieldname="keberfungsian">
+	{$label ibm_vsanimas keberfungsian }	</span>
+{END keberfungsian_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field27}
+				 
+					{BEGIN cellblock_grid_headcell_field28}
+	<th
+	
+	{$cell_grid_headcell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kualitaskeberfungsian_class}
+			"
+
+			data-field="kualitaskeberfungsian"
+	
+	data-cellId="grid_headcell_field28" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kualitaskeberfungsian_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field106" {$item_simple_grid_field106} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kualitaskeberfungsian" data-fieldname="kualitaskeberfungsian">
+	{$label ibm_vsanimas kualitaskeberfungsian }	</span>
+{END kualitaskeberfungsian_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field28}
+				 
+					{BEGIN cellblock_grid_headcell_field29}
+	<th
+	
+	{$cell_grid_headcell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$wilayahpelayanan_class}
+			"
+
+			data-field="wilayahpelayanan"
+	
+	data-cellId="grid_headcell_field29" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN wilayahpelayanan_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field107" {$item_simple_grid_field107} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="wilayahpelayanan" data-fieldname="wilayahpelayanan">
+	{$label ibm_vsanimas wilayahpelayanan }	</span>
+{END wilayahpelayanan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field29}
+				 
+					{BEGIN cellblock_grid_headcell_field30}
+	<th
+	
+	{$cell_grid_headcell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$volumeresidu_class}
+			"
+
+			data-field="volumeresidu"
+	
+	data-cellId="grid_headcell_field30" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN volumeresidu_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field108" {$item_simple_grid_field108} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="volumeresidu" data-fieldname="volumeresidu">
+	{$label ibm_vsanimas volumeresidu }	</span>
+{END volumeresidu_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field30}
+				 
+					{BEGIN cellblock_grid_headcell_field31}
+	<th
+	
+	{$cell_grid_headcell_field31}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$luashanggar_class}
+			"
+
+			data-field="luashanggar"
+	
+	data-cellId="grid_headcell_field31" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN luashanggar_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field109" {$item_simple_grid_field109} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="luashanggar" data-fieldname="luashanggar">
+	{$label ibm_vsanimas luashanggar }	</span>
+{END luashanggar_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field31}
+				 
+					{BEGIN cellblock_grid_headcell_field32}
+	<th
+	
+	{$cell_grid_headcell_field32}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$konstruksihanggar_class}
+			"
+
+			data-field="konstruksihanggar"
+	
+	data-cellId="grid_headcell_field32" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN konstruksihanggar_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field110" {$item_simple_grid_field110} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="konstruksihanggar" data-fieldname="konstruksihanggar">
+	{$label ibm_vsanimas konstruksihanggar }	</span>
+{END konstruksihanggar_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field32}
+				 
+					{BEGIN cellblock_grid_headcell_field33}
+	<th
+	
+	{$cell_grid_headcell_field33}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kondisihanggar_class}
+			"
+
+			data-field="kondisihanggar"
+	
+	data-cellId="grid_headcell_field33" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kondisihanggar_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field111" {$item_simple_grid_field111} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kondisihanggar" data-fieldname="kondisihanggar">
+	{$label ibm_vsanimas kondisihanggar }	</span>
+{END kondisihanggar_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field33}
+				 
+					{BEGIN cellblock_grid_headcell_field34}
+	<th
+	
+	{$cell_grid_headcell_field34}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$luaskantor_class}
+			"
+
+			data-field="luaskantor"
+	
+	data-cellId="grid_headcell_field34" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN luaskantor_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field112" {$item_simple_grid_field112} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="luaskantor" data-fieldname="luaskantor">
+	{$label ibm_vsanimas luaskantor }	</span>
+{END luaskantor_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field34}
+				 
+					{BEGIN cellblock_grid_headcell_field35}
+	<th
+	
+	{$cell_grid_headcell_field35}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$konstruksikantor_class}
+			"
+
+			data-field="konstruksikantor"
+	
+	data-cellId="grid_headcell_field35" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN konstruksikantor_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field113" {$item_simple_grid_field113} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="konstruksikantor" data-fieldname="konstruksikantor">
+	{$label ibm_vsanimas konstruksikantor }	</span>
+{END konstruksikantor_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field35}
+				 
+					{BEGIN cellblock_grid_headcell_field36}
+	<th
+	
+	{$cell_grid_headcell_field36}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jalan_class}
+			"
+
+			data-field="jalan"
+	
+	data-cellId="grid_headcell_field36" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jalan_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field114" {$item_simple_grid_field114} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jalan" data-fieldname="jalan">
+	{$label ibm_vsanimas jalan }	</span>
+{END jalan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field36}
+				 
+					{BEGIN cellblock_grid_headcell_field37}
+	<th
+	
+	{$cell_grid_headcell_field37}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$listrik_class}
+			"
+
+			data-field="listrik"
+	
+	data-cellId="grid_headcell_field37" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN listrik_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field115" {$item_simple_grid_field115} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="listrik" data-fieldname="listrik">
+	{$label ibm_vsanimas listrik }	</span>
+{END listrik_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field37}
+				 
+					{BEGIN cellblock_grid_headcell_field38}
+	<th
+	
+	{$cell_grid_headcell_field38}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$airbersih_class}
+			"
+
+			data-field="airbersih"
+	
+	data-cellId="grid_headcell_field38" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN airbersih_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field116" {$item_simple_grid_field116} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="airbersih" data-fieldname="airbersih">
+	{$label ibm_vsanimas airbersih }	</span>
+{END airbersih_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field38}
+				 
+					{BEGIN cellblock_grid_headcell_field39}
+	<th
+	
+	{$cell_grid_headcell_field39}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jenisbecakmotor_class}
+			"
+
+			data-field="jenisbecakmotor"
+	
+	data-cellId="grid_headcell_field39" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jenisbecakmotor_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field117" {$item_simple_grid_field117} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jenisbecakmotor" data-fieldname="jenisbecakmotor">
+	{$label ibm_vsanimas jenisbecakmotor }	</span>
+{END jenisbecakmotor_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field39}
+				 
+					{BEGIN cellblock_grid_headcell_field40}
+	<th
+	
+	{$cell_grid_headcell_field40}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahbecakmotor_class}
+			"
+
+			data-field="jumlahbecakmotor"
+	
+	data-cellId="grid_headcell_field40" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahbecakmotor_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field118" {$item_simple_grid_field118} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahbecakmotor" data-fieldname="jumlahbecakmotor">
+	{$label ibm_vsanimas jumlahbecakmotor }	</span>
+{END jumlahbecakmotor_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field40}
+				 
+					{BEGIN cellblock_grid_headcell_field41}
+	<th
+	
+	{$cell_grid_headcell_field41}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kondisibecakmotor_class}
+			"
+
+			data-field="kondisibecakmotor"
+	
+	data-cellId="grid_headcell_field41" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kondisibecakmotor_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field119" {$item_simple_grid_field119} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kondisibecakmotor" data-fieldname="kondisibecakmotor">
+	{$label ibm_vsanimas kondisibecakmotor }	</span>
+{END kondisibecakmotor_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field41}
+				 
+					{BEGIN cellblock_grid_headcell_field42}
+	<th
+	
+	{$cell_grid_headcell_field42}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jenispencacahkompos_class}
+			"
+
+			data-field="jenispencacahkompos"
+	
+	data-cellId="grid_headcell_field42" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jenispencacahkompos_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field120" {$item_simple_grid_field120} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jenispencacahkompos" data-fieldname="jenispencacahkompos">
+	{$label ibm_vsanimas jenispencacahkompos }	</span>
+{END jenispencacahkompos_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field42}
+				 
+					{BEGIN cellblock_grid_headcell_field43}
+	<th
+	
+	{$cell_grid_headcell_field43}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahpencacahkompos_class}
+			"
+
+			data-field="jumlahpencacahkompos"
+	
+	data-cellId="grid_headcell_field43" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahpencacahkompos_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field121" {$item_simple_grid_field121} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahpencacahkompos" data-fieldname="jumlahpencacahkompos">
+	{$label ibm_vsanimas jumlahpencacahkompos }	</span>
+{END jumlahpencacahkompos_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field43}
+				 
+					{BEGIN cellblock_grid_headcell_field44}
+	<th
+	
+	{$cell_grid_headcell_field44}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kondisipencacahkompos_class}
+			"
+
+			data-field="kondisipencacahkompos"
+	
+	data-cellId="grid_headcell_field44" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kondisipencacahkompos_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field122" {$item_simple_grid_field122} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kondisipencacahkompos" data-fieldname="kondisipencacahkompos">
+	{$label ibm_vsanimas kondisipencacahkompos }	</span>
+{END kondisipencacahkompos_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field44}
+				 
+					{BEGIN cellblock_grid_headcell_field45}
+	<th
+	
+	{$cell_grid_headcell_field45}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jenispencacahplastik_class}
+			"
+
+			data-field="jenispencacahplastik"
+	
+	data-cellId="grid_headcell_field45" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jenispencacahplastik_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field123" {$item_simple_grid_field123} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jenispencacahplastik" data-fieldname="jenispencacahplastik">
+	{$label ibm_vsanimas jenispencacahplastik }	</span>
+{END jenispencacahplastik_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field45}
+				 
+					{BEGIN cellblock_grid_headcell_field46}
+	<th
+	
+	{$cell_grid_headcell_field46}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahpencacahplastik_class}
+			"
+
+			data-field="jumlahpencacahplastik"
+	
+	data-cellId="grid_headcell_field46" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahpencacahplastik_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field124" {$item_simple_grid_field124} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahpencacahplastik" data-fieldname="jumlahpencacahplastik">
+	{$label ibm_vsanimas jumlahpencacahplastik }	</span>
+{END jumlahpencacahplastik_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field46}
+				 
+					{BEGIN cellblock_grid_headcell_field47}
+	<th
+	
+	{$cell_grid_headcell_field47}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kondisipencacahplastik_class}
+			"
+
+			data-field="kondisipencacahplastik"
+	
+	data-cellId="grid_headcell_field47" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kondisipencacahplastik_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field125" {$item_simple_grid_field125} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kondisipencacahplastik" data-fieldname="kondisipencacahplastik">
+	{$label ibm_vsanimas kondisipencacahplastik }	</span>
+{END kondisipencacahplastik_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field47}
+				 
+					{BEGIN cellblock_grid_headcell_field48}
+	<th
+	
+	{$cell_grid_headcell_field48}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$sistempengolahan_class}
+			"
+
+			data-field="sistempengolahan"
+	
+	data-cellId="grid_headcell_field48" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sistempengolahan_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field126" {$item_simple_grid_field126} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sistempengolahan" data-fieldname="sistempengolahan">
+	{$label ibm_vsanimas sistempengolahan }	</span>
+{END sistempengolahan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field48}
+				 
+					{BEGIN cellblock_grid_headcell_field49}
+	<th
+	
+	{$cell_grid_headcell_field49}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$partisipasimasyarakat_class}
+			"
+
+			data-field="partisipasimasyarakat"
+	
+	data-cellId="grid_headcell_field49" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN partisipasimasyarakat_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field127" {$item_simple_grid_field127} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="partisipasimasyarakat" data-fieldname="partisipasimasyarakat">
+	{$label ibm_vsanimas partisipasimasyarakat }	</span>
+{END partisipasimasyarakat_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field49}
+				 
+					{BEGIN cellblock_grid_headcell_field50}
+	<th
+	
+	{$cell_grid_headcell_field50}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$partisipasipemda_class}
+			"
+
+			data-field="partisipasipemda"
+	
+	data-cellId="grid_headcell_field50" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN partisipasipemda_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field128" {$item_simple_grid_field128} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="partisipasipemda" data-fieldname="partisipasipemda">
+	{$label ibm_vsanimas partisipasipemda }	</span>
+{END partisipasipemda_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field50}
+				 
+					{BEGIN cellblock_grid_headcell_field51}
+	<th
+	
+	{$cell_grid_headcell_field51}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$catatanpermasalahan_class}
+			"
+
+			data-field="catatanpermasalahan"
+	
+	data-cellId="grid_headcell_field51" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN catatanpermasalahan_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field129" {$item_simple_grid_field129} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="catatanpermasalahan" data-fieldname="catatanpermasalahan">
+	{$label ibm_vsanimas catatanpermasalahan }	</span>
+{END catatanpermasalahan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field51}
+				 
+					{BEGIN cellblock_grid_headcell_field52}
+	<th
+	
+	{$cell_grid_headcell_field52}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$catatanrekomendasi_class}
+			"
+
+			data-field="catatanrekomendasi"
+	
+	data-cellId="grid_headcell_field52" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN catatanrekomendasi_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field130" {$item_simple_grid_field130} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="catatanrekomendasi" data-fieldname="catatanrekomendasi">
+	{$label ibm_vsanimas catatanrekomendasi }	</span>
+{END catatanrekomendasi_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field52}
+				 
+					{BEGIN cellblock_grid_headcell_field53}
+	<th
+	
+	{$cell_grid_headcell_field53}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$materialperpipaan_class}
+			"
+
+			data-field="materialperpipaan"
+	
+	data-cellId="grid_headcell_field53" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN materialperpipaan_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field131" {$item_simple_grid_field131} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="materialperpipaan" data-fieldname="materialperpipaan">
+	{$label ibm_vsanimas materialperpipaan }	</span>
+{END materialperpipaan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field53}
+				 
+					{BEGIN cellblock_grid_headcell_field54}
+	<th
+	
+	{$cell_grid_headcell_field54}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kondisiperpipaan_class}
+			"
+
+			data-field="kondisiperpipaan"
+	
+	data-cellId="grid_headcell_field54" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kondisiperpipaan_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field132" {$item_simple_grid_field132} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kondisiperpipaan" data-fieldname="kondisiperpipaan">
+	{$label ibm_vsanimas kondisiperpipaan }	</span>
+{END kondisiperpipaan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field54}
+				 
+					{BEGIN cellblock_grid_headcell_field55}
+	<th
+	
+	{$cell_grid_headcell_field55}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$latarbelakang_class}
+			"
+
+			data-field="latarbelakang"
+	
+	data-cellId="grid_headcell_field55" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN latarbelakang_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field133" {$item_simple_grid_field133} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="latarbelakang" data-fieldname="latarbelakang">
+	{$label ibm_vsanimas latarbelakang }	</span>
+{END latarbelakang_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field55}
+				 
+					{BEGIN cellblock_grid_headcell_field56}
+	<th
+	
+	{$cell_grid_headcell_field56}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tujuan_class}
+			"
+
+			data-field="tujuan"
+	
+	data-cellId="grid_headcell_field56" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tujuan_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field134" {$item_simple_grid_field134} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tujuan" data-fieldname="tujuan">
+	{$label ibm_vsanimas tujuan }	</span>
+{END tujuan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field56}
+				 
+					{BEGIN cellblock_grid_headcell_field57}
+	<th
+	
+	{$cell_grid_headcell_field57}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$lingkupkegiatan_class}
+			"
+
+			data-field="lingkupkegiatan"
+	
+	data-cellId="grid_headcell_field57" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN lingkupkegiatan_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field135" {$item_simple_grid_field135} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="lingkupkegiatan" data-fieldname="lingkupkegiatan">
+	{$label ibm_vsanimas lingkupkegiatan }	</span>
+{END lingkupkegiatan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field57}
+				 
+					{BEGIN cellblock_grid_headcell_field58}
+	<th
+	
+	{$cell_grid_headcell_field58}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$manfaat_class}
+			"
+
+			data-field="manfaat"
+	
+	data-cellId="grid_headcell_field58" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN manfaat_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field136" {$item_simple_grid_field136} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="manfaat" data-fieldname="manfaat">
+	{$label ibm_vsanimas manfaat }	</span>
+{END manfaat_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field58}
+				 
+					{BEGIN cellblock_grid_headcell_field59}
+	<th
+	
+	{$cell_grid_headcell_field59}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$verifikasi_class}
+			"
+
+			data-field="verifikasi"
+	
+	data-cellId="grid_headcell_field59" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN verifikasi_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field137" {$item_simple_grid_field137} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="verifikasi" data-fieldname="verifikasi">
+	{$label ibm_vsanimas verifikasi }	</span>
+{END verifikasi_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field59}
+				 
+					{BEGIN cellblock_grid_headcell_field60}
+	<th
+	
+	{$cell_grid_headcell_field60}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jeniskegiatan_class}
+			"
+
+			data-field="jeniskegiatan"
+	
+	data-cellId="grid_headcell_field60" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jeniskegiatan_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field138" {$item_simple_grid_field138} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jeniskegiatan" data-fieldname="jeniskegiatan">
+	{$label ibm_vsanimas jeniskegiatan }	</span>
+{END jeniskegiatan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field60}
+				 
+					{BEGIN cellblock_grid_headcell_field61}
+	<th
+	
+	{$cell_grid_headcell_field61}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$permasalahanphoto_class}
+			"
+
+			data-field="permasalahanphoto"
+	
+	data-cellId="grid_headcell_field61" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN permasalahanphoto_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field139" {$item_simple_grid_field139} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="permasalahanphoto" data-fieldname="permasalahanphoto">
+	{$label ibm_vsanimas permasalahanphoto }	</span>
+{END permasalahanphoto_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field61}
+				 
+					{BEGIN cellblock_grid_headcell_field62}
+	<th
+	
+	{$cell_grid_headcell_field62}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$alamat_class}
+			"
+
+			data-field="alamat"
+	
+	data-cellId="grid_headcell_field62" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN alamat_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field140" {$item_simple_grid_field140} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="alamat" data-fieldname="alamat">
+	{$label ibm_vsanimas alamat }	</span>
+{END alamat_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field62}
+				 
+					{BEGIN cellblock_grid_headcell_field63}
+	<th
+	
+	{$cell_grid_headcell_field63}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$phone_class}
+			"
+
+			data-field="phone"
+	
+	data-cellId="grid_headcell_field63" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN phone_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field141" {$item_simple_grid_field141} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="phone" data-fieldname="phone">
+	{$label ibm_vsanimas phone }	</span>
+{END phone_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field63}
+				 
+					{BEGIN cellblock_grid_headcell_field64}
+	<th
+	
+	{$cell_grid_headcell_field64}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$namaksm_class}
+			"
+
+			data-field="namaksm"
+	
+	data-cellId="grid_headcell_field64" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN namaksm_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field142" {$item_simple_grid_field142} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="namaksm" data-fieldname="namaksm">
+	{$label ibm_vsanimas namaksm }	</span>
+{END namaksm_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field64}
+				 
+					{BEGIN cellblock_grid_headcell_field65}
+	<th
+	
+	{$cell_grid_headcell_field65}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ketuaksm_class}
+			"
+
+			data-field="ketuaksm"
+	
+	data-cellId="grid_headcell_field65" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ketuaksm_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field143" {$item_simple_grid_field143} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ketuaksm" data-fieldname="ketuaksm">
+	{$label ibm_vsanimas ketuaksm }	</span>
+{END ketuaksm_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field65}
+				 
+					{BEGIN cellblock_grid_headcell_field66}
+	<th
+	
+	{$cell_grid_headcell_field66}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahsdm_class}
+			"
+
+			data-field="jumlahsdm"
+	
+	data-cellId="grid_headcell_field66" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahsdm_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field144" {$item_simple_grid_field144} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahsdm" data-fieldname="jumlahsdm">
+	{$label ibm_vsanimas jumlahsdm }	</span>
+{END jumlahsdm_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field66}
+				 
+					{BEGIN cellblock_grid_headcell_field67}
+	<th
+	
+	{$cell_grid_headcell_field67}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahkkterlayani_class}
+			"
+
+			data-field="jumlahkkterlayani"
+	
+	data-cellId="grid_headcell_field67" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahkkterlayani_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field145" {$item_simple_grid_field145} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahkkterlayani" data-fieldname="jumlahkkterlayani">
+	{$label ibm_vsanimas jumlahkkterlayani }	</span>
+{END jumlahkkterlayani_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field67}
+				 
+					{BEGIN cellblock_grid_headcell_field68}
+	<th
+	
+	{$cell_grid_headcell_field68}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahpenerimamanfaat_class}
+			"
+
+			data-field="jumlahpenerimamanfaat"
+	
+	data-cellId="grid_headcell_field68" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahpenerimamanfaat_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field146" {$item_simple_grid_field146} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahpenerimamanfaat" data-fieldname="jumlahpenerimamanfaat">
+	{$label ibm_vsanimas jumlahpenerimamanfaat }	</span>
+{END jumlahpenerimamanfaat_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field68}
+				 
+					{BEGIN cellblock_grid_headcell_field69}
+	<th
+	
+	{$cell_grid_headcell_field69}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahkkmbr_class}
+			"
+
+			data-field="jumlahkkmbr"
+	
+	data-cellId="grid_headcell_field69" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahkkmbr_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field147" {$item_simple_grid_field147} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahkkmbr" data-fieldname="jumlahkkmbr">
+	{$label ibm_vsanimas jumlahkkmbr }	</span>
+{END jumlahkkmbr_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field69}
+				 
+					{BEGIN cellblock_grid_headcell_field70}
+	<th
+	
+	{$cell_grid_headcell_field70}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahjiwapemanfaat_class}
+			"
+
+			data-field="jumlahjiwapemanfaat"
+	
+	data-cellId="grid_headcell_field70" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahjiwapemanfaat_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field148" {$item_simple_grid_field148} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahjiwapemanfaat" data-fieldname="jumlahjiwapemanfaat">
+	{$label ibm_vsanimas jumlahjiwapemanfaat }	</span>
+{END jumlahjiwapemanfaat_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field70}
+				 
+					{BEGIN cellblock_grid_headcell_field71}
+	<th
+	
+	{$cell_grid_headcell_field71}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$luaslahan_class}
+			"
+
+			data-field="luaslahan"
+	
+	data-cellId="grid_headcell_field71" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN luaslahan_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field149" {$item_simple_grid_field149} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="luaslahan" data-fieldname="luaslahan">
+	{$label ibm_vsanimas luaslahan }	</span>
+{END luaslahan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field71}
+				 
+					{BEGIN cellblock_grid_headcell_field72}
+	<th
+	
+	{$cell_grid_headcell_field72}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$statuslahan_class}
+			"
+
+			data-field="statuslahan"
+	
+	data-cellId="grid_headcell_field72" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN statuslahan_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field150" {$item_simple_grid_field150} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="statuslahan" data-fieldname="statuslahan">
+	{$label ibm_vsanimas statuslahan }	</span>
+{END statuslahan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field72}
+				 
+					{BEGIN cellblock_grid_headcell_field73}
+	<th
+	
+	{$cell_grid_headcell_field73}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$buktilegal_class}
+			"
+
+			data-field="buktilegal"
+	
+	data-cellId="grid_headcell_field73" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN buktilegal_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field151" {$item_simple_grid_field151} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="buktilegal" data-fieldname="buktilegal">
+	{$label ibm_vsanimas buktilegal }	</span>
+{END buktilegal_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field73}
+				 
+					{BEGIN cellblock_grid_headcell_field74}
+	<th
+	
+	{$cell_grid_headcell_field74}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$badanpenerima_class}
+			"
+
+			data-field="badanpenerima"
+	
+	data-cellId="grid_headcell_field74" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN badanpenerima_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field152" {$item_simple_grid_field152} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="badanpenerima" data-fieldname="badanpenerima">
+	{$label ibm_vsanimas badanpenerima }	</span>
+{END badanpenerima_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field74}
+				 
+					{BEGIN cellblock_grid_headcell_field75}
+	<th
+	
+	{$cell_grid_headcell_field75}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$konturlahan_class}
+			"
+
+			data-field="konturlahan"
+	
+	data-cellId="grid_headcell_field75" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN konturlahan_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field153" {$item_simple_grid_field153} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="konturlahan" data-fieldname="konturlahan">
+	{$label ibm_vsanimas konturlahan }	</span>
+{END konturlahan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field75}
+				 
+					{BEGIN cellblock_grid_headcell_field76}
+	<th
+	
+	{$cell_grid_headcell_field76}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$akseslahan_class}
+			"
+
+			data-field="akseslahan"
+	
+	data-cellId="grid_headcell_field76" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN akseslahan_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field154" {$item_simple_grid_field154} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="akseslahan" data-fieldname="akseslahan">
+	{$label ibm_vsanimas akseslahan }	</span>
+{END akseslahan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field76}
+				 
+					{BEGIN cellblock_grid_headcell_field77}
+	<th
+	
+	{$cell_grid_headcell_field77}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$teksturlahan_class}
+			"
+
+			data-field="teksturlahan"
+	
+	data-cellId="grid_headcell_field77" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN teksturlahan_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field155" {$item_simple_grid_field155} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="teksturlahan" data-fieldname="teksturlahan">
+	{$label ibm_vsanimas teksturlahan }	</span>
+{END teksturlahan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field77}
+							</tr>
+					 
+					 
+					
+					{END grid_header}
+			</thead>
+															{BEGIN grid_row}
+					<tbody>
+									
+		 
+					 
+						<tr {$rowattrs} {$row_grid_1} class="{$rowclass} 
+								
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$id_class}
+			"
+
+			data-field="id"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id" data-fieldname="id" data-default-width >
+{$id_value}
+</span>
+{END id_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+				 
+					{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$propinsiid_class}
+			"
+
+			data-field="propinsiid"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN propinsiid_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="propinsiid" data-fieldname="propinsiid" data-default-width >
+{$propinsiid_value}
+</span>
+{END propinsiid_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+				 
+					{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$propinsiname_class}
+			"
+
+			data-field="propinsiname"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN propinsiname_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="propinsiname" data-fieldname="propinsiname" data-default-width >
+{$propinsiname_value}
+</span>
+{END propinsiname_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+				 
+					{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kabupatenkotaname_class}
+			"
+
+			data-field="kabupatenkotaname"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kabupatenkotaname_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kabupatenkotaname" data-fieldname="kabupatenkotaname" data-default-width >
+{$kabupatenkotaname_value}
+</span>
+{END kabupatenkotaname_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+				 
+					{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kecamatanname_class}
+			"
+
+			data-field="kecamatanname"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kecamatanname_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kecamatanname" data-fieldname="kecamatanname" data-default-width >
+{$kecamatanname_value}
+</span>
+{END kecamatanname_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+				 
+					{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$desaname_class}
+			"
+
+			data-field="desaname"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN desaname_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="desaname" data-fieldname="desaname" data-default-width >
+{$desaname_value}
+</span>
+{END desaname_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+				 
+					{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$luaswilayah_class}
+			"
+
+			data-field="luaswilayah"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN luaswilayah_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="luaswilayah" data-fieldname="luaswilayah" data-default-width >
+{$luaswilayah_value}
+</span>
+{END luaswilayah_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+				 
+					{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahpenduduk_class}
+			"
+
+			data-field="jumlahpenduduk"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahpenduduk_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahpenduduk" data-fieldname="jumlahpenduduk" data-default-width >
+{$jumlahpenduduk_value}
+</span>
+{END jumlahpenduduk_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+				 
+					{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahpendudukpria_class}
+			"
+
+			data-field="jumlahpendudukpria"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahpendudukpria_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahpendudukpria" data-fieldname="jumlahpendudukpria" data-default-width >
+{$jumlahpendudukpria_value}
+</span>
+{END jumlahpendudukpria_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+				 
+					{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahpendudukwanita_class}
+			"
+
+			data-field="jumlahpendudukwanita"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahpendudukwanita_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahpendudukwanita" data-fieldname="jumlahpendudukwanita" data-default-width >
+{$jumlahpendudukwanita_value}
+</span>
+{END jumlahpendudukwanita_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
+				 
+					{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahkk_class}
+			"
+
+			data-field="jumlahkk"
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahkk_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahkk" data-fieldname="jumlahkk" data-default-width >
+{$jumlahkk_value}
+</span>
+{END jumlahkk_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field10}
+				 
+					{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahmbr_class}
+			"
+
+			data-field="jumlahmbr"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahmbr_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahmbr" data-fieldname="jumlahmbr" data-default-width >
+{$jumlahmbr_value}
+</span>
+{END jumlahmbr_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
+				 
+					{BEGIN cellblock_grid_cell_field12}
+	<td
+	
+	{$cell_grid_cell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahrw_class}
+			"
+
+			data-field="jumlahrw"
+	
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahrw_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahrw" data-fieldname="jumlahrw" data-default-width >
+{$jumlahrw_value}
+</span>
+{END jumlahrw_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field12}
+				 
+					{BEGIN cellblock_grid_cell_field13}
+	<td
+	
+	{$cell_grid_cell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahrt_class}
+			"
+
+			data-field="jumlahrt"
+	
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahrt_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahrt" data-fieldname="jumlahrt" data-default-width >
+{$jumlahrt_value}
+</span>
+{END jumlahrt_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field13}
+				 
+					{BEGIN cellblock_grid_cell_field14}
+	<td
+	
+	{$cell_grid_cell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahjamban_class}
+			"
+
+			data-field="jumlahjamban"
+	
+	data-cellId="grid_cell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahjamban_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahjamban" data-fieldname="jumlahjamban" data-default-width >
+{$jumlahjamban_value}
+</span>
+{END jumlahjamban_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field14}
+				 
+					{BEGIN cellblock_grid_cell_field15}
+	<td
+	
+	{$cell_grid_cell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahseptictank_class}
+			"
+
+			data-field="jumlahseptictank"
+	
+	data-cellId="grid_cell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahseptictank_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahseptictank" data-fieldname="jumlahseptictank" data-default-width >
+{$jumlahseptictank_value}
+</span>
+{END jumlahseptictank_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field15}
+				 
+					{BEGIN cellblock_grid_cell_field16}
+	<td
+	
+	{$cell_grid_cell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahmck_class}
+			"
+
+			data-field="jumlahmck"
+	
+	data-cellId="grid_cell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahmck_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahmck" data-fieldname="jumlahmck" data-default-width >
+{$jumlahmck_value}
+</span>
+{END jumlahmck_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field16}
+				 
+					{BEGIN cellblock_grid_cell_field17}
+	<td
+	
+	{$cell_grid_cell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahsumurgali_class}
+			"
+
+			data-field="jumlahsumurgali"
+	
+	data-cellId="grid_cell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahsumurgali_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahsumurgali" data-fieldname="jumlahsumurgali" data-default-width >
+{$jumlahsumurgali_value}
+</span>
+{END jumlahsumurgali_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field17}
+				 
+					{BEGIN cellblock_grid_cell_field18}
+	<td
+	
+	{$cell_grid_cell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahsumurpompa_class}
+			"
+
+			data-field="jumlahsumurpompa"
+	
+	data-cellId="grid_cell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahsumurpompa_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahsumurpompa" data-fieldname="jumlahsumurpompa" data-default-width >
+{$jumlahsumurpompa_value}
+</span>
+{END jumlahsumurpompa_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field18}
+				 
+					{BEGIN cellblock_grid_cell_field19}
+	<td
+	
+	{$cell_grid_cell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahsambunganpdam_class}
+			"
+
+			data-field="jumlahsambunganpdam"
+	
+	data-cellId="grid_cell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahsambunganpdam_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahsambunganpdam" data-fieldname="jumlahsambunganpdam" data-default-width >
+{$jumlahsambunganpdam_value}
+</span>
+{END jumlahsambunganpdam_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field19}
+				 
+					{BEGIN cellblock_grid_cell_field20}
+	<td
+	
+	{$cell_grid_cell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahkranumum_class}
+			"
+
+			data-field="jumlahkranumum"
+	
+	data-cellId="grid_cell_field20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahkranumum_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahkranumum" data-fieldname="jumlahkranumum" data-default-width >
+{$jumlahkranumum_value}
+</span>
+{END jumlahkranumum_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field20}
+				 
+					{BEGIN cellblock_grid_cell_field21}
+	<td
+	
+	{$cell_grid_cell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahpenampunganair_class}
+			"
+
+			data-field="jumlahpenampunganair"
+	
+	data-cellId="grid_cell_field21" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahpenampunganair_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahpenampunganair" data-fieldname="jumlahpenampunganair" data-default-width >
+{$jumlahpenampunganair_value}
+</span>
+{END jumlahpenampunganair_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field21}
+				 
+					{BEGIN cellblock_grid_cell_field22}
+	<td
+	
+	{$cell_grid_cell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$koordinatx_class}
+			"
+
+			data-field="koordinatx"
+	
+	data-cellId="grid_cell_field22" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN koordinatx_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="koordinatx" data-fieldname="koordinatx" data-default-width >
+{$koordinatx_value}
+</span>
+{END koordinatx_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field22}
+				 
+					{BEGIN cellblock_grid_cell_field23}
+	<td
+	
+	{$cell_grid_cell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$koordinaty_class}
+			"
+
+			data-field="koordinaty"
+	
+	data-cellId="grid_cell_field23" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN koordinaty_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="koordinaty" data-fieldname="koordinaty" data-default-width >
+{$koordinaty_value}
+</span>
+{END koordinaty_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field23}
+				 
+					{BEGIN cellblock_grid_cell_field24}
+	<td
+	
+	{$cell_grid_cell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$pagu2_class}
+			"
+
+			data-field="pagu2"
+	
+	data-cellId="grid_cell_field24" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pagu2_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pagu2" data-fieldname="pagu2" data-default-width >
+{$pagu2_value}
+</span>
+{END pagu2_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field24}
+				 
+					{BEGIN cellblock_grid_cell_field25}
+	<td
+	
+	{$cell_grid_cell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tahun2_class}
+			"
+
+			data-field="tahun2"
+	
+	data-cellId="grid_cell_field25" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tahun2_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tahun2" data-fieldname="tahun2" data-default-width >
+{$tahun2_value}
+</span>
+{END tahun2_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field25}
+				 
+					{BEGIN cellblock_grid_cell_field26}
+	<td
+	
+	{$cell_grid_cell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$sumberdana2_class}
+			"
+
+			data-field="sumberdana2"
+	
+	data-cellId="grid_cell_field26" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sumberdana2_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sumberdana2" data-fieldname="sumberdana2" data-default-width >
+{$sumberdana2_value}
+</span>
+{END sumberdana2_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field26}
+				 
+					{BEGIN cellblock_grid_cell_field27}
+	<td
+	
+	{$cell_grid_cell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$keberfungsian_class}
+			"
+
+			data-field="keberfungsian"
+	
+	data-cellId="grid_cell_field27" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN keberfungsian_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="keberfungsian" data-fieldname="keberfungsian" data-default-width >
+{$keberfungsian_value}
+</span>
+{END keberfungsian_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field27}
+				 
+					{BEGIN cellblock_grid_cell_field28}
+	<td
+	
+	{$cell_grid_cell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kualitaskeberfungsian_class}
+			"
+
+			data-field="kualitaskeberfungsian"
+	
+	data-cellId="grid_cell_field28" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kualitaskeberfungsian_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field28" {$item_simple_grid_field28} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kualitaskeberfungsian" data-fieldname="kualitaskeberfungsian" data-default-width >
+{$kualitaskeberfungsian_value}
+</span>
+{END kualitaskeberfungsian_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field28}
+				 
+					{BEGIN cellblock_grid_cell_field29}
+	<td
+	
+	{$cell_grid_cell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$wilayahpelayanan_class}
+			"
+
+			data-field="wilayahpelayanan"
+	
+	data-cellId="grid_cell_field29" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN wilayahpelayanan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field29" {$item_simple_grid_field29} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="wilayahpelayanan" data-fieldname="wilayahpelayanan" data-default-width >
+{$wilayahpelayanan_value}
+</span>
+{END wilayahpelayanan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field29}
+				 
+					{BEGIN cellblock_grid_cell_field30}
+	<td
+	
+	{$cell_grid_cell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$volumeresidu_class}
+			"
+
+			data-field="volumeresidu"
+	
+	data-cellId="grid_cell_field30" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN volumeresidu_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field30" {$item_simple_grid_field30} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="volumeresidu" data-fieldname="volumeresidu" data-default-width >
+{$volumeresidu_value}
+</span>
+{END volumeresidu_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field30}
+				 
+					{BEGIN cellblock_grid_cell_field31}
+	<td
+	
+	{$cell_grid_cell_field31}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$luashanggar_class}
+			"
+
+			data-field="luashanggar"
+	
+	data-cellId="grid_cell_field31" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN luashanggar_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field31" {$item_simple_grid_field31} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="luashanggar" data-fieldname="luashanggar" data-default-width >
+{$luashanggar_value}
+</span>
+{END luashanggar_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field31}
+				 
+					{BEGIN cellblock_grid_cell_field32}
+	<td
+	
+	{$cell_grid_cell_field32}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$konstruksihanggar_class}
+			"
+
+			data-field="konstruksihanggar"
+	
+	data-cellId="grid_cell_field32" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN konstruksihanggar_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field32" {$item_simple_grid_field32} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="konstruksihanggar" data-fieldname="konstruksihanggar" data-default-width >
+{$konstruksihanggar_value}
+</span>
+{END konstruksihanggar_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field32}
+				 
+					{BEGIN cellblock_grid_cell_field33}
+	<td
+	
+	{$cell_grid_cell_field33}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kondisihanggar_class}
+			"
+
+			data-field="kondisihanggar"
+	
+	data-cellId="grid_cell_field33" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kondisihanggar_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field33" {$item_simple_grid_field33} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kondisihanggar" data-fieldname="kondisihanggar" data-default-width >
+{$kondisihanggar_value}
+</span>
+{END kondisihanggar_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field33}
+				 
+					{BEGIN cellblock_grid_cell_field34}
+	<td
+	
+	{$cell_grid_cell_field34}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$luaskantor_class}
+			"
+
+			data-field="luaskantor"
+	
+	data-cellId="grid_cell_field34" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN luaskantor_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field34" {$item_simple_grid_field34} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="luaskantor" data-fieldname="luaskantor" data-default-width >
+{$luaskantor_value}
+</span>
+{END luaskantor_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field34}
+				 
+					{BEGIN cellblock_grid_cell_field35}
+	<td
+	
+	{$cell_grid_cell_field35}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$konstruksikantor_class}
+			"
+
+			data-field="konstruksikantor"
+	
+	data-cellId="grid_cell_field35" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN konstruksikantor_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field35" {$item_simple_grid_field35} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="konstruksikantor" data-fieldname="konstruksikantor" data-default-width >
+{$konstruksikantor_value}
+</span>
+{END konstruksikantor_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field35}
+				 
+					{BEGIN cellblock_grid_cell_field36}
+	<td
+	
+	{$cell_grid_cell_field36}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jalan_class}
+			"
+
+			data-field="jalan"
+	
+	data-cellId="grid_cell_field36" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jalan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field36" {$item_simple_grid_field36} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jalan" data-fieldname="jalan" data-default-width >
+{$jalan_value}
+</span>
+{END jalan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field36}
+				 
+					{BEGIN cellblock_grid_cell_field37}
+	<td
+	
+	{$cell_grid_cell_field37}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$listrik_class}
+			"
+
+			data-field="listrik"
+	
+	data-cellId="grid_cell_field37" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN listrik_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field37" {$item_simple_grid_field37} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="listrik" data-fieldname="listrik" data-default-width >
+{$listrik_value}
+</span>
+{END listrik_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field37}
+				 
+					{BEGIN cellblock_grid_cell_field38}
+	<td
+	
+	{$cell_grid_cell_field38}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$airbersih_class}
+			"
+
+			data-field="airbersih"
+	
+	data-cellId="grid_cell_field38" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN airbersih_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field38" {$item_simple_grid_field38} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="airbersih" data-fieldname="airbersih" data-default-width >
+{$airbersih_value}
+</span>
+{END airbersih_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field38}
+				 
+					{BEGIN cellblock_grid_cell_field39}
+	<td
+	
+	{$cell_grid_cell_field39}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jenisbecakmotor_class}
+			"
+
+			data-field="jenisbecakmotor"
+	
+	data-cellId="grid_cell_field39" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jenisbecakmotor_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field39" {$item_simple_grid_field39} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jenisbecakmotor" data-fieldname="jenisbecakmotor" data-default-width >
+{$jenisbecakmotor_value}
+</span>
+{END jenisbecakmotor_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field39}
+				 
+					{BEGIN cellblock_grid_cell_field40}
+	<td
+	
+	{$cell_grid_cell_field40}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahbecakmotor_class}
+			"
+
+			data-field="jumlahbecakmotor"
+	
+	data-cellId="grid_cell_field40" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahbecakmotor_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field40" {$item_simple_grid_field40} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahbecakmotor" data-fieldname="jumlahbecakmotor" data-default-width >
+{$jumlahbecakmotor_value}
+</span>
+{END jumlahbecakmotor_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field40}
+				 
+					{BEGIN cellblock_grid_cell_field41}
+	<td
+	
+	{$cell_grid_cell_field41}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kondisibecakmotor_class}
+			"
+
+			data-field="kondisibecakmotor"
+	
+	data-cellId="grid_cell_field41" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kondisibecakmotor_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field41" {$item_simple_grid_field41} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kondisibecakmotor" data-fieldname="kondisibecakmotor" data-default-width >
+{$kondisibecakmotor_value}
+</span>
+{END kondisibecakmotor_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field41}
+				 
+					{BEGIN cellblock_grid_cell_field42}
+	<td
+	
+	{$cell_grid_cell_field42}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jenispencacahkompos_class}
+			"
+
+			data-field="jenispencacahkompos"
+	
+	data-cellId="grid_cell_field42" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jenispencacahkompos_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field42" {$item_simple_grid_field42} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jenispencacahkompos" data-fieldname="jenispencacahkompos" data-default-width >
+{$jenispencacahkompos_value}
+</span>
+{END jenispencacahkompos_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field42}
+				 
+					{BEGIN cellblock_grid_cell_field43}
+	<td
+	
+	{$cell_grid_cell_field43}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahpencacahkompos_class}
+			"
+
+			data-field="jumlahpencacahkompos"
+	
+	data-cellId="grid_cell_field43" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahpencacahkompos_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field43" {$item_simple_grid_field43} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahpencacahkompos" data-fieldname="jumlahpencacahkompos" data-default-width >
+{$jumlahpencacahkompos_value}
+</span>
+{END jumlahpencacahkompos_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field43}
+				 
+					{BEGIN cellblock_grid_cell_field44}
+	<td
+	
+	{$cell_grid_cell_field44}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kondisipencacahkompos_class}
+			"
+
+			data-field="kondisipencacahkompos"
+	
+	data-cellId="grid_cell_field44" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kondisipencacahkompos_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field44" {$item_simple_grid_field44} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kondisipencacahkompos" data-fieldname="kondisipencacahkompos" data-default-width >
+{$kondisipencacahkompos_value}
+</span>
+{END kondisipencacahkompos_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field44}
+				 
+					{BEGIN cellblock_grid_cell_field45}
+	<td
+	
+	{$cell_grid_cell_field45}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jenispencacahplastik_class}
+			"
+
+			data-field="jenispencacahplastik"
+	
+	data-cellId="grid_cell_field45" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jenispencacahplastik_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field45" {$item_simple_grid_field45} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jenispencacahplastik" data-fieldname="jenispencacahplastik" data-default-width >
+{$jenispencacahplastik_value}
+</span>
+{END jenispencacahplastik_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field45}
+				 
+					{BEGIN cellblock_grid_cell_field46}
+	<td
+	
+	{$cell_grid_cell_field46}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahpencacahplastik_class}
+			"
+
+			data-field="jumlahpencacahplastik"
+	
+	data-cellId="grid_cell_field46" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahpencacahplastik_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field46" {$item_simple_grid_field46} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahpencacahplastik" data-fieldname="jumlahpencacahplastik" data-default-width >
+{$jumlahpencacahplastik_value}
+</span>
+{END jumlahpencacahplastik_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field46}
+				 
+					{BEGIN cellblock_grid_cell_field47}
+	<td
+	
+	{$cell_grid_cell_field47}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kondisipencacahplastik_class}
+			"
+
+			data-field="kondisipencacahplastik"
+	
+	data-cellId="grid_cell_field47" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kondisipencacahplastik_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field47" {$item_simple_grid_field47} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kondisipencacahplastik" data-fieldname="kondisipencacahplastik" data-default-width >
+{$kondisipencacahplastik_value}
+</span>
+{END kondisipencacahplastik_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field47}
+				 
+					{BEGIN cellblock_grid_cell_field48}
+	<td
+	
+	{$cell_grid_cell_field48}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$sistempengolahan_class}
+			"
+
+			data-field="sistempengolahan"
+	
+	data-cellId="grid_cell_field48" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sistempengolahan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field48" {$item_simple_grid_field48} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sistempengolahan" data-fieldname="sistempengolahan" data-default-width >
+{$sistempengolahan_value}
+</span>
+{END sistempengolahan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field48}
+				 
+					{BEGIN cellblock_grid_cell_field49}
+	<td
+	
+	{$cell_grid_cell_field49}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$partisipasimasyarakat_class}
+			"
+
+			data-field="partisipasimasyarakat"
+	
+	data-cellId="grid_cell_field49" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN partisipasimasyarakat_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field49" {$item_simple_grid_field49} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="partisipasimasyarakat" data-fieldname="partisipasimasyarakat" data-default-width >
+{$partisipasimasyarakat_value}
+</span>
+{END partisipasimasyarakat_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field49}
+				 
+					{BEGIN cellblock_grid_cell_field50}
+	<td
+	
+	{$cell_grid_cell_field50}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$partisipasipemda_class}
+			"
+
+			data-field="partisipasipemda"
+	
+	data-cellId="grid_cell_field50" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN partisipasipemda_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field50" {$item_simple_grid_field50} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="partisipasipemda" data-fieldname="partisipasipemda" data-default-width >
+{$partisipasipemda_value}
+</span>
+{END partisipasipemda_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field50}
+				 
+					{BEGIN cellblock_grid_cell_field51}
+	<td
+	
+	{$cell_grid_cell_field51}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$catatanpermasalahan_class}
+			"
+
+			data-field="catatanpermasalahan"
+	
+	data-cellId="grid_cell_field51" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN catatanpermasalahan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field51" {$item_simple_grid_field51} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="catatanpermasalahan" data-fieldname="catatanpermasalahan" data-default-width >
+{$catatanpermasalahan_value}
+</span>
+{END catatanpermasalahan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field51}
+				 
+					{BEGIN cellblock_grid_cell_field52}
+	<td
+	
+	{$cell_grid_cell_field52}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$catatanrekomendasi_class}
+			"
+
+			data-field="catatanrekomendasi"
+	
+	data-cellId="grid_cell_field52" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN catatanrekomendasi_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field52" {$item_simple_grid_field52} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="catatanrekomendasi" data-fieldname="catatanrekomendasi" data-default-width >
+{$catatanrekomendasi_value}
+</span>
+{END catatanrekomendasi_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field52}
+				 
+					{BEGIN cellblock_grid_cell_field53}
+	<td
+	
+	{$cell_grid_cell_field53}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$materialperpipaan_class}
+			"
+
+			data-field="materialperpipaan"
+	
+	data-cellId="grid_cell_field53" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN materialperpipaan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field53" {$item_simple_grid_field53} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="materialperpipaan" data-fieldname="materialperpipaan" data-default-width >
+{$materialperpipaan_value}
+</span>
+{END materialperpipaan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field53}
+				 
+					{BEGIN cellblock_grid_cell_field54}
+	<td
+	
+	{$cell_grid_cell_field54}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kondisiperpipaan_class}
+			"
+
+			data-field="kondisiperpipaan"
+	
+	data-cellId="grid_cell_field54" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kondisiperpipaan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field54" {$item_simple_grid_field54} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kondisiperpipaan" data-fieldname="kondisiperpipaan" data-default-width >
+{$kondisiperpipaan_value}
+</span>
+{END kondisiperpipaan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field54}
+				 
+					{BEGIN cellblock_grid_cell_field55}
+	<td
+	
+	{$cell_grid_cell_field55}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$latarbelakang_class}
+			"
+
+			data-field="latarbelakang"
+	
+	data-cellId="grid_cell_field55" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN latarbelakang_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field55" {$item_simple_grid_field55} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="latarbelakang" data-fieldname="latarbelakang" data-default-width >
+{$latarbelakang_value}
+</span>
+{END latarbelakang_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field55}
+				 
+					{BEGIN cellblock_grid_cell_field56}
+	<td
+	
+	{$cell_grid_cell_field56}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tujuan_class}
+			"
+
+			data-field="tujuan"
+	
+	data-cellId="grid_cell_field56" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tujuan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field56" {$item_simple_grid_field56} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tujuan" data-fieldname="tujuan" data-default-width >
+{$tujuan_value}
+</span>
+{END tujuan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field56}
+				 
+					{BEGIN cellblock_grid_cell_field57}
+	<td
+	
+	{$cell_grid_cell_field57}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$lingkupkegiatan_class}
+			"
+
+			data-field="lingkupkegiatan"
+	
+	data-cellId="grid_cell_field57" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN lingkupkegiatan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field57" {$item_simple_grid_field57} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="lingkupkegiatan" data-fieldname="lingkupkegiatan" data-default-width >
+{$lingkupkegiatan_value}
+</span>
+{END lingkupkegiatan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field57}
+				 
+					{BEGIN cellblock_grid_cell_field58}
+	<td
+	
+	{$cell_grid_cell_field58}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$manfaat_class}
+			"
+
+			data-field="manfaat"
+	
+	data-cellId="grid_cell_field58" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN manfaat_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field58" {$item_simple_grid_field58} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="manfaat" data-fieldname="manfaat" data-default-width >
+{$manfaat_value}
+</span>
+{END manfaat_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field58}
+				 
+					{BEGIN cellblock_grid_cell_field59}
+	<td
+	
+	{$cell_grid_cell_field59}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$verifikasi_class}
+			"
+
+			data-field="verifikasi"
+	
+	data-cellId="grid_cell_field59" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN verifikasi_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field59" {$item_simple_grid_field59} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="verifikasi" data-fieldname="verifikasi" data-default-width >
+{$verifikasi_value}
+</span>
+{END verifikasi_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field59}
+				 
+					{BEGIN cellblock_grid_cell_field60}
+	<td
+	
+	{$cell_grid_cell_field60}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jeniskegiatan_class}
+			"
+
+			data-field="jeniskegiatan"
+	
+	data-cellId="grid_cell_field60" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jeniskegiatan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field60" {$item_simple_grid_field60} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jeniskegiatan" data-fieldname="jeniskegiatan" data-default-width >
+{$jeniskegiatan_value}
+</span>
+{END jeniskegiatan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field60}
+				 
+					{BEGIN cellblock_grid_cell_field61}
+	<td
+	
+	{$cell_grid_cell_field61}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$permasalahanphoto_class}
+			"
+
+			data-field="permasalahanphoto"
+	
+	data-cellId="grid_cell_field61" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN permasalahanphoto_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field61" {$item_simple_grid_field61} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="permasalahanphoto" data-fieldname="permasalahanphoto" data-default-width >
+{$permasalahanphoto_value}
+</span>
+{END permasalahanphoto_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field61}
+				 
+					{BEGIN cellblock_grid_cell_field62}
+	<td
+	
+	{$cell_grid_cell_field62}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$alamat_class}
+			"
+
+			data-field="alamat"
+	
+	data-cellId="grid_cell_field62" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN alamat_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field62" {$item_simple_grid_field62} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="alamat" data-fieldname="alamat" data-default-width >
+{$alamat_value}
+</span>
+{END alamat_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field62}
+				 
+					{BEGIN cellblock_grid_cell_field63}
+	<td
+	
+	{$cell_grid_cell_field63}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$phone_class}
+			"
+
+			data-field="phone"
+	
+	data-cellId="grid_cell_field63" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN phone_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field63" {$item_simple_grid_field63} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="phone" data-fieldname="phone" data-default-width >
+{$phone_value}
+</span>
+{END phone_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field63}
+				 
+					{BEGIN cellblock_grid_cell_field64}
+	<td
+	
+	{$cell_grid_cell_field64}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$namaksm_class}
+			"
+
+			data-field="namaksm"
+	
+	data-cellId="grid_cell_field64" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN namaksm_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field64" {$item_simple_grid_field64} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="namaksm" data-fieldname="namaksm" data-default-width >
+{$namaksm_value}
+</span>
+{END namaksm_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field64}
+				 
+					{BEGIN cellblock_grid_cell_field65}
+	<td
+	
+	{$cell_grid_cell_field65}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ketuaksm_class}
+			"
+
+			data-field="ketuaksm"
+	
+	data-cellId="grid_cell_field65" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ketuaksm_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field65" {$item_simple_grid_field65} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ketuaksm" data-fieldname="ketuaksm" data-default-width >
+{$ketuaksm_value}
+</span>
+{END ketuaksm_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field65}
+				 
+					{BEGIN cellblock_grid_cell_field66}
+	<td
+	
+	{$cell_grid_cell_field66}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahsdm_class}
+			"
+
+			data-field="jumlahsdm"
+	
+	data-cellId="grid_cell_field66" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahsdm_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field66" {$item_simple_grid_field66} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahsdm" data-fieldname="jumlahsdm" data-default-width >
+{$jumlahsdm_value}
+</span>
+{END jumlahsdm_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field66}
+				 
+					{BEGIN cellblock_grid_cell_field67}
+	<td
+	
+	{$cell_grid_cell_field67}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahkkterlayani_class}
+			"
+
+			data-field="jumlahkkterlayani"
+	
+	data-cellId="grid_cell_field67" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahkkterlayani_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field67" {$item_simple_grid_field67} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahkkterlayani" data-fieldname="jumlahkkterlayani" data-default-width >
+{$jumlahkkterlayani_value}
+</span>
+{END jumlahkkterlayani_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field67}
+				 
+					{BEGIN cellblock_grid_cell_field68}
+	<td
+	
+	{$cell_grid_cell_field68}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahpenerimamanfaat_class}
+			"
+
+			data-field="jumlahpenerimamanfaat"
+	
+	data-cellId="grid_cell_field68" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahpenerimamanfaat_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field68" {$item_simple_grid_field68} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahpenerimamanfaat" data-fieldname="jumlahpenerimamanfaat" data-default-width >
+{$jumlahpenerimamanfaat_value}
+</span>
+{END jumlahpenerimamanfaat_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field68}
+				 
+					{BEGIN cellblock_grid_cell_field69}
+	<td
+	
+	{$cell_grid_cell_field69}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahkkmbr_class}
+			"
+
+			data-field="jumlahkkmbr"
+	
+	data-cellId="grid_cell_field69" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahkkmbr_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field69" {$item_simple_grid_field69} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahkkmbr" data-fieldname="jumlahkkmbr" data-default-width >
+{$jumlahkkmbr_value}
+</span>
+{END jumlahkkmbr_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field69}
+				 
+					{BEGIN cellblock_grid_cell_field70}
+	<td
+	
+	{$cell_grid_cell_field70}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlahjiwapemanfaat_class}
+			"
+
+			data-field="jumlahjiwapemanfaat"
+	
+	data-cellId="grid_cell_field70" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlahjiwapemanfaat_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field70" {$item_simple_grid_field70} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlahjiwapemanfaat" data-fieldname="jumlahjiwapemanfaat" data-default-width >
+{$jumlahjiwapemanfaat_value}
+</span>
+{END jumlahjiwapemanfaat_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field70}
+				 
+					{BEGIN cellblock_grid_cell_field71}
+	<td
+	
+	{$cell_grid_cell_field71}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$luaslahan_class}
+			"
+
+			data-field="luaslahan"
+	
+	data-cellId="grid_cell_field71" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN luaslahan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field71" {$item_simple_grid_field71} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="luaslahan" data-fieldname="luaslahan" data-default-width >
+{$luaslahan_value}
+</span>
+{END luaslahan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field71}
+				 
+					{BEGIN cellblock_grid_cell_field72}
+	<td
+	
+	{$cell_grid_cell_field72}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$statuslahan_class}
+			"
+
+			data-field="statuslahan"
+	
+	data-cellId="grid_cell_field72" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN statuslahan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field72" {$item_simple_grid_field72} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="statuslahan" data-fieldname="statuslahan" data-default-width >
+{$statuslahan_value}
+</span>
+{END statuslahan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field72}
+				 
+					{BEGIN cellblock_grid_cell_field73}
+	<td
+	
+	{$cell_grid_cell_field73}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$buktilegal_class}
+			"
+
+			data-field="buktilegal"
+	
+	data-cellId="grid_cell_field73" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN buktilegal_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field73" {$item_simple_grid_field73} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="buktilegal" data-fieldname="buktilegal" data-default-width >
+{$buktilegal_value}
+</span>
+{END buktilegal_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field73}
+				 
+					{BEGIN cellblock_grid_cell_field74}
+	<td
+	
+	{$cell_grid_cell_field74}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$badanpenerima_class}
+			"
+
+			data-field="badanpenerima"
+	
+	data-cellId="grid_cell_field74" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN badanpenerima_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field74" {$item_simple_grid_field74} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="badanpenerima" data-fieldname="badanpenerima" data-default-width >
+{$badanpenerima_value}
+</span>
+{END badanpenerima_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field74}
+				 
+					{BEGIN cellblock_grid_cell_field75}
+	<td
+	
+	{$cell_grid_cell_field75}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$konturlahan_class}
+			"
+
+			data-field="konturlahan"
+	
+	data-cellId="grid_cell_field75" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN konturlahan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field75" {$item_simple_grid_field75} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="konturlahan" data-fieldname="konturlahan" data-default-width >
+{$konturlahan_value}
+</span>
+{END konturlahan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field75}
+				 
+					{BEGIN cellblock_grid_cell_field76}
+	<td
+	
+	{$cell_grid_cell_field76}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$akseslahan_class}
+			"
+
+			data-field="akseslahan"
+	
+	data-cellId="grid_cell_field76" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN akseslahan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field76" {$item_simple_grid_field76} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="akseslahan" data-fieldname="akseslahan" data-default-width >
+{$akseslahan_value}
+</span>
+{END akseslahan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field76}
+				 
+					{BEGIN cellblock_grid_cell_field77}
+	<td
+	
+	{$cell_grid_cell_field77}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$teksturlahan_class}
+			"
+
+			data-field="teksturlahan"
+	
+	data-cellId="grid_cell_field77" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN teksturlahan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field77" {$item_simple_grid_field77} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="teksturlahan" data-fieldname="teksturlahan" data-default-width >
+{$teksturlahan_value}
+</span>
+{END teksturlahan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field77}
+							</tr>
+					 
+					
+											</tbody>
+					{END grid_row}
+													<tfoot>
+					
+		 
+					 
+					 
+						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
+									{$gridFooter_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_footcell_field}
+	<td
+	
+	{$cell_grid_footcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field}
+				 
+					{BEGIN cellblock_grid_footcell_field1}
+	<td
+	
+	{$cell_grid_footcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field1}
+				 
+					{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
+				 
+					{BEGIN cellblock_grid_footcell_field3}
+	<td
+	
+	{$cell_grid_footcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field3}
+				 
+					{BEGIN cellblock_grid_footcell_field4}
+	<td
+	
+	{$cell_grid_footcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field4}
+				 
+					{BEGIN cellblock_grid_footcell_field5}
+	<td
+	
+	{$cell_grid_footcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field5}
+				 
+					{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
+				 
+					{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
+				 
+					{BEGIN cellblock_grid_footcell_field8}
+	<td
+	
+	{$cell_grid_footcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field8}
+				 
+					{BEGIN cellblock_grid_footcell_field9}
+	<td
+	
+	{$cell_grid_footcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field9}
+				 
+					{BEGIN cellblock_grid_footcell_field10}
+	<td
+	
+	{$cell_grid_footcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field10}
+				 
+					{BEGIN cellblock_grid_footcell_field11}
+	<td
+	
+	{$cell_grid_footcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field11}
+				 
+					{BEGIN cellblock_grid_footcell_field12}
+	<td
+	
+	{$cell_grid_footcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field12}
+				 
+					{BEGIN cellblock_grid_footcell_field13}
+	<td
+	
+	{$cell_grid_footcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field13}
+				 
+					{BEGIN cellblock_grid_footcell_field14}
+	<td
+	
+	{$cell_grid_footcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field14}
+				 
+					{BEGIN cellblock_grid_footcell_field15}
+	<td
+	
+	{$cell_grid_footcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field15}
+				 
+					{BEGIN cellblock_grid_footcell_field16}
+	<td
+	
+	{$cell_grid_footcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field16}
+				 
+					{BEGIN cellblock_grid_footcell_field17}
+	<td
+	
+	{$cell_grid_footcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field17}
+				 
+					{BEGIN cellblock_grid_footcell_field18}
+	<td
+	
+	{$cell_grid_footcell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field18" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field18}
+				 
+					{BEGIN cellblock_grid_footcell_field19}
+	<td
+	
+	{$cell_grid_footcell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field19" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field19}
+				 
+					{BEGIN cellblock_grid_footcell_field20}
+	<td
+	
+	{$cell_grid_footcell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field20" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field20}
+				 
+					{BEGIN cellblock_grid_footcell_field21}
+	<td
+	
+	{$cell_grid_footcell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field21" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field21}
+				 
+					{BEGIN cellblock_grid_footcell_field22}
+	<td
+	
+	{$cell_grid_footcell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field22" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field22}
+				 
+					{BEGIN cellblock_grid_footcell_field23}
+	<td
+	
+	{$cell_grid_footcell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field23" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field23}
+				 
+					{BEGIN cellblock_grid_footcell_field24}
+	<td
+	
+	{$cell_grid_footcell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field24" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field24}
+				 
+					{BEGIN cellblock_grid_footcell_field25}
+	<td
+	
+	{$cell_grid_footcell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field25" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field25}
+				 
+					{BEGIN cellblock_grid_footcell_field26}
+	<td
+	
+	{$cell_grid_footcell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field26" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field26}
+				 
+					{BEGIN cellblock_grid_footcell_field27}
+	<td
+	
+	{$cell_grid_footcell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field27" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field27}
+				 
+					{BEGIN cellblock_grid_footcell_field28}
+	<td
+	
+	{$cell_grid_footcell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field28" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field28}
+				 
+					{BEGIN cellblock_grid_footcell_field29}
+	<td
+	
+	{$cell_grid_footcell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field29" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field29}
+				 
+					{BEGIN cellblock_grid_footcell_field30}
+	<td
+	
+	{$cell_grid_footcell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field30" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field30}
+				 
+					{BEGIN cellblock_grid_footcell_field31}
+	<td
+	
+	{$cell_grid_footcell_field31}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field31" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field31}
+				 
+					{BEGIN cellblock_grid_footcell_field32}
+	<td
+	
+	{$cell_grid_footcell_field32}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field32" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field32}
+				 
+					{BEGIN cellblock_grid_footcell_field33}
+	<td
+	
+	{$cell_grid_footcell_field33}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field33" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field33}
+				 
+					{BEGIN cellblock_grid_footcell_field34}
+	<td
+	
+	{$cell_grid_footcell_field34}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field34" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field34}
+				 
+					{BEGIN cellblock_grid_footcell_field35}
+	<td
+	
+	{$cell_grid_footcell_field35}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field35" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field35}
+				 
+					{BEGIN cellblock_grid_footcell_field36}
+	<td
+	
+	{$cell_grid_footcell_field36}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field36" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field36}
+				 
+					{BEGIN cellblock_grid_footcell_field37}
+	<td
+	
+	{$cell_grid_footcell_field37}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field37" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field37}
+				 
+					{BEGIN cellblock_grid_footcell_field38}
+	<td
+	
+	{$cell_grid_footcell_field38}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field38" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field38}
+				 
+					{BEGIN cellblock_grid_footcell_field39}
+	<td
+	
+	{$cell_grid_footcell_field39}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field39" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field39}
+				 
+					{BEGIN cellblock_grid_footcell_field40}
+	<td
+	
+	{$cell_grid_footcell_field40}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field40" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field40}
+				 
+					{BEGIN cellblock_grid_footcell_field41}
+	<td
+	
+	{$cell_grid_footcell_field41}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field41" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field41}
+				 
+					{BEGIN cellblock_grid_footcell_field42}
+	<td
+	
+	{$cell_grid_footcell_field42}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field42" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field42}
+				 
+					{BEGIN cellblock_grid_footcell_field43}
+	<td
+	
+	{$cell_grid_footcell_field43}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field43" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field43}
+				 
+					{BEGIN cellblock_grid_footcell_field44}
+	<td
+	
+	{$cell_grid_footcell_field44}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field44" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field44}
+				 
+					{BEGIN cellblock_grid_footcell_field45}
+	<td
+	
+	{$cell_grid_footcell_field45}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field45" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field45}
+				 
+					{BEGIN cellblock_grid_footcell_field46}
+	<td
+	
+	{$cell_grid_footcell_field46}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field46" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field46}
+				 
+					{BEGIN cellblock_grid_footcell_field47}
+	<td
+	
+	{$cell_grid_footcell_field47}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field47" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field47}
+				 
+					{BEGIN cellblock_grid_footcell_field48}
+	<td
+	
+	{$cell_grid_footcell_field48}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field48" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field48}
+				 
+					{BEGIN cellblock_grid_footcell_field49}
+	<td
+	
+	{$cell_grid_footcell_field49}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field49" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field49}
+				 
+					{BEGIN cellblock_grid_footcell_field50}
+	<td
+	
+	{$cell_grid_footcell_field50}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field50" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field50}
+				 
+					{BEGIN cellblock_grid_footcell_field51}
+	<td
+	
+	{$cell_grid_footcell_field51}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field51" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field51}
+				 
+					{BEGIN cellblock_grid_footcell_field52}
+	<td
+	
+	{$cell_grid_footcell_field52}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field52" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field52}
+				 
+					{BEGIN cellblock_grid_footcell_field53}
+	<td
+	
+	{$cell_grid_footcell_field53}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field53" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field53}
+				 
+					{BEGIN cellblock_grid_footcell_field54}
+	<td
+	
+	{$cell_grid_footcell_field54}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field54" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field54}
+				 
+					{BEGIN cellblock_grid_footcell_field55}
+	<td
+	
+	{$cell_grid_footcell_field55}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field55" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field55}
+				 
+					{BEGIN cellblock_grid_footcell_field56}
+	<td
+	
+	{$cell_grid_footcell_field56}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field56" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field56}
+				 
+					{BEGIN cellblock_grid_footcell_field57}
+	<td
+	
+	{$cell_grid_footcell_field57}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field57" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field57}
+				 
+					{BEGIN cellblock_grid_footcell_field58}
+	<td
+	
+	{$cell_grid_footcell_field58}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field58" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field58}
+				 
+					{BEGIN cellblock_grid_footcell_field59}
+	<td
+	
+	{$cell_grid_footcell_field59}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field59" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field59}
+				 
+					{BEGIN cellblock_grid_footcell_field60}
+	<td
+	
+	{$cell_grid_footcell_field60}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field60" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field60}
+				 
+					{BEGIN cellblock_grid_footcell_field61}
+	<td
+	
+	{$cell_grid_footcell_field61}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field61" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field61}
+				 
+					{BEGIN cellblock_grid_footcell_field62}
+	<td
+	
+	{$cell_grid_footcell_field62}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field62" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field62}
+				 
+					{BEGIN cellblock_grid_footcell_field63}
+	<td
+	
+	{$cell_grid_footcell_field63}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field63" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field63}
+				 
+					{BEGIN cellblock_grid_footcell_field64}
+	<td
+	
+	{$cell_grid_footcell_field64}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field64" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field64}
+				 
+					{BEGIN cellblock_grid_footcell_field65}
+	<td
+	
+	{$cell_grid_footcell_field65}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field65" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field65}
+				 
+					{BEGIN cellblock_grid_footcell_field66}
+	<td
+	
+	{$cell_grid_footcell_field66}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field66" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field66}
+				 
+					{BEGIN cellblock_grid_footcell_field67}
+	<td
+	
+	{$cell_grid_footcell_field67}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field67" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field67}
+				 
+					{BEGIN cellblock_grid_footcell_field68}
+	<td
+	
+	{$cell_grid_footcell_field68}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field68" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field68}
+				 
+					{BEGIN cellblock_grid_footcell_field69}
+	<td
+	
+	{$cell_grid_footcell_field69}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field69" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field69}
+				 
+					{BEGIN cellblock_grid_footcell_field70}
+	<td
+	
+	{$cell_grid_footcell_field70}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field70" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field70}
+				 
+					{BEGIN cellblock_grid_footcell_field71}
+	<td
+	
+	{$cell_grid_footcell_field71}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field71" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field71}
+				 
+					{BEGIN cellblock_grid_footcell_field72}
+	<td
+	
+	{$cell_grid_footcell_field72}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field72" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field72}
+				 
+					{BEGIN cellblock_grid_footcell_field73}
+	<td
+	
+	{$cell_grid_footcell_field73}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field73" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field73}
+				 
+					{BEGIN cellblock_grid_footcell_field74}
+	<td
+	
+	{$cell_grid_footcell_field74}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field74" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field74}
+				 
+					{BEGIN cellblock_grid_footcell_field75}
+	<td
+	
+	{$cell_grid_footcell_field75}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field75" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field75}
+				 
+					{BEGIN cellblock_grid_footcell_field76}
+	<td
+	
+	{$cell_grid_footcell_field76}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field76" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field76}
+				 
+					{BEGIN cellblock_grid_footcell_field77}
+	<td
+	
+	{$cell_grid_footcell_field77}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field77" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ibm_vsanimas_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field77}
+							</tr>
+					
+					</tfoot>
+				</table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}" >		
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

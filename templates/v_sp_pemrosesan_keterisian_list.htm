@@ -1,0 +1,2765 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="250px" data-fixed class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Memperluas" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main}			</div>
+		
+ 
+
+			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="search_panel" {$item_search_panel} data-topcell-item-type="search_panel" >
+				<!-- Begin Search panel content -->
+<div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}" >
+
+	<div class="panel-heading">
+		<div class="btn-group" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle btn-sm )" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Search in			<span class="caret"></span>
+			</button>
+		</div>
+
+
+		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Show options</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>all conditions</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>any condition</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>hide</a></li>
+			</ul>
+		</div>
+
+
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+																		{BEGIN searchCtrlBlock_alamat}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_alamat}" {$filterRow_attrs_alamat}>
+			<label>{$label v_sp_pemrosesan_keterisian alamat }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_alamat}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_alamat}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_alamat}</span>
+						</div>
+		{END searchCtrlBlock_alamat}
+																{BEGIN searchCtrlBlock_unit_pengolahan_air_lindi}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_unit_pengolahan_air_lindi}" {$filterRow_attrs_unit_pengolahan_air_lindi}>
+			<label>{$label v_sp_pemrosesan_keterisian unit_pengolahan_air_lindi }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_unit_pengolahan_air_lindi}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_unit_pengolahan_air_lindi}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_unit_pengolahan_air_lindi}</span>
+						</div>
+		{END searchCtrlBlock_unit_pengolahan_air_lindi}
+																{BEGIN searchCtrlBlock_umur_TPA}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_umur_TPA}" {$filterRow_attrs_umur_TPA}>
+			<label>{$label v_sp_pemrosesan_keterisian umur_TPA }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_umur_TPA}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_umur_TPA}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_umur_TPA}</span>
+						</div>
+		{END searchCtrlBlock_umur_TPA}
+																{BEGIN searchCtrlBlock_telepon}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_telepon}" {$filterRow_attrs_telepon}>
+			<label>{$label v_sp_pemrosesan_keterisian telepon }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_telepon}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_telepon}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_telepon}</span>
+						</div>
+		{END searchCtrlBlock_telepon}
+																{BEGIN searchCtrlBlock_tahun_pembangunan}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_tahun_pembangunan}" {$filterRow_attrs_tahun_pembangunan}>
+			<label>{$label v_sp_pemrosesan_keterisian tahun_pembangunan }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_tahun_pembangunan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_tahun_pembangunan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_tahun_pembangunan}</span>
+						</div>
+		{END searchCtrlBlock_tahun_pembangunan}
+																{BEGIN searchCtrlBlock_tahun_mulai_operasi}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_tahun_mulai_operasi}" {$filterRow_attrs_tahun_mulai_operasi}>
+			<label>{$label v_sp_pemrosesan_keterisian tahun_mulai_operasi }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_tahun_mulai_operasi}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_tahun_mulai_operasi}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_tahun_mulai_operasi}</span>
+						</div>
+		{END searchCtrlBlock_tahun_mulai_operasi}
+																{BEGIN searchCtrlBlock_sumber_dana_pembangunan}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sumber_dana_pembangunan}" {$filterRow_attrs_sumber_dana_pembangunan}>
+			<label>{$label v_sp_pemrosesan_keterisian sumber_dana_pembangunan }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sumber_dana_pembangunan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sumber_dana_pembangunan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sumber_dana_pembangunan}</span>
+						</div>
+		{END searchCtrlBlock_sumber_dana_pembangunan}
+																{BEGIN searchCtrlBlock_status_keberfungsian}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_status_keberfungsian}" {$filterRow_attrs_status_keberfungsian}>
+			<label>{$label v_sp_pemrosesan_keterisian status_keberfungsian }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_status_keberfungsian}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_status_keberfungsian}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_status_keberfungsian}</span>
+						</div>
+		{END searchCtrlBlock_status_keberfungsian}
+																{BEGIN searchCtrlBlock_potensi_emisi_gas}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_potensi_emisi_gas}" {$filterRow_attrs_potensi_emisi_gas}>
+			<label>{$label v_sp_pemrosesan_keterisian potensi_emisi_gas }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_potensi_emisi_gas}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_potensi_emisi_gas}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_potensi_emisi_gas}</span>
+						</div>
+		{END searchCtrlBlock_potensi_emisi_gas}
+																{BEGIN searchCtrlBlock_pengelola}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_pengelola}" {$filterRow_attrs_pengelola}>
+			<label>{$label v_sp_pemrosesan_keterisian pengelola }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_pengelola}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_pengelola}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_pengelola}</span>
+						</div>
+		{END searchCtrlBlock_pengelola}
+																{BEGIN searchCtrlBlock_pemanfaatan_gas_methane}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_pemanfaatan_gas_methane}" {$filterRow_attrs_pemanfaatan_gas_methane}>
+			<label>{$label v_sp_pemrosesan_keterisian pemanfaatan_gas_methane }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_pemanfaatan_gas_methane}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_pemanfaatan_gas_methane}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_pemanfaatan_gas_methane}</span>
+						</div>
+		{END searchCtrlBlock_pemanfaatan_gas_methane}
+																{BEGIN searchCtrlBlock_nama_kepala_fasilitas}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nama_kepala_fasilitas}" {$filterRow_attrs_nama_kepala_fasilitas}>
+			<label>{$label v_sp_pemrosesan_keterisian nama_kepala_fasilitas }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nama_kepala_fasilitas}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nama_kepala_fasilitas}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nama_kepala_fasilitas}</span>
+						</div>
+		{END searchCtrlBlock_nama_kepala_fasilitas}
+																{BEGIN searchCtrlBlock_metode_lahan_urug}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_metode_lahan_urug}" {$filterRow_attrs_metode_lahan_urug}>
+			<label>{$label v_sp_pemrosesan_keterisian metode_lahan_urug }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_metode_lahan_urug}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_metode_lahan_urug}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_metode_lahan_urug}</span>
+						</div>
+		{END searchCtrlBlock_metode_lahan_urug}
+																{BEGIN searchCtrlBlock_luas_unit_pengolahan_sampah}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_luas_unit_pengolahan_sampah}" {$filterRow_attrs_luas_unit_pengolahan_sampah}>
+			<label>{$label v_sp_pemrosesan_keterisian luas_unit_pengolahan_sampah }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_luas_unit_pengolahan_sampah}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_luas_unit_pengolahan_sampah}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_luas_unit_pengolahan_sampah}</span>
+						</div>
+		{END searchCtrlBlock_luas_unit_pengolahan_sampah}
+																{BEGIN searchCtrlBlock_luas_total_TPA}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_luas_total_TPA}" {$filterRow_attrs_luas_total_TPA}>
+			<label>{$label v_sp_pemrosesan_keterisian luas_total_TPA }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_luas_total_TPA}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_luas_total_TPA}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_luas_total_TPA}</span>
+						</div>
+		{END searchCtrlBlock_luas_total_TPA}
+																{BEGIN searchCtrlBlock_kualitas_keberfungsian}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_kualitas_keberfungsian}" {$filterRow_attrs_kualitas_keberfungsian}>
+			<label>{$label v_sp_pemrosesan_keterisian kualitas_keberfungsian }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_kualitas_keberfungsian}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_kualitas_keberfungsian}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_kualitas_keberfungsian}</span>
+						</div>
+		{END searchCtrlBlock_kualitas_keberfungsian}
+																{BEGIN searchCtrlBlock_kondisifasilitas}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_kondisifasilitas}" {$filterRow_attrs_kondisifasilitas}>
+			<label>{$label v_sp_pemrosesan_keterisian kondisifasilitas }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_kondisifasilitas}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_kondisifasilitas}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_kondisifasilitas}</span>
+						</div>
+		{END searchCtrlBlock_kondisifasilitas}
+																{BEGIN searchCtrlBlock_kategori_pelayanan}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_kategori_pelayanan}" {$filterRow_attrs_kategori_pelayanan}>
+			<label>{$label v_sp_pemrosesan_keterisian kategori_pelayanan }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_kategori_pelayanan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_kategori_pelayanan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_kategori_pelayanan}</span>
+						</div>
+		{END searchCtrlBlock_kategori_pelayanan}
+																{BEGIN searchCtrlBlock_kapasitas_sampah_terolah}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_kapasitas_sampah_terolah}" {$filterRow_attrs_kapasitas_sampah_terolah}>
+			<label>{$label v_sp_pemrosesan_keterisian kapasitas_sampah_terolah }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_kapasitas_sampah_terolah}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_kapasitas_sampah_terolah}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_kapasitas_sampah_terolah}</span>
+						</div>
+		{END searchCtrlBlock_kapasitas_sampah_terolah}
+																{BEGIN searchCtrlBlock_kapasitas_sampah_masuk}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_kapasitas_sampah_masuk}" {$filterRow_attrs_kapasitas_sampah_masuk}>
+			<label>{$label v_sp_pemrosesan_keterisian kapasitas_sampah_masuk }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_kapasitas_sampah_masuk}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_kapasitas_sampah_masuk}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_kapasitas_sampah_masuk}</span>
+						</div>
+		{END searchCtrlBlock_kapasitas_sampah_masuk}
+																{BEGIN searchCtrlBlock_jumlah_record}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_jumlah_record}" {$filterRow_attrs_jumlah_record}>
+			<label>{$label v_sp_pemrosesan_keterisian jumlah_record }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_jumlah_record}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_jumlah_record}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_jumlah_record}</span>
+						</div>
+		{END searchCtrlBlock_jumlah_record}
+																{BEGIN searchCtrlBlock_jenis_pengelola}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_jenis_pengelola}" {$filterRow_attrs_jenis_pengelola}>
+			<label>{$label v_sp_pemrosesan_keterisian jenis_pengelola }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_jenis_pengelola}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_jenis_pengelola}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_jenis_pengelola}</span>
+						</div>
+		{END searchCtrlBlock_jenis_pengelola}
+																{BEGIN searchCtrlBlock_jarak_perumahan}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_jarak_perumahan}" {$filterRow_attrs_jarak_perumahan}>
+			<label>{$label v_sp_pemrosesan_keterisian jarak_perumahan }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_jarak_perumahan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_jarak_perumahan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_jarak_perumahan}</span>
+						</div>
+		{END searchCtrlBlock_jarak_perumahan}
+																{BEGIN searchCtrlBlock_jarak_badan_air}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_jarak_badan_air}" {$filterRow_attrs_jarak_badan_air}>
+			<label>{$label v_sp_pemrosesan_keterisian jarak_badan_air }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_jarak_badan_air}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_jarak_badan_air}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_jarak_badan_air}</span>
+						</div>
+		{END searchCtrlBlock_jarak_badan_air}
+																{BEGIN searchCtrlBlock_email}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_email}" {$filterRow_attrs_email}>
+			<label>{$label v_sp_pemrosesan_keterisian email }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_email}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_email}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_email}</span>
+						</div>
+		{END searchCtrlBlock_email}
+																{BEGIN searchCtrlBlock_biaya_pembangunan}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_biaya_pembangunan}" {$filterRow_attrs_biaya_pembangunan}>
+			<label>{$label v_sp_pemrosesan_keterisian biaya_pembangunan }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_biaya_pembangunan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_biaya_pembangunan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_biaya_pembangunan}</span>
+						</div>
+		{END searchCtrlBlock_biaya_pembangunan}
+																{BEGIN searchCtrlBlock_biaya_operasional}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_biaya_operasional}" {$filterRow_attrs_biaya_operasional}>
+			<label>{$label v_sp_pemrosesan_keterisian biaya_operasional }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_biaya_operasional}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_biaya_operasional}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_biaya_operasional}</span>
+						</div>
+		{END searchCtrlBlock_biaya_operasional}
+																{BEGIN searchCtrlBlock_bentuk_pemanfaatan_gas_metan}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_bentuk_pemanfaatan_gas_metan}" {$filterRow_attrs_bentuk_pemanfaatan_gas_metan}>
+			<label>{$label v_sp_pemrosesan_keterisian bentuk_pemanfaatan_gas_metan }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_bentuk_pemanfaatan_gas_metan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_bentuk_pemanfaatan_gas_metan}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_bentuk_pemanfaatan_gas_metan}</span>
+						</div>
+		{END searchCtrlBlock_bentuk_pemanfaatan_gas_metan}
+		
+
+	</div>
+
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary btn-sm" id="searchButton{$id}" {$searchbutton_attrs}>Cari</button>
+
+				<button class="btn btn-default btn-sm" {$showAllCont_attrs} {$showallbutton_attrs}>Perlihatkan semua</button>
+	</div>
+</div>
+<!-- End Search panel content -->
+			</div>
+		
+    {END left_block}
+</div>				</div>
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div data-resize-left="leftbar"  data-fixed class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="expand_menu_button" {$item_expand_menu_button} data-topcell-item-type="expand_menu_button" >
+				<span data-itemtype="expand_menu_button" data-itemid="expand_menu_button" {$item_expand_menu_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Menyembunyikan" class="btn-link   
+	 glyphicon glyphicon-menu-hamburger" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Tampilkan menu" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="breadcrumb" {$item_breadcrumb} data-topcell-item-type="breadcrumb" >
+				{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
+				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+
+<div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+				<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Perlihatkan semua">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
+				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-cog"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" data-small >
+				<a   href="v_sp_pemrosesan_keterisian_search.php{$stateLink_full}" {$advsearchlink_attrs}  title="" >
+				
+		Pencarian canggih		
+		</a>
+	</li>
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="showOptPanel{$id}"  title="" >
+				
+		Show search panel		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="hideOptPanel{$id}"  title="" >
+				
+		Hide search panel		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+					</ul>
+	</span>
+</span>
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Login			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+			{BEGIN userbutton_icon}							<span class="glyphicon glyphicon-user"></span>
+						{END userbutton_icon}{$userbutton_image}			{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN userinfo_link}
+	<li data-itemtype="userinfo_link" data-itemid="userinfo_link" {$item_userinfo_link} data-pageid="{$pageid}" data-small >
+				<a  href="userinfo.php"  title="" >
+				
+		Profil pengguna		
+		</a>
+	</li>
+{END userinfo_link}
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Log out		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Admin Area		
+		</a>
+	</li>
+{END adminarea_link}
+							{BEGIN changepwd_link}
+	<li data-itemtype="changepassword_link" data-itemid="changepassword_link" {$item_changepassword_link} data-pageid="{$pageid}" data-small >
+				<a  href="changepwd.php" {$changepwdlink_attrs} id="changePasswordButton{$id}"  title="" >
+				
+		Rubah password		
+		</a>
+	</li>
+{END changepwd_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>	
+				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	</div>		
+{END top_block}
+						</div>
+					<div class="r-above">
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-6
+	
+">
+		{BEGIN firstAboveGridCell}
+				{END firstAboveGridCell}	
+	</div>			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class="r-align-right			col-md-6
+	
+">
+		 
+		<span data-itemtype="details_found" data-itemid="details_found" {$item_details_found} data-pageid="{$pageid}" data-small >
+{$mlp_push}{$mlparam first var first_shown}{$mlparam last var last_shown}{$mlparam total var records_found}{mlang_message DISPLAYING}{$mlp_pop}</span>	 
+		<span data-itemtype="page_size" data-itemid="page_size" {$item_page_size} data-pageid="{$pageid}" >
+		{$recsPerPage}
+</span>		</div>					</div>
+	</div>		
+{END above-grid_block}
+						</div>
+					<div class="r-grid">
+										{BEGIN grid_block}
+{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}	<style>
+@media screen and (max-width: 767px) {
+		[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="jumlah_record"]:before {
+		content: "{$label v_sp_pemrosesan_keterisian jumlah_record}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="kondisifasilitas"]:before {
+		content: "{$label v_sp_pemrosesan_keterisian kondisifasilitas}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="kategori_pelayanan"]:before {
+		content: "{$label v_sp_pemrosesan_keterisian kategori_pelayanan}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="pengelola"]:before {
+		content: "{$label v_sp_pemrosesan_keterisian pengelola}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="jenis_pengelola"]:before {
+		content: "{$label v_sp_pemrosesan_keterisian jenis_pengelola}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="nama_kepala_fasilitas"]:before {
+		content: "{$label v_sp_pemrosesan_keterisian nama_kepala_fasilitas}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="alamat"]:before {
+		content: "{$label v_sp_pemrosesan_keterisian alamat}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="telepon"]:before {
+		content: "{$label v_sp_pemrosesan_keterisian telepon}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="email"]:before {
+		content: "{$label v_sp_pemrosesan_keterisian email}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="tahun_pembangunan"]:before {
+		content: "{$label v_sp_pemrosesan_keterisian tahun_pembangunan}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="tahun_mulai_operasi"]:before {
+		content: "{$label v_sp_pemrosesan_keterisian tahun_mulai_operasi}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="jarak_perumahan"]:before {
+		content: "{$label v_sp_pemrosesan_keterisian jarak_perumahan}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="jarak_badan_air"]:before {
+		content: "{$label v_sp_pemrosesan_keterisian jarak_badan_air}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="sumber_dana_pembangunan"]:before {
+		content: "{$label v_sp_pemrosesan_keterisian sumber_dana_pembangunan}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="biaya_pembangunan"]:before {
+		content: "{$label v_sp_pemrosesan_keterisian biaya_pembangunan}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="luas_total_TPA"]:before {
+		content: "{$label v_sp_pemrosesan_keterisian luas_total_TPA}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="luas_unit_pengolahan_sampah"]:before {
+		content: "{$label v_sp_pemrosesan_keterisian luas_unit_pengolahan_sampah}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="status_keberfungsian"]:before {
+		content: "{$label v_sp_pemrosesan_keterisian status_keberfungsian}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="kualitas_keberfungsian"]:before {
+		content: "{$label v_sp_pemrosesan_keterisian kualitas_keberfungsian}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="metode_lahan_urug"]:before {
+		content: "{$label v_sp_pemrosesan_keterisian metode_lahan_urug}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="kapasitas_sampah_masuk"]:before {
+		content: "{$label v_sp_pemrosesan_keterisian kapasitas_sampah_masuk}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="kapasitas_sampah_terolah"]:before {
+		content: "{$label v_sp_pemrosesan_keterisian kapasitas_sampah_terolah}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="unit_pengolahan_air_lindi"]:before {
+		content: "{$label v_sp_pemrosesan_keterisian unit_pengolahan_air_lindi}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="umur_TPA"]:before {
+		content: "{$label v_sp_pemrosesan_keterisian umur_TPA}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="pemanfaatan_gas_methane"]:before {
+		content: "{$label v_sp_pemrosesan_keterisian pemanfaatan_gas_methane}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="potensi_emisi_gas"]:before {
+		content: "{$label v_sp_pemrosesan_keterisian potensi_emisi_gas}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="bentuk_pemanfaatan_gas_metan"]:before {
+		content: "{$label v_sp_pemrosesan_keterisian bentuk_pemanfaatan_gas_metan}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="biaya_operasional"]:before {
+		content: "{$label v_sp_pemrosesan_keterisian biaya_operasional}";
+	}
+	}
+</style>
+<table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes} r-horizontal-grid  r-flexgrid rnr-b-grid rnr-gridtable" 
+	cellpadding="0" 
+	data-body-height="1"
+>
+						<thead>
+			{BEGIN grid_header}
+					
+		 
+						<tr {$rowattrs} {$row_grid_0} class="{$rowclass} 
+									{$gridHeader_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_headcell_icons}
+	<th
+	
+	{$cell_grid_headcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"		data-control-cell
+	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_icons}
+				 
+					{BEGIN cellblock_grid_headcell_field}
+	<th
+	
+	{$cell_grid_headcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlah_record_class}
+			"
+
+			data-field="jumlah_record"
+	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlah_record_fieldheadercolumn}
+	{BEGIN jumlah_record_fieldheader}
+	<SPAN {$jumlah_record_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field28" {$item_simple_grid_field28} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlah_record" data-fieldname="jumlah_record">
+	{$label v_sp_pemrosesan_keterisian jumlah_record }	{$arrow_icon_jumlah_record}
+	</SPAN>
+	{END jumlah_record_fieldheader}
+{END jumlah_record_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field}
+				 
+					{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kondisifasilitas_class}
+			"
+
+			data-field="kondisifasilitas"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kondisifasilitas_fieldheadercolumn}
+	{BEGIN kondisifasilitas_fieldheader}
+	<SPAN {$kondisifasilitas_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field29" {$item_simple_grid_field29} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kondisifasilitas" data-fieldname="kondisifasilitas">
+	{$label v_sp_pemrosesan_keterisian kondisifasilitas }	{$arrow_icon_kondisifasilitas}
+	</SPAN>
+	{END kondisifasilitas_fieldheader}
+{END kondisifasilitas_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+				 
+					{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kategori_pelayanan_class}
+			"
+
+			data-field="kategori_pelayanan"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kategori_pelayanan_fieldheadercolumn}
+	{BEGIN kategori_pelayanan_fieldheader}
+	<SPAN {$kategori_pelayanan_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field30" {$item_simple_grid_field30} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kategori_pelayanan" data-fieldname="kategori_pelayanan">
+	{$label v_sp_pemrosesan_keterisian kategori_pelayanan }	{$arrow_icon_kategori_pelayanan}
+	</SPAN>
+	{END kategori_pelayanan_fieldheader}
+{END kategori_pelayanan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
+				 
+					{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$pengelola_class}
+			"
+
+			data-field="pengelola"
+	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pengelola_fieldheadercolumn}
+	{BEGIN pengelola_fieldheader}
+	<SPAN {$pengelola_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field31" {$item_simple_grid_field31} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pengelola" data-fieldname="pengelola">
+	{$label v_sp_pemrosesan_keterisian pengelola }	{$arrow_icon_pengelola}
+	</SPAN>
+	{END pengelola_fieldheader}
+{END pengelola_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field3}
+				 
+					{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jenis_pengelola_class}
+			"
+
+			data-field="jenis_pengelola"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jenis_pengelola_fieldheadercolumn}
+	{BEGIN jenis_pengelola_fieldheader}
+	<SPAN {$jenis_pengelola_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field32" {$item_simple_grid_field32} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jenis_pengelola" data-fieldname="jenis_pengelola">
+	{$label v_sp_pemrosesan_keterisian jenis_pengelola }	{$arrow_icon_jenis_pengelola}
+	</SPAN>
+	{END jenis_pengelola_fieldheader}
+{END jenis_pengelola_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field4}
+				 
+					{BEGIN cellblock_grid_headcell_field5}
+	<th
+	
+	{$cell_grid_headcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nama_kepala_fasilitas_class}
+			"
+
+			data-field="nama_kepala_fasilitas"
+	
+	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nama_kepala_fasilitas_fieldheadercolumn}
+	{BEGIN nama_kepala_fasilitas_fieldheader}
+	<SPAN {$nama_kepala_fasilitas_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field33" {$item_simple_grid_field33} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nama_kepala_fasilitas" data-fieldname="nama_kepala_fasilitas">
+	{$label v_sp_pemrosesan_keterisian nama_kepala_fasilitas }	{$arrow_icon_nama_kepala_fasilitas}
+	</SPAN>
+	{END nama_kepala_fasilitas_fieldheader}
+{END nama_kepala_fasilitas_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field5}
+				 
+					{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$alamat_class}
+			"
+
+			data-field="alamat"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN alamat_fieldheadercolumn}
+	{BEGIN alamat_fieldheader}
+	<SPAN {$alamat_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field34" {$item_simple_grid_field34} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="alamat" data-fieldname="alamat">
+	{$label v_sp_pemrosesan_keterisian alamat }	{$arrow_icon_alamat}
+	</SPAN>
+	{END alamat_fieldheader}
+{END alamat_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field6}
+				 
+					{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$telepon_class}
+			"
+
+			data-field="telepon"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN telepon_fieldheadercolumn}
+	{BEGIN telepon_fieldheader}
+	<SPAN {$telepon_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field35" {$item_simple_grid_field35} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="telepon" data-fieldname="telepon">
+	{$label v_sp_pemrosesan_keterisian telepon }	{$arrow_icon_telepon}
+	</SPAN>
+	{END telepon_fieldheader}
+{END telepon_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
+				 
+					{BEGIN cellblock_grid_headcell_field8}
+	<th
+	
+	{$cell_grid_headcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$email_class}
+			"
+
+			data-field="email"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN email_fieldheadercolumn}
+	{BEGIN email_fieldheader}
+	<SPAN {$email_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field36" {$item_simple_grid_field36} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="email" data-fieldname="email">
+	{$label v_sp_pemrosesan_keterisian email }	{$arrow_icon_email}
+	</SPAN>
+	{END email_fieldheader}
+{END email_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field8}
+				 
+					{BEGIN cellblock_grid_headcell_field9}
+	<th
+	
+	{$cell_grid_headcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tahun_pembangunan_class}
+			"
+
+			data-field="tahun_pembangunan"
+	
+	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tahun_pembangunan_fieldheadercolumn}
+	{BEGIN tahun_pembangunan_fieldheader}
+	<SPAN {$tahun_pembangunan_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field37" {$item_simple_grid_field37} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tahun_pembangunan" data-fieldname="tahun_pembangunan">
+	{$label v_sp_pemrosesan_keterisian tahun_pembangunan }	{$arrow_icon_tahun_pembangunan}
+	</SPAN>
+	{END tahun_pembangunan_fieldheader}
+{END tahun_pembangunan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field9}
+				 
+					{BEGIN cellblock_grid_headcell_field10}
+	<th
+	
+	{$cell_grid_headcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tahun_mulai_operasi_class}
+			"
+
+			data-field="tahun_mulai_operasi"
+	
+	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tahun_mulai_operasi_fieldheadercolumn}
+	{BEGIN tahun_mulai_operasi_fieldheader}
+	<SPAN {$tahun_mulai_operasi_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field38" {$item_simple_grid_field38} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tahun_mulai_operasi" data-fieldname="tahun_mulai_operasi">
+	{$label v_sp_pemrosesan_keterisian tahun_mulai_operasi }	{$arrow_icon_tahun_mulai_operasi}
+	</SPAN>
+	{END tahun_mulai_operasi_fieldheader}
+{END tahun_mulai_operasi_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field10}
+				 
+					{BEGIN cellblock_grid_headcell_field11}
+	<th
+	
+	{$cell_grid_headcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jarak_perumahan_class}
+			"
+
+			data-field="jarak_perumahan"
+	
+	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jarak_perumahan_fieldheadercolumn}
+	{BEGIN jarak_perumahan_fieldheader}
+	<SPAN {$jarak_perumahan_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field39" {$item_simple_grid_field39} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jarak_perumahan" data-fieldname="jarak_perumahan">
+	{$label v_sp_pemrosesan_keterisian jarak_perumahan }	{$arrow_icon_jarak_perumahan}
+	</SPAN>
+	{END jarak_perumahan_fieldheader}
+{END jarak_perumahan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field11}
+				 
+					{BEGIN cellblock_grid_headcell_field12}
+	<th
+	
+	{$cell_grid_headcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jarak_badan_air_class}
+			"
+
+			data-field="jarak_badan_air"
+	
+	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jarak_badan_air_fieldheadercolumn}
+	{BEGIN jarak_badan_air_fieldheader}
+	<SPAN {$jarak_badan_air_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field40" {$item_simple_grid_field40} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jarak_badan_air" data-fieldname="jarak_badan_air">
+	{$label v_sp_pemrosesan_keterisian jarak_badan_air }	{$arrow_icon_jarak_badan_air}
+	</SPAN>
+	{END jarak_badan_air_fieldheader}
+{END jarak_badan_air_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field12}
+				 
+					{BEGIN cellblock_grid_headcell_field13}
+	<th
+	
+	{$cell_grid_headcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$sumber_dana_pembangunan_class}
+			"
+
+			data-field="sumber_dana_pembangunan"
+	
+	data-cellId="grid_headcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sumber_dana_pembangunan_fieldheadercolumn}
+	{BEGIN sumber_dana_pembangunan_fieldheader}
+	<SPAN {$sumber_dana_pembangunan_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field41" {$item_simple_grid_field41} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sumber_dana_pembangunan" data-fieldname="sumber_dana_pembangunan">
+	{$label v_sp_pemrosesan_keterisian sumber_dana_pembangunan }	{$arrow_icon_sumber_dana_pembangunan}
+	</SPAN>
+	{END sumber_dana_pembangunan_fieldheader}
+{END sumber_dana_pembangunan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field13}
+				 
+					{BEGIN cellblock_grid_headcell_field14}
+	<th
+	
+	{$cell_grid_headcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$biaya_pembangunan_class}
+			"
+
+			data-field="biaya_pembangunan"
+	
+	data-cellId="grid_headcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN biaya_pembangunan_fieldheadercolumn}
+	{BEGIN biaya_pembangunan_fieldheader}
+	<SPAN {$biaya_pembangunan_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field42" {$item_simple_grid_field42} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="biaya_pembangunan" data-fieldname="biaya_pembangunan">
+	{$label v_sp_pemrosesan_keterisian biaya_pembangunan }	{$arrow_icon_biaya_pembangunan}
+	</SPAN>
+	{END biaya_pembangunan_fieldheader}
+{END biaya_pembangunan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field14}
+				 
+					{BEGIN cellblock_grid_headcell_field15}
+	<th
+	
+	{$cell_grid_headcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$luas_total_TPA_class}
+			"
+
+			data-field="luas_total_TPA"
+	
+	data-cellId="grid_headcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN luas_total_TPA_fieldheadercolumn}
+	{BEGIN luas_total_TPA_fieldheader}
+	<SPAN {$luas_total_TPA_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field43" {$item_simple_grid_field43} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="luas_total_TPA" data-fieldname="luas_total_TPA">
+	{$label v_sp_pemrosesan_keterisian luas_total_TPA }	{$arrow_icon_luas_total_TPA}
+	</SPAN>
+	{END luas_total_TPA_fieldheader}
+{END luas_total_TPA_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field15}
+				 
+					{BEGIN cellblock_grid_headcell_field16}
+	<th
+	
+	{$cell_grid_headcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$luas_unit_pengolahan_sampah_class}
+			"
+
+			data-field="luas_unit_pengolahan_sampah"
+	
+	data-cellId="grid_headcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN luas_unit_pengolahan_sampah_fieldheadercolumn}
+	{BEGIN luas_unit_pengolahan_sampah_fieldheader}
+	<SPAN {$luas_unit_pengolahan_sampah_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field44" {$item_simple_grid_field44} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="luas_unit_pengolahan_sampah" data-fieldname="luas_unit_pengolahan_sampah">
+	{$label v_sp_pemrosesan_keterisian luas_unit_pengolahan_sampah }	{$arrow_icon_luas_unit_pengolahan_sampah}
+	</SPAN>
+	{END luas_unit_pengolahan_sampah_fieldheader}
+{END luas_unit_pengolahan_sampah_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field16}
+				 
+					{BEGIN cellblock_grid_headcell_field17}
+	<th
+	
+	{$cell_grid_headcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$status_keberfungsian_class}
+			"
+
+			data-field="status_keberfungsian"
+	
+	data-cellId="grid_headcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN status_keberfungsian_fieldheadercolumn}
+	{BEGIN status_keberfungsian_fieldheader}
+	<SPAN {$status_keberfungsian_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field45" {$item_simple_grid_field45} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="status_keberfungsian" data-fieldname="status_keberfungsian">
+	{$label v_sp_pemrosesan_keterisian status_keberfungsian }	{$arrow_icon_status_keberfungsian}
+	</SPAN>
+	{END status_keberfungsian_fieldheader}
+{END status_keberfungsian_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field17}
+				 
+					{BEGIN cellblock_grid_headcell_field18}
+	<th
+	
+	{$cell_grid_headcell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kualitas_keberfungsian_class}
+			"
+
+			data-field="kualitas_keberfungsian"
+	
+	data-cellId="grid_headcell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kualitas_keberfungsian_fieldheadercolumn}
+	{BEGIN kualitas_keberfungsian_fieldheader}
+	<SPAN {$kualitas_keberfungsian_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field46" {$item_simple_grid_field46} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kualitas_keberfungsian" data-fieldname="kualitas_keberfungsian">
+	{$label v_sp_pemrosesan_keterisian kualitas_keberfungsian }	{$arrow_icon_kualitas_keberfungsian}
+	</SPAN>
+	{END kualitas_keberfungsian_fieldheader}
+{END kualitas_keberfungsian_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field18}
+				 
+					{BEGIN cellblock_grid_headcell_field19}
+	<th
+	
+	{$cell_grid_headcell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$metode_lahan_urug_class}
+			"
+
+			data-field="metode_lahan_urug"
+	
+	data-cellId="grid_headcell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN metode_lahan_urug_fieldheadercolumn}
+	{BEGIN metode_lahan_urug_fieldheader}
+	<SPAN {$metode_lahan_urug_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field47" {$item_simple_grid_field47} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="metode_lahan_urug" data-fieldname="metode_lahan_urug">
+	{$label v_sp_pemrosesan_keterisian metode_lahan_urug }	{$arrow_icon_metode_lahan_urug}
+	</SPAN>
+	{END metode_lahan_urug_fieldheader}
+{END metode_lahan_urug_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field19}
+				 
+					{BEGIN cellblock_grid_headcell_field20}
+	<th
+	
+	{$cell_grid_headcell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kapasitas_sampah_masuk_class}
+			"
+
+			data-field="kapasitas_sampah_masuk"
+	
+	data-cellId="grid_headcell_field20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kapasitas_sampah_masuk_fieldheadercolumn}
+	{BEGIN kapasitas_sampah_masuk_fieldheader}
+	<SPAN {$kapasitas_sampah_masuk_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field48" {$item_simple_grid_field48} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kapasitas_sampah_masuk" data-fieldname="kapasitas_sampah_masuk">
+	{$label v_sp_pemrosesan_keterisian kapasitas_sampah_masuk }	{$arrow_icon_kapasitas_sampah_masuk}
+	</SPAN>
+	{END kapasitas_sampah_masuk_fieldheader}
+{END kapasitas_sampah_masuk_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field20}
+				 
+					{BEGIN cellblock_grid_headcell_field21}
+	<th
+	
+	{$cell_grid_headcell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kapasitas_sampah_terolah_class}
+			"
+
+			data-field="kapasitas_sampah_terolah"
+	
+	data-cellId="grid_headcell_field21" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kapasitas_sampah_terolah_fieldheadercolumn}
+	{BEGIN kapasitas_sampah_terolah_fieldheader}
+	<SPAN {$kapasitas_sampah_terolah_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field49" {$item_simple_grid_field49} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kapasitas_sampah_terolah" data-fieldname="kapasitas_sampah_terolah">
+	{$label v_sp_pemrosesan_keterisian kapasitas_sampah_terolah }	{$arrow_icon_kapasitas_sampah_terolah}
+	</SPAN>
+	{END kapasitas_sampah_terolah_fieldheader}
+{END kapasitas_sampah_terolah_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field21}
+				 
+					{BEGIN cellblock_grid_headcell_field22}
+	<th
+	
+	{$cell_grid_headcell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$unit_pengolahan_air_lindi_class}
+			"
+
+			data-field="unit_pengolahan_air_lindi"
+	
+	data-cellId="grid_headcell_field22" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN unit_pengolahan_air_lindi_fieldheadercolumn}
+	{BEGIN unit_pengolahan_air_lindi_fieldheader}
+	<SPAN {$unit_pengolahan_air_lindi_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field50" {$item_simple_grid_field50} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="unit_pengolahan_air_lindi" data-fieldname="unit_pengolahan_air_lindi">
+	{$label v_sp_pemrosesan_keterisian unit_pengolahan_air_lindi }	{$arrow_icon_unit_pengolahan_air_lindi}
+	</SPAN>
+	{END unit_pengolahan_air_lindi_fieldheader}
+{END unit_pengolahan_air_lindi_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field22}
+				 
+					{BEGIN cellblock_grid_headcell_field23}
+	<th
+	
+	{$cell_grid_headcell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$umur_TPA_class}
+			"
+
+			data-field="umur_TPA"
+	
+	data-cellId="grid_headcell_field23" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN umur_TPA_fieldheadercolumn}
+	{BEGIN umur_TPA_fieldheader}
+	<SPAN {$umur_TPA_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field51" {$item_simple_grid_field51} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="umur_TPA" data-fieldname="umur_TPA">
+	{$label v_sp_pemrosesan_keterisian umur_TPA }	{$arrow_icon_umur_TPA}
+	</SPAN>
+	{END umur_TPA_fieldheader}
+{END umur_TPA_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field23}
+				 
+					{BEGIN cellblock_grid_headcell_field24}
+	<th
+	
+	{$cell_grid_headcell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$pemanfaatan_gas_methane_class}
+			"
+
+			data-field="pemanfaatan_gas_methane"
+	
+	data-cellId="grid_headcell_field24" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pemanfaatan_gas_methane_fieldheadercolumn}
+	{BEGIN pemanfaatan_gas_methane_fieldheader}
+	<SPAN {$pemanfaatan_gas_methane_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field52" {$item_simple_grid_field52} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pemanfaatan_gas_methane" data-fieldname="pemanfaatan_gas_methane">
+	{$label v_sp_pemrosesan_keterisian pemanfaatan_gas_methane }	{$arrow_icon_pemanfaatan_gas_methane}
+	</SPAN>
+	{END pemanfaatan_gas_methane_fieldheader}
+{END pemanfaatan_gas_methane_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field24}
+				 
+					{BEGIN cellblock_grid_headcell_field25}
+	<th
+	
+	{$cell_grid_headcell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$potensi_emisi_gas_class}
+			"
+
+			data-field="potensi_emisi_gas"
+	
+	data-cellId="grid_headcell_field25" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN potensi_emisi_gas_fieldheadercolumn}
+	{BEGIN potensi_emisi_gas_fieldheader}
+	<SPAN {$potensi_emisi_gas_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field53" {$item_simple_grid_field53} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="potensi_emisi_gas" data-fieldname="potensi_emisi_gas">
+	{$label v_sp_pemrosesan_keterisian potensi_emisi_gas }	{$arrow_icon_potensi_emisi_gas}
+	</SPAN>
+	{END potensi_emisi_gas_fieldheader}
+{END potensi_emisi_gas_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field25}
+				 
+					{BEGIN cellblock_grid_headcell_field26}
+	<th
+	
+	{$cell_grid_headcell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$bentuk_pemanfaatan_gas_metan_class}
+			"
+
+			data-field="bentuk_pemanfaatan_gas_metan"
+	
+	data-cellId="grid_headcell_field26" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN bentuk_pemanfaatan_gas_metan_fieldheadercolumn}
+	{BEGIN bentuk_pemanfaatan_gas_metan_fieldheader}
+	<SPAN {$bentuk_pemanfaatan_gas_metan_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field54" {$item_simple_grid_field54} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="bentuk_pemanfaatan_gas_metan" data-fieldname="bentuk_pemanfaatan_gas_metan">
+	{$label v_sp_pemrosesan_keterisian bentuk_pemanfaatan_gas_metan }	{$arrow_icon_bentuk_pemanfaatan_gas_metan}
+	</SPAN>
+	{END bentuk_pemanfaatan_gas_metan_fieldheader}
+{END bentuk_pemanfaatan_gas_metan_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field26}
+				 
+					{BEGIN cellblock_grid_headcell_field27}
+	<th
+	
+	{$cell_grid_headcell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$biaya_operasional_class}
+			"
+
+			data-field="biaya_operasional"
+	
+	data-cellId="grid_headcell_field27" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN biaya_operasional_fieldheadercolumn}
+	{BEGIN biaya_operasional_fieldheader}
+	<SPAN {$biaya_operasional_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field55" {$item_simple_grid_field55} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="biaya_operasional" data-fieldname="biaya_operasional">
+	{$label v_sp_pemrosesan_keterisian biaya_operasional }	{$arrow_icon_biaya_operasional}
+	</SPAN>
+	{END biaya_operasional_fieldheader}
+{END biaya_operasional_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field27}
+							</tr>
+					 
+					 
+					
+					{END grid_header}
+			</thead>
+															<tbody>
+					{BEGIN grid_row}
+									
+		 
+					 
+						<tr {$rowattrs} {$row_grid_1} class="{$rowclass} 
+								
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_cell_icons}
+	<td
+	
+	{$cell_grid_cell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"		data-control-cell
+	
+	>
+
+	 
+		{BEGIN view_column}
+{BEGIN view_link}
+<span data-itemtype="grid_view" data-itemid="grid_view" {$item_grid_view} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Lihat Catatan" class="btn-link   
+	 glyphicon glyphicon-search" href="v_sp_pemrosesan_keterisian_view.php?{$editlink}" {$viewlink_attrs} title="Lihat" >		
+				
+								</a>
+</span>
+{END view_link}
+{END view_column}
+	
+	</td>
+	{END cellblock_grid_cell_icons}
+				 
+					{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jumlah_record_class}
+			"
+
+			data-field="jumlah_record"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jumlah_record_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jumlah_record" data-fieldname="jumlah_record" data-default-width >
+{$jumlah_record_value}
+</span>
+{END jumlah_record_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+				 
+					{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kondisifasilitas_class}
+			"
+
+			data-field="kondisifasilitas"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kondisifasilitas_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kondisifasilitas" data-fieldname="kondisifasilitas" data-default-width >
+{$kondisifasilitas_value}
+</span>
+{END kondisifasilitas_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+				 
+					{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kategori_pelayanan_class}
+			"
+
+			data-field="kategori_pelayanan"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kategori_pelayanan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kategori_pelayanan" data-fieldname="kategori_pelayanan" data-default-width >
+{$kategori_pelayanan_value}
+</span>
+{END kategori_pelayanan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+				 
+					{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$pengelola_class}
+			"
+
+			data-field="pengelola"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pengelola_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pengelola" data-fieldname="pengelola" data-default-width >
+{$pengelola_value}
+</span>
+{END pengelola_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+				 
+					{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jenis_pengelola_class}
+			"
+
+			data-field="jenis_pengelola"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jenis_pengelola_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jenis_pengelola" data-fieldname="jenis_pengelola" data-default-width >
+{$jenis_pengelola_value}
+</span>
+{END jenis_pengelola_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+				 
+					{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nama_kepala_fasilitas_class}
+			"
+
+			data-field="nama_kepala_fasilitas"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nama_kepala_fasilitas_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nama_kepala_fasilitas" data-fieldname="nama_kepala_fasilitas" data-default-width >
+{$nama_kepala_fasilitas_value}
+</span>
+{END nama_kepala_fasilitas_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+				 
+					{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$alamat_class}
+			"
+
+			data-field="alamat"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN alamat_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="alamat" data-fieldname="alamat" data-default-width >
+{$alamat_value}
+</span>
+{END alamat_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+				 
+					{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$telepon_class}
+			"
+
+			data-field="telepon"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN telepon_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="telepon" data-fieldname="telepon" data-default-width >
+{$telepon_value}
+</span>
+{END telepon_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+				 
+					{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$email_class}
+			"
+
+			data-field="email"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN email_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="email" data-fieldname="email" data-default-width >
+{$email_value}
+</span>
+{END email_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+				 
+					{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tahun_pembangunan_class}
+			"
+
+			data-field="tahun_pembangunan"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tahun_pembangunan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tahun_pembangunan" data-fieldname="tahun_pembangunan" data-default-width >
+{$tahun_pembangunan_value}
+</span>
+{END tahun_pembangunan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
+				 
+					{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tahun_mulai_operasi_class}
+			"
+
+			data-field="tahun_mulai_operasi"
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tahun_mulai_operasi_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tahun_mulai_operasi" data-fieldname="tahun_mulai_operasi" data-default-width >
+{$tahun_mulai_operasi_value}
+</span>
+{END tahun_mulai_operasi_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field10}
+				 
+					{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jarak_perumahan_class}
+			"
+
+			data-field="jarak_perumahan"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jarak_perumahan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jarak_perumahan" data-fieldname="jarak_perumahan" data-default-width >
+{$jarak_perumahan_value}
+</span>
+{END jarak_perumahan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
+				 
+					{BEGIN cellblock_grid_cell_field12}
+	<td
+	
+	{$cell_grid_cell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$jarak_badan_air_class}
+			"
+
+			data-field="jarak_badan_air"
+	
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN jarak_badan_air_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="jarak_badan_air" data-fieldname="jarak_badan_air" data-default-width >
+{$jarak_badan_air_value}
+</span>
+{END jarak_badan_air_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field12}
+				 
+					{BEGIN cellblock_grid_cell_field13}
+	<td
+	
+	{$cell_grid_cell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$sumber_dana_pembangunan_class}
+			"
+
+			data-field="sumber_dana_pembangunan"
+	
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sumber_dana_pembangunan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sumber_dana_pembangunan" data-fieldname="sumber_dana_pembangunan" data-default-width >
+{$sumber_dana_pembangunan_value}
+</span>
+{END sumber_dana_pembangunan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field13}
+				 
+					{BEGIN cellblock_grid_cell_field14}
+	<td
+	
+	{$cell_grid_cell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$biaya_pembangunan_class}
+			"
+
+			data-field="biaya_pembangunan"
+	
+	data-cellId="grid_cell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN biaya_pembangunan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="biaya_pembangunan" data-fieldname="biaya_pembangunan" data-default-width >
+{$biaya_pembangunan_value}
+</span>
+{END biaya_pembangunan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field14}
+				 
+					{BEGIN cellblock_grid_cell_field15}
+	<td
+	
+	{$cell_grid_cell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$luas_total_TPA_class}
+			"
+
+			data-field="luas_total_TPA"
+	
+	data-cellId="grid_cell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN luas_total_TPA_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="luas_total_TPA" data-fieldname="luas_total_TPA" data-default-width >
+{$luas_total_TPA_value}
+</span>
+{END luas_total_TPA_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field15}
+				 
+					{BEGIN cellblock_grid_cell_field16}
+	<td
+	
+	{$cell_grid_cell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$luas_unit_pengolahan_sampah_class}
+			"
+
+			data-field="luas_unit_pengolahan_sampah"
+	
+	data-cellId="grid_cell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN luas_unit_pengolahan_sampah_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="luas_unit_pengolahan_sampah" data-fieldname="luas_unit_pengolahan_sampah" data-default-width >
+{$luas_unit_pengolahan_sampah_value}
+</span>
+{END luas_unit_pengolahan_sampah_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field16}
+				 
+					{BEGIN cellblock_grid_cell_field17}
+	<td
+	
+	{$cell_grid_cell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$status_keberfungsian_class}
+			"
+
+			data-field="status_keberfungsian"
+	
+	data-cellId="grid_cell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN status_keberfungsian_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="status_keberfungsian" data-fieldname="status_keberfungsian" data-default-width >
+{$status_keberfungsian_value}
+</span>
+{END status_keberfungsian_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field17}
+				 
+					{BEGIN cellblock_grid_cell_field18}
+	<td
+	
+	{$cell_grid_cell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kualitas_keberfungsian_class}
+			"
+
+			data-field="kualitas_keberfungsian"
+	
+	data-cellId="grid_cell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kualitas_keberfungsian_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kualitas_keberfungsian" data-fieldname="kualitas_keberfungsian" data-default-width >
+{$kualitas_keberfungsian_value}
+</span>
+{END kualitas_keberfungsian_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field18}
+				 
+					{BEGIN cellblock_grid_cell_field19}
+	<td
+	
+	{$cell_grid_cell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$metode_lahan_urug_class}
+			"
+
+			data-field="metode_lahan_urug"
+	
+	data-cellId="grid_cell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN metode_lahan_urug_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="metode_lahan_urug" data-fieldname="metode_lahan_urug" data-default-width >
+{$metode_lahan_urug_value}
+</span>
+{END metode_lahan_urug_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field19}
+				 
+					{BEGIN cellblock_grid_cell_field20}
+	<td
+	
+	{$cell_grid_cell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kapasitas_sampah_masuk_class}
+			"
+
+			data-field="kapasitas_sampah_masuk"
+	
+	data-cellId="grid_cell_field20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kapasitas_sampah_masuk_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kapasitas_sampah_masuk" data-fieldname="kapasitas_sampah_masuk" data-default-width >
+{$kapasitas_sampah_masuk_value}
+</span>
+{END kapasitas_sampah_masuk_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field20}
+				 
+					{BEGIN cellblock_grid_cell_field21}
+	<td
+	
+	{$cell_grid_cell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$kapasitas_sampah_terolah_class}
+			"
+
+			data-field="kapasitas_sampah_terolah"
+	
+	data-cellId="grid_cell_field21" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN kapasitas_sampah_terolah_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kapasitas_sampah_terolah" data-fieldname="kapasitas_sampah_terolah" data-default-width >
+{$kapasitas_sampah_terolah_value}
+</span>
+{END kapasitas_sampah_terolah_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field21}
+				 
+					{BEGIN cellblock_grid_cell_field22}
+	<td
+	
+	{$cell_grid_cell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$unit_pengolahan_air_lindi_class}
+			"
+
+			data-field="unit_pengolahan_air_lindi"
+	
+	data-cellId="grid_cell_field22" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN unit_pengolahan_air_lindi_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="unit_pengolahan_air_lindi" data-fieldname="unit_pengolahan_air_lindi" data-default-width >
+{$unit_pengolahan_air_lindi_value}
+</span>
+{END unit_pengolahan_air_lindi_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field22}
+				 
+					{BEGIN cellblock_grid_cell_field23}
+	<td
+	
+	{$cell_grid_cell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$umur_TPA_class}
+			"
+
+			data-field="umur_TPA"
+	
+	data-cellId="grid_cell_field23" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN umur_TPA_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="umur_TPA" data-fieldname="umur_TPA" data-default-width >
+{$umur_TPA_value}
+</span>
+{END umur_TPA_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field23}
+				 
+					{BEGIN cellblock_grid_cell_field24}
+	<td
+	
+	{$cell_grid_cell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$pemanfaatan_gas_methane_class}
+			"
+
+			data-field="pemanfaatan_gas_methane"
+	
+	data-cellId="grid_cell_field24" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pemanfaatan_gas_methane_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pemanfaatan_gas_methane" data-fieldname="pemanfaatan_gas_methane" data-default-width >
+{$pemanfaatan_gas_methane_value}
+</span>
+{END pemanfaatan_gas_methane_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field24}
+				 
+					{BEGIN cellblock_grid_cell_field25}
+	<td
+	
+	{$cell_grid_cell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$potensi_emisi_gas_class}
+			"
+
+			data-field="potensi_emisi_gas"
+	
+	data-cellId="grid_cell_field25" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN potensi_emisi_gas_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="potensi_emisi_gas" data-fieldname="potensi_emisi_gas" data-default-width >
+{$potensi_emisi_gas_value}
+</span>
+{END potensi_emisi_gas_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field25}
+				 
+					{BEGIN cellblock_grid_cell_field26}
+	<td
+	
+	{$cell_grid_cell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$bentuk_pemanfaatan_gas_metan_class}
+			"
+
+			data-field="bentuk_pemanfaatan_gas_metan"
+	
+	data-cellId="grid_cell_field26" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN bentuk_pemanfaatan_gas_metan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="bentuk_pemanfaatan_gas_metan" data-fieldname="bentuk_pemanfaatan_gas_metan" data-default-width >
+{$bentuk_pemanfaatan_gas_metan_value}
+</span>
+{END bentuk_pemanfaatan_gas_metan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field26}
+				 
+					{BEGIN cellblock_grid_cell_field27}
+	<td
+	
+	{$cell_grid_cell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$biaya_operasional_class}
+			"
+
+			data-field="biaya_operasional"
+	
+	data-cellId="grid_cell_field27" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN biaya_operasional_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="biaya_operasional" data-fieldname="biaya_operasional" data-default-width >
+{$biaya_operasional_value}
+</span>
+{END biaya_operasional_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field27}
+							</tr>
+					 
+					
+											{END grid_row}
+					</tbody>
+													<tfoot>
+					
+		 
+					 
+					 
+						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
+									{$gridFooter_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_footcell_icons}
+	<td
+	
+	{$cell_grid_footcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_icons}
+				 
+					{BEGIN cellblock_grid_footcell_field}
+	<td
+	
+	{$cell_grid_footcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field}
+				 
+					{BEGIN cellblock_grid_footcell_field1}
+	<td
+	
+	{$cell_grid_footcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field1}
+				 
+					{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
+				 
+					{BEGIN cellblock_grid_footcell_field3}
+	<td
+	
+	{$cell_grid_footcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field3}
+				 
+					{BEGIN cellblock_grid_footcell_field4}
+	<td
+	
+	{$cell_grid_footcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field4}
+				 
+					{BEGIN cellblock_grid_footcell_field5}
+	<td
+	
+	{$cell_grid_footcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field5}
+				 
+					{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
+				 
+					{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
+				 
+					{BEGIN cellblock_grid_footcell_field8}
+	<td
+	
+	{$cell_grid_footcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field8}
+				 
+					{BEGIN cellblock_grid_footcell_field9}
+	<td
+	
+	{$cell_grid_footcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field9}
+				 
+					{BEGIN cellblock_grid_footcell_field10}
+	<td
+	
+	{$cell_grid_footcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field10}
+				 
+					{BEGIN cellblock_grid_footcell_field11}
+	<td
+	
+	{$cell_grid_footcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field11}
+				 
+					{BEGIN cellblock_grid_footcell_field12}
+	<td
+	
+	{$cell_grid_footcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field12}
+				 
+					{BEGIN cellblock_grid_footcell_field13}
+	<td
+	
+	{$cell_grid_footcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field13}
+				 
+					{BEGIN cellblock_grid_footcell_field14}
+	<td
+	
+	{$cell_grid_footcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field14}
+				 
+					{BEGIN cellblock_grid_footcell_field15}
+	<td
+	
+	{$cell_grid_footcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field15}
+				 
+					{BEGIN cellblock_grid_footcell_field16}
+	<td
+	
+	{$cell_grid_footcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field16}
+				 
+					{BEGIN cellblock_grid_footcell_field17}
+	<td
+	
+	{$cell_grid_footcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field17}
+				 
+					{BEGIN cellblock_grid_footcell_field18}
+	<td
+	
+	{$cell_grid_footcell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field18" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field18}
+				 
+					{BEGIN cellblock_grid_footcell_field19}
+	<td
+	
+	{$cell_grid_footcell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field19" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field19}
+				 
+					{BEGIN cellblock_grid_footcell_field20}
+	<td
+	
+	{$cell_grid_footcell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field20" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field20}
+				 
+					{BEGIN cellblock_grid_footcell_field21}
+	<td
+	
+	{$cell_grid_footcell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field21" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field21}
+				 
+					{BEGIN cellblock_grid_footcell_field22}
+	<td
+	
+	{$cell_grid_footcell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field22" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field22}
+				 
+					{BEGIN cellblock_grid_footcell_field23}
+	<td
+	
+	{$cell_grid_footcell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field23" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field23}
+				 
+					{BEGIN cellblock_grid_footcell_field24}
+	<td
+	
+	{$cell_grid_footcell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field24" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field24}
+				 
+					{BEGIN cellblock_grid_footcell_field25}
+	<td
+	
+	{$cell_grid_footcell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field25" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field25}
+				 
+					{BEGIN cellblock_grid_footcell_field26}
+	<td
+	
+	{$cell_grid_footcell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field26" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field26}
+				 
+					{BEGIN cellblock_grid_footcell_field27}
+	<td
+	
+	{$cell_grid_footcell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field27" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="v_sp_pemrosesan_keterisian_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field27}
+							</tr>
+					
+					</tfoot>
+				</table>
+{END grid_block}
+						</div>
+					<div class="r-below">
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="r-align-center r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN pagination_block}
+<span data-itemtype="pagination" data-itemid="pagination" {$item_pagination} data-pageid="{$pageid}" >
+{$pagination}
+</span>
+{END pagination_block}
+		</div>					</div>
+	</div>		
+{END below-grid_block}
+						</div>
+					{$footer}
+				</div>	
+			</div>	
+			<div class="r-body-shadow">
+			</div>
+		</div>
+	{END body}
+	</body>
+</html>

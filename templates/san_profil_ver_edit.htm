@@ -1,0 +1,440 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-edit" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel san_profil_ver edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>Balik ke daftar</button>
+	{END message_back_button}
+{BEGIN message_view_page_button}
+		<a class="btn btn-sm btn-default" href="san_profil_ver_view.php?{$editlink}" {$view_page_button_attrs}>Lihat</a>
+{END message_view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN propinsiid_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_propinsiid}  r-vertical-field" 
+	data-signal-error-for="propinsiid{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="propinsiid" data-fieldname="propinsiid" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_propinsiid}">
+		{BEGIN propinsiid_label}{$label san_profil_ver propinsiid }{END propinsiid_label}
+	</label>
+	<div class="r-edit-field">
+		{$propinsiid_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="propinsiid">
+		<div class="text-muted" >
+		{$tooltip san_profil_ver propinsiid }		</div>
+	</div>
+</div>
+
+
+{END propinsiid_fieldblock}
+											
+{BEGIN kabupatenkotaid_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kabupatenkotaid}  r-vertical-field" 
+	data-signal-error-for="kabupatenkotaid{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="kabupatenkotaid" data-fieldname="kabupatenkotaid" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_kabupatenkotaid}">
+		{BEGIN kabupatenkotaid_label}{$label san_profil_ver kabupatenkotaid }{END kabupatenkotaid_label}
+	</label>
+	<div class="r-edit-field">
+		{$kabupatenkotaid_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="kabupatenkotaid">
+		<div class="text-muted" >
+		{$tooltip san_profil_ver kabupatenkotaid }		</div>
+	</div>
+</div>
+
+
+{END kabupatenkotaid_fieldblock}
+											
+{BEGIN jumlahpendudukadmin_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jumlahpendudukadmin}  r-vertical-field" 
+	data-signal-error-for="jumlahpendudukadmin{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="jumlahpendudukadmin" data-fieldname="jumlahpendudukadmin" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_jumlahpendudukadmin}">
+		{BEGIN jumlahpendudukadmin_label}{$label san_profil_ver jumlahpendudukadmin }{END jumlahpendudukadmin_label}
+	</label>
+	<div class="r-edit-field">
+		{$jumlahpendudukadmin_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="jumlahpendudukadmin">
+		<div class="text-muted" >
+		{$tooltip san_profil_ver jumlahpendudukadmin }		</div>
+	</div>
+</div>
+
+
+{END jumlahpendudukadmin_fieldblock}
+											
+{BEGIN jumlahrumah_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jumlahrumah}  r-vertical-field" 
+	data-signal-error-for="jumlahrumah{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="jumlahrumah" data-fieldname="jumlahrumah" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_jumlahrumah}">
+		{BEGIN jumlahrumah_label}{$label san_profil_ver jumlahrumah }{END jumlahrumah_label}
+	</label>
+	<div class="r-edit-field">
+		{$jumlahrumah_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="jumlahrumah">
+		<div class="text-muted" >
+		{$tooltip san_profil_ver jumlahrumah }		</div>
+	</div>
+</div>
+
+
+{END jumlahrumah_fieldblock}
+											
+{BEGIN jumlahpendudukkota_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jumlahpendudukkota}  r-vertical-field" 
+	data-signal-error-for="jumlahpendudukkota{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="jumlahpendudukkota" data-fieldname="jumlahpendudukkota" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_jumlahpendudukkota}">
+		{BEGIN jumlahpendudukkota_label}{$label san_profil_ver jumlahpendudukkota }{END jumlahpendudukkota_label}
+	</label>
+	<div class="r-edit-field">
+		{$jumlahpendudukkota_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="jumlahpendudukkota">
+		<div class="text-muted" >
+		{$tooltip san_profil_ver jumlahpendudukkota }		</div>
+	</div>
+</div>
+
+
+{END jumlahpendudukkota_fieldblock}
+											
+{BEGIN jumlahpendudukdesa_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jumlahpendudukdesa}  r-vertical-field" 
+	data-signal-error-for="jumlahpendudukdesa{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="jumlahpendudukdesa" data-fieldname="jumlahpendudukdesa" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_jumlahpendudukdesa}">
+		{BEGIN jumlahpendudukdesa_label}{$label san_profil_ver jumlahpendudukdesa }{END jumlahpendudukdesa_label}
+	</label>
+	<div class="r-edit-field">
+		{$jumlahpendudukdesa_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="jumlahpendudukdesa">
+		<div class="text-muted" >
+		{$tooltip san_profil_ver jumlahpendudukdesa }		</div>
+	</div>
+</div>
+
+
+{END jumlahpendudukdesa_fieldblock}
+											
+{BEGIN jumlahjiwa_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jumlahjiwa}  r-vertical-field" 
+	data-signal-error-for="jumlahjiwa{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="jumlahjiwa" data-fieldname="jumlahjiwa" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_jumlahjiwa}">
+		{BEGIN jumlahjiwa_label}{$label san_profil_ver jumlahjiwa }{END jumlahjiwa_label}
+	</label>
+	<div class="r-edit-field">
+		{$jumlahjiwa_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="jumlahjiwa">
+		<div class="text-muted" >
+		{$tooltip san_profil_ver jumlahjiwa }		</div>
+	</div>
+</div>
+
+
+{END jumlahjiwa_fieldblock}
+											
+{BEGIN kepadatanpenduduk_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kepadatanpenduduk}  r-vertical-field" 
+	data-signal-error-for="kepadatanpenduduk{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="kepadatanpenduduk" data-fieldname="kepadatanpenduduk" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_kepadatanpenduduk}">
+		{BEGIN kepadatanpenduduk_label}{$label san_profil_ver kepadatanpenduduk }{END kepadatanpenduduk_label}
+	</label>
+	<div class="r-edit-field">
+		{$kepadatanpenduduk_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="kepadatanpenduduk">
+		<div class="text-muted" >
+		{$tooltip san_profil_ver kepadatanpenduduk }		</div>
+	</div>
+</div>
+
+
+{END kepadatanpenduduk_fieldblock}
+											
+{BEGIN lajupertumbuhanpenduduk_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_lajupertumbuhanpenduduk}  r-vertical-field" 
+	data-signal-error-for="lajupertumbuhanpenduduk{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="lajupertumbuhanpenduduk" data-fieldname="lajupertumbuhanpenduduk" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_lajupertumbuhanpenduduk}">
+		{BEGIN lajupertumbuhanpenduduk_label}{$label san_profil_ver lajupertumbuhanpenduduk }{END lajupertumbuhanpenduduk_label}
+	</label>
+	<div class="r-edit-field">
+		{$lajupertumbuhanpenduduk_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="lajupertumbuhanpenduduk">
+		<div class="text-muted" >
+		{$tooltip san_profil_ver lajupertumbuhanpenduduk }		</div>
+	</div>
+</div>
+
+
+{END lajupertumbuhanpenduduk_fieldblock}
+											
+{BEGIN indexfiskal_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_indexfiskal}  r-vertical-field" 
+	data-signal-error-for="indexfiskal{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="indexfiskal" data-fieldname="indexfiskal" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_indexfiskal}">
+		{BEGIN indexfiskal_label}{$label san_profil_ver indexfiskal }{END indexfiskal_label}
+	</label>
+	<div class="r-edit-field">
+		{$indexfiskal_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="indexfiskal">
+		<div class="text-muted" >
+		{$tooltip san_profil_ver indexfiskal }		</div>
+	</div>
+</div>
+
+
+{END indexfiskal_fieldblock}
+											
+{BEGIN verifikasi_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_verifikasi}  r-vertical-field" 
+	data-signal-error-for="verifikasi{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="verifikasi" data-fieldname="verifikasi" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_verifikasi}">
+		{BEGIN verifikasi_label}{$label san_profil_ver verifikasi }{END verifikasi_label}
+	</label>
+	<div class="r-edit-field">
+		{$verifikasi_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="verifikasi">
+		<div class="text-muted" >
+		{$tooltip san_profil_ver verifikasi }		</div>
+	</div>
+</div>
+
+
+{END verifikasi_fieldblock}
+											
+{BEGIN keterangan_verifikasi_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_keterangan_verifikasi}  r-vertical-field" 
+	data-signal-error-for="keterangan_verifikasi{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="keterangan_verifikasi" data-fieldname="keterangan_verifikasi" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_keterangan_verifikasi}">
+		{BEGIN keterangan_verifikasi_label}{$label san_profil_ver keterangan_verifikasi }{END keterangan_verifikasi_label}
+	</label>
+	<div class="r-edit-field">
+		{$keterangan_verifikasi_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="keterangan_verifikasi">
+		<div class="text-muted" >
+		{$tooltip san_profil_ver keterangan_verifikasi }		</div>
+	</div>
+</div>
+
+
+{END keterangan_verifikasi_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Simpan			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							Batal			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		Tata ulang		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  href="san_profil_ver_view.php?{$editlink}" {$view_page_button_attrs}  title="" >
+				
+		Lihat		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

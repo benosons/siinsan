@@ -1,0 +1,634 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel simdak_v_rekap_drainase search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN propinsi_nama_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_propinsi_nama}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="propinsi_nama{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="propinsi_nama" data-fieldname="propinsi_nama" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_propinsi_nama}">
+		{$label simdak_v_rekap_drainase propinsi_nama }	</label>
+	<div class="r-search-option">
+		{$searchtype_propinsi_nama}
+	</div>
+	<div class="r-search-field">
+		{$propinsi_nama_editcontrol}	</div>
+	<div class="r-search-field">
+		{$propinsi_nama_editcontrol1}
+	</div>
+	
+</div>
+
+{END propinsi_nama_fieldblock}
+											
+{BEGIN jmlkeg2015_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jmlkeg2015}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jmlkeg2015{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="jmlkeg2015" data-fieldname="jmlkeg2015" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jmlkeg2015}">
+		{$label simdak_v_rekap_drainase jmlkeg2015 }	</label>
+	<div class="r-search-option">
+		{$searchtype_jmlkeg2015}
+	</div>
+	<div class="r-search-field">
+		{$jmlkeg2015_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jmlkeg2015_editcontrol1}
+	</div>
+	
+</div>
+
+{END jmlkeg2015_fieldblock}
+											
+{BEGIN jmlmeter2015_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jmlmeter2015}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jmlmeter2015{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="jmlmeter2015" data-fieldname="jmlmeter2015" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jmlmeter2015}">
+		{$label simdak_v_rekap_drainase jmlmeter2015 }	</label>
+	<div class="r-search-option">
+		{$searchtype_jmlmeter2015}
+	</div>
+	<div class="r-search-field">
+		{$jmlmeter2015_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jmlmeter2015_editcontrol1}
+	</div>
+	
+</div>
+
+{END jmlmeter2015_fieldblock}
+											
+{BEGIN jmljiwa2015_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jmljiwa2015}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jmljiwa2015{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="jmljiwa2015" data-fieldname="jmljiwa2015" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jmljiwa2015}">
+		{$label simdak_v_rekap_drainase jmljiwa2015 }	</label>
+	<div class="r-search-option">
+		{$searchtype_jmljiwa2015}
+	</div>
+	<div class="r-search-field">
+		{$jmljiwa2015_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jmljiwa2015_editcontrol1}
+	</div>
+	
+</div>
+
+{END jmljiwa2015_fieldblock}
+											
+{BEGIN jmlkeg2016_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jmlkeg2016}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jmlkeg2016{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="jmlkeg2016" data-fieldname="jmlkeg2016" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jmlkeg2016}">
+		{$label simdak_v_rekap_drainase jmlkeg2016 }	</label>
+	<div class="r-search-option">
+		{$searchtype_jmlkeg2016}
+	</div>
+	<div class="r-search-field">
+		{$jmlkeg2016_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jmlkeg2016_editcontrol1}
+	</div>
+	
+</div>
+
+{END jmlkeg2016_fieldblock}
+											
+{BEGIN jmlmeter2016_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jmlmeter2016}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jmlmeter2016{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="jmlmeter2016" data-fieldname="jmlmeter2016" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jmlmeter2016}">
+		{$label simdak_v_rekap_drainase jmlmeter2016 }	</label>
+	<div class="r-search-option">
+		{$searchtype_jmlmeter2016}
+	</div>
+	<div class="r-search-field">
+		{$jmlmeter2016_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jmlmeter2016_editcontrol1}
+	</div>
+	
+</div>
+
+{END jmlmeter2016_fieldblock}
+											
+{BEGIN jmljiwa2016_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jmljiwa2016}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jmljiwa2016{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="jmljiwa2016" data-fieldname="jmljiwa2016" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jmljiwa2016}">
+		{$label simdak_v_rekap_drainase jmljiwa2016 }	</label>
+	<div class="r-search-option">
+		{$searchtype_jmljiwa2016}
+	</div>
+	<div class="r-search-field">
+		{$jmljiwa2016_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jmljiwa2016_editcontrol1}
+	</div>
+	
+</div>
+
+{END jmljiwa2016_fieldblock}
+											
+{BEGIN jmlkeg2017_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jmlkeg2017}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jmlkeg2017{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="jmlkeg2017" data-fieldname="jmlkeg2017" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jmlkeg2017}">
+		{$label simdak_v_rekap_drainase jmlkeg2017 }	</label>
+	<div class="r-search-option">
+		{$searchtype_jmlkeg2017}
+	</div>
+	<div class="r-search-field">
+		{$jmlkeg2017_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jmlkeg2017_editcontrol1}
+	</div>
+	
+</div>
+
+{END jmlkeg2017_fieldblock}
+											
+{BEGIN jmlmeter2017_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jmlmeter2017}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jmlmeter2017{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="jmlmeter2017" data-fieldname="jmlmeter2017" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jmlmeter2017}">
+		{$label simdak_v_rekap_drainase jmlmeter2017 }	</label>
+	<div class="r-search-option">
+		{$searchtype_jmlmeter2017}
+	</div>
+	<div class="r-search-field">
+		{$jmlmeter2017_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jmlmeter2017_editcontrol1}
+	</div>
+	
+</div>
+
+{END jmlmeter2017_fieldblock}
+											
+{BEGIN jmljiwa2017_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jmljiwa2017}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jmljiwa2017{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="jmljiwa2017" data-fieldname="jmljiwa2017" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jmljiwa2017}">
+		{$label simdak_v_rekap_drainase jmljiwa2017 }	</label>
+	<div class="r-search-option">
+		{$searchtype_jmljiwa2017}
+	</div>
+	<div class="r-search-field">
+		{$jmljiwa2017_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jmljiwa2017_editcontrol1}
+	</div>
+	
+</div>
+
+{END jmljiwa2017_fieldblock}
+											
+{BEGIN jmlkeg2018_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jmlkeg2018}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jmlkeg2018{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="jmlkeg2018" data-fieldname="jmlkeg2018" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jmlkeg2018}">
+		{$label simdak_v_rekap_drainase jmlkeg2018 }	</label>
+	<div class="r-search-option">
+		{$searchtype_jmlkeg2018}
+	</div>
+	<div class="r-search-field">
+		{$jmlkeg2018_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jmlkeg2018_editcontrol1}
+	</div>
+	
+</div>
+
+{END jmlkeg2018_fieldblock}
+											
+{BEGIN jmlmeter2018_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jmlmeter2018}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jmlmeter2018{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="jmlmeter2018" data-fieldname="jmlmeter2018" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jmlmeter2018}">
+		{$label simdak_v_rekap_drainase jmlmeter2018 }	</label>
+	<div class="r-search-option">
+		{$searchtype_jmlmeter2018}
+	</div>
+	<div class="r-search-field">
+		{$jmlmeter2018_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jmlmeter2018_editcontrol1}
+	</div>
+	
+</div>
+
+{END jmlmeter2018_fieldblock}
+											
+{BEGIN jmljiwa2018_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jmljiwa2018}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jmljiwa2018{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="jmljiwa2018" data-fieldname="jmljiwa2018" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jmljiwa2018}">
+		{$label simdak_v_rekap_drainase jmljiwa2018 }	</label>
+	<div class="r-search-option">
+		{$searchtype_jmljiwa2018}
+	</div>
+	<div class="r-search-field">
+		{$jmljiwa2018_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jmljiwa2018_editcontrol1}
+	</div>
+	
+</div>
+
+{END jmljiwa2018_fieldblock}
+											
+{BEGIN jmlkeg2019_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jmlkeg2019}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jmlkeg2019{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="jmlkeg2019" data-fieldname="jmlkeg2019" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jmlkeg2019}">
+		{$label simdak_v_rekap_drainase jmlkeg2019 }	</label>
+	<div class="r-search-option">
+		{$searchtype_jmlkeg2019}
+	</div>
+	<div class="r-search-field">
+		{$jmlkeg2019_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jmlkeg2019_editcontrol1}
+	</div>
+	
+</div>
+
+{END jmlkeg2019_fieldblock}
+											
+{BEGIN jmlmeter2019_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jmlmeter2019}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jmlmeter2019{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="jmlmeter2019" data-fieldname="jmlmeter2019" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jmlmeter2019}">
+		{$label simdak_v_rekap_drainase jmlmeter2019 }	</label>
+	<div class="r-search-option">
+		{$searchtype_jmlmeter2019}
+	</div>
+	<div class="r-search-field">
+		{$jmlmeter2019_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jmlmeter2019_editcontrol1}
+	</div>
+	
+</div>
+
+{END jmlmeter2019_fieldblock}
+											
+{BEGIN jmljiwa2019_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jmljiwa2019}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jmljiwa2019{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="jmljiwa2019" data-fieldname="jmljiwa2019" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jmljiwa2019}">
+		{$label simdak_v_rekap_drainase jmljiwa2019 }	</label>
+	<div class="r-search-option">
+		{$searchtype_jmljiwa2019}
+	</div>
+	<div class="r-search-field">
+		{$jmljiwa2019_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jmljiwa2019_editcontrol1}
+	</div>
+	
+</div>
+
+{END jmljiwa2019_fieldblock}
+											
+{BEGIN jmlkeg2020_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jmlkeg2020}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jmlkeg2020{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="jmlkeg2020" data-fieldname="jmlkeg2020" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jmlkeg2020}">
+		{$label simdak_v_rekap_drainase jmlkeg2020 }	</label>
+	<div class="r-search-option">
+		{$searchtype_jmlkeg2020}
+	</div>
+	<div class="r-search-field">
+		{$jmlkeg2020_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jmlkeg2020_editcontrol1}
+	</div>
+	
+</div>
+
+{END jmlkeg2020_fieldblock}
+											
+{BEGIN jmlmeter2020_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jmlmeter2020}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jmlmeter2020{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field17" {$item_integrated_search_field17} data-pageid="{$pageid}" data-field="jmlmeter2020" data-fieldname="jmlmeter2020" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jmlmeter2020}">
+		{$label simdak_v_rekap_drainase jmlmeter2020 }	</label>
+	<div class="r-search-option">
+		{$searchtype_jmlmeter2020}
+	</div>
+	<div class="r-search-field">
+		{$jmlmeter2020_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jmlmeter2020_editcontrol1}
+	</div>
+	
+</div>
+
+{END jmlmeter2020_fieldblock}
+											
+{BEGIN jmljiwa2020_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jmljiwa2020}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jmljiwa2020{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field18" {$item_integrated_search_field18} data-pageid="{$pageid}" data-field="jmljiwa2020" data-fieldname="jmljiwa2020" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jmljiwa2020}">
+		{$label simdak_v_rekap_drainase jmljiwa2020 }	</label>
+	<div class="r-search-option">
+		{$searchtype_jmljiwa2020}
+	</div>
+	<div class="r-search-field">
+		{$jmljiwa2020_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jmljiwa2020_editcontrol1}
+	</div>
+	
+</div>
+
+{END jmljiwa2020_fieldblock}
+											
+{BEGIN jmlkeg2021_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jmlkeg2021}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jmlkeg2021{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field19" {$item_integrated_search_field19} data-pageid="{$pageid}" data-field="jmlkeg2021" data-fieldname="jmlkeg2021" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jmlkeg2021}">
+		{$label simdak_v_rekap_drainase jmlkeg2021 }	</label>
+	<div class="r-search-option">
+		{$searchtype_jmlkeg2021}
+	</div>
+	<div class="r-search-field">
+		{$jmlkeg2021_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jmlkeg2021_editcontrol1}
+	</div>
+	
+</div>
+
+{END jmlkeg2021_fieldblock}
+											
+{BEGIN jmlmeter2021_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jmlmeter2021}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jmlmeter2021{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field20" {$item_integrated_search_field20} data-pageid="{$pageid}" data-field="jmlmeter2021" data-fieldname="jmlmeter2021" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jmlmeter2021}">
+		{$label simdak_v_rekap_drainase jmlmeter2021 }	</label>
+	<div class="r-search-option">
+		{$searchtype_jmlmeter2021}
+	</div>
+	<div class="r-search-field">
+		{$jmlmeter2021_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jmlmeter2021_editcontrol1}
+	</div>
+	
+</div>
+
+{END jmlmeter2021_fieldblock}
+											
+{BEGIN jmljiwa2021_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jmljiwa2021}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="jmljiwa2021{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field21" {$item_integrated_search_field21} data-pageid="{$pageid}" data-field="jmljiwa2021" data-fieldname="jmljiwa2021" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_jmljiwa2021}">
+		{$label simdak_v_rekap_drainase jmljiwa2021 }	</label>
+	<div class="r-search-option">
+		{$searchtype_jmljiwa2021}
+	</div>
+	<div class="r-search-field">
+		{$jmljiwa2021_editcontrol}	</div>
+	<div class="r-search-field">
+		{$jmljiwa2021_editcontrol1}
+	</div>
+	
+</div>
+
+{END jmljiwa2021_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Cari			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Tata ulang			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Batal			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

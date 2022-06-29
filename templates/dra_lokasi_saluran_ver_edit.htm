@@ -1,0 +1,503 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+		
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel dra_lokasi_saluran_ver edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>Balik ke daftar</button>
+	{END message_back_button}
+{BEGIN message_view_page_button}
+		<a class="btn btn-sm btn-default" href="dra_lokasi_saluran_ver_view.php?{$editlink}" {$view_page_button_attrs}>Lihat</a>
+{END message_view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN kd_propinsi_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_propinsi}  r-vertical-field" 
+	data-signal-error-for="kd_propinsi{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="kd_propinsi" data-fieldname="kd_propinsi" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_kd_propinsi}">
+		{BEGIN kd_propinsi_label}{$label dra_lokasi_saluran_ver kd_propinsi }{END kd_propinsi_label}
+	</label>
+	<div class="r-edit-field">
+		{$kd_propinsi_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="kd_propinsi">
+		<div class="text-muted" >
+		{$tooltip dra_lokasi_saluran_ver kd_propinsi }		</div>
+	</div>
+</div>
+
+
+{END kd_propinsi_fieldblock}
+											
+{BEGIN kd_kota_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_kota}  r-vertical-field" 
+	data-signal-error-for="kd_kota{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="kd_kota" data-fieldname="kd_kota" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_kd_kota}">
+		{BEGIN kd_kota_label}{$label dra_lokasi_saluran_ver kd_kota }{END kd_kota_label}
+	</label>
+	<div class="r-edit-field">
+		{$kd_kota_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="kd_kota">
+		<div class="text-muted" >
+		{$tooltip dra_lokasi_saluran_ver kd_kota }		</div>
+	</div>
+</div>
+
+
+{END kd_kota_fieldblock}
+											
+{BEGIN kd_kecamatan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_kecamatan}  r-vertical-field" 
+	data-signal-error-for="kd_kecamatan{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="kd_kecamatan" data-fieldname="kd_kecamatan" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_kd_kecamatan}">
+		{BEGIN kd_kecamatan_label}{$label dra_lokasi_saluran_ver kd_kecamatan }{END kd_kecamatan_label}
+	</label>
+	<div class="r-edit-field">
+		{$kd_kecamatan_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="kd_kecamatan">
+		<div class="text-muted" >
+		{$tooltip dra_lokasi_saluran_ver kd_kecamatan }		</div>
+	</div>
+</div>
+
+
+{END kd_kecamatan_fieldblock}
+											
+{BEGIN kd_kelurahan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_kelurahan}  r-vertical-field" 
+	data-signal-error-for="kd_kelurahan{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="kd_kelurahan" data-fieldname="kd_kelurahan" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_kd_kelurahan}">
+		{BEGIN kd_kelurahan_label}{$label dra_lokasi_saluran_ver kd_kelurahan }{END kd_kelurahan_label}
+	</label>
+	<div class="r-edit-field">
+		{$kd_kelurahan_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="kd_kelurahan">
+		<div class="text-muted" >
+		{$tooltip dra_lokasi_saluran_ver kd_kelurahan }		</div>
+	</div>
+</div>
+
+
+{END kd_kelurahan_fieldblock}
+											
+{BEGIN koordinat_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_koordinat}  r-vertical-field" 
+	data-signal-error-for="koordinat{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="koordinat" data-fieldname="koordinat" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_koordinat}">
+		{BEGIN koordinat_label}{$label dra_lokasi_saluran_ver koordinat }{END koordinat_label}
+	</label>
+	<div class="r-edit-field">
+		{$koordinat_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="koordinat">
+		<div class="text-muted" >
+		{$tooltip dra_lokasi_saluran_ver koordinat }		</div>
+	</div>
+</div>
+
+
+{END koordinat_fieldblock}
+											
+{BEGIN nm_sistem_drainase_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nm_sistem_drainase}  r-vertical-field" 
+	data-signal-error-for="nm_sistem_drainase{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="nm_sistem_drainase" data-fieldname="nm_sistem_drainase" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_nm_sistem_drainase}">
+		{BEGIN nm_sistem_drainase_label}{$label dra_lokasi_saluran_ver nm_sistem_drainase }{END nm_sistem_drainase_label}
+	</label>
+	<div class="r-edit-field">
+		{$nm_sistem_drainase_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nm_sistem_drainase">
+		<div class="text-muted" >
+		{$tooltip dra_lokasi_saluran_ver nm_sistem_drainase }		</div>
+	</div>
+</div>
+
+
+{END nm_sistem_drainase_fieldblock}
+											
+{BEGIN keterangan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_keterangan}  r-vertical-field" 
+	data-signal-error-for="keterangan{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="keterangan" data-fieldname="keterangan" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_keterangan}">
+		{BEGIN keterangan_label}{$label dra_lokasi_saluran_ver keterangan }{END keterangan_label}
+	</label>
+	<div class="r-edit-field">
+		{$keterangan_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="keterangan">
+		<div class="text-muted" >
+		{$tooltip dra_lokasi_saluran_ver keterangan }		</div>
+	</div>
+</div>
+
+
+{END keterangan_fieldblock}
+											
+{BEGIN entryDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_entryDate}  r-vertical-field" 
+	data-signal-error-for="entryDate{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="entryDate" data-fieldname="entryDate" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_entryDate}">
+		{BEGIN entryDate_label}{$label dra_lokasi_saluran_ver entryDate }{END entryDate_label}
+	</label>
+	<div class="r-edit-field">
+		{$entryDate_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="entryDate">
+		<div class="text-muted" >
+		{$tooltip dra_lokasi_saluran_ver entryDate }		</div>
+	</div>
+</div>
+
+
+{END entryDate_fieldblock}
+											
+{BEGIN verifikasi_prov_user_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_verifikasi_prov_user}  r-vertical-field" 
+	data-signal-error-for="verifikasi_prov_user{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="verifikasi_prov_user" data-fieldname="verifikasi_prov_user" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_verifikasi_prov_user}">
+		{BEGIN verifikasi_prov_user_label}{$label dra_lokasi_saluran_ver verifikasi_prov_user }{END verifikasi_prov_user_label}
+	</label>
+	<div class="r-edit-field">
+		{$verifikasi_prov_user_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="verifikasi_prov_user">
+		<div class="text-muted" >
+		{$tooltip dra_lokasi_saluran_ver verifikasi_prov_user }		</div>
+	</div>
+</div>
+
+
+{END verifikasi_prov_user_fieldblock}
+											
+{BEGIN tanggal_verifikasi_prov_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tanggal_verifikasi_prov}  r-vertical-field" 
+	data-signal-error-for="tanggal_verifikasi_prov{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="tanggal_verifikasi_prov" data-fieldname="tanggal_verifikasi_prov" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_tanggal_verifikasi_prov}">
+		{BEGIN tanggal_verifikasi_prov_label}{$label dra_lokasi_saluran_ver tanggal_verifikasi_prov }{END tanggal_verifikasi_prov_label}
+	</label>
+	<div class="r-edit-field">
+		{$tanggal_verifikasi_prov_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="tanggal_verifikasi_prov">
+		<div class="text-muted" >
+		{$tooltip dra_lokasi_saluran_ver tanggal_verifikasi_prov }		</div>
+	</div>
+</div>
+
+
+{END tanggal_verifikasi_prov_fieldblock}
+											
+{BEGIN verifikasi_prov_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_verifikasi_prov}  r-vertical-field" 
+	data-signal-error-for="verifikasi_prov{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="verifikasi_prov" data-fieldname="verifikasi_prov" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_verifikasi_prov}">
+		{BEGIN verifikasi_prov_label}{$label dra_lokasi_saluran_ver verifikasi_prov }{END verifikasi_prov_label}
+	</label>
+	<div class="r-edit-field">
+		{$verifikasi_prov_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="verifikasi_prov">
+		<div class="text-muted" >
+		{$tooltip dra_lokasi_saluran_ver verifikasi_prov }		</div>
+	</div>
+</div>
+
+
+{END verifikasi_prov_fieldblock}
+											
+{BEGIN keterangan_verifikasi_prov_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_keterangan_verifikasi_prov}  r-vertical-field" 
+	data-signal-error-for="keterangan_verifikasi_prov{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="keterangan_verifikasi_prov" data-fieldname="keterangan_verifikasi_prov" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_keterangan_verifikasi_prov}">
+		{BEGIN keterangan_verifikasi_prov_label}{$label dra_lokasi_saluran_ver keterangan_verifikasi_prov }{END keterangan_verifikasi_prov_label}
+	</label>
+	<div class="r-edit-field">
+		{$keterangan_verifikasi_prov_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="keterangan_verifikasi_prov">
+		<div class="text-muted" >
+		{$tooltip dra_lokasi_saluran_ver keterangan_verifikasi_prov }		</div>
+	</div>
+</div>
+
+
+{END keterangan_verifikasi_prov_fieldblock}
+											
+{BEGIN verifikasi_pusat_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_verifikasi_pusat}  r-vertical-field" 
+	data-signal-error-for="verifikasi_pusat{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="verifikasi_pusat" data-fieldname="verifikasi_pusat" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_verifikasi_pusat}">
+		{BEGIN verifikasi_pusat_label}{$label dra_lokasi_saluran_ver verifikasi_pusat }{END verifikasi_pusat_label}
+	</label>
+	<div class="r-edit-field">
+		{$verifikasi_pusat_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="verifikasi_pusat">
+		<div class="text-muted" >
+		{$tooltip dra_lokasi_saluran_ver verifikasi_pusat }		</div>
+	</div>
+</div>
+
+
+{END verifikasi_pusat_fieldblock}
+											
+{BEGIN tanggal_verifikasi_pusat_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tanggal_verifikasi_pusat}  r-vertical-field" 
+	data-signal-error-for="tanggal_verifikasi_pusat{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="tanggal_verifikasi_pusat" data-fieldname="tanggal_verifikasi_pusat" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_tanggal_verifikasi_pusat}">
+		{BEGIN tanggal_verifikasi_pusat_label}{$label dra_lokasi_saluran_ver tanggal_verifikasi_pusat }{END tanggal_verifikasi_pusat_label}
+	</label>
+	<div class="r-edit-field">
+		{$tanggal_verifikasi_pusat_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="tanggal_verifikasi_pusat">
+		<div class="text-muted" >
+		{$tooltip dra_lokasi_saluran_ver tanggal_verifikasi_pusat }		</div>
+	</div>
+</div>
+
+
+{END tanggal_verifikasi_pusat_fieldblock}
+											
+{BEGIN keterangan_verifikasi_pusat_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_keterangan_verifikasi_pusat}  r-vertical-field" 
+	data-signal-error-for="keterangan_verifikasi_pusat{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="keterangan_verifikasi_pusat" data-fieldname="keterangan_verifikasi_pusat" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_keterangan_verifikasi_pusat}">
+		{BEGIN keterangan_verifikasi_pusat_label}{$label dra_lokasi_saluran_ver keterangan_verifikasi_pusat }{END keterangan_verifikasi_pusat_label}
+	</label>
+	<div class="r-edit-field">
+		{$keterangan_verifikasi_pusat_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="keterangan_verifikasi_pusat">
+		<div class="text-muted" >
+		{$tooltip dra_lokasi_saluran_ver keterangan_verifikasi_pusat }		</div>
+	</div>
+</div>
+
+
+{END keterangan_verifikasi_pusat_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Simpan			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							Batal			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		Tata ulang		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  href="dra_lokasi_saluran_ver_view.php?{$editlink}" {$view_page_button_attrs}  title="" >
+				
+		Lihat		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

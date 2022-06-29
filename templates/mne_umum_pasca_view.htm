@@ -1,0 +1,1207 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-view" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel mne_umum_pasca view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN tahap_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tahap}  r-vertical-field" data-fieldname="tahap" data-signal-error-for="tahap{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field50" {$item_integrated_edit_field50} data-pageid="{$pageid}" data-field="tahap" data-fieldname="tahap" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_tahap}">
+		
+		{BEGIN tahap_label}{$label mne_umum_pasca tahap }{END tahap_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$tahap_value}	</div>
+
+		
+</div>
+
+
+{END tahap_fieldblock}
+											
+{BEGIN id_mne_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_mne}  r-vertical-field" data-fieldname="id_mne" data-signal-error-for="id_mne{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="id_mne" data-fieldname="id_mne" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_mne}">
+		
+		{BEGIN id_mne_label}{$label mne_umum_pasca id_mne }{END id_mne_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_mne_value}	</div>
+
+		
+</div>
+
+
+{END id_mne_fieldblock}
+											
+{BEGIN kd_sektor_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_sektor}  r-vertical-field" data-fieldname="kd_sektor" data-signal-error-for="kd_sektor{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="kd_sektor" data-fieldname="kd_sektor" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kd_sektor}">
+		
+		{BEGIN kd_sektor_label}{$label mne_umum_pasca kd_sektor }{END kd_sektor_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kd_sektor_value}	</div>
+
+		
+</div>
+
+
+{END kd_sektor_fieldblock}
+											
+{BEGIN provinsiid_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_provinsiid}  r-vertical-field" data-fieldname="provinsiid" data-signal-error-for="provinsiid{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="provinsiid" data-fieldname="provinsiid" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_provinsiid}">
+		
+		{BEGIN provinsiid_label}{$label mne_umum_pasca provinsiid }{END provinsiid_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$provinsiid_value}	</div>
+
+		
+</div>
+
+
+{END provinsiid_fieldblock}
+											
+{BEGIN kabupatenkotaid_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kabupatenkotaid}  r-vertical-field" data-fieldname="kabupatenkotaid" data-signal-error-for="kabupatenkotaid{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="kabupatenkotaid" data-fieldname="kabupatenkotaid" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kabupatenkotaid}">
+		
+		{BEGIN kabupatenkotaid_label}{$label mne_umum_pasca kabupatenkotaid }{END kabupatenkotaid_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kabupatenkotaid_value}	</div>
+
+		
+</div>
+
+
+{END kabupatenkotaid_fieldblock}
+											
+{BEGIN tahun_data_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tahun_data}  r-vertical-field" data-fieldname="tahun_data" data-signal-error-for="tahun_data{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="tahun_data" data-fieldname="tahun_data" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_tahun_data}">
+		
+		{BEGIN tahun_data_label}{$label mne_umum_pasca tahun_data }{END tahun_data_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$tahun_data_value}	</div>
+
+		
+</div>
+
+
+{END tahun_data_fieldblock}
+											
+{BEGIN nm_kegiatan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nm_kegiatan}  r-vertical-field" data-fieldname="nm_kegiatan" data-signal-error-for="nm_kegiatan{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="nm_kegiatan" data-fieldname="nm_kegiatan" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_nm_kegiatan}">
+		
+		{BEGIN nm_kegiatan_label}{$label mne_umum_pasca nm_kegiatan }{END nm_kegiatan_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$nm_kegiatan_value}	</div>
+
+		
+</div>
+
+
+{END nm_kegiatan_fieldblock}
+											
+{BEGIN kd_jenisInfra_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kd_jenisInfra}  r-vertical-field" data-fieldname="kd_jenisInfra" data-signal-error-for="kd_jenisInfra{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="kd_jenisInfra" data-fieldname="kd_jenisInfra" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kd_jenisInfra}">
+		
+		{BEGIN kd_jenisInfra_label}{$label mne_umum_pasca kd_jenisInfra }{END kd_jenisInfra_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kd_jenisInfra_value}	</div>
+
+		
+</div>
+
+
+{END kd_jenisInfra_fieldblock}
+											
+{BEGIN pagu_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pagu}  r-vertical-field" data-fieldname="pagu" data-signal-error-for="pagu{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="pagu" data-fieldname="pagu" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_pagu}">
+		
+		{BEGIN pagu_label}{$label mne_umum_pasca pagu }{END pagu_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$pagu_value}	</div>
+
+		
+</div>
+
+
+{END pagu_fieldblock}
+											
+{BEGIN sumber_dana_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sumber_dana}  r-vertical-field" data-fieldname="sumber_dana" data-signal-error-for="sumber_dana{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="sumber_dana" data-fieldname="sumber_dana" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_sumber_dana}">
+		
+		{BEGIN sumber_dana_label}{$label mne_umum_pasca sumber_dana }{END sumber_dana_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$sumber_dana_value}	</div>
+
+		
+</div>
+
+
+{END sumber_dana_fieldblock}
+											
+{BEGIN status_usulan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_status_usulan}  r-vertical-field" data-fieldname="status_usulan" data-signal-error-for="status_usulan{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="status_usulan" data-fieldname="status_usulan" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_status_usulan}">
+		
+		{BEGIN status_usulan_label}{$label mne_umum_pasca status_usulan }{END status_usulan_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$status_usulan_value}	</div>
+
+		
+</div>
+
+
+{END status_usulan_fieldblock}
+											
+{BEGIN lokasi_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_lokasi}  r-vertical-field" data-fieldname="lokasi" data-signal-error-for="lokasi{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="lokasi" data-fieldname="lokasi" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_lokasi}">
+		
+		{BEGIN lokasi_label}{$label mne_umum_pasca lokasi }{END lokasi_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$lokasi_value}	</div>
+
+		
+</div>
+
+
+{END lokasi_fieldblock}
+											
+{BEGIN kategori_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kategori}  r-vertical-field" data-fieldname="kategori" data-signal-error-for="kategori{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="kategori" data-fieldname="kategori" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kategori}">
+		
+		{BEGIN kategori_label}{$label mne_umum_pasca kategori }{END kategori_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kategori_value}	</div>
+
+		
+</div>
+
+
+{END kategori_fieldblock}
+											
+{BEGIN deskripsi_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_deskripsi}  r-vertical-field" data-fieldname="deskripsi" data-signal-error-for="deskripsi{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="deskripsi" data-fieldname="deskripsi" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_deskripsi}">
+		
+		{BEGIN deskripsi_label}{$label mne_umum_pasca deskripsi }{END deskripsi_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$deskripsi_value}	</div>
+
+		
+</div>
+
+
+{END deskripsi_fieldblock}
+											
+{BEGIN ruanglingkup_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ruanglingkup}  r-vertical-field" data-fieldname="ruanglingkup" data-signal-error-for="ruanglingkup{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="ruanglingkup" data-fieldname="ruanglingkup" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ruanglingkup}">
+		
+		{BEGIN ruanglingkup_label}{$label mne_umum_pasca ruanglingkup }{END ruanglingkup_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ruanglingkup_value}	</div>
+
+		
+</div>
+
+
+{END ruanglingkup_fieldblock}
+											
+{BEGIN kapasitas_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kapasitas}  r-vertical-field" data-fieldname="kapasitas" data-signal-error-for="kapasitas{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="kapasitas" data-fieldname="kapasitas" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kapasitas}">
+		
+		{BEGIN kapasitas_label}{$label mne_umum_pasca kapasitas }{END kapasitas_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kapasitas_value}	</div>
+
+		
+</div>
+
+
+{END kapasitas_fieldblock}
+											
+{BEGIN penerimamanfaat_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_penerimamanfaat}  r-vertical-field" data-fieldname="penerimamanfaat" data-signal-error-for="penerimamanfaat{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="penerimamanfaat" data-fieldname="penerimamanfaat" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_penerimamanfaat}">
+		
+		{BEGIN penerimamanfaat_label}{$label mne_umum_pasca penerimamanfaat }{END penerimamanfaat_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$penerimamanfaat_value}	</div>
+
+		
+</div>
+
+
+{END penerimamanfaat_fieldblock}
+											
+{BEGIN tanggal_input_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tanggal_input}  r-vertical-field" data-fieldname="tanggal_input" data-signal-error-for="tanggal_input{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field32" {$item_integrated_edit_field32} data-pageid="{$pageid}" data-field="tanggal_input" data-fieldname="tanggal_input" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_tanggal_input}">
+		
+		{BEGIN tanggal_input_label}{$label mne_umum_pasca tanggal_input }{END tanggal_input_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$tanggal_input_value}	</div>
+
+		
+</div>
+
+
+{END tanggal_input_fieldblock}
+											
+{BEGIN diinput_oleh_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_diinput_oleh}  r-vertical-field" data-fieldname="diinput_oleh" data-signal-error-for="diinput_oleh{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field33" {$item_integrated_edit_field33} data-pageid="{$pageid}" data-field="diinput_oleh" data-fieldname="diinput_oleh" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_diinput_oleh}">
+		
+		{BEGIN diinput_oleh_label}{$label mne_umum_pasca diinput_oleh }{END diinput_oleh_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$diinput_oleh_value}	</div>
+
+		
+</div>
+
+
+{END diinput_oleh_fieldblock}
+											
+{BEGIN tanggal_update_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tanggal_update}  r-vertical-field" data-fieldname="tanggal_update" data-signal-error-for="tanggal_update{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field34" {$item_integrated_edit_field34} data-pageid="{$pageid}" data-field="tanggal_update" data-fieldname="tanggal_update" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_tanggal_update}">
+		
+		{BEGIN tanggal_update_label}{$label mne_umum_pasca tanggal_update }{END tanggal_update_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$tanggal_update_value}	</div>
+
+		
+</div>
+
+
+{END tanggal_update_fieldblock}
+											
+{BEGIN diupdate_oleh_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_diupdate_oleh}  r-vertical-field" data-fieldname="diupdate_oleh" data-signal-error-for="diupdate_oleh{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field35" {$item_integrated_edit_field35} data-pageid="{$pageid}" data-field="diupdate_oleh" data-fieldname="diupdate_oleh" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_diupdate_oleh}">
+		
+		{BEGIN diupdate_oleh_label}{$label mne_umum_pasca diupdate_oleh }{END diupdate_oleh_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$diupdate_oleh_value}	</div>
+
+		
+</div>
+
+
+{END diupdate_oleh_fieldblock}
+											
+{BEGIN kesimpulan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kesimpulan}  r-vertical-field" data-fieldname="kesimpulan" data-signal-error-for="kesimpulan{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="kesimpulan" data-fieldname="kesimpulan" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kesimpulan}">
+		
+		{BEGIN kesimpulan_label}{$label mne_umum_pasca kesimpulan }{END kesimpulan_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kesimpulan_value}	</div>
+
+		
+</div>
+
+
+{END kesimpulan_fieldblock}
+											
+{BEGIN catatan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_catatan}  r-vertical-field" data-fieldname="catatan" data-signal-error-for="catatan{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="catatan" data-fieldname="catatan" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_catatan}">
+		
+		{BEGIN catatan_label}{$label mne_umum_pasca catatan }{END catatan_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$catatan_value}	</div>
+
+		
+</div>
+
+
+{END catatan_fieldblock}
+											
+{BEGIN tindak_lanjut_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tindak_lanjut}  r-vertical-field" data-fieldname="tindak_lanjut" data-signal-error-for="tindak_lanjut{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="tindak_lanjut" data-fieldname="tindak_lanjut" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_tindak_lanjut}">
+		
+		{BEGIN tindak_lanjut_label}{$label mne_umum_pasca tindak_lanjut }{END tindak_lanjut_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$tindak_lanjut_value}	</div>
+
+		
+</div>
+
+
+{END tindak_lanjut_fieldblock}
+											
+{BEGIN lokasi_pelaksanaan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_lokasi_pelaksanaan}  r-vertical-field" data-fieldname="lokasi_pelaksanaan" data-signal-error-for="lokasi_pelaksanaan{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="lokasi_pelaksanaan" data-fieldname="lokasi_pelaksanaan" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_lokasi_pelaksanaan}">
+		
+		{BEGIN lokasi_pelaksanaan_label}{$label mne_umum_pasca lokasi_pelaksanaan }{END lokasi_pelaksanaan_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$lokasi_pelaksanaan_value}	</div>
+
+		
+</div>
+
+
+{END lokasi_pelaksanaan_fieldblock}
+											
+{BEGIN nilai_kontrak_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nilai_kontrak}  r-vertical-field" data-fieldname="nilai_kontrak" data-signal-error-for="nilai_kontrak{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="nilai_kontrak" data-fieldname="nilai_kontrak" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_nilai_kontrak}">
+		
+		{BEGIN nilai_kontrak_label}{$label mne_umum_pasca nilai_kontrak }{END nilai_kontrak_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$nilai_kontrak_value}	</div>
+
+		
+</div>
+
+
+{END nilai_kontrak_fieldblock}
+											
+{BEGIN nama_satker_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nama_satker}  r-vertical-field" data-fieldname="nama_satker" data-signal-error-for="nama_satker{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="nama_satker" data-fieldname="nama_satker" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_nama_satker}">
+		
+		{BEGIN nama_satker_label}{$label mne_umum_pasca nama_satker }{END nama_satker_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$nama_satker_value}	</div>
+
+		
+</div>
+
+
+{END nama_satker_fieldblock}
+											
+{BEGIN jenis_kontrak_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_jenis_kontrak}  r-vertical-field" data-fieldname="jenis_kontrak" data-signal-error-for="jenis_kontrak{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="jenis_kontrak" data-fieldname="jenis_kontrak" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_jenis_kontrak}">
+		
+		{BEGIN jenis_kontrak_label}{$label mne_umum_pasca jenis_kontrak }{END jenis_kontrak_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$jenis_kontrak_value}	</div>
+
+		
+</div>
+
+
+{END jenis_kontrak_fieldblock}
+											
+{BEGIN tanggal_kontrak_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tanggal_kontrak}  r-vertical-field" data-fieldname="tanggal_kontrak" data-signal-error-for="tanggal_kontrak{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="tanggal_kontrak" data-fieldname="tanggal_kontrak" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_tanggal_kontrak}">
+		
+		{BEGIN tanggal_kontrak_label}{$label mne_umum_pasca tanggal_kontrak }{END tanggal_kontrak_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$tanggal_kontrak_value}	</div>
+
+		
+</div>
+
+
+{END tanggal_kontrak_fieldblock}
+											
+{BEGIN pagu_pelaksanaan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pagu_pelaksanaan}  r-vertical-field" data-fieldname="pagu_pelaksanaan" data-signal-error-for="pagu_pelaksanaan{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field26" {$item_integrated_edit_field26} data-pageid="{$pageid}" data-field="pagu_pelaksanaan" data-fieldname="pagu_pelaksanaan" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_pagu_pelaksanaan}">
+		
+		{BEGIN pagu_pelaksanaan_label}{$label mne_umum_pasca pagu_pelaksanaan }{END pagu_pelaksanaan_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$pagu_pelaksanaan_value}	</div>
+
+		
+</div>
+
+
+{END pagu_pelaksanaan_fieldblock}
+											
+{BEGIN nilai_adendum1_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nilai_adendum1}  r-vertical-field" data-fieldname="nilai_adendum1" data-signal-error-for="nilai_adendum1{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field27" {$item_integrated_edit_field27} data-pageid="{$pageid}" data-field="nilai_adendum1" data-fieldname="nilai_adendum1" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_nilai_adendum1}">
+		
+		{BEGIN nilai_adendum1_label}{$label mne_umum_pasca nilai_adendum1 }{END nilai_adendum1_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$nilai_adendum1_value}	</div>
+
+		
+</div>
+
+
+{END nilai_adendum1_fieldblock}
+											
+{BEGIN waktu_adendum1_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_waktu_adendum1}  r-vertical-field" data-fieldname="waktu_adendum1" data-signal-error-for="waktu_adendum1{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field28" {$item_integrated_edit_field28} data-pageid="{$pageid}" data-field="waktu_adendum1" data-fieldname="waktu_adendum1" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_waktu_adendum1}">
+		
+		{BEGIN waktu_adendum1_label}{$label mne_umum_pasca waktu_adendum1 }{END waktu_adendum1_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$waktu_adendum1_value}	</div>
+
+		
+</div>
+
+
+{END waktu_adendum1_fieldblock}
+											
+{BEGIN nilai_adendum2_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nilai_adendum2}  r-vertical-field" data-fieldname="nilai_adendum2" data-signal-error-for="nilai_adendum2{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field29" {$item_integrated_edit_field29} data-pageid="{$pageid}" data-field="nilai_adendum2" data-fieldname="nilai_adendum2" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_nilai_adendum2}">
+		
+		{BEGIN nilai_adendum2_label}{$label mne_umum_pasca nilai_adendum2 }{END nilai_adendum2_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$nilai_adendum2_value}	</div>
+
+		
+</div>
+
+
+{END nilai_adendum2_fieldblock}
+											
+{BEGIN waktu_adendum2_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_waktu_adendum2}  r-vertical-field" data-fieldname="waktu_adendum2" data-signal-error-for="waktu_adendum2{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field30" {$item_integrated_edit_field30} data-pageid="{$pageid}" data-field="waktu_adendum2" data-fieldname="waktu_adendum2" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_waktu_adendum2}">
+		
+		{BEGIN waktu_adendum2_label}{$label mne_umum_pasca waktu_adendum2 }{END waktu_adendum2_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$waktu_adendum2_value}	</div>
+
+		
+</div>
+
+
+{END waktu_adendum2_fieldblock}
+											
+{BEGIN nilai_adendum3_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nilai_adendum3}  r-vertical-field" data-fieldname="nilai_adendum3" data-signal-error-for="nilai_adendum3{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field31" {$item_integrated_edit_field31} data-pageid="{$pageid}" data-field="nilai_adendum3" data-fieldname="nilai_adendum3" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_nilai_adendum3}">
+		
+		{BEGIN nilai_adendum3_label}{$label mne_umum_pasca nilai_adendum3 }{END nilai_adendum3_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$nilai_adendum3_value}	</div>
+
+		
+</div>
+
+
+{END nilai_adendum3_fieldblock}
+											
+{BEGIN waktu_adendum3_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_waktu_adendum3}  r-vertical-field" data-fieldname="waktu_adendum3" data-signal-error-for="waktu_adendum3{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field36" {$item_integrated_edit_field36} data-pageid="{$pageid}" data-field="waktu_adendum3" data-fieldname="waktu_adendum3" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_waktu_adendum3}">
+		
+		{BEGIN waktu_adendum3_label}{$label mne_umum_pasca waktu_adendum3 }{END waktu_adendum3_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$waktu_adendum3_value}	</div>
+
+		
+</div>
+
+
+{END waktu_adendum3_fieldblock}
+											
+{BEGIN foto_kegiatan_pelaksanaan1_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_foto_kegiatan_pelaksanaan1}  r-vertical-field" data-fieldname="foto_kegiatan_pelaksanaan1" data-signal-error-for="foto_kegiatan_pelaksanaan1{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field37" {$item_integrated_edit_field37} data-pageid="{$pageid}" data-field="foto_kegiatan_pelaksanaan1" data-fieldname="foto_kegiatan_pelaksanaan1" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_foto_kegiatan_pelaksanaan1}">
+		
+		{BEGIN foto_kegiatan_pelaksanaan1_label}{$label mne_umum_pasca foto_kegiatan_pelaksanaan1 }{END foto_kegiatan_pelaksanaan1_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$foto_kegiatan_pelaksanaan1_value}	</div>
+
+		
+</div>
+
+
+{END foto_kegiatan_pelaksanaan1_fieldblock}
+											
+{BEGIN foto_kegiatan_pelaksanaan2_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_foto_kegiatan_pelaksanaan2}  r-vertical-field" data-fieldname="foto_kegiatan_pelaksanaan2" data-signal-error-for="foto_kegiatan_pelaksanaan2{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field38" {$item_integrated_edit_field38} data-pageid="{$pageid}" data-field="foto_kegiatan_pelaksanaan2" data-fieldname="foto_kegiatan_pelaksanaan2" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_foto_kegiatan_pelaksanaan2}">
+		
+		{BEGIN foto_kegiatan_pelaksanaan2_label}{$label mne_umum_pasca foto_kegiatan_pelaksanaan2 }{END foto_kegiatan_pelaksanaan2_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$foto_kegiatan_pelaksanaan2_value}	</div>
+
+		
+</div>
+
+
+{END foto_kegiatan_pelaksanaan2_fieldblock}
+											
+{BEGIN kesimpulan_pelaksanaan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kesimpulan_pelaksanaan}  r-vertical-field" data-fieldname="kesimpulan_pelaksanaan" data-signal-error-for="kesimpulan_pelaksanaan{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field39" {$item_integrated_edit_field39} data-pageid="{$pageid}" data-field="kesimpulan_pelaksanaan" data-fieldname="kesimpulan_pelaksanaan" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kesimpulan_pelaksanaan}">
+		
+		{BEGIN kesimpulan_pelaksanaan_label}{$label mne_umum_pasca kesimpulan_pelaksanaan }{END kesimpulan_pelaksanaan_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kesimpulan_pelaksanaan_value}	</div>
+
+		
+</div>
+
+
+{END kesimpulan_pelaksanaan_fieldblock}
+											
+{BEGIN catatan_pelaksanaan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_catatan_pelaksanaan}  r-vertical-field" data-fieldname="catatan_pelaksanaan" data-signal-error-for="catatan_pelaksanaan{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field40" {$item_integrated_edit_field40} data-pageid="{$pageid}" data-field="catatan_pelaksanaan" data-fieldname="catatan_pelaksanaan" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_catatan_pelaksanaan}">
+		
+		{BEGIN catatan_pelaksanaan_label}{$label mne_umum_pasca catatan_pelaksanaan }{END catatan_pelaksanaan_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$catatan_pelaksanaan_value}	</div>
+
+		
+</div>
+
+
+{END catatan_pelaksanaan_fieldblock}
+											
+{BEGIN tindak_lanjut_pelaksanaan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tindak_lanjut_pelaksanaan}  r-vertical-field" data-fieldname="tindak_lanjut_pelaksanaan" data-signal-error-for="tindak_lanjut_pelaksanaan{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field41" {$item_integrated_edit_field41} data-pageid="{$pageid}" data-field="tindak_lanjut_pelaksanaan" data-fieldname="tindak_lanjut_pelaksanaan" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_tindak_lanjut_pelaksanaan}">
+		
+		{BEGIN tindak_lanjut_pelaksanaan_label}{$label mne_umum_pasca tindak_lanjut_pelaksanaan }{END tindak_lanjut_pelaksanaan_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$tindak_lanjut_pelaksanaan_value}	</div>
+
+		
+</div>
+
+
+{END tindak_lanjut_pelaksanaan_fieldblock}
+											
+{BEGIN kapasitas_terbangun_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kapasitas_terbangun}  r-vertical-field" data-fieldname="kapasitas_terbangun" data-signal-error-for="kapasitas_terbangun{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field42" {$item_integrated_edit_field42} data-pageid="{$pageid}" data-field="kapasitas_terbangun" data-fieldname="kapasitas_terbangun" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kapasitas_terbangun}">
+		
+		{BEGIN kapasitas_terbangun_label}{$label mne_umum_pasca kapasitas_terbangun }{END kapasitas_terbangun_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kapasitas_terbangun_value}	</div>
+
+		
+</div>
+
+
+{END kapasitas_terbangun_fieldblock}
+											
+{BEGIN status_BAST_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_status_BAST}  r-vertical-field" data-fieldname="status_BAST" data-signal-error-for="status_BAST{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field43" {$item_integrated_edit_field43} data-pageid="{$pageid}" data-field="status_BAST" data-fieldname="status_BAST" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_status_BAST}">
+		
+		{BEGIN status_BAST_label}{$label mne_umum_pasca status_BAST }{END status_BAST_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$status_BAST_value}	</div>
+
+		
+</div>
+
+
+{END status_BAST_fieldblock}
+											
+{BEGIN tanggal_BAST_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tanggal_BAST}  r-vertical-field" data-fieldname="tanggal_BAST" data-signal-error-for="tanggal_BAST{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field44" {$item_integrated_edit_field44} data-pageid="{$pageid}" data-field="tanggal_BAST" data-fieldname="tanggal_BAST" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_tanggal_BAST}">
+		
+		{BEGIN tanggal_BAST_label}{$label mne_umum_pasca tanggal_BAST }{END tanggal_BAST_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$tanggal_BAST_value}	</div>
+
+		
+</div>
+
+
+{END tanggal_BAST_fieldblock}
+											
+{BEGIN foto_kegiatan_pasca1_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_foto_kegiatan_pasca1}  r-vertical-field" data-fieldname="foto_kegiatan_pasca1" data-signal-error-for="foto_kegiatan_pasca1{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field45" {$item_integrated_edit_field45} data-pageid="{$pageid}" data-field="foto_kegiatan_pasca1" data-fieldname="foto_kegiatan_pasca1" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_foto_kegiatan_pasca1}">
+		
+		{BEGIN foto_kegiatan_pasca1_label}{$label mne_umum_pasca foto_kegiatan_pasca1 }{END foto_kegiatan_pasca1_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$foto_kegiatan_pasca1_value}	</div>
+
+		
+</div>
+
+
+{END foto_kegiatan_pasca1_fieldblock}
+											
+{BEGIN foto_kegiatan_pasca2_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_foto_kegiatan_pasca2}  r-vertical-field" data-fieldname="foto_kegiatan_pasca2" data-signal-error-for="foto_kegiatan_pasca2{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field46" {$item_integrated_edit_field46} data-pageid="{$pageid}" data-field="foto_kegiatan_pasca2" data-fieldname="foto_kegiatan_pasca2" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_foto_kegiatan_pasca2}">
+		
+		{BEGIN foto_kegiatan_pasca2_label}{$label mne_umum_pasca foto_kegiatan_pasca2 }{END foto_kegiatan_pasca2_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$foto_kegiatan_pasca2_value}	</div>
+
+		
+</div>
+
+
+{END foto_kegiatan_pasca2_fieldblock}
+											
+{BEGIN kesimpulan_pasca_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kesimpulan_pasca}  r-vertical-field" data-fieldname="kesimpulan_pasca" data-signal-error-for="kesimpulan_pasca{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field47" {$item_integrated_edit_field47} data-pageid="{$pageid}" data-field="kesimpulan_pasca" data-fieldname="kesimpulan_pasca" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_kesimpulan_pasca}">
+		
+		{BEGIN kesimpulan_pasca_label}{$label mne_umum_pasca kesimpulan_pasca }{END kesimpulan_pasca_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$kesimpulan_pasca_value}	</div>
+
+		
+</div>
+
+
+{END kesimpulan_pasca_fieldblock}
+											
+{BEGIN catatan_pasca_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_catatan_pasca}  r-vertical-field" data-fieldname="catatan_pasca" data-signal-error-for="catatan_pasca{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field48" {$item_integrated_edit_field48} data-pageid="{$pageid}" data-field="catatan_pasca" data-fieldname="catatan_pasca" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_catatan_pasca}">
+		
+		{BEGIN catatan_pasca_label}{$label mne_umum_pasca catatan_pasca }{END catatan_pasca_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$catatan_pasca_value}	</div>
+
+		
+</div>
+
+
+{END catatan_pasca_fieldblock}
+											
+{BEGIN tindak_lanjut_pasca_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tindak_lanjut_pasca}  r-vertical-field" data-fieldname="tindak_lanjut_pasca" data-signal-error-for="tindak_lanjut_pasca{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field49" {$item_integrated_edit_field49} data-pageid="{$pageid}" data-field="tindak_lanjut_pasca" data-fieldname="tindak_lanjut_pasca" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_tindak_lanjut_pasca}">
+		
+		{BEGIN tindak_lanjut_pasca_label}{$label mne_umum_pasca tindak_lanjut_pasca }{END tindak_lanjut_pasca_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$tindak_lanjut_pasca_value}	</div>
+
+		
+</div>
+
+
+{END tindak_lanjut_pasca_fieldblock}
+											
+{BEGIN file_BAST_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_file_BAST}  r-vertical-field" data-fieldname="file_BAST" data-signal-error-for="file_BAST{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field51" {$item_integrated_edit_field51} data-pageid="{$pageid}" data-field="file_BAST" data-fieldname="file_BAST" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_file_BAST}">
+		
+		{BEGIN file_BAST_label}{$label mne_umum_pasca file_BAST }{END file_BAST_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$file_BAST_value}	</div>
+
+		
+</div>
+
+
+{END file_BAST_fieldblock}
+											
+{BEGIN tanggal_mulai_commissioning_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tanggal_mulai_commissioning}  r-vertical-field" data-fieldname="tanggal_mulai_commissioning" data-signal-error-for="tanggal_mulai_commissioning{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field52" {$item_integrated_edit_field52} data-pageid="{$pageid}" data-field="tanggal_mulai_commissioning" data-fieldname="tanggal_mulai_commissioning" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_tanggal_mulai_commissioning}">
+		
+		{BEGIN tanggal_mulai_commissioning_label}{$label mne_umum_pasca tanggal_mulai_commissioning }{END tanggal_mulai_commissioning_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$tanggal_mulai_commissioning_value}	</div>
+
+		
+</div>
+
+
+{END tanggal_mulai_commissioning_fieldblock}
+											
+{BEGIN tanggal_selesai_commissioning_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tanggal_selesai_commissioning}  r-vertical-field" data-fieldname="tanggal_selesai_commissioning" data-signal-error-for="tanggal_selesai_commissioning{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field53" {$item_integrated_edit_field53} data-pageid="{$pageid}" data-field="tanggal_selesai_commissioning" data-fieldname="tanggal_selesai_commissioning" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_tanggal_selesai_commissioning}">
+		
+		{BEGIN tanggal_selesai_commissioning_label}{$label mne_umum_pasca tanggal_selesai_commissioning }{END tanggal_selesai_commissioning_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$tanggal_selesai_commissioning_value}	</div>
+
+		
+</div>
+
+
+{END tanggal_selesai_commissioning_fieldblock}
+											
+{BEGIN berita_acara_commissioning_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_berita_acara_commissioning}  r-vertical-field" data-fieldname="berita_acara_commissioning" data-signal-error-for="berita_acara_commissioning{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field54" {$item_integrated_edit_field54} data-pageid="{$pageid}" data-field="berita_acara_commissioning" data-fieldname="berita_acara_commissioning" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_berita_acara_commissioning}">
+		
+		{BEGIN berita_acara_commissioning_label}{$label mne_umum_pasca berita_acara_commissioning }{END berita_acara_commissioning_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$berita_acara_commissioning_value}	</div>
+
+		
+</div>
+
+
+{END berita_acara_commissioning_fieldblock}
+											
+{BEGIN foto_commissioning1_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_foto_commissioning1}  r-vertical-field" data-fieldname="foto_commissioning1" data-signal-error-for="foto_commissioning1{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field55" {$item_integrated_edit_field55} data-pageid="{$pageid}" data-field="foto_commissioning1" data-fieldname="foto_commissioning1" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_foto_commissioning1}">
+		
+		{BEGIN foto_commissioning1_label}{$label mne_umum_pasca foto_commissioning1 }{END foto_commissioning1_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$foto_commissioning1_value}	</div>
+
+		
+</div>
+
+
+{END foto_commissioning1_fieldblock}
+											
+{BEGIN foto_commissioning2_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_foto_commissioning2}  r-vertical-field" data-fieldname="foto_commissioning2" data-signal-error-for="foto_commissioning2{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field56" {$item_integrated_edit_field56} data-pageid="{$pageid}" data-field="foto_commissioning2" data-fieldname="foto_commissioning2" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_foto_commissioning2}">
+		
+		{BEGIN foto_commissioning2_label}{$label mne_umum_pasca foto_commissioning2 }{END foto_commissioning2_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$foto_commissioning2_value}	</div>
+
+		
+</div>
+
+
+{END foto_commissioning2_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Tutup jendela			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="mne_umum_pasca_edit.php?{$editlink}" {$edit_page_button_attrs}  title="" >
+				
+		Edit		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
